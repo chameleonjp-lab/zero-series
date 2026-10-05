@@ -10,7 +10,7 @@ mainに採用した候補ソースをGitHub Actionsが検査し、distだけをG
 
 ## 検査結果
 
-- Node.js 24で台帳・ランキング境界の単体検査26件合格。順位・同率・0/1/4/5/6件、scope不一致、不正型、timeout、429、最大2並列、旧応答、停止、5分/30分cache、時計逆行、連打、契約失効を架空fixtureで検査。本番RPCは実行していない。
+- Node.js 24で台帳・ランキング境界の単体検査29件合格。順位・同率・0/1/4/5/6件、scope不一致、不正型、timeout、429、最大2並列、旧応答、停止、5分/30分cache、時計逆行、連打、契約失効を架空fixtureで検査。本番RPCは実行していない。
 - ChromiumとWebKitで各14件、計28件合格。320/375/390/430/768/1280/1440px、200%文字・長い連続文字、44px操作、タッチ横向き1列、PC2/3列、JS無効、offline、keyboard/skip link、FF切替、HTML表示名の不活性化、局所状態表示を検査。
 - axe-coreのWCAG 2 A/AA・2.1 AA対象自動検査で違反0。独立レビューの指摘によりselect/retry境界色を修正。人によるVoiceOver試験の代用ではない。
 - [モバイル画像](portal-mobile.png)、[PC画像](portal-desktop.png) を目視。これはポータルの検査画像で、実ゲームサムネイルではない。SHA表示はcommit前の作業tree検査時の基準SHAで、最終配備SHAではない。
