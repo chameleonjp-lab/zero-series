@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'tests/browser',timeout:30000,fullyParallel:true,workers:2,reporter:'list',use:{baseURL:process.env.BASE_URL||'http://127.0.0.1:4173'},webServer:process.env.BASE_URL?undefined:{command:'python -m http.server 4173 --directory dist',url:'http://127.0.0.1:4173',reuseExistingServer:false},projects:[{name:'chromium',use:{browserName:'chromium'}},{name:'webkit',use:{browserName:'webkit'}}]});
