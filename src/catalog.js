@@ -4,6 +4,7 @@
 const OFFICIAL_PLAY_URLS = Object.freeze({
   kaisen: 'https://chameleonjp-lab.github.io/kaisen/',
   faitofuraito: 'https://chameleonjp-lab.github.io/faitofuraito/',
+  gekichin: 'https://chameleonjp-lab.github.io/gekichin/',
   uchiotose: 'https://chameleonjp-lab.github.io/uchiotose/',
 });
 
@@ -218,32 +219,49 @@ export const catalog = [
     "id": "gekichin",
     "displayOrder": 4,
     "title": "ゲキチン",
-    "description": "超大型宇宙船の100基の砲台を、僚機と破壊するタイム・スコアアタックを予定しています。現在は操縦プロトタイプを開発中で、砲台戦は未実装です。",
-    "releaseState": "preparing",
-    "playUrl": null,
+    "description": "超大型母艦の100基の砲台を、僚機と破壊するタイム・スコアアタック。イージーとノーマルで挑戦できます。",
+    "releaseState": "published",
+    "playUrl": "https://chameleonjp-lab.github.io/gekichin/",
     "repositoryUrl": "https://github.com/chameleonjp-lab/gekichin",
-    "sourceCommit": "98119b5ae6604ad5975024b0e523b78eef369662",
-    "sourceRoot": "https://github.com/chameleonjp-lab/gekichin/tree/98119b5ae6604ad5975024b0e523b78eef369662",
+    "sourceCommit": "ad0d62b7968fd40f4d502f07c5bc4671d44973b9",
+    "sourceRoot": "https://github.com/chameleonjp-lab/gekichin/tree/ad0d62b7968fd40f4d502f07c5bc4671d44973b9",
     "publicationEvidence": {
-      "verified": false,
-      "officialUrl": null,
+      "verified": true,
+      "officialUrl": "https://chameleonjp-lab.github.io/gekichin/",
       "candidateUrl": null,
-      "deployedCommit": null,
-      "checkedAt": "2026-10-05T03:49:58Z",
+      "deployedCommit": "ad0d62b7968fd40f4d502f07c5bc4671d44973b9",
+      "checkedAt": "2026-10-05T18:24:14.731Z",
       "method": [
-        "Official repository main, README and fixed source documents",
-        "Public repository metadata: homepage null",
-        "Repository has_pages false; this does not exclude unrecorded alternate hosts"
+        "TLS-verified public HTML, deployment manifest and four product files; exact bytes and SHA-256 comparison with an independent main build",
+        "Successful GitHub Actions verification and Pages deployment for the same source commit",
+        "Live cloud-browser home and graphics-failure screen pixels inspected; gameplay blocked by disabled cloud WebGL"
       ],
       "sources": [
-        "https://github.com/chameleonjp-lab/gekichin/blob/98119b5ae6604ad5975024b0e523b78eef369662/README.md",
-        "https://github.com/chameleonjp-lab/gekichin/blob/98119b5ae6604ad5975024b0e523b78eef369662/docs/REQUIREMENTS.md",
-        "https://github.com/chameleonjp-lab/gekichin/blob/98119b5ae6604ad5975024b0e523b78eef369662/docs/IMPLEMENTATION_STATUS.md"
+        "https://chameleonjp-lab.github.io/gekichin/deployment.json",
+        "https://github.com/chameleonjp-lab/gekichin/actions/runs/37353314366",
+        "https://github.com/chameleonjp-lab/gekichin/blob/ad0d62b7968fd40f4d502f07c5bc4671d44973b9/src/main.ts",
+        "https://github.com/chameleonjp-lab/gekichin/blob/ad0d62b7968fd40f4d502f07c5bc4671d44973b9/docs/IMPLEMENTATION_STATUS.md"
       ],
       "unknown": [
-        "No verified current playable deployment URL"
+        "Cloud WebGL was disabled; the start control was disabled and live gameplay was not verified",
+        "Physical iPhone and human gameplay, performance and audio acceptance were not performed"
       ],
-      "evidenceFile": "docs/evidence/catalog.md"
+      "evidenceFile": "docs/evidence/catalog.md",
+      "artifactHashes": {
+        "assets/index-BufJBCcE.css": "d89927dcc6ca023fc4eb27a7d824215101184aeac9f2505e117eb80b76bb89bf",
+        "assets/index-Ca9XU86d.js": "75a38d906ca0775e2a1b7322366f3dfeb97a00edfd817ca00efc6f356f34cb9c",
+        "index.html": "1856e5b784410ffd8af94e7c8610f9def8ed0bc3f157062c28a7dd80c9b09b6a",
+        "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+      },
+      "manifestSha256": "4fcda149b42d3dd6b1dc49f361d1cf2be9c5c739cddcedfd7b25e7b770966ce9",
+      "currentMainProductBytesMatch": true,
+      "deploymentRecord": {
+        "kind": "github_actions",
+        "runId": 37353314366,
+        "headCommit": "ad0d62b7968fd40f4d502f07c5bc4671d44973b9",
+        "conclusion": "success",
+        "completedRecordAt": "2026-10-05T18:19:37Z"
+      }
     },
     "thumbnail": null,
     "ranking": {
@@ -252,7 +270,7 @@ export const catalog = [
       "defaultMode": null,
       "modes": []
     },
-    "contentUpdatedAt": "2026-10-05T03:53:32Z"
+    "contentUpdatedAt": "2026-10-05T18:37:37Z"
   },
   {
     "id": "uchiotose",
