@@ -11,6 +11,8 @@ test('8 static cards, unavailable states and local-only ranking',async({page})=>
   await expect(page).toHaveTitle('ゼロ シリーズ');
   await expect(page.locator('h1')).toHaveText('ゼロ シリーズ');
   await expect(page.locator('article.card')).toHaveCount(8);
+  await expect(page.locator('#uchiotose a.action')).toHaveAttribute('href','https://chameleonjp-lab.github.io/uchiotose/');
+  await expect(page.locator('a.action')).toHaveCount(3);
   await expect(page.locator('[data-ranking-status]')).toHaveText(Array(8).fill('ランキング未接続'));
   await page.locator('[data-mode]').selectOption('easy');
   await expect(page.locator('#faitofuraito [data-scope]')).toContainText('イージー');
@@ -71,7 +73,7 @@ test('offline keeps static cards and confirmed links',async({page,context})=>{
   await page.locator('[data-mode]').selectOption('easy');
   await expect(page.locator('#faitofuraito [data-scope]')).toContainText('イージー');
   await expect(page.locator('article')).toHaveCount(8);
-  await expect(page.locator('a.action')).toHaveCount(2);
+  await expect(page.locator('a.action')).toHaveCount(3);
   await expect(page.locator('[data-ranking-status]')).toHaveText(Array(8).fill('ランキング未接続'));
 });
 
