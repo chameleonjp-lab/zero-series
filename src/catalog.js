@@ -4,6 +4,7 @@
 const OFFICIAL_PLAY_URLS = Object.freeze({
   kaisen: 'https://chameleonjp-lab.github.io/kaisen/',
   faitofuraito: 'https://chameleonjp-lab.github.io/faitofuraito/',
+  uchiotose: 'https://chameleonjp-lab.github.io/uchiotose/',
 });
 
 export const catalog = [
@@ -15,36 +16,43 @@ export const catalog = [
     "releaseState": "published",
     "playUrl": "https://chameleonjp-lab.github.io/kaisen/",
     "repositoryUrl": "https://github.com/chameleonjp-lab/kaisen",
-    "sourceCommit": "3d751051dc6212482a129e8da596ddd349b2f9f5",
-    "sourceRoot": "https://github.com/chameleonjp-lab/kaisen/tree/3d751051dc6212482a129e8da596ddd349b2f9f5",
+    "sourceCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
+    "sourceRoot": "https://github.com/chameleonjp-lab/kaisen/tree/519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
     "publicationEvidence": {
       "verified": true,
       "officialUrl": "https://chameleonjp-lab.github.io/kaisen/",
       "candidateUrl": null,
-      "deployedCommit": "3d751051dc6212482a129e8da596ddd349b2f9f5",
-      "checkedAt": "2026-10-05T03:52:34.410Z",
+      "deployedCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
+      "checkedAt": "2026-10-05T14:32:00Z",
       "method": [
-        "README official URL",
-        "TLS-verified HTML, deployment manifest and JavaScript/CSS bodies; SHA-256 equality",
-        "Chromium home readiness from exact deployed-byte replay; GET/HEAD allowlist, all external requests and mutations blocked"
+        "TLS-verified public HTML, manifest and product assets; SHA-256 comparison",
+        "Current main source and exact CI or fresh production build checked separately"
       ],
       "sources": [
-        "https://github.com/chameleonjp-lab/kaisen/blob/3d751051dc6212482a129e8da596ddd349b2f9f5/README.md",
-        "https://github.com/chameleonjp-lab/kaisen/blob/3d751051dc6212482a129e8da596ddd349b2f9f5/docs/DEPLOYMENT.md",
         "https://chameleonjp-lab.github.io/kaisen/deployment.json",
-        "https://github.com/chameleonjp-lab/kaisen/actions/runs/37242180604"
+        "https://github.com/chameleonjp-lab/kaisen/actions/runs/37300960802"
       ],
       "unknown": [
-        "Direct live Chromium HTTPS inspection blocked by managed proxy CA trust",
-        "Gameplay, scoring, audio and physical iPhone operation were not tested"
+        "No new interactive browser or physical iPhone acceptance performed for this review"
       ],
       "evidenceFile": "docs/evidence/catalog.md",
       "artifactHashes": {
-        "index.html": "ce4fc2a6af98bf8bfc437f5e7d9b903f45d183132a58eb0bccdb301d355d5d05",
-        "assets/index-D79zFkmg.js": "9f3ecec88b461c2fe163216bc45751b6973d5978a195ed1483ac51917951ff36",
-        "assets/index-DoDftaxZ.css": "470c3b2f05659b37212eb5b20ca1897138b7a509d939bb8f77314d0b9662f8b6"
+        "assets/index-AnoDvxMm.js": "bc0e3bf86a54b5e673e7a7b0e5eafbb85bf6ad2f059eaab41c72d4d9430b8f3d",
+        "assets/index-CC4z0vjG.css": "27a94f1a79f29ec460e9d2493989b05d0870874621a13186c397a5fe3e0c527a",
+        "index.html": "864fac28e535f8022fd4edc4c14035b83e906460a60f9bb190e30da6f3ac0cff",
+        "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
       },
-      "homeCheck": {
+      "deploymentRecord": {
+        "kind": "github_actions",
+        "runId": 37300960802,
+        "headCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
+        "conclusion": "success",
+        "completedRecordAt": "2026-10-05T11:09:19Z"
+      },
+      "historicalHomeCheck": {
+        "sourceCommit": "3d751051dc6212482a129e8da596ddd349b2f9f5",
+        "checkedAt": "2026-10-05T03:52:34.410Z",
+        "appliesToCurrentSource": false,
         "method": "deployed_byte_replay",
         "browser": "153.0.8010.12",
         "viewport": {
@@ -56,13 +64,6 @@ export const catalog = [
         "pageErrorCount": 0,
         "gameStarted": false,
         "externalRequestCount": 0
-      },
-      "deploymentRecord": {
-        "kind": "github_actions",
-        "runId": 37242180604,
-        "headCommit": "3d751051dc6212482a129e8da596ddd349b2f9f5",
-        "conclusion": "success",
-        "completedRecordAt": "2026-10-04T23:02:27Z"
       }
     },
     "thumbnail": null,
@@ -72,7 +73,7 @@ export const catalog = [
       "defaultMode": null,
       "modes": []
     },
-    "contentUpdatedAt": "2026-10-05T03:53:32Z"
+    "contentUpdatedAt": "2026-10-05T14:32:00Z"
   },
   {
     "id": "faitofuraito",
@@ -82,37 +83,47 @@ export const catalog = [
     "releaseState": "published",
     "playUrl": "https://chameleonjp-lab.github.io/faitofuraito/",
     "repositoryUrl": "https://github.com/chameleonjp-lab/faitofuraito",
-    "sourceCommit": "c2b313d37875b93458032d98636fcf5b5d30a138",
-    "sourceRoot": "https://github.com/chameleonjp-lab/faitofuraito/tree/c2b313d37875b93458032d98636fcf5b5d30a138",
+    "sourceCommit": "9b1a54b6c24cf9fa0487ff3c2c6fe5324fb1ac5e",
+    "sourceRoot": "https://github.com/chameleonjp-lab/faitofuraito/tree/9b1a54b6c24cf9fa0487ff3c2c6fe5324fb1ac5e",
     "publicationEvidence": {
       "verified": true,
       "officialUrl": "https://chameleonjp-lab.github.io/faitofuraito/",
       "candidateUrl": null,
-      "deployedCommit": "037e7914572871f18eb9aa9a41eca4fdae9f3bc7",
-      "checkedAt": "2026-10-05T03:52:35.267Z",
+      "deployedCommit": "9b1a54b6c24cf9fa0487ff3c2c6fe5324fb1ac5e",
+      "checkedAt": "2026-10-05T14:32:00Z",
       "method": [
-        "README official URL",
-        "TLS-verified HTML, deployment manifest and JavaScript/CSS bodies; SHA-256 equality",
-        "Chromium home readiness from exact deployed-byte replay; GET/HEAD allowlist, all external requests and mutations blocked"
+        "TLS-verified public HTML, manifest and product assets; SHA-256 comparison",
+        "Current main source and exact CI or fresh production build checked separately"
       ],
       "sources": [
-        "https://github.com/chameleonjp-lab/faitofuraito/blob/c2b313d37875b93458032d98636fcf5b5d30a138/README.md",
-        "https://github.com/chameleonjp-lab/faitofuraito/blob/c2b313d37875b93458032d98636fcf5b5d30a138/public/ranking-manifest.json",
         "https://chameleonjp-lab.github.io/faitofuraito/deployment.json",
-        "https://github.com/chameleonjp-lab/faitofuraito/blob/8d22fa535e2f107745710b37df5c92b2ab1b763b/deployment.json"
+        "https://github.com/chameleonjp-lab/faitofuraito/actions/runs/37293139866"
       ],
       "unknown": [
-        "Direct live Chromium HTTPS inspection blocked by managed proxy CA trust",
-        "Gameplay, scoring, audio and physical iPhone operation were not tested",
-        "Deployed source differs from current main; main-only updates are not claimed as deployed"
+        "No new interactive browser or physical iPhone acceptance performed for this review"
       ],
       "evidenceFile": "docs/evidence/catalog.md",
       "artifactHashes": {
-        "index.html": "ddb26ff81e70ea99ab514b34a7a200ed700e7f4031602f8fa45a1e4f9a8efdf2",
-        "assets/index-mKVNiF0f.js": "94d35d736119c7fb8dd6fc035e7d21402e23f792c720a89be3de9f5f17a5925b",
-        "assets/index-DA8nm5ZM.css": "d2e44f2c526697256fb0b181a707db529822fcc86c2b0c9413d1f80962c20507"
+        "third-party-notices.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+        "ranking-manifest.json": "5f3a91f821ea3894ece70d6ee4f2978467df1b3d04692e1a4c943c953085de17",
+        "social-card.png": "7a3fb68e0504a3a2ec31178325394cf62a793518f65833645e69661353db8989",
+        "index.html": "4e6f88ed2543e3258fbb612ea835dffbf14d27f516eb54a725beff4a373f15fa",
+        "assets/index-DWkc_rYZ.css": "279163e59993581a7adf69a62c5a97539a04d84186b03bc6ffe57ac0d0b7c7ca",
+        "assets/index-H6N7oKHa.js": "9acb7790edc01366203002890d4d1029be099fffca90cd2d9644a62d1469c5c0",
+        "deployment.json": "ee74115aba771d5885f24a0f2c60570e1bcd1a390b3916326632fd8a9ab06e15"
       },
-      "homeCheck": {
+      "deployedBranchCommit": "c0027e3d62bceafcc1cfb41bc95cff5a5b2fd8d8",
+      "deploymentRecord": {
+        "kind": "github_pages_branch",
+        "runId": 37293139866,
+        "headCommit": "c0027e3d62bceafcc1cfb41bc95cff5a5b2fd8d8",
+        "conclusion": "success",
+        "completedRecordAt": "2026-10-05T09:55:15Z"
+      },
+      "historicalHomeCheck": {
+        "sourceCommit": "037e7914572871f18eb9aa9a41eca4fdae9f3bc7",
+        "checkedAt": "2026-10-05T03:52:35.267Z",
+        "appliesToCurrentSource": false,
         "method": "deployed_byte_replay",
         "browser": "153.0.8010.12",
         "viewport": {
@@ -124,8 +135,7 @@ export const catalog = [
         "pageErrorCount": 0,
         "gameStarted": false,
         "externalRequestCount": 0
-      },
-      "deployedBranchCommit": "8d22fa535e2f107745710b37df5c92b2ab1b763b"
+      }
     },
     "thumbnail": null,
     "ranking": {
@@ -163,7 +173,7 @@ export const catalog = [
         }
       ]
     },
-    "contentUpdatedAt": "2026-10-05T03:53:32Z"
+    "contentUpdatedAt": "2026-10-05T14:32:00Z"
   },
   {
     "id": "machimamore",
@@ -248,35 +258,43 @@ export const catalog = [
     "id": "uchiotose",
     "displayOrder": 5,
     "title": "ウチオトセ",
-    "description": "味方艦隊と戦闘機で、浮遊島から出撃する飛行戦士と戦う海上空戦ゲーム。戦闘実装は進んでいますが、公開入口は確認中です。",
-    "releaseState": "unverified",
-    "playUrl": null,
+    "description": "味方艦隊と戦闘機で、浮遊島から出撃する飛行戦士と戦う海上空戦ゲーム。イージーとノーマルで挑戦できます。",
+    "releaseState": "published",
+    "playUrl": "https://chameleonjp-lab.github.io/uchiotose/",
     "repositoryUrl": "https://github.com/chameleonjp-lab/uchiotose",
-    "sourceCommit": "14090299b5d1f67502210fe51e1c04799770d817",
-    "sourceRoot": "https://github.com/chameleonjp-lab/uchiotose/tree/14090299b5d1f67502210fe51e1c04799770d817",
+    "sourceCommit": "772812665b94c854f1834a759560bb07eb9e89bb",
+    "sourceRoot": "https://github.com/chameleonjp-lab/uchiotose/tree/772812665b94c854f1834a759560bb07eb9e89bb",
     "publicationEvidence": {
-      "verified": false,
-      "officialUrl": null,
-      "candidateUrl": "https://chameleonjp-lab.github.io/uchiotose/",
-      "deployedCommit": null,
-      "checkedAt": "2026-10-05T03:49:58Z",
+      "verified": true,
+      "officialUrl": "https://chameleonjp-lab.github.io/uchiotose/",
+      "candidateUrl": null,
+      "deployedCommit": "aac2b36e651024bc3ccca851e2374f5dd373a3b1",
+      "checkedAt": "2026-10-05T14:32:00Z",
       "method": [
-        "Official repository main, README and fixed source documents",
-        "Public repository metadata: homepage null",
-        "Repository has_pages false; this does not exclude unrecorded alternate hosts"
+        "TLS-verified public HTML, manifest and product assets; SHA-256 comparison",
+        "Current main source and exact CI or fresh production build checked separately"
       ],
       "sources": [
-        "https://github.com/chameleonjp-lab/uchiotose/blob/14090299b5d1f67502210fe51e1c04799770d817/README.md",
-        "https://github.com/chameleonjp-lab/uchiotose/blob/14090299b5d1f67502210fe51e1c04799770d817/docs/REQUIREMENTS.md",
-        "https://github.com/chameleonjp-lab/uchiotose/blob/14090299b5d1f67502210fe51e1c04799770d817/docs/IMPLEMENTATION_RELEASE.md",
-        "https://github.com/chameleonjp-lab/uchiotose/blob/14090299b5d1f67502210fe51e1c04799770d817/docs/DEPLOYMENT.md"
+        "https://chameleonjp-lab.github.io/uchiotose/release.json",
+        "https://github.com/chameleonjp-lab/uchiotose/tree/772812665b94c854f1834a759560bb07eb9e89bb",
+        "https://github.com/chameleonjp-lab/uchiotose/tree/391ac84cb5fb68cae2aa1332b5b978e6a87cb1bb"
       ],
       "unknown": [
-        "No verified current playable deployment URL"
+        "No new interactive browser or physical iPhone acceptance performed for this review",
+        "Release manifest names an earlier source commit; current main product bytes match, but newer documents are not presented as a new game deployment",
+        "Alternate Sites asset requests returned 403 and were not retried or bypassed",
+        "Long-gap pause fix in PR #8 is not merged or deployed"
       ],
       "evidenceFile": "docs/evidence/catalog.md",
-      "candidateUrlLabel": "Expected URL in deployment plan, not a confirmed publication",
-      "candidateResponseStatus": 404
+      "artifactHashes": {
+        "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+        "index.html": "1e81cd9af73688d75542af13e28e4a46e0f4441d0f6b7b1f01cd8a924bef0230",
+        "assets/index-jjlx_KNJ.css": "2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382",
+        "assets/index-9zuTiUNp.js": "10e11722468205f51a1691405019d3ae588022f8337642027de747c739973e0a"
+      },
+      "deployedBranchCommit": "391ac84cb5fb68cae2aa1332b5b978e6a87cb1bb",
+      "currentMainProductBytesMatch": true,
+      "unpublishedReviewFix": "https://github.com/chameleonjp-lab/uchiotose/pull/8"
     },
     "thumbnail": null,
     "ranking": {
@@ -285,7 +303,7 @@ export const catalog = [
       "defaultMode": null,
       "modes": []
     },
-    "contentUpdatedAt": "2026-10-05T03:53:32Z"
+    "contentUpdatedAt": "2026-10-05T14:32:00Z"
   },
   {
     "id": "senryou",

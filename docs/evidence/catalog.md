@@ -94,3 +94,26 @@ README と `docs/DEPLOYMENT.md` に古い公開版の記述が残っているが
 `getPlayableUrl(entry)` は published、`publicationEvidence.verified === true`、確認済み完全配備 SHA と、作品 ID ごとに固定した正式 https URL が揃う場合だけ URL を返す。別作品、任意ホスト、URL query/hash、javascript/data URL、未確認・準備中は null。`validateCatalog()` は8件・固定順・完全 SHA/root・状態とリンク・ランキング無効を build 時に検査する。
 
 台帳 module の構文・8作品の検証、実 URL 2件/null 6件、未知 ID/悪意 URL/未確認/null publication の拒否、全 ranking 無効をローカルで確認する。統合ページの JS 無効・レスポンシブ・アクセシビリティの検査はポータル側の QA 記録を参照する。
+
+
+## 2026-10-05 14:32 UTC 公開台帳の再照合
+
+この節は初期掲載調査の後続記録。過去の調査本文を消さず、現在の掲載根拠を更新する。既存ゲームの公開状態を確認する作業であり、ゲームの再配備や未マージ修正の公開ではない。
+
+|作品|現main|公開成果物の確認|掲載|
+|---|---|---|---|
+|カイセン|519fd0d50dfb2ce9a1145c0b58a1301b5c74d032|[成功run37300960802](https://github.com/chameleonjp-lab/kaisen/actions/runs/37300960802)、[deployment.json](https://chameleonjp-lab.github.io/kaisen/deployment.json)とHTML/JS/CSS/NOTICE全4 SHA-256一致|公開中を維持、版の根拠を更新|
+|ファイトフライト|9b1a54b6c24cf9fa0487ff3c2c6fe5324fb1ac5e|[成功run37293139866](https://github.com/chameleonjp-lab/faitofuraito/actions/runs/37293139866)、gh-pages c0027e3d62bceafcc1cfb41bc95cff5a5b2fd8d8、[deployment.json](https://chameleonjp-lab.github.io/faitofuraito/deployment.json)を含む全7ファイル一致|公開中を維持、旧「mainと公開が異なる」状態を解消|
+|ウチオトセ|772812665b94c854f1834a759560bb07eb9e89bb|[公式repoのgh-pages](https://github.com/chameleonjp-lab/uchiotose/tree/391ac84cb5fb68cae2aa1332b5b978e6a87cb1bb)、[公開release.json](https://chameleonjp-lab.github.io/uchiotose/release.json)、最新mainの新規production buildと配信HTML/JS/CSS/NOTICE全4一致|確認済みGitHub Pagesへの入口を有効化|
+
+各ファイルのSHA-256はsrc/catalog.jsのpublicationEvidence.artifactHashesへ記録した。カイセンmanifestの手元保存と実配信の差は末尾改行だけで、JSON内容と全4製品ファイルは一致する。
+
+ウチオトセのrelease.jsonは旧source aac2b36e651024bc3ccca851e2374f5dd373a3b1を示す。現mainは文書追加後のSHAなので、現main SHAを配備済みsourceへ付け替えない。製品bytesの一致を別に記録する。既存Sitesのrootは200だがassets/release取得は403で、別経路へ迂回せず未確認とした。今回の入口は検証済みGitHub Pagesのみ。
+
+ウチオトセ[長gap停止修正PR #8](https://github.com/chameleonjp-lab/uchiotose/pull/8)は未マージ・未公開であり、公開版の停止不具合を修正済みとは扱わない。実機受入、操作感、音、全作戦通しプレイの合格も主張しない。Kaisen/FFの旧home replay結果はhistoricalHomeCheckへ分離し、旧source・確認時刻とappliesToCurrentSource=falseを付けて保存した。今回の公開版の実ブラウザ操作結果に流用しない。
+
+掲載対象は8作品のまま、確認済みプレイ入口だけ2→3件。未公開5作品、全8ランキング未接続、画像準備中を維持する。製品コード、DB、スコア、公開設定は変更しない。初期公開のPages設定不足は別問題で、台帳修正だけでポータル公開完了とはしない。
+
+今回の候補は単体30件とbuild成功。ブラウザ定義はUchiの固定URLと公開3件を検査するよう更新したが、この環境でのブラウザ実行・iPhone受入は未実施。候補のGitHub CIを別途確認する。
+
+復元はこの限定変更を採用しないか、採用後に通常のrevert PRで初期台帳へ戻す。元ソースは基点99f1647b049e01f54b1b8eafa6dd57531a6fbcccと保存控えに保持。force pushやゲーム/ランキングの復旧操作は不要。

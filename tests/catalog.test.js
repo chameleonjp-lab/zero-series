@@ -4,7 +4,7 @@ import {catalog,validateCatalog,getPlayableUrl} from '../src/catalog.js';
 
 test('fixed eight-source allowlist and live-disabled production policy',()=>{
   assert.equal(validateCatalog(),true);
-  assert.equal(catalog.filter(game=>getPlayableUrl(game)).length,2);
+  assert.equal(catalog.filter(game=>getPlayableUrl(game)).length,3);
   assert.ok(catalog.every(game=>game.thumbnail===null&&game.ranking.enabled===false));
 });
 test('unsafe URLs, unverified publications and incorrect source roots are refused',()=>{
@@ -20,4 +20,14 @@ test('wrong counts, ordering, unknown game and activation fail build validation'
   assert.throws(()=>validateCatalog([...catalog].reverse()));
   const copy=structuredClone(catalog);copy[0].id='seme';assert.throws(()=>validateCatalog(copy));
   const active=structuredClone(catalog);active[0].ranking.enabled=true;assert.throws(()=>validateCatalog(active));
+});
+
+test('only the three byte-verified public games have playable entries',()=>{
+  assert.deepEqual(catalog.filter(game=>getPlayableUrl(game)).map(game=>game.id),['kaisen','faitofuraito','uchiotose']);
+  const entry=catalog.find(game=>game.id==='uchiotose');
+  assert.equal(entry.publicationEvidence.currentMainProductBytesMatch,true);
+  assert.notEqual(entry.sourceCommit,entry.publicationEvidence.deployedCommit);
+  assert.equal(Object.keys(entry.publicationEvidence.artifactHashes).length,4);
+  const unverified=structuredClone(entry);unverified.publicationEvidence.verified=false;
+  assert.equal(getPlayableUrl(unverified),null);
 });
