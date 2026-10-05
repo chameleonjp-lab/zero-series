@@ -117,3 +117,31 @@ README と `docs/DEPLOYMENT.md` に古い公開版の記述が残っているが
 今回の候補は単体30件とbuild成功。ブラウザ定義はUchiの固定URLと公開3件を検査するよう更新したが、この環境でのブラウザ実行・iPhone受入は未実施。候補のGitHub CIを別途確認する。
 
 復元はこの限定変更を採用しないか、採用後に通常のrevert PRで初期台帳へ戻す。元ソースは基点99f1647b049e01f54b1b8eafa6dd57531a6fbcccと保存控えに保持。force pushやゲーム/ランキングの復旧操作は不要。
+
+
+## 2026-10-05 18:24 UTC ゲキチン公開証拠の反映
+
+この節は初期調査と14:32 UTCの再照合に続く追記で、旧「操縦プロトタイプ・砲台戦未実装・preparing」は当時の履歴として保持する。今回の掲載変更はゲキチン1件に限定し、他7作品の紹介・版・公開状態、全8作品のランキング未接続と画像準備中を変えない。ポータルの基点は `e8928676303f9ea784fa38809408d319e1002a82`、treeは `7ffe90c05ffc27d2553bddd9696d91a54ada3e5a`。変更前27 tracked filesのblob・SHA-256とソースの復元用控えを保管し、GitHubの基点treeと全blobの一致を確認した。
+
+### 公開URL・配備版と実装説明
+
+正式URLは [ゲキチン](https://chameleonjp-lab.github.io/gekichin/)。[公開deployment.json](https://chameleonjp-lab.github.io/gekichin/deployment.json) の `repository = chameleonjp-lab/gekichin`、`commit = ad0d62b7968fd40f4d502f07c5bc4671d44973b9` を確認した。現main、公開manifest、[成功run 37353314366](https://github.com/chameleonjp-lab/gekichin/actions/runs/37353314366) のsource SHAが一致する。Pages配備成功の記録は18:19:37 UTC。独立した現mainのproduction buildと実配信のmanifestおよび製品4ファイルは、TLS検証済みHTTPS GETで取得した全バイト・SHA-256とも一致した。公開確認は18:20:55 UTC開始、総合記録は18:24:14.731 UTC。manifest自体のSHA-256は `4fcda149b42d3dd6b1dc49f361d1cf2be9c5c739cddcedfd7b25e7b770966ce9`。
+
+| 配備ファイル | 実応答SHA-256 |
+|---|---|
+| assets/index-BufJBCcE.css | `d89927dcc6ca023fc4eb27a7d824215101184aeac9f2505e117eb80b76bb89bf` |
+| assets/index-Ca9XU86d.js | `75a38d906ca0775e2a1b7322366f3dfeb97a00edfd817ca00efc6f356f34cb9c` |
+| index.html | `1856e5b784410ffd8af94e7c8610f9def8ed0bc3f157062c28a7dd80c9b09b6a` |
+| third-party-notices.txt | `97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f` |
+
+説明文は「超大型母艦の100基の砲台を、僚機と破壊するタイム・スコアアタック。イージーとノーマルで挑戦できます。」へ更新する。[固定sourceのホーム・遊び方・結果表示](https://github.com/chameleonjp-lab/gekichin/blob/ad0d62b7968fd40f4d502f07c5bc4671d44973b9/src/main.ts) の100基、僚機、Easy/Normal、作戦タイムと成績に基づく。[実装状況](https://github.com/chameleonjp-lab/gekichin/blob/ad0d62b7968fd40f4d502f07c5bc4671d44973b9/docs/IMPLEMENTATION_STATUS.md) の戦闘実装と実機受入残件は区別し、旧候補の検査記録を現mainの受入結果へ読み替えない。
+
+### 検証と未確認事項
+
+同sourceの成功runでは単体112件成功、browser 56件成功・既存skip 1件・失敗0、baseline comparison成功を確認した。これらはゲキチン側の検査であり、このポータル変更のbrowser CI成功を示すものではない。
+
+liveクラウドブラウザでホームと描画失敗案内の実画面を確認したが、その環境はWebGLが無効（GL_VENDOR / GL_RENDERER Disabled、BindToCurrentSequence failed）で出撃ボタンも無効だった。live gameplay、実iPhone、実機性能、人による操作感・音の受入は未実施。publishedは検証済み正式公開入口の状態を示し、全機能完成・実機受入完了の主張ではない。
+
+ポータル側は固定許可URLへゲキチンを追加し、確認済み入口を3→4件とする。単体検査に完全source/deployed SHA、正式URL、製品4hash、manifest hash、配備run、未確認事項と未接続rankingの照合、不正URL・公開証拠欠落の拒否を追加した。browser定義はゲキチンの公開ラベル・正確な紹介文・リンク文言とURL・準備中表示なし・ranking未接続を確認し、JS無効時とoffline時にも固定リンクを確認する。全8カード、外部要求なし、レイアウト、アクセシビリティの既存検査を維持する。今回のローカル検査結果とexact-head browser実行はPRのChecksへ結び付け、browser定義の列挙だけを実行成功と扱わない。
+
+変更対象は `src/catalog.js`、`tests/catalog.test.js`、`tests/browser/portal.spec.js`、この証拠追記の4ファイルだけ。workflow、package/lock、ゲーム本体、ランキング接続、公開設定は変更せず、benchmarkやliveランキング要求は行わない。復元は未採用ならこの候補を採用しない、採用後なら通常のrevert PRで基点の4ファイルへ戻す。旧本文と復元用控えを保持し、force pushや再帰的な強制削除は不要。
