@@ -145,3 +145,39 @@ liveクラウドブラウザでホームと描画失敗案内の実画面を確�
 ポータル側は固定許可URLへゲキチンを追加し、確認済み入口を3→4件とする。単体検査に完全source/deployed SHA、正式URL、製品4hash、manifest hash、配備run、未確認事項と未接続rankingの照合、不正URL・公開証拠欠落の拒否を追加した。browser定義はゲキチンの公開ラベル・正確な紹介文・リンク文言とURL・準備中表示なし・ranking未接続を確認し、JS無効時とoffline時にも固定リンクを確認する。全8カード、外部要求なし、レイアウト、アクセシビリティの既存検査を維持する。今回のローカル検査結果とexact-head browser実行はPRのChecksへ結び付け、browser定義の列挙だけを実行成功と扱わない。
 
 変更対象は `src/catalog.js`、`tests/catalog.test.js`、`tests/browser/portal.spec.js`、この証拠追記の4ファイルだけ。workflow、package/lock、ゲーム本体、ランキング接続、公開設定は変更せず、benchmarkやliveランキング要求は行わない。復元は未採用ならこの候補を採用しない、採用後なら通常のrevert PRで基点の4ファイルへ戻す。旧本文と復元用控えを保持し、force pushや再帰的な強制削除は不要。
+
+
+## 2026-10-06 00:41 UTC マチマモレ公開証拠の反映
+
+この節は初期調査と既存の再照合記録に続く追記で、旧「仕様・計画の準備段階・preparing」は当時の履歴として保持する。今回の掲載変更はマチマモレ1件に限定する。ポータルの基点mainは `e5183cca3349a8425df1f23af2d6b07872a47b77`、treeは `facdb68643b5c8a595ab96ac539cb7b522ecdfff`。変更前4ファイルと全27 tracked filesの復元用控え、全blob・SHA-256一覧、ソースarchiveを保存し、現mainのGitHub treeと全27blobの一致を確認した。他7作品の紹介・版・公開状態、全8ランキング未接続、全8画像準備中を保持する。
+
+### 公開URL・配備版・バイト照合
+
+正式URLは [マチマモレ](https://chameleonjp-lab.github.io/machimamore/)。[公開deployment.json](https://chameleonjp-lab.github.io/machimamore/deployment.json) の `repository = chameleonjp-lab/machimamore`、`commit = 1d27a697ea62dbfa676e1e78968c164552459ec5` を確認した。現main、公開manifest、[成功run 37394426765](https://github.com/chameleonjp-lab/machimamore/actions/runs/37394426765) のsource SHAは一致し、source treeは `dbeb1439bc8af19dbe620dc9e6125a967a6765af`。Pages配備成功は2026-10-06 00:37:50 UTC、公開HTTPS照合の開始は00:39:17.412 UTC、総合記録は00:41:12.108 UTC。
+
+固定配布5ファイル（HTML・JS・CSS・NOTICE・artifact-manifest.json）の実応答は、独立した現mainのproduction buildと全バイト・SHA-256で一致した。公開6ファイル（上記5件とdeployment.json）は、同runの実際のPages artifactとも全バイトで一致した。実配信hashは次のとおり。
+
+| 配布ファイル | 実応答SHA-256 |
+|---|---|
+| artifact-manifest.json | `57742db53f439b2641c8c4b6f8eab3cf3264d9217cce217002531d58f3111589` |
+| assets/index-BAyulP5k.css | `52bee58f42cf2b7d73afc93ba89df8a27f15cd117f74a857c8d852c602516d65` |
+| assets/index-CX-kywWz.js | `9d04640ab8527e2b90fae88da3a455d7ca1da658eb0b20d21da04e1202dcceb0` |
+| index.html | `dae5e25fd272dcf1115e7af756565e940271db243102c5af9a4f2ab6a0947d79` |
+| third-party-notices.txt | `8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc` |
+| deployment.json | `ab92295564225afb5fe84a8b4c9596f3537ed3efdf5df43cd309e0d3d8626d8a` |
+
+独立buildとCIのsource-manifest.jsonには生成時刻 `generatedAt` だけの差があり、そのhashを記録するdeployment.jsonは独立buildとバイト一致しない。公開deployment.jsonはCIの実配備artifactと一致する。CI source manifestの全81入力を独立checkoutで再計算して一致を確認した。公開 `sourceManifestSha256` は `c9ef9cd15a779cf1e0a5715ef39d39e3efdc367d8f12f5d07857ac4d8831725b`、両者で一致する `sourceContentDigest` は `f5cf45e8fc5907fcd8113596c8fb14d6d1e461e34f428547ae5fb9610bd41043`。`currentMainProductBytesMatch` は固定配布5件の一致を示し、deployment.jsonまで独立buildと完全一致したという意味ではない。
+
+### 実装説明と受入の境界
+
+説明文は「街20区画を守り、味方戦闘機と50機の敵UFOを迎撃する都市防衛ゲーム。イージーとノーマルで挑戦できます。」とする。[固定sourceのREADME](https://github.com/chameleonjp-lab/machimamore/blob/1d27a697ea62dbfa676e1e78968c164552459ec5/README.md) は自機込み味方総数50機、敵UFO総数50機、同時出撃8対8、街20区画、有限の残機と全敵撃破による勝利、Easy/Normalを説明している。50機を同時出撃数とは記載しない。[実装状況](https://github.com/chameleonjp-lab/machimamore/blob/1d27a697ea62dbfa676e1e78968c164552459ec5/docs/IMPLEMENTATION_STATUS.md) とREADMEの速度レバーUI・v2設定移行・受入検査の統合待ちは、今回完了したとは扱わない。
+
+同sourceの検査は単体108件成功、browser 33件成功・既存対象skip 3件・失敗0。これはマチマモレ側の検査であり、このポータル変更のbrowser成功を示すものではない。liveクラウドブラウザではホームと描画失敗案内の実画面を確認したが、その環境のWebGLは無効だった。live gameplay、実iPhone、実機性能、人による操作感・音の受入は未実施。publishedは確認済みの正式公開入口を示し、全機能完成・実機受入完了の主張ではない。
+
+### ポータルの変更・検査・復元
+
+固定許可URLにマチマモレを追加し、確認済み入口を4→5件とする。単体検査は正式URL、完全source/deployed SHA、固定配布5hash、公開deployment manifest hash、source digest、生成時刻による差、配備run、未確認事項、ranking未接続、不正URL・公開証拠欠落の拒否を検査する。browser定義はマチマモレの公開ラベル・正確な紹介・リンク文言とURL・準備中表示なし・ranking未接続を確認し、JS無効時とoffline時の入口も確認する。全8カード、外部要求なし、レイアウト、アクセシビリティの既存検査は維持する。
+
+変更対象は `src/catalog.js`、`tests/catalog.test.js`、`tests/browser/portal.spec.js`、この追記の4ファイルだけ。workflow、package/lock、ゲーム本体、ランキング接続、公開設定は変更しない。ローカルでは既存build scriptを変えず、検査用preloadで既存distの削除を拒否して新規distへ生成する。ローカルbrowserは既知の実行制約により実行せず、定義列挙を実行成功と扱わない。ローカル単体34件成功・失敗/skip 0、build成功、Chromium/WebKitのbrowser定義28件の列挙成功、8カード・5入口・全8ランキング未接続の生成HTML照合成功。他7作品のdeep equality、証拠本文のappend-only、4ファイル限定差分と `git diff --check` も確認した。採用前にPRのexact-head CIでbrowser検査を確認する。
+
+復元は未採用ならこの候補を採用しない、採用後なら通常のrevert PRで基点の4ファイルへ戻す。旧本文・元ソース・復元用控えを保持し、force push、再帰的な強制削除、ゲームやランキングの復旧操作は不要。この作業はDraft PR提出までとし、merge・配備は行わない。

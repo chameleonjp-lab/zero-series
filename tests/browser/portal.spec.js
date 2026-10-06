@@ -12,13 +12,19 @@ test('8 static cards, unavailable states and local-only ranking',async({page})=>
   await expect(page.locator('h1')).toHaveText('ゼロ シリーズ');
   await expect(page.locator('article.card')).toHaveCount(8);
   await expect(page.locator('#uchiotose a.action')).toHaveAttribute('href','https://chameleonjp-lab.github.io/uchiotose/');
+  await expect(page.locator('#machimamore .release')).toHaveText('公開中');
+  await expect(page.locator('#machimamore .description')).toHaveText('街20区画を守り、味方戦闘機と50機の敵UFOを迎撃する都市防衛ゲーム。イージーとノーマルで挑戦できます。');
+  await expect(page.locator('#machimamore a.action')).toHaveText('マチマモレを遊ぶ');
+  await expect(page.locator('#machimamore a.action')).toHaveAttribute('href','https://chameleonjp-lab.github.io/machimamore/');
+  await expect(page.locator('#machimamore .unavailable')).toHaveCount(0);
+  await expect(page.locator('#machimamore [data-ranking-status]')).toHaveText('ランキング未接続');
   await expect(page.locator('#gekichin .release')).toHaveText('公開中');
   await expect(page.locator('#gekichin .description')).toHaveText('超大型母艦の100基の砲台を、僚機と破壊するタイム・スコアアタック。イージーとノーマルで挑戦できます。');
   await expect(page.locator('#gekichin a.action')).toHaveText('ゲキチンを遊ぶ');
   await expect(page.locator('#gekichin a.action')).toHaveAttribute('href','https://chameleonjp-lab.github.io/gekichin/');
   await expect(page.locator('#gekichin .unavailable')).toHaveCount(0);
   await expect(page.locator('#gekichin [data-ranking-status]')).toHaveText('ランキング未接続');
-  await expect(page.locator('a.action')).toHaveCount(4);
+  await expect(page.locator('a.action')).toHaveCount(5);
   await expect(page.locator('[data-ranking-status]')).toHaveText(Array(8).fill('ランキング未接続'));
   await page.locator('[data-mode]').selectOption('easy');
   await expect(page.locator('#faitofuraito [data-scope]')).toContainText('イージー');
@@ -42,6 +48,8 @@ test('touch landscape keeps one column',async({browser})=>{
 
 test('static content survives disabled JS and keyboard navigation',async({browser})=>{
   const context=await browser.newContext({javaScriptEnabled:false});const page=await context.newPage();await page.goto(process.env.BASE_URL||'http://127.0.0.1:4173/');
+  await expect(page.locator('#machimamore a.action')).toHaveAttribute('href','https://chameleonjp-lab.github.io/machimamore/');
+  await expect(page.locator('#machimamore .release')).toHaveText('公開中');
   await expect(page.locator('#gekichin a.action')).toHaveAttribute('href','https://chameleonjp-lab.github.io/gekichin/');
   await expect(page.locator('#gekichin .release')).toHaveText('公開中');
   await expect(page.locator('article')).toHaveCount(8);await expect(page.locator('noscript')).toBeVisible();await page.keyboard.press('Tab');await expect(page.locator('.skip')).toBeFocused();await page.keyboard.press('Enter');await expect(page.locator('#games')).toBeFocused();await context.close();
@@ -78,12 +86,14 @@ test('accessible structure, colors, labels and names',async({page})=>{
 
 test('offline keeps static cards and confirmed links',async({page,context})=>{
   await page.goto('./');await context.setOffline(true);
+  await expect(page.locator('#machimamore a.action')).toHaveAttribute('href','https://chameleonjp-lab.github.io/machimamore/');
+  await expect(page.locator('#machimamore .release')).toHaveText('公開中');
   await expect(page.locator('#gekichin a.action')).toHaveAttribute('href','https://chameleonjp-lab.github.io/gekichin/');
   await expect(page.locator('#gekichin .release')).toHaveText('公開中');
   await page.locator('[data-mode]').selectOption('easy');
   await expect(page.locator('#faitofuraito [data-scope]')).toContainText('イージー');
   await expect(page.locator('article')).toHaveCount(8);
-  await expect(page.locator('a.action')).toHaveCount(4);
+  await expect(page.locator('a.action')).toHaveCount(5);
   await expect(page.locator('[data-ranking-status]')).toHaveText(Array(8).fill('ランキング未接続'));
 });
 
