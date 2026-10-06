@@ -26,15 +26,15 @@ test('only the five byte-verified public games have playable entries',()=>{
   assert.deepEqual(catalog.filter(game=>getPlayableUrl(game)).map(game=>game.id),['kaisen','faitofuraito','machimamore','gekichin','uchiotose']);
   const entry=catalog.find(game=>game.id==='uchiotose');
   assert.equal(entry.publicationEvidence.currentMainProductBytesMatch,true);
-  assert.notEqual(entry.sourceCommit,entry.publicationEvidence.deployedCommit);
-  assert.equal(Object.keys(entry.publicationEvidence.artifactHashes).length,4);
+  assert.equal(entry.sourceCommit,entry.publicationEvidence.deployedCommit);
+  assert.equal(Object.keys(entry.publicationEvidence.artifactHashes).length,6);
   const unverified=structuredClone(entry);unverified.publicationEvidence.verified=false;
   assert.equal(getPlayableUrl(unverified),null);
 });
 
 test('Gekichin publication is bound to the verified main, exact URL and four product hashes',()=>{
   const entry=catalog.find(game=>game.id==='gekichin');
-  const sha='ad0d62b7968fd40f4d502f07c5bc4671d44973b9';
+  const sha='5504f3785ca783a694b2c5fedd39987ad6ef4349';
   const url='https://chameleonjp-lab.github.io/gekichin/';
   assert.equal(entry.releaseState,'published');
   assert.equal(getPlayableUrl(entry),url);
@@ -51,12 +51,52 @@ test('Gekichin publication is bound to the verified main, exact URL and four pro
     'index.html':'1856e5b784410ffd8af94e7c8610f9def8ed0bc3f157062c28a7dd80c9b09b6a',
     'third-party-notices.txt':'97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f'
   });
-  assert.equal(entry.publicationEvidence.manifestSha256,'4fcda149b42d3dd6b1dc49f361d1cf2be9c5c739cddcedfd7b25e7b770966ce9');
+  assert.equal(entry.publicationEvidence.manifestSha256,'bc0bcd6507275a37244084cfb63d37a4de4427db6d0e21f9e805fb10703d640c');
+  assert.equal(entry.publicationEvidence.deployedArtifactBytesMatch,true);
+  assert.ok(entry.publicationEvidence.method.some(value=>value.includes('only the deployment manifest changed')));
   assert.deepEqual(entry.publicationEvidence.deploymentRecord,{
-    kind:'github_actions',runId:37353314366,headCommit:sha,conclusion:'success',completedRecordAt:'2026-10-05T18:19:37Z'
+    kind:'github_actions',runId:37436127535,headCommit:sha,conclusion:'success',completedRecordAt:'2026-10-06T08:40:38Z'
   });
   assert.ok(entry.publicationEvidence.unknown.some(value=>value.includes('Cloud WebGL')));
   assert.ok(entry.publicationEvidence.unknown.some(value=>value.includes('Physical iPhone')));
+  assert.deepEqual(entry.ranking,{enabled:false,displayState:'not_connected',defaultMode:null,modes:[]});
+});
+
+test('Uchiotose published correction separates source, Pages commit and all six verified files',()=>{
+  const entry=catalog.find(game=>game.id==='uchiotose');
+  const evidence=entry.publicationEvidence;
+  const source='2a7e815c70baf9dc65721fc938909b6ab083f074';
+  const pages='1307117008dc72f9031a8c345b6ac077fc8ff30b';
+  const url='https://chameleonjp-lab.github.io/uchiotose/';
+  assert.equal(entry.releaseState,'published');
+  assert.equal(getPlayableUrl(entry),url);
+  assert.equal(evidence.officialUrl,url);
+  assert.equal(entry.sourceCommit,source);
+  assert.equal(entry.sourceRoot,`https://github.com/chameleonjp-lab/uchiotose/tree/${source}`);
+  assert.equal(evidence.deployedCommit,source);
+  assert.equal(evidence.deployedBranchCommit,pages);
+  assert.notEqual(source,pages);
+  assert.equal(evidence.currentMainProductBytesMatch,true);
+  assert.equal(evidence.deployedArtifactBytesMatch,true);
+  assert.deepEqual(evidence.artifactHashes,{
+    '.nojekyll':'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
+    'assets/index-6rKQhKs9.js':'43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639',
+    'assets/index-jjlx_KNJ.css':'2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382',
+    'index.html':'57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e',
+    'release.json':'912aa5163fc46ab06aa80387c475ca1abef960c72f27ef0a49f43a3fc4180cb7',
+    'third-party-notices.txt':'97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f'
+  });
+  assert.equal(evidence.manifestSha256,evidence.artifactHashes['release.json']);
+  assert.deepEqual(evidence.releaseManifest,{commit:source,rulesVersion:'uchiotose-1',ranking:false});
+  assert.deepEqual(evidence.deploymentRecord,{
+    kind:'github_pages_branch',runId:37439104263,headCommit:pages,conclusion:'success',completedRecordAt:'2026-10-06T08:53:21Z'
+  });
+  assert.equal(evidence.publishedReviewFix,'https://github.com/chameleonjp-lab/uchiotose/pull/8');
+  assert.equal(Object.hasOwn(evidence,'unpublishedReviewFix'),false);
+  assert.doesNotMatch(JSON.stringify(evidence),/not merged or deployed|earlier source commit/);
+  assert.ok(evidence.unknown.some(value=>value.includes('Cloud WebGL')));
+  assert.ok(evidence.unknown.some(value=>value.includes('WebKit')&&value.includes('not full game rendering')));
+  assert.ok(evidence.unknown.some(value=>value.includes('Physical iPhone')&&value.includes('GPU')));
   assert.deepEqual(entry.ranking,{enabled:false,displayState:'not_connected',defaultMode:null,modes:[]});
 });
 

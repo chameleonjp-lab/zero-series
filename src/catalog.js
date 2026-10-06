@@ -251,24 +251,25 @@ export const catalog = [
     "releaseState": "published",
     "playUrl": "https://chameleonjp-lab.github.io/gekichin/",
     "repositoryUrl": "https://github.com/chameleonjp-lab/gekichin",
-    "sourceCommit": "ad0d62b7968fd40f4d502f07c5bc4671d44973b9",
-    "sourceRoot": "https://github.com/chameleonjp-lab/gekichin/tree/ad0d62b7968fd40f4d502f07c5bc4671d44973b9",
+    "sourceCommit": "5504f3785ca783a694b2c5fedd39987ad6ef4349",
+    "sourceRoot": "https://github.com/chameleonjp-lab/gekichin/tree/5504f3785ca783a694b2c5fedd39987ad6ef4349",
     "publicationEvidence": {
       "verified": true,
       "officialUrl": "https://chameleonjp-lab.github.io/gekichin/",
       "candidateUrl": null,
-      "deployedCommit": "ad0d62b7968fd40f4d502f07c5bc4671d44973b9",
-      "checkedAt": "2026-10-05T18:24:14.731Z",
+      "deployedCommit": "5504f3785ca783a694b2c5fedd39987ad6ef4349",
+      "checkedAt": "2026-10-06T08:43:14.434063Z",
       "method": [
-        "TLS-verified public HTML, deployment manifest and four product files; exact bytes and SHA-256 comparison with an independent main build",
+        "TLS-verified public deployment manifest and four product files; exact bytes and SHA-256 comparison with the Pages artifact",
         "Successful GitHub Actions verification and Pages deployment for the same source commit",
-        "Live cloud-browser home and graphics-failure screen pixels inspected; gameplay blocked by disabled cloud WebGL"
+        "All four product files are byte-identical to the previous release; only the deployment manifest changed",
+        "The earlier cloud-browser home check did not verify gameplay because cloud WebGL was disabled; no new device acceptance is claimed"
       ],
       "sources": [
         "https://chameleonjp-lab.github.io/gekichin/deployment.json",
-        "https://github.com/chameleonjp-lab/gekichin/actions/runs/37353314366",
-        "https://github.com/chameleonjp-lab/gekichin/blob/ad0d62b7968fd40f4d502f07c5bc4671d44973b9/src/main.ts",
-        "https://github.com/chameleonjp-lab/gekichin/blob/ad0d62b7968fd40f4d502f07c5bc4671d44973b9/docs/IMPLEMENTATION_STATUS.md"
+        "https://github.com/chameleonjp-lab/gekichin/actions/runs/37436127535",
+        "https://github.com/chameleonjp-lab/gekichin/blob/5504f3785ca783a694b2c5fedd39987ad6ef4349/src/main.ts",
+        "https://github.com/chameleonjp-lab/gekichin/blob/5504f3785ca783a694b2c5fedd39987ad6ef4349/docs/IMPLEMENTATION_STATUS.md"
       ],
       "unknown": [
         "Cloud WebGL was disabled; the start control was disabled and live gameplay was not verified",
@@ -281,15 +282,16 @@ export const catalog = [
         "index.html": "1856e5b784410ffd8af94e7c8610f9def8ed0bc3f157062c28a7dd80c9b09b6a",
         "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
       },
-      "manifestSha256": "4fcda149b42d3dd6b1dc49f361d1cf2be9c5c739cddcedfd7b25e7b770966ce9",
+      "manifestSha256": "bc0bcd6507275a37244084cfb63d37a4de4427db6d0e21f9e805fb10703d640c",
       "currentMainProductBytesMatch": true,
       "deploymentRecord": {
         "kind": "github_actions",
-        "runId": 37353314366,
-        "headCommit": "ad0d62b7968fd40f4d502f07c5bc4671d44973b9",
+        "runId": 37436127535,
+        "headCommit": "5504f3785ca783a694b2c5fedd39987ad6ef4349",
         "conclusion": "success",
-        "completedRecordAt": "2026-10-05T18:19:37Z"
-      }
+        "completedRecordAt": "2026-10-06T08:40:38Z"
+      },
+      "deployedArtifactBytesMatch": true
     },
     "thumbnail": null,
     "ranking": {
@@ -298,7 +300,7 @@ export const catalog = [
       "defaultMode": null,
       "modes": []
     },
-    "contentUpdatedAt": "2026-10-05T18:37:37Z"
+    "contentUpdatedAt": "2026-10-06T09:26:30Z"
   },
   {
     "id": "uchiotose",
@@ -308,39 +310,59 @@ export const catalog = [
     "releaseState": "published",
     "playUrl": "https://chameleonjp-lab.github.io/uchiotose/",
     "repositoryUrl": "https://github.com/chameleonjp-lab/uchiotose",
-    "sourceCommit": "772812665b94c854f1834a759560bb07eb9e89bb",
-    "sourceRoot": "https://github.com/chameleonjp-lab/uchiotose/tree/772812665b94c854f1834a759560bb07eb9e89bb",
+    "sourceCommit": "2a7e815c70baf9dc65721fc938909b6ab083f074",
+    "sourceRoot": "https://github.com/chameleonjp-lab/uchiotose/tree/2a7e815c70baf9dc65721fc938909b6ab083f074",
     "publicationEvidence": {
       "verified": true,
       "officialUrl": "https://chameleonjp-lab.github.io/uchiotose/",
       "candidateUrl": null,
-      "deployedCommit": "aac2b36e651024bc3ccca851e2374f5dd373a3b1",
-      "checkedAt": "2026-10-05T14:32:00Z",
+      "deployedCommit": "2a7e815c70baf9dc65721fc938909b6ab083f074",
+      "checkedAt": "2026-10-06T08:55:57.349612Z",
       "method": [
-        "TLS-verified public HTML, manifest and product assets; SHA-256 comparison",
-        "Current main source and exact CI or fresh production build checked separately"
+        "TLS-verified public HTML, JS, CSS, release manifest, NOTICE and .nojekyll; all six files HTTP 200 and byte-identical to the publication package prepared from the verified main build",
+        "Successful GitHub Pages deployment is bound to the gh-pages branch commit; release.json identifies the separate source commit",
+        "Merged PR #8 fixed-clock long-gap pause correction is included in this release; PR #9 adds acceptance coverage without changing game runtime",
+        "Live cloud-browser home, rules and settings navigation checked; gameplay blocked by unavailable cloud WebGL"
       ],
       "sources": [
         "https://chameleonjp-lab.github.io/uchiotose/release.json",
-        "https://github.com/chameleonjp-lab/uchiotose/tree/772812665b94c854f1834a759560bb07eb9e89bb",
-        "https://github.com/chameleonjp-lab/uchiotose/tree/391ac84cb5fb68cae2aa1332b5b978e6a87cb1bb"
+        "https://github.com/chameleonjp-lab/uchiotose/tree/2a7e815c70baf9dc65721fc938909b6ab083f074",
+        "https://github.com/chameleonjp-lab/uchiotose/tree/1307117008dc72f9031a8c345b6ac077fc8ff30b",
+        "https://github.com/chameleonjp-lab/uchiotose/actions/runs/37439104263",
+        "https://github.com/chameleonjp-lab/uchiotose/pull/8",
+        "https://github.com/chameleonjp-lab/uchiotose/pull/9#issuecomment-6012752273"
       ],
       "unknown": [
-        "No new interactive browser or physical iPhone acceptance performed for this review",
-        "Release manifest names an earlier source commit; current main product bytes match, but newer documents are not presented as a new game deployment",
-        "Alternate Sites asset requests returned 403 and were not retried or bypassed",
-        "Long-gap pause fix in PR #8 is not merged or deployed"
+        "Cloud WebGL was unavailable before and after release; the start control was disabled and live gameplay was not verified",
+        "WebKit acceptance covers the settings fixture, not full game rendering",
+        "Physical iPhone Safari and mobile GPU performance remain unverified"
       ],
       "evidenceFile": "docs/evidence/catalog.md",
       "artifactHashes": {
-        "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
-        "index.html": "1e81cd9af73688d75542af13e28e4a46e0f4441d0f6b7b1f01cd8a924bef0230",
+        ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "assets/index-6rKQhKs9.js": "43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639",
         "assets/index-jjlx_KNJ.css": "2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382",
-        "assets/index-9zuTiUNp.js": "10e11722468205f51a1691405019d3ae588022f8337642027de747c739973e0a"
+        "index.html": "57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e",
+        "release.json": "912aa5163fc46ab06aa80387c475ca1abef960c72f27ef0a49f43a3fc4180cb7",
+        "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
       },
-      "deployedBranchCommit": "391ac84cb5fb68cae2aa1332b5b978e6a87cb1bb",
+      "deployedBranchCommit": "1307117008dc72f9031a8c345b6ac077fc8ff30b",
       "currentMainProductBytesMatch": true,
-      "unpublishedReviewFix": "https://github.com/chameleonjp-lab/uchiotose/pull/8"
+      "deployedArtifactBytesMatch": true,
+      "manifestSha256": "912aa5163fc46ab06aa80387c475ca1abef960c72f27ef0a49f43a3fc4180cb7",
+      "releaseManifest": {
+        "commit": "2a7e815c70baf9dc65721fc938909b6ab083f074",
+        "rulesVersion": "uchiotose-1",
+        "ranking": false
+      },
+      "deploymentRecord": {
+        "kind": "github_pages_branch",
+        "runId": 37439104263,
+        "headCommit": "1307117008dc72f9031a8c345b6ac077fc8ff30b",
+        "conclusion": "success",
+        "completedRecordAt": "2026-10-06T08:53:21Z"
+      },
+      "publishedReviewFix": "https://github.com/chameleonjp-lab/uchiotose/pull/8"
     },
     "thumbnail": null,
     "ranking": {
@@ -349,7 +371,7 @@ export const catalog = [
       "defaultMode": null,
       "modes": []
     },
-    "contentUpdatedAt": "2026-10-05T14:32:00Z"
+    "contentUpdatedAt": "2026-10-06T09:26:30Z"
   },
   {
     "id": "senryou",

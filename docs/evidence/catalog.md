@@ -181,3 +181,49 @@ liveクラウドブラウザでホームと描画失敗案内の実画面を確�
 変更対象は `src/catalog.js`、`tests/catalog.test.js`、`tests/browser/portal.spec.js`、この追記の4ファイルだけ。workflow、package/lock、ゲーム本体、ランキング接続、公開設定は変更しない。ローカルでは既存build scriptを変えず、検査用preloadで既存distの削除を拒否して新規distへ生成する。ローカルbrowserは既知の実行制約により実行せず、定義列挙を実行成功と扱わない。ローカル単体34件成功・失敗/skip 0、build成功、Chromium/WebKitのbrowser定義28件の列挙成功、8カード・5入口・全8ランキング未接続の生成HTML照合成功。他7作品のdeep equality、証拠本文のappend-only、4ファイル限定差分と `git diff --check` も確認した。採用前にPRのexact-head CIでbrowser検査を確認する。
 
 復元は未採用ならこの候補を採用しない、採用後なら通常のrevert PRで基点の4ファイルへ戻す。旧本文・元ソース・復元用控えを保持し、force push、再帰的な強制削除、ゲームやランキングの復旧操作は不要。この作業はDraft PR提出までとし、merge・配備は行わない。
+
+
+## 2026-10-06 09:26 UTC ゲキチン・ウチオトセ公開証拠の再同期
+
+この節が2作品の現在の掲載根拠を更新する。上の2026-10-05記録にあるゲキチン旧source `ad0d62b…`、ウチオトセ旧source `aac2b36…` と「PR #8未マージ・未公開」は当時の観測として保持し、現在の公開状態には使用しない。ポータル基点mainは `3c93b56a789ed5c1aa9be49c73ecf13f29a81e30`、treeは `99ead966399a0b541a4dc11ab196af436622bf97`。09:24 UTCにmainとopen PRを再確認し、競合するopen PRはなかった。全29 tracked filesの控えを保存し、GitHub treeの全blobと一致を確認した。
+
+### ゲキチン: 検査変更後のsourceを配備記録へ反映
+
+- source / 公開manifest commit: `5504f3785ca783a694b2c5fedd39987ad6ef4349`
+- [公開deployment.json](https://chameleonjp-lab.github.io/gekichin/deployment.json) のSHA-256: `bc0bcd6507275a37244084cfb63d37a4de4427db6d0e21f9e805fb10703d640c`
+- [Pages run 37436127535](https://github.com/chameleonjp-lab/gekichin/actions/runs/37436127535) は同sourceでsuccess。deploy job完了記録は08:40:38 UTC、run更新は08:40:39 UTC。最初に公開された正確な時刻とは区別する
+- artifact ID `11399464330` と08:43:14.434063 UTCの実配信照合では、HTML・JS・CSS・NOTICEの4製品ファイルとdeployment.jsonがHTTP 200かつ全バイト・SHA-256一致
+- 4製品ファイルは旧配備 `ad0d62b7968fd40f4d502f07c5bc4671d44973b9` とも同一。旧4hashは維持し、変わった配備manifestとsource/runだけを更新する。ゲーム挙動の変更として扱わない
+
+以前のクラウドブラウザ確認はWebGL無効で出撃不可だった。今回のsource更新・bytes一致を新しい実機プレイ、実iPhone、GPU性能、操作感・音の受入合格に読み替えない。
+
+### ウチオトセ: マージ済みPR #8の停止修正を含む正式配備
+
+- source / [公開release.json](https://chameleonjp-lab.github.io/uchiotose/release.json) commit: `2a7e815c70baf9dc65721fc938909b6ab083f074`
+- [gh-pages commit](https://github.com/chameleonjp-lab/uchiotose/tree/1307117008dc72f9031a8c345b6ac077fc8ff30b): `1307117008dc72f9031a8c345b6ac077fc8ff30b`。ソースcommitと混同しない
+- [Pages run 37439104263](https://github.com/chameleonjp-lab/uchiotose/actions/runs/37439104263) はこのgh-pages commitでbuild / report-build-status / deployがsuccess。deploy job完了記録は08:53:21 UTC、run更新は08:53:22 UTC
+- [PR #8](https://github.com/chameleonjp-lab/uchiotose/pull/8) はマージ済み（merge commit `8b6e469f2007eed728fdefda7e4a9dda1d37702f`）。今回の正式配備はfixed-clockの長時間gap停止修正を含む。[PR #9の公開記録](https://github.com/chameleonjp-lab/uchiotose/pull/9#issuecomment-6012752273) と一致する。PR #9自体は受入検査の変更でゲームランタイム変更ではない
+- 08:54:06–08:55:03 UTCに以下6ファイルがHTTP 200、独立したmain buildから `prepare-pages.mjs` で作成しgh-pagesへ提出した公開パッケージと全バイト・SHA-256一致。総合照合記録は08:55:57.349612 UTC
+
+| 配布ファイル | 実応答SHA-256 |
+|---|---|
+| .nojekyll | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| assets/index-6rKQhKs9.js | `43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639` |
+| assets/index-jjlx_KNJ.css | `2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382` |
+| index.html | `57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e` |
+| release.json | `912aa5163fc46ab06aa80387c475ca1abef960c72f27ef0a49f43a3fc4180cb7` |
+| third-party-notices.txt | `97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f` |
+
+公開release.jsonの `rulesVersion: uchiotose-1` と `ranking: false` は配備証拠として記録する。これはランキング接続・backend版隔離の確認ではなく、ポータルrankingは引き続き未接続とする。
+
+公開後のクラウドChromeでhome、遊び方の開閉、keyboard/touch設定編集画面、設定破棄・再表示、focus復帰を確認した。保存設定は変更していない。公開前後ともcloud WebGLを利用できずStartが無効だったため、公開ゲームプレイは未検証。WebKit検査は設定fixtureで、ゲーム全描画の証拠ではない。実iPhone Safariと実機GPU性能は未確認のまま。
+
+### 今回の変更・検証と復元範囲
+
+変更は `src/catalog.js`、`tests/catalog.test.js`、この証拠追記の3ファイル。8作品・5つの既存プレイ入口・紹介文・画像準備中・全8ランキング未接続を維持する。Gekichinの4製品hashと更新manifest/run、Uchiotoseのsource/gh-pages区別・6hash・公開済みPR #8・ranking:false・実機未確認を単体検査に固定する。他6作品は完全同一とし、歴史的記録はappend-onlyで残す。
+
+Node.js 24で単体検査とbuildを実施し、ブラウザ定義を列挙する。buildは既存scriptを変更せず、検査用preloadで既存pathの削除を拒否し、新規distへ生成する。typecheck/lint専用scriptは本repoにない。ローカルとCIの結果はPRに記録し、PR head、base、GitHubが実際に検査するmerge refのSHAを区別する。定義列挙をbrowser実行成功とは扱わず、Chromium/WebKit実行結果は実際のPR CIで確認する。
+
+Draft PRまでをこの作業の範囲とし、merge・Pages配備・workflow・権限・ゲームコード・DB・スコア送信は変更しない。復元は候補を採用しないか、採用後にこの3ファイルを通常のrevert PRで基点へ戻す。基点のGitHub履歴と全29blobの控えを保持しており、force pushや強制削除は不要。
+
+ローカル確認結果（09:28 UTC）: Node.js v24.19.0、単体40件成功・失敗/skip 0、build成功。Chromium/WebKit定義は計28件を列挙できたが、ローカルでbrowser実行はしていない。生成HTMLの8カード・既存5入口・8つのランキング未接続、他6作品のdeep equality、旧証拠本文の完全保持、3 tracked filesのみの差分と空白検査を確認した。ローカルbuildのsource-revisionは比較用の基点SHAであり、提出後のPR headやCI tested merge SHAの検査結果には読み替えない。
