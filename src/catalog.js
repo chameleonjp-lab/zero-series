@@ -4,6 +4,7 @@
 const OFFICIAL_PLAY_URLS = Object.freeze({
   kaisen: 'https://chameleonjp-lab.github.io/kaisen/',
   faitofuraito: 'https://chameleonjp-lab.github.io/faitofuraito/',
+  machimamore: 'https://chameleonjp-lab.github.io/machimamore/',
   gekichin: 'https://chameleonjp-lab.github.io/gekichin/',
   uchiotose: 'https://chameleonjp-lab.github.io/uchiotose/',
 });
@@ -180,31 +181,58 @@ export const catalog = [
     "id": "machimamore",
     "displayOrder": 3,
     "title": "マチマモレ",
-    "description": "街を攻撃する円盤UFOを、味方戦闘機と迎撃する都市防衛ゲームを予定しています。現在は仕様・計画の準備段階です。",
-    "releaseState": "preparing",
-    "playUrl": null,
+    "description": "街20区画を守り、味方戦闘機と50機の敵UFOを迎撃する都市防衛ゲーム。イージーとノーマルで挑戦できます。",
+    "releaseState": "published",
+    "playUrl": "https://chameleonjp-lab.github.io/machimamore/",
     "repositoryUrl": "https://github.com/chameleonjp-lab/machimamore",
-    "sourceCommit": "4cefae935236f2b8bb6a9e5895ddd05220883eb2",
-    "sourceRoot": "https://github.com/chameleonjp-lab/machimamore/tree/4cefae935236f2b8bb6a9e5895ddd05220883eb2",
+    "sourceCommit": "1d27a697ea62dbfa676e1e78968c164552459ec5",
+    "sourceRoot": "https://github.com/chameleonjp-lab/machimamore/tree/1d27a697ea62dbfa676e1e78968c164552459ec5",
     "publicationEvidence": {
-      "verified": false,
-      "officialUrl": null,
+      "verified": true,
+      "officialUrl": "https://chameleonjp-lab.github.io/machimamore/",
       "candidateUrl": null,
-      "deployedCommit": null,
-      "checkedAt": "2026-10-05T03:49:58Z",
+      "deployedCommit": "1d27a697ea62dbfa676e1e78968c164552459ec5",
+      "checkedAt": "2026-10-06T00:41:12.108Z",
       "method": [
-        "Official repository main, README and fixed source documents",
-        "Public repository metadata: homepage null",
-        "Repository has_pages false; this does not exclude unrecorded alternate hosts"
+        "TLS-verified public HTML, JS, CSS, NOTICE and artifact manifest; exact bytes and SHA-256 comparison with an independent main build",
+        "All six public files including deployment.json match the actual Pages artifact; 81 source inputs independently verified against the CI source manifest",
+        "Successful GitHub Actions verification and Pages deployment for the same source commit",
+        "Live cloud-browser home and graphics-failure screen pixels inspected; gameplay blocked by disabled cloud WebGL"
       ],
       "sources": [
-        "https://github.com/chameleonjp-lab/machimamore/blob/4cefae935236f2b8bb6a9e5895ddd05220883eb2/README.md",
-        "https://github.com/chameleonjp-lab/machimamore/blob/4cefae935236f2b8bb6a9e5895ddd05220883eb2/docs/REQUIREMENTS.md"
+        "https://chameleonjp-lab.github.io/machimamore/deployment.json",
+        "https://chameleonjp-lab.github.io/machimamore/artifact-manifest.json",
+        "https://github.com/chameleonjp-lab/machimamore/actions/runs/37394426765",
+        "https://github.com/chameleonjp-lab/machimamore/blob/1d27a697ea62dbfa676e1e78968c164552459ec5/README.md",
+        "https://github.com/chameleonjp-lab/machimamore/blob/1d27a697ea62dbfa676e1e78968c164552459ec5/docs/IMPLEMENTATION_STATUS.md"
       ],
       "unknown": [
-        "No verified current playable deployment URL"
+        "Cloud WebGL was disabled; live gameplay was not verified",
+        "Physical iPhone and human gameplay, performance and audio acceptance were not performed",
+        "The speed-lever UI, v2 settings migration and acceptance tests remain pending integration"
       ],
-      "evidenceFile": "docs/evidence/catalog.md"
+      "evidenceFile": "docs/evidence/catalog.md",
+      "artifactHashes": {
+        "artifact-manifest.json": "57742db53f439b2641c8c4b6f8eab3cf3264d9217cce217002531d58f3111589",
+        "assets/index-BAyulP5k.css": "52bee58f42cf2b7d73afc93ba89df8a27f15cd117f74a857c8d852c602516d65",
+        "assets/index-CX-kywWz.js": "9d04640ab8527e2b90fae88da3a455d7ca1da658eb0b20d21da04e1202dcceb0",
+        "index.html": "dae5e25fd272dcf1115e7af756565e940271db243102c5af9a4f2ab6a0947d79",
+        "third-party-notices.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+      },
+      "manifestSha256": "ab92295564225afb5fe84a8b4c9596f3537ed3efdf5df43cd309e0d3d8626d8a",
+      "sourceContentDigest": "f5cf45e8fc5907fcd8113596c8fb14d6d1e461e34f428547ae5fb9610bd41043",
+      "sourceManifestSha256": "c9ef9cd15a779cf1e0a5715ef39d39e3efdc367d8f12f5d07857ac4d8831725b",
+      "currentMainProductBytesMatch": true,
+      "deployedArtifactBytesMatch": true,
+      "deploymentManifestMatchesIndependentBuild": false,
+      "manifestVariance": "The CI and independent source manifests differ only in generatedAt, so deployment.json differs only in sourceManifestSha256; all 81 source inputs and sourceContentDigest match",
+      "deploymentRecord": {
+        "kind": "github_actions",
+        "runId": 37394426765,
+        "headCommit": "1d27a697ea62dbfa676e1e78968c164552459ec5",
+        "conclusion": "success",
+        "completedRecordAt": "2026-10-06T00:37:50Z"
+      }
     },
     "thumbnail": null,
     "ranking": {
@@ -213,7 +241,7 @@ export const catalog = [
       "defaultMode": null,
       "modes": []
     },
-    "contentUpdatedAt": "2026-10-05T03:53:32Z"
+    "contentUpdatedAt": "2026-10-06T00:50:00Z"
   },
   {
     "id": "gekichin",
