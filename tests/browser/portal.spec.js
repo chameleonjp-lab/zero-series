@@ -1,12 +1,14 @@
 import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+import {installPortalNetworkGuard} from '../helpers/portal-network.js';
 
-test('8 static cards, unavailable states and local-only ranking',async({page})=>{
-  const errors=[];const external=[];
+// Service-worker traffic must not bypass the A11 request interception.
+test.use({serviceWorkers:'block'});
+
+test('8 static cards, unavailable states and local-only ranking',async({page,context})=>{
+  const errors=[];
   page.on('pageerror',e=>errors.push(e.message));
-  const base=new URL(process.env.BASE_URL||'http://127.0.0.1:4173/');
-  const sourcePrefix=new URL('./src/',base).pathname;
-  page.on('request',request=>{const url=new URL(request.url());if(url.origin!==base.origin||request.resourceType()!=='document'&&!url.pathname.startsWith(sourcePrefix))external.push(request.url());});
+  const blocked=await installPortalNetworkGuard(context,process.env.BASE_URL||'http://127.0.0.1:4173/');
   await page.goto('./');
   await expect(page).toHaveTitle('ゼロ シリーズ');
   await expect(page.locator('h1')).toHaveText('ゼロ シリーズ');
@@ -29,9 +31,9 @@ test('8 static cards, unavailable states and local-only ranking',async({page})=>
   await page.locator('[data-mode]').selectOption('easy');
   await expect(page.locator('#faitofuraito [data-scope]')).toContainText('イージー');
   await expect(page.locator('#faitofuraito [data-ranking-status]')).toHaveText('ランキング未接続');
-  expect(errors).toEqual([]);expect(external).toEqual([]);
   await expect(page.locator('iframe,audio,canvas')).toHaveCount(0);
   await expect(page.locator('a[href="#"]')).toHaveCount(0);
+  expect(errors).toEqual([]);expect(blocked).toEqual([]);
 });
 
 for(const width of [320,375,390,430,768,1280,1440])test(`layout ${width}px, zoom and long text`,async({page})=>{
