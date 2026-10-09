@@ -227,3 +227,74 @@ Node.js 24で単体検査とbuildを実施し、ブラウザ定義を列挙す�
 Draft PRまでをこの作業の範囲とし、merge・Pages配備・workflow・権限・ゲームコード・DB・スコア送信は変更しない。復元は候補を採用しないか、採用後にこの3ファイルを通常のrevert PRで基点へ戻す。基点のGitHub履歴と全29blobの控えを保持しており、force pushや強制削除は不要。
 
 ローカル確認結果（09:28 UTC）: Node.js v24.19.0、単体40件成功・失敗/skip 0、build成功。Chromium/WebKit定義は計28件を列挙できたが、ローカルでbrowser実行はしていない。生成HTMLの8カード・既存5入口・8つのランキング未接続、他6作品のdeep equality、旧証拠本文の完全保持、3 tracked filesのみの差分と空白検査を確認した。ローカルbuildのsource-revisionは比較用の基点SHAであり、提出後のPR headやCI tested merge SHAの検査結果には読み替えない。
+
+
+## 2026-10-09 全8作品の現行ソース・公開版の読取再照合
+
+この節は過去の記録に続く追記である。現在の機械可読証拠は [current-games.json](current-games.json) に保存する。ポータル調査の基点は `ce51a8de9fd1b8c367a60f0978d8bf071b042e5d`。main・open PR・repo metadataの初回観測は14:46:27 UTC、正式公開HTMLとmanifest取得は14:47:56 UTC頃、全製品資産のhash確認は14:49:02–14:49:03 UTC、総合証拠の作成は14:58:37 UTC。ソースのcommit時刻、manifestのビルド時刻、Actionsの完了記録、今回の観測時刻は別の値として保存する。
+
+今回の実装・撮影・許可された読取接続・Draft PR作成の承認は、初期計画の「2文書のみ」という履歴とは区別する。この掲載調査で他repo、ゲーム本体、公開設定、DB、ランキング、得点は変更せず、ゲーム開始・送信・再開・mergeも行っていない。全8repoは `/workspace/game-sources/<id>` に読取cloneし、配備sourceの検証用コピーでproduction buildを行った。紹介は現在の固定ソースに結び付け、未公開の機能や受入を公開済みの内容へ付け替えない。
+
+### 現行mainと公開source
+
+`sourceCommit` は最新mainの紹介根拠、`publicationEvidence.deployedCommit` は配信manifestが示すソースSHAとする。branch配信の場合の `deployedBranchCommit` はさらに別の値であり、ソースSHAへ代入しない。初回観測時のopen PRは8repoすべて0件。
+
+| 順 | 作品 | 現行mainの完全SHA | 現行公開manifestのソースSHA | 採用状態 |
+|---|---|---|---|---|
+| 1 | カイセン | `519fd0d50dfb2ce9a1145c0b58a1301b5c74d032` | `519fd0d50dfb2ce9a1145c0b58a1301b5c74d032` | published |
+| 2 | ファイトフライト | `8946bf12a777d24c7334b887492d62fd93153e23` | `8946bf12a777d24c7334b887492d62fd93153e23` | published |
+| 3 | マチマモレ | `192c075532a8f0d2810a444ae5ac299cdfec9f1a` | `1d27a697ea62dbfa676e1e78968c164552459ec5` | published |
+| 4 | ゲキチン | `01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3` | `de500c3e0e077fe2bab636dc2a382a8796ea8b9e` | published |
+| 5 | ウチオトセ | `7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8` | `2a7e815c70baf9dc65721fc938909b6ab083f074` | published |
+| 6 | センリョウ | `6ad011e951f5217abf65ad2e1291717b365b36ca` | 未確認 | unverified |
+| 7 | ファンタジア | `08f2c98582a627992e3c375ceb71f77cf0fbdc23` | 未確認 | preparing |
+| 8 | ヌスミダセ | `c604c7990e5ba9a599898ede6c1ccb4b42970b51` | 未確認 | preparing |
+
+マチマモレ・ゲキチン・ウチオトセの最新mainには配備後の製品source変更がある。現在の公開版の証拠には上表の公開sourceを使用し、その後の共通UI・操縦・表示変更を公開済みとして紹介しない。カイセンとFFは現在の公開sourceとmainが一致する。紹介文は従来の意味を維持し、各固定README・実装・仕様のURLをJSONの `descriptionSources` に記録した。
+
+### 正式公開5入口と全製品資産
+
+既存台帳で正式公開の根拠を保存した5URLのみを再照合した。URLをrepo名から新しく推測して増やしていない。TLS検証を有効にし、cacheを避けるHTTPS GETで、HTML・公開manifest・manifestが列挙する全製品ファイルを取得した。Uchiは正確なgh-pages treeの全6ファイルを対象とした。全29観測ファイルはHTTP 200、現在の製品25ファイルのSHA-256は期待値と一致した。各取得URL、最終URL、時刻、byte数、実hash、期待hash、成否はJSONの `assetObservations` にある。
+
+| 正式URL | 対応する成功Pages run | deploy job完了記録UTC | 製品ファイル数・独立照合 |
+|---|---|---|---|
+| [カイセン](https://chameleonjp-lab.github.io/kaisen/) | [37300960802](https://github.com/chameleonjp-lab/kaisen/actions/runs/37300960802) | 2026-10-05 11:09:18 | 製品4件＋manifestを固定source buildと全バイト一致 |
+| [ファイトフライト](https://chameleonjp-lab.github.io/faitofuraito/) | [37456726210](https://github.com/chameleonjp-lab/faitofuraito/actions/runs/37456726210) | 2026-10-06 11:31:07 | 製品6件を固定source buildと一致、manifest込み7件をgh-pagesと一致 |
+| [マチマモレ](https://chameleonjp-lab.github.io/machimamore/) | [37394426765](https://github.com/chameleonjp-lab/machimamore/actions/runs/37394426765) | 2026-10-06 00:37:52 | artifact-manifest込み製品5件を固定source buildと全バイト一致 |
+| [ゲキチン](https://chameleonjp-lab.github.io/gekichin/) | [37476863919](https://github.com/chameleonjp-lab/gekichin/actions/runs/37476863919) | 2026-10-06 14:21:20 | 製品4件＋manifestを固定source buildと全バイト一致 |
+| [ウチオトセ](https://chameleonjp-lab.github.io/uchiotose/) | [37439104263](https://github.com/chameleonjp-lab/uchiotose/actions/runs/37439104263) | 2026-10-06 08:53:21 | 製品4件を固定source buildと一致、release/.nojekyllを含む6件を公開packageとgh-pages双方へ照合 |
+
+全5runとdeploy jobがsuccessであることを現在のAPIで再読した。完了記録を公開開始の正確な時刻とは呼ばない。Actions artifact方式のKaisen・Machi・Gekiはrunのhead SHAが配備sourceそのもの。FFは公開branch `88bfaf5ac6d75aee70c9eaaab569a3a404e07b4d`、Uchiは `1307117008dc72f9031a8c345b6ac077fc8ff30b` で、各runはそのbranch SHAを検査・配備している。
+
+独立buildはNode.js v24.19.0、固定lock、`npm ci --ignore-scripts` と `npm run build` を使用した。Machiは `npm run check:dist` でartifact-manifestも再生成し、固定sourceの全81入力から再計算した `sourceContentDigest = f5cf45e8fc5907fcd8113596c8fb14d6d1e461e34f428547ae5fb9610bd41043` が公開manifestと一致した。生成時刻を含むCI-only source manifestとdeployment.jsonを新しいbuildで再生成して完全一致したとは扱わない。Uchiはarchiveのためgit HEADを読むprepare scriptを実行せず、固定source SHAから同じJSON形式のrelease.jsonと空の.nojekyllを独立再構成して一致を確認した。
+
+FFの公開manifestが参照する検査source `b7cc31024618e9553c93c07eb7fc0055eedf5770` と現在mainは、tree `1a38006a596da1c4ca99f40272a201b7b9f98ffd` が完全一致する。[検査run 37450807591](https://github.com/chameleonjp-lab/faitofuraito/actions/runs/37450807591) のheadとsuccessも再読した。このtree一致の証拠を、存在しないmain merge SHAの別CI実行として記録しない。
+
+今回GitHubのartifact metadataを取得できた3作品は、MCPが返す一時file-service URLのZIP取得がこのcloud環境でHTTP 403になった。ZIP内容の照合成功は主張せず、公開全資産、固定source build、公開manifest、成功runによる照合を用いた。branch配信2作品のrunは、観測したartifact endpointにdownloadable github-pages artifactがなかったため、正確なgh-pages treeを独立の照合元にした。
+
+### 3作品の未確認入口と受入の境界
+
+全8repoの現在のAPI metadataは `has_pages:true / homepage:null` だった。しかしセンリョウ・ファンタジア・ヌスミダセの現在main、README、全公式docs、HTML、JSON、workflow、branch/run記録から正式play URLと配備sourceを確定できなかった。設定の真偽を実ゲームの公開成功へ読み替えず、3作品の `playUrl` はnullとする。
+
+- センリョウ: 実装はあるが、固定README・検証資料から確認済み正式公開入口を得られないためunverified。
+- ファンタジア: 現在のREADMEは公開受入未完了、`docs/RELEASE_GATE.json` は `ready:false`。実装・CIの存在を公開済みへ読み替えずpreparing。
+- ヌスミダセ: 現mainはREADMEと仕様・実装計画の2文書のみ。Actions runは0、gh-pages branchも存在せず、本体完成や公開を推測しない。紹介は予定、preparing。
+
+公開assetのreplay用コピーと全hashを撮影担当へ共有した。現在画面の撮影・権利・個人情報・altの採用記録は撮影担当の証拠へ別に結び付ける。この調査のhash一致とbuild成功はゲーム開始、勝敗、得点送信、実iPhone、VoiceOver、実機GPU、操作感・音の受入を示すものではない。紹介・入口の確認とランキング接続ゲートも別であり、この調査でRPC、DB、プレイヤー名、実スコアは取得していない。
+
+15:02:28 UTCに全8mainとopen PRを最後に再読し、すべてのsource SHAが上表から不変、open PRもすべて0件だった。15:02:33 UTCには正式URLそのものの末尾 `/` もTLS GETし、5件すべてリダイレクトなしのHTTP 200で、先に照合したindex.htmlと全バイト一致した。最終再照合と入口応答はJSONの `finalRepositoryRecheck` と `entryUrlObservation` に記録した。
+
+### 現在の公開版ホーム観測との結合
+
+撮影担当の [images-current.json](images-current.json) と [画像採用記録](images-current.md) を読取り、全5件の撮影source SHAと製品asset hashが上記の現在配信版と一致することを確認した。撮影時刻はKaisen 14:53:14.033 UTC、FF 14:53:50.784 UTC、Machi 14:54:31.040 UTC、Geki 14:54:53.424 UTC、Uchi 14:55:21.915 UTC。この結果をJSONの `homeCheck` に分離し、Machi/Geki/Uchiでは `appliesToLatestMain:false` とする。
+
+条件はLinux、Playwright 1.63.0、Chromium 153.0.8010.12、1280×720、DPR 1。新しいoffline contextで、TLS取得済みかつhash一致の正式URLのGET/HEADだけをローカルreplayした。各ページで静的要求3件、homeVisible=true、playingVisible=false、gameStarted=false、page/console error 0、非GET要求0、外部要求fulfilled 0、blocked 0。click・keyboard・pointer・touch操作を送らず、出撃・設定保存・得点送信も行っていない。画面の個人情報なしも撮影記録へ結び付けている。
+
+Kaisen/FF/Machi/Uchiのホームは実際の製品rendererを含む。Gekiは製品のタイトルpanelが表示されるが、ホームに母艦や戦闘rendererがなく、戦闘実画面の要件は未達としている。全5画像はタイトル／ホーム画面と明記し、戦闘画面として扱わない。これは配備byteの現在ホーム確認であり、直接live browserのゲームプレイ・実機受入の成功ではない。
+
+
+## 2026-10-09 マチマモレ・ウチオトセのホーム撮影改善との再同期
+
+上の初回ホーム観測は当時の履歴として保持する。[画像採用記録](images-current.md) にある描画準備完了後の撮影へ合わせ、この2作品だけ `homeCheck` の時刻、原画hash、派生画像参照、readinessを更新した。Machiは15:15:53.817 UTC、原画SHA-256 `883dc35fd2d1609c7f7df695e2f46acc9e56791942e14e4d3956535c042b552c`。Uchiは15:16:22.225 UTC、原画SHA-256 `f1e85d80c44b272e6431ea95220b03973ef80648c105e0fe1fa88b7ed66794a9`。新しい640/960派生画像の実ファイルhashと画像証拠の対応を確認した。
+
+Machiは最大20秒の待機枠で2,497ms、Uchiは2,511msで製品のHome renderer準備完了信号を観測した。いずれも `startEnabled:true / startPressed:false / gameStarted:false / playingVisible:false`、入力操作なし、非GET要求・外部fulfilled・実行時エラーも0である。開始ボタン有効化は待機中の観測であり、開始操作や戦闘画面の受入ではない。source/deployed SHA、公開asset・Actions・独立buildの既存照合、他6作品の記録は変更せず、同じ成功検査を再実行していない。

@@ -5,7 +5,8 @@ import {catalog,validateCatalog,getPlayableUrl} from '../src/catalog.js';
 test('fixed eight-source allowlist and live-disabled production policy',()=>{
   assert.equal(validateCatalog(),true);
   assert.equal(catalog.filter(game=>getPlayableUrl(game)).length,5);
-  assert.ok(catalog.every(game=>game.thumbnail===null&&game.ranking.enabled===false));
+  assert.equal(catalog.filter(game=>game.thumbnail).length,5);
+  assert.ok(catalog.every(game=>game.ranking.enabled===false));
 });
 test('unsafe URLs, unverified publications and incorrect source roots are refused',()=>{
   for(const url of ['javascript:alert(1)','data:text/html,hi','https://evil.test/kaisen/','https://chameleonjp-lab.github.io/kaisen/?redirect=x','https://chameleonjp-lab.github.io/faitofuraito/']){
@@ -25,24 +26,27 @@ test('wrong counts, ordering, unknown game and activation fail build validation'
 test('only the five byte-verified public games have playable entries',()=>{
   assert.deepEqual(catalog.filter(game=>getPlayableUrl(game)).map(game=>game.id),['kaisen','faitofuraito','machimamore','gekichin','uchiotose']);
   const entry=catalog.find(game=>game.id==='uchiotose');
-  assert.equal(entry.publicationEvidence.currentMainProductBytesMatch,true);
-  assert.equal(entry.sourceCommit,entry.publicationEvidence.deployedCommit);
+  assert.equal(entry.publicationEvidence.currentMainProductBytesMatch,null);
+  assert.notEqual(entry.sourceCommit,entry.publicationEvidence.deployedCommit);
+  assert.equal(entry.publicationEvidence.deployedSourceProductBytesMatch,true);
   assert.equal(Object.keys(entry.publicationEvidence.artifactHashes).length,6);
   const unverified=structuredClone(entry);unverified.publicationEvidence.verified=false;
   assert.equal(getPlayableUrl(unverified),null);
 });
 
-test('Gekichin publication is bound to the verified main, exact URL and four product hashes',()=>{
+test('Gekichin publication is bound to the verified deployed source, exact URL and four product hashes',()=>{
   const entry=catalog.find(game=>game.id==='gekichin');
-  const sha='5504f3785ca783a694b2c5fedd39987ad6ef4349';
+  const sha='01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3';
+  const deployed='de500c3e0e077fe2bab636dc2a382a8796ea8b9e';
   const url='https://chameleonjp-lab.github.io/gekichin/';
   assert.equal(entry.releaseState,'published');
   assert.equal(getPlayableUrl(entry),url);
   assert.equal(entry.publicationEvidence.officialUrl,url);
   assert.equal(entry.sourceCommit,sha);
   assert.equal(entry.sourceRoot,`https://github.com/chameleonjp-lab/gekichin/tree/${sha}`);
-  assert.equal(entry.publicationEvidence.deployedCommit,sha);
-  assert.equal(entry.publicationEvidence.currentMainProductBytesMatch,true);
+  assert.equal(entry.publicationEvidence.deployedCommit,deployed);
+  assert.equal(entry.publicationEvidence.currentMainProductBytesMatch,null);
+  assert.equal(entry.publicationEvidence.deployedSourceProductBytesMatch,true);
   assert.equal(entry.description,'超大型母艦の100基の砲台を、僚機と破壊するタイム・スコアアタック。イージーとノーマルで挑戦できます。');
   assert.doesNotMatch(entry.description,/予定|プロトタイプ|未実装|完成|受入済み/);
   assert.deepEqual(entry.publicationEvidence.artifactHashes,{
@@ -51,14 +55,17 @@ test('Gekichin publication is bound to the verified main, exact URL and four pro
     'index.html':'1856e5b784410ffd8af94e7c8610f9def8ed0bc3f157062c28a7dd80c9b09b6a',
     'third-party-notices.txt':'97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f'
   });
-  assert.equal(entry.publicationEvidence.manifestSha256,'bc0bcd6507275a37244084cfb63d37a4de4427db6d0e21f9e805fb10703d640c');
-  assert.equal(entry.publicationEvidence.deployedArtifactBytesMatch,true);
-  assert.ok(entry.publicationEvidence.method.some(value=>value.includes('only the deployment manifest changed')));
-  assert.deepEqual(entry.publicationEvidence.deploymentRecord,{
-    kind:'github_actions',runId:37436127535,headCommit:sha,conclusion:'success',completedRecordAt:'2026-10-06T08:40:38Z'
-  });
-  assert.ok(entry.publicationEvidence.unknown.some(value=>value.includes('Cloud WebGL')));
-  assert.ok(entry.publicationEvidence.unknown.some(value=>value.includes('Physical iPhone')));
+  assert.equal(entry.publicationEvidence.manifestSha256,'7fd7fedf350fa67948a113ef9aebfe90049a876354354675a5debbe88e820964');
+  assert.equal(entry.publicationEvidence.deployedArtifactBytesMatch,null);
+  assert.equal(entry.publicationEvidence.allProductHashesMatch,true);
+  assert.ok(entry.publicationEvidence.method.some(value=>value.includes('production build')));
+  assert.equal(entry.publicationEvidence.deploymentRecord.runId,37476863919);
+  assert.equal(entry.publicationEvidence.deploymentRecord.headCommit,deployed);
+  assert.equal(entry.publicationEvidence.deploymentRecord.conclusion,'success');
+  assert.equal(entry.publicationEvidence.deploymentRecord.deployJobConclusion,'success');
+  assert.equal(entry.publicationEvidence.deploymentRecord.completedRecordAt,'2026-10-06T14:21:20Z');
+  assert.ok(entry.publicationEvidence.unknown.some(value=>value.includes('live gameplay')));
+  assert.ok(entry.publicationEvidence.unknown.some(value=>value.includes('physical iPhone')));
   assert.deepEqual(entry.ranking,{enabled:false,displayState:'not_connected',defaultMode:null,modes:[]});
 });
 
@@ -71,13 +78,16 @@ test('Uchiotose published correction separates source, Pages commit and all six 
   assert.equal(entry.releaseState,'published');
   assert.equal(getPlayableUrl(entry),url);
   assert.equal(evidence.officialUrl,url);
-  assert.equal(entry.sourceCommit,source);
-  assert.equal(entry.sourceRoot,`https://github.com/chameleonjp-lab/uchiotose/tree/${source}`);
+  const currentMain='7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8';
+  assert.equal(entry.sourceCommit,currentMain);
+  assert.equal(entry.sourceRoot,`https://github.com/chameleonjp-lab/uchiotose/tree/${currentMain}`);
   assert.equal(evidence.deployedCommit,source);
   assert.equal(evidence.deployedBranchCommit,pages);
   assert.notEqual(source,pages);
-  assert.equal(evidence.currentMainProductBytesMatch,true);
-  assert.equal(evidence.deployedArtifactBytesMatch,true);
+  assert.equal(evidence.currentMainProductBytesMatch,null);
+  assert.equal(evidence.deployedSourceProductBytesMatch,true);
+  assert.equal(evidence.deployedArtifactBytesMatch,null);
+  assert.equal(evidence.deployedBranchBytesMatch,true);
   assert.deepEqual(evidence.artifactHashes,{
     '.nojekyll':'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855',
     'assets/index-6rKQhKs9.js':'43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639',
@@ -88,15 +98,18 @@ test('Uchiotose published correction separates source, Pages commit and all six 
   });
   assert.equal(evidence.manifestSha256,evidence.artifactHashes['release.json']);
   assert.deepEqual(evidence.releaseManifest,{commit:source,rulesVersion:'uchiotose-1',ranking:false});
-  assert.deepEqual(evidence.deploymentRecord,{
-    kind:'github_pages_branch',runId:37439104263,headCommit:pages,conclusion:'success',completedRecordAt:'2026-10-06T08:53:21Z'
-  });
-  assert.equal(evidence.publishedReviewFix,'https://github.com/chameleonjp-lab/uchiotose/pull/8');
+  assert.equal(evidence.deploymentRecord.kind,'github_pages_branch');
+  assert.equal(evidence.deploymentRecord.runId,37439104263);
+  assert.equal(evidence.deploymentRecord.headCommit,pages);
+  assert.equal(evidence.deploymentRecord.conclusion,'success');
+  assert.equal(evidence.deploymentRecord.deployJobConclusion,'success');
+  assert.equal(evidence.deploymentRecord.completedRecordAt,'2026-10-06T08:53:21Z');
+  assert.equal(evidence.sourceIsLatestMain,false);
   assert.equal(Object.hasOwn(evidence,'unpublishedReviewFix'),false);
   assert.doesNotMatch(JSON.stringify(evidence),/not merged or deployed|earlier source commit/);
-  assert.ok(evidence.unknown.some(value=>value.includes('Cloud WebGL')));
-  assert.ok(evidence.unknown.some(value=>value.includes('WebKit')&&value.includes('not full game rendering')));
-  assert.ok(evidence.unknown.some(value=>value.includes('Physical iPhone')&&value.includes('GPU')));
+  assert.ok(evidence.unknown.some(value=>value.includes('live gameplay')));
+  assert.ok(evidence.unknown.some(value=>value.includes('Latest main')&&value.includes('not claimed')));
+  assert.ok(evidence.unknown.some(value=>value.includes('physical iPhone')&&value.includes('GPU')));
   assert.deepEqual(entry.ranking,{enabled:false,displayState:'not_connected',defaultMode:null,modes:[]});
 });
 
@@ -117,14 +130,15 @@ test('Gekichin refuses incorrect URLs and missing publication proof',()=>{
 
 test('Machimamore publication separates exact product bytes from run-specific provenance',()=>{
   const entry=catalog.find(game=>game.id==='machimamore');
-  const sha='1d27a697ea62dbfa676e1e78968c164552459ec5';
+  const sha='192c075532a8f0d2810a444ae5ac299cdfec9f1a';
+  const deployed='1d27a697ea62dbfa676e1e78968c164552459ec5';
   const url='https://chameleonjp-lab.github.io/machimamore/';
   assert.equal(entry.releaseState,'published');
   assert.equal(getPlayableUrl(entry),url);
   assert.equal(entry.publicationEvidence.officialUrl,url);
   assert.equal(entry.sourceCommit,sha);
   assert.equal(entry.sourceRoot,`https://github.com/chameleonjp-lab/machimamore/tree/${sha}`);
-  assert.equal(entry.publicationEvidence.deployedCommit,sha);
+  assert.equal(entry.publicationEvidence.deployedCommit,deployed);
   assert.equal(entry.description,'街20区画を守り、味方戦闘機と50機の敵UFOを迎撃する都市防衛ゲーム。イージーとノーマルで挑戦できます。');
   assert.doesNotMatch(entry.description,/予定|準備段階|未実装|完成|受入済み|レバー/);
   assert.deepEqual(entry.publicationEvidence.artifactHashes,{
@@ -137,16 +151,24 @@ test('Machimamore publication separates exact product bytes from run-specific pr
   assert.equal(entry.publicationEvidence.manifestSha256,'ab92295564225afb5fe84a8b4c9596f3537ed3efdf5df43cd309e0d3d8626d8a');
   assert.equal(entry.publicationEvidence.sourceContentDigest,'f5cf45e8fc5907fcd8113596c8fb14d6d1e461e34f428547ae5fb9610bd41043');
   assert.equal(entry.publicationEvidence.sourceManifestSha256,'c9ef9cd15a779cf1e0a5715ef39d39e3efdc367d8f12f5d07857ac4d8831725b');
-  assert.equal(entry.publicationEvidence.currentMainProductBytesMatch,true);
-  assert.equal(entry.publicationEvidence.deployedArtifactBytesMatch,true);
-  assert.equal(entry.publicationEvidence.deploymentManifestMatchesIndependentBuild,false);
-  assert.match(entry.publicationEvidence.manifestVariance,/generatedAt.*sourceManifestSha256.*81 source inputs/);
-  assert.deepEqual(entry.publicationEvidence.deploymentRecord,{
-    kind:'github_actions',runId:37394426765,headCommit:sha,conclusion:'success',completedRecordAt:'2026-10-06T00:37:50Z'
-  });
-  assert.ok(entry.publicationEvidence.unknown.some(value=>value.includes('Cloud WebGL')));
-  assert.ok(entry.publicationEvidence.unknown.some(value=>value.includes('Physical iPhone')));
-  assert.ok(entry.publicationEvidence.unknown.some(value=>value.includes('speed-lever')));
+  assert.equal(entry.publicationEvidence.currentMainProductBytesMatch,null);
+  assert.equal(entry.publicationEvidence.deployedSourceProductBytesMatch,true);
+  assert.equal(entry.publicationEvidence.deployedArtifactBytesMatch,null);
+  assert.equal(entry.publicationEvidence.allProductHashesMatch,true);
+  assert.equal(entry.publicationEvidence.deploymentManifestMatchesIndependentBuild,null);
+  assert.match(entry.publicationEvidence.manifestVariance,/generation timestamp.*not reconstructed/);
+  assert.equal(entry.publicationEvidence.sourceValidation.sourceInputFileCount,81);
+  assert.equal(entry.publicationEvidence.sourceValidation.matchesPublicDeploymentDigest,true);
+  assert.equal(entry.publicationEvidence.deploymentRecord.kind,'github_actions');
+  assert.equal(entry.publicationEvidence.deploymentRecord.runId,37394426765);
+  assert.equal(entry.publicationEvidence.deploymentRecord.headCommit,deployed);
+  assert.equal(entry.publicationEvidence.deploymentRecord.conclusion,'success');
+  assert.equal(entry.publicationEvidence.deploymentRecord.deployJobConclusion,'success');
+  assert.equal(entry.publicationEvidence.deploymentRecord.completedRecordAt,'2026-10-06T00:37:52Z');
+  assert.ok(entry.publicationEvidence.unknown.some(value=>value.includes('live gameplay')));
+  assert.ok(entry.publicationEvidence.unknown.some(value=>value.includes('physical iPhone')));
+  assert.equal(entry.publicationEvidence.sourceIsLatestMain,false);
+  assert.ok(entry.publicationEvidence.unknown.some(value=>value.includes('Latest main')&&value.includes('not claimed')));
   assert.deepEqual(entry.ranking,{enabled:false,displayState:'not_connected',defaultMode:null,modes:[]});
 });
 
