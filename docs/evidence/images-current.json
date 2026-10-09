@@ -1,0 +1,1263 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-09T15:16:22Z",
+  "status": "published-title-screens-collected",
+  "capturePolicy": {
+    "scope": "Five officially published products with publication evidence verified before capture: kaisen, faitofuraito, machimamore, gekichin, uchiotose.",
+    "state": "Published product Home/title screens only. This evidence does not satisfy the separate real gameplay-screen requirement.",
+    "gameInteraction": "No Start action or gameplay input. No gameplay/playing phase entered; no play-count start, ranking submission, or new battle session was initiated.",
+    "network": "The replay browser was offline. Each product was loaded from local public-asset copies whose observed HTTPS/TLS hashes matched the published manifest; only exact known GET/HEAD files could be fulfilled. Unknown URLs and other methods were aborted.",
+    "environment": {
+      "os": "Linux 6.18.44 x64",
+      "browser": "Chromium 153.0.8010.12",
+      "playwright": "1.63.0",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "deviceScaleFactor": 1,
+      "locale": "ja-JP",
+      "reducedMotion": "reduce"
+    },
+    "conversion": {
+      "tool": "ImageMagick 7.1.1-43",
+      "libwebp": "1.5.0",
+      "operations": "Faithful contain/resize to 960x540 and 640x360, no cropping; PNG to WebP; profile/metadata strip; quality 82.",
+      "maxTargetBytes": 120000,
+      "totalDerivativeBytes": 142152
+    },
+    "rights": "The user authorized product-screen capture and portal derivatives for this task. This does not assert a blanket license for the game repositories. Their bundled NOTICE files contain a Three.js MIT notice only; screenshot rights basis is recorded per item.",
+    "personalInformation": "No personal information appears in these screenshots; no account or personal data was supplied to the fresh contexts.",
+    "previewRouteAudit": {
+      "inspectedAt": "2026-10-09T15:06:54Z",
+      "method": "Read-only inspection of each deployed-source snapshot at the recorded deployedCommit. Searched production source for preview/debug/query routes and Start-to-playing transitions; did not run product tests or fixture capture scripts.",
+      "result": "No safe production renderer-only battle-preview route was found in the five published builds. Production uses explicit Start flows to enter gameplay; control-settings preview strings refer to draggable control-layout UI, not a battle renderer. No test-only state injection or fixture was used.",
+      "products": [
+        {
+          "gameId": "kaisen",
+          "sourceFiles": [
+            "src/main.ts:180",
+            "src/main.ts:589"
+          ],
+          "finding": "Start/retry buttons call begin(), which creates the game state and calls startGame. No production scene-preview URL/flag found."
+        },
+        {
+          "gameId": "faitofuraito",
+          "sourceFiles": [
+            "src/main.ts:281",
+            "src/main.ts:641",
+            "src/display-diagnostics.ts:1"
+          ],
+          "finding": "The start form calls begin(), which creates/starts the game and invokes rankingService.beginPlay. The only display-check query is read-only text diagnostics for layout/result-link visibility; it does not render a battle screen."
+        },
+        {
+          "gameId": "machimamore",
+          "sourceFiles": [
+            "src/main.ts:39",
+            "src/main.ts:54"
+          ],
+          "finding": "Start button calls begin(), which creates game state and calls startGame. No production scene-preview URL/flag found."
+        },
+        {
+          "gameId": "gekichin",
+          "sourceFiles": [
+            "src/main.ts:242",
+            "src/main.ts:319",
+            "src/rules.ts:7"
+          ],
+          "finding": "Start calls start(mode), which prepares a session and begins after animation frames. MOTHERSHIP_PREVIEW is a dimensions constant, not a preview renderer. Home has no mothership/combat scene."
+        },
+        {
+          "gameId": "uchiotose",
+          "sourceFiles": [
+            "src/ui-controller.ts:106",
+            "src/main.ts:69"
+          ],
+          "finding": "Start invokes onStart(), which creates a playing mission. Home initializes an idle home-phase model, but production contains no battle-only preview route."
+        }
+      ]
+    },
+    "rendererReadiness": "For machimamore and uchiotose, waited up to 20 seconds for the published Start-disabled readiness signal to change, without interacting with the page. Both became ready in approximately 2.5 seconds; readiness details are recorded per image. This signals successful product renderer initialization, not native-GPU performance."
+  },
+  "items": [
+    {
+      "id": "kaisen",
+      "title": "カイセン",
+      "src": "assets/screenshots/kaisen-42a69bc9873d-960.webp",
+      "srcset": [
+        {
+          "src": "assets/screenshots/kaisen-42a69bc9873d-640.webp",
+          "width": 640,
+          "height": 360,
+          "sha256": "150b9fe5f7972af2cd1b7cf5cc19d1c9b4f10a0ce3d75f07d9e1663f9b31ccb9",
+          "bytes": 7604,
+          "format": "image/webp"
+        },
+        {
+          "src": "assets/screenshots/kaisen-42a69bc9873d-960.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "744f6cc035f094cc1f11b5f8437ae9606adb5d35308560f09e0bb04e5a7d97f8",
+          "bytes": 13250,
+          "format": "image/webp"
+        }
+      ],
+      "width": 960,
+      "height": 540,
+      "alt": "カイセンの公開版タイトル画面。海上に戦闘機と艦隊が表示され、左側に操作モード選択と出撃ボタンがある。",
+      "caption": "公開版のタイトル画面（戦闘画面ではありません）。",
+      "version": "42a69bc9873d2dc3cd40b006e4092d7707bc52c341f3ceef2228f0283ff67d5f",
+      "evidence": {
+        "sourceUrl": "https://chameleonjp-lab.github.io/kaisen/",
+        "sourceCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
+        "deployedCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
+        "capturedAt": "2026-10-09T14:53:14.033Z",
+        "rights": "このタスクでユーザーが公開製品画面の撮影とポータル掲載用派生を明示承認。製品リポジトリ全体のライセンスとは主張しない。公開版NOTICEはThree.jsのMIT表示のみ。製品資料に記された画面素材の来歴はrightsBasisを参照。",
+        "evidenceFile": "docs/evidence/images-current.json",
+        "originalSha256": "42a69bc9873d2dc3cd40b006e4092d7707bc52c341f3ceef2228f0283ff67d5f",
+        "derivatives": [
+          {
+            "src": "assets/screenshots/kaisen-42a69bc9873d-640.webp",
+            "sha256": "150b9fe5f7972af2cd1b7cf5cc19d1c9b4f10a0ce3d75f07d9e1663f9b31ccb9"
+          },
+          {
+            "src": "assets/screenshots/kaisen-42a69bc9873d-960.webp",
+            "sha256": "744f6cc035f094cc1f11b5f8437ae9606adb5d35308560f09e0bb04e5a7d97f8"
+          }
+        ],
+        "rightsBasis": [
+          {
+            "path": "docs/PROVENANCE.md",
+            "url": "https://github.com/chameleonjp-lab/kaisen/blob/519fd0d50dfb2ce9a1145c0b58a1301b5c74d032/docs/PROVENANCE.md"
+          }
+        ]
+      },
+      "capture": {
+        "state": "published-title-screen",
+        "gameplayScreenshotAccepted": false,
+        "gameplayScreenshotReason": "Home/title scene only. Start was not pressed; no gameplay scene was entered.",
+        "visualScene": "Home画面に海上、戦闘機、艦隊の製品レンダリングが見える。",
+        "original": {
+          "format": "image/png",
+          "width": 1280,
+          "height": 720,
+          "bytes": 234609,
+          "sha256": "42a69bc9873d2dc3cd40b006e4092d7707bc52c341f3ceef2228f0283ff67d5f",
+          "capturedAt": "2026-10-09T14:53:14.033Z",
+          "retainedInRepository": false,
+          "temporaryPath": "/tmp/zero-series-offline-captures/kaisen-42a69bc9873d-source.png",
+          "fileModifiedAt": "2026-10-09T14:53:13.762Z"
+        },
+        "environment": {
+          "os": "Linux 6.18.44 x64",
+          "browser": "Chromium 153.0.8010.12",
+          "playwright": "1.63.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "deviceScaleFactor": 1,
+          "locale": "ja-JP",
+          "reducedMotion": "reduce"
+        },
+        "interaction": {
+          "startPressed": false,
+          "click": false,
+          "keyboard": false,
+          "pointer": false,
+          "touch": false,
+          "playingPhaseEntered": false,
+          "gameStarted": false,
+          "playCountStart": false,
+          "rankingSubmission": false,
+          "newBattleSession": false
+        },
+        "productState": {
+          "homeVisible": true,
+          "heading": "カイセン",
+          "playingVisible": false,
+          "pilotNameEmpty": null
+        },
+        "network": {
+          "browserOffline": true,
+          "replayedOnlyTlsVerifiedHashMatchedProductFiles": true,
+          "nonGetRequestsAttempted": 0,
+          "externalRequestsFulfilled": 0,
+          "blockedRequests": 0,
+          "staticRequestsServed": 3,
+          "note": "Fresh browser context. Requests were fulfilled only from exact URL/path entries whose bytes matched the TLS-verified observation hashes; all unknown URLs and methods other than GET/HEAD were set to abort. No external request was fulfilled or blocked because none was attempted."
+        },
+        "runtimeErrors": {
+          "console": 0,
+          "page": 0
+        },
+        "personalInformation": {
+          "present": false,
+          "note": "No person, personal name, notification, or account data visible; Faito pilot-name field was blank."
+        },
+        "previewRouteAudit": "No safe production battle-renderer preview route found in the pinned deployed source. Existing production control preview is UI layout only; test fixtures/state injection were excluded."
+      },
+      "publicationEvidence": {
+        "manifestPath": "/workspace/game-sources/public-assets/kaisen/deployment.json",
+        "manifestSha256": "da7f34d4f3a8f762c580b87d9458e6959e6c05cd56abf36b432912a1e982fa95",
+        "observationPath": "/workspace/game-sources/public-assets/kaisen/observation-at-capture.json",
+        "observationSha256": "54e3f6bc7ff5d9ffc2843ab31280e57fdc2a76b5675480e6f66330990b45f0ae",
+        "observedAt": "2026-10-09T14:49:02.613131+00:00",
+        "tlsVerificationEnabled": true,
+        "expectedHashSource": "public deployment manifest",
+        "allProductHashesMatch": true,
+        "productFiles": [
+          {
+            "path": "assets/index-AnoDvxMm.js",
+            "sha256": "bc0e3bf86a54b5e673e7a7b0e5eafbb85bf6ad2f059eaab41c72d4d9430b8f3d",
+            "bytes": 823153,
+            "hashMatches": true
+          },
+          {
+            "path": "assets/index-CC4z0vjG.css",
+            "sha256": "27a94f1a79f29ec460e9d2493989b05d0870874621a13186c397a5fe3e0c527a",
+            "bytes": 30778,
+            "hashMatches": true
+          },
+          {
+            "path": "index.html",
+            "sha256": "864fac28e535f8022fd4edc4c14035b83e906460a60f9bb190e30da6f3ac0cff",
+            "bytes": 11598,
+            "hashMatches": true
+          },
+          {
+            "path": "third-party-notices.txt",
+            "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+            "bytes": 1082,
+            "hashMatches": true
+          }
+        ],
+        "currentMainCommitAtObservation": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
+        "latestMainDiffersFromDeployedSource": false
+      },
+      "rightsReview": {
+        "repoWideLicenseFound": false,
+        "thirdPartyNotice": "third-party-notices.txt contains a Three.js MIT notice; this is not treated as a repository-wide license.",
+        "rightsBasis": [
+          {
+            "path": "docs/PROVENANCE.md",
+            "url": "https://github.com/chameleonjp-lab/kaisen/blob/519fd0d50dfb2ce9a1145c0b58a1301b5c74d032/docs/PROVENANCE.md"
+          }
+        ],
+        "determination": "実際の公開版の製品コードが描画したHome／タイトル画面を撮影。掲載用スクリーンショットの利用はこのタスクでのユーザー明示承認に基づく。各作品の公開ソース資料は素材来歴や第三者素材方針の記録として参照するが、リポジトリ全体のライセンス付与とは扱わない。social-cardや検査用fixtureは使っていない。"
+      },
+      "gameId": "kaisen",
+      "sourceCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
+      "deployedCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
+      "capturedAt": "2026-10-09T14:53:14.033Z",
+      "outputs": [
+        {
+          "src": "assets/screenshots/kaisen-42a69bc9873d-640.webp",
+          "width": 640,
+          "height": 360,
+          "sha256": "150b9fe5f7972af2cd1b7cf5cc19d1c9b4f10a0ce3d75f07d9e1663f9b31ccb9",
+          "bytes": 7604,
+          "format": "image/webp"
+        },
+        {
+          "src": "assets/screenshots/kaisen-42a69bc9873d-960.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "744f6cc035f094cc1f11b5f8437ae9606adb5d35308560f09e0bb04e5a7d97f8",
+          "bytes": 13250,
+          "format": "image/webp"
+        }
+      ]
+    },
+    {
+      "id": "faitofuraito",
+      "title": "ファイトフライト",
+      "src": "assets/screenshots/faitofuraito-ce4eff271a44-960.webp",
+      "srcset": [
+        {
+          "src": "assets/screenshots/faitofuraito-ce4eff271a44-640.webp",
+          "width": 640,
+          "height": 360,
+          "sha256": "c5c1c2df67305270b1369c3eb4417187ba0d991cdc5c2ddd00dea2dac3e6b183",
+          "bytes": 9648,
+          "format": "image/webp"
+        },
+        {
+          "src": "assets/screenshots/faitofuraito-ce4eff271a44-960.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "85ba341db20b1d6cb3f8da08b4e25009422e6f80f04617d944bf4db6cbb9300e",
+          "bytes": 17812,
+          "format": "image/webp"
+        }
+      ],
+      "width": 960,
+      "height": 540,
+      "alt": "ファイトフライトの公開版タイトル画面。青空と零戦の背景にゲーム名が表示され、中央パネルにモード選択と空のパイロット名欄がある。",
+      "caption": "公開版のタイトル画面（戦闘画面ではありません）。",
+      "version": "ce4eff271a448d608c924c9733f23a9d081591aa24ba0f482c4b3bba403876a4",
+      "evidence": {
+        "sourceUrl": "https://chameleonjp-lab.github.io/faitofuraito/",
+        "sourceCommit": "8946bf12a777d24c7334b887492d62fd93153e23",
+        "deployedCommit": "8946bf12a777d24c7334b887492d62fd93153e23",
+        "deployedBranchCommit": "88bfaf5ac6d75aee70c9eaaab569a3a404e07b4d",
+        "capturedAt": "2026-10-09T14:53:50.784Z",
+        "rights": "このタスクでユーザーが公開製品画面の撮影とポータル掲載用派生を明示承認。製品リポジトリ全体のライセンスとは主張しない。公開版NOTICEはThree.jsのMIT表示のみ。製品資料に記された画面素材の来歴はrightsBasisを参照。",
+        "evidenceFile": "docs/evidence/images-current.json",
+        "originalSha256": "ce4eff271a448d608c924c9733f23a9d081591aa24ba0f482c4b3bba403876a4",
+        "derivatives": [
+          {
+            "src": "assets/screenshots/faitofuraito-ce4eff271a44-640.webp",
+            "sha256": "c5c1c2df67305270b1369c3eb4417187ba0d991cdc5c2ddd00dea2dac3e6b183"
+          },
+          {
+            "src": "assets/screenshots/faitofuraito-ce4eff271a44-960.webp",
+            "sha256": "85ba341db20b1d6cb3f8da08b4e25009422e6f80f04617d944bf4db6cbb9300e"
+          }
+        ],
+        "rightsBasis": [
+          {
+            "path": "README.md",
+            "url": "https://github.com/chameleonjp-lab/faitofuraito/blob/8946bf12a777d24c7334b887492d62fd93153e23/README.md"
+          }
+        ]
+      },
+      "capture": {
+        "state": "published-title-screen",
+        "gameplayScreenshotAccepted": false,
+        "gameplayScreenshotReason": "Home/title scene only. Start was not pressed; no gameplay scene was entered.",
+        "visualScene": "Home画面に青空、零戦のシルエット、モード選択パネルが見える。パイロット名欄は空。",
+        "original": {
+          "format": "image/png",
+          "width": 1280,
+          "height": 720,
+          "bytes": 214570,
+          "sha256": "ce4eff271a448d608c924c9733f23a9d081591aa24ba0f482c4b3bba403876a4",
+          "capturedAt": "2026-10-09T14:53:50.784Z",
+          "retainedInRepository": false,
+          "temporaryPath": "/tmp/zero-series-offline-captures/faitofuraito-ce4eff271a44-source.png",
+          "fileModifiedAt": "2026-10-09T14:53:50.387Z"
+        },
+        "environment": {
+          "os": "Linux 6.18.44 x64",
+          "browser": "Chromium 153.0.8010.12",
+          "playwright": "1.63.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "deviceScaleFactor": 1,
+          "locale": "ja-JP",
+          "reducedMotion": "reduce"
+        },
+        "interaction": {
+          "startPressed": false,
+          "click": false,
+          "keyboard": false,
+          "pointer": false,
+          "touch": false,
+          "playingPhaseEntered": false,
+          "gameStarted": false,
+          "playCountStart": false,
+          "rankingSubmission": false,
+          "newBattleSession": false
+        },
+        "productState": {
+          "homeVisible": true,
+          "heading": "ファイトフライト",
+          "playingVisible": false,
+          "pilotNameEmpty": true
+        },
+        "network": {
+          "browserOffline": true,
+          "replayedOnlyTlsVerifiedHashMatchedProductFiles": true,
+          "nonGetRequestsAttempted": 0,
+          "externalRequestsFulfilled": 0,
+          "blockedRequests": 0,
+          "staticRequestsServed": 3,
+          "note": "Fresh browser context. Requests were fulfilled only from exact URL/path entries whose bytes matched the TLS-verified observation hashes; all unknown URLs and methods other than GET/HEAD were set to abort. No external request was fulfilled or blocked because none was attempted."
+        },
+        "runtimeErrors": {
+          "console": 0,
+          "page": 0
+        },
+        "personalInformation": {
+          "present": false,
+          "note": "No person, personal name, notification, or account data visible; Faito pilot-name field was blank."
+        },
+        "previewRouteAudit": "No safe production battle-renderer preview route found in the pinned deployed source. Existing production control preview is UI layout only; test fixtures/state injection were excluded."
+      },
+      "publicationEvidence": {
+        "manifestPath": "/workspace/game-sources/public-assets/faitofuraito/deployment.json",
+        "manifestSha256": "0518640ebdfab12966fba39fb6725e66aec571d6ceaa69b43c5d96627a913660",
+        "observationPath": "/workspace/game-sources/public-assets/faitofuraito/observation-at-capture.json",
+        "observationSha256": "c93869f358e5109e63017988e2ddc4d82e9c237234d396ffcd82cb6832bc2e28",
+        "observedAt": "2026-10-09T14:49:03.307608+00:00",
+        "tlsVerificationEnabled": true,
+        "expectedHashSource": "public deployment manifest",
+        "allProductHashesMatch": true,
+        "productFiles": [
+          {
+            "path": "assets/index-BAlrsVZ7.js",
+            "sha256": "a3388c5c28ff1436356e9221a4ace164a297d545fa3e81235ba45d56d5e5ebbe",
+            "bytes": 751426,
+            "hashMatches": true
+          },
+          {
+            "path": "assets/index-DWkc_rYZ.css",
+            "sha256": "279163e59993581a7adf69a62c5a97539a04d84186b03bc6ffe57ac0d0b7c7ca",
+            "bytes": 30353,
+            "hashMatches": true
+          },
+          {
+            "path": "index.html",
+            "sha256": "6aea1740f48d2661acf84a277e1ed96cb4f55b3e6a560dc8166f908a6868df3b",
+            "bytes": 18190,
+            "hashMatches": true
+          },
+          {
+            "path": "ranking-manifest.json",
+            "sha256": "5f3a91f821ea3894ece70d6ee4f2978467df1b3d04692e1a4c943c953085de17",
+            "bytes": 2370,
+            "hashMatches": true
+          },
+          {
+            "path": "social-card.png",
+            "sha256": "7a3fb68e0504a3a2ec31178325394cf62a793518f65833645e69661353db8989",
+            "bytes": 1941845,
+            "hashMatches": true
+          },
+          {
+            "path": "third-party-notices.txt",
+            "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+            "bytes": 1081,
+            "hashMatches": true
+          }
+        ],
+        "currentMainCommitAtObservation": "8946bf12a777d24c7334b887492d62fd93153e23",
+        "latestMainDiffersFromDeployedSource": false
+      },
+      "rightsReview": {
+        "repoWideLicenseFound": false,
+        "thirdPartyNotice": "third-party-notices.txt contains a Three.js MIT notice; this is not treated as a repository-wide license.",
+        "rightsBasis": [
+          {
+            "path": "README.md",
+            "url": "https://github.com/chameleonjp-lab/faitofuraito/blob/8946bf12a777d24c7334b887492d62fd93153e23/README.md"
+          }
+        ],
+        "determination": "実際の公開版の製品コードが描画したHome／タイトル画面を撮影。掲載用スクリーンショットの利用はこのタスクでのユーザー明示承認に基づく。各作品の公開ソース資料は素材来歴や第三者素材方針の記録として参照するが、リポジトリ全体のライセンス付与とは扱わない。social-cardや検査用fixtureは使っていない。"
+      },
+      "gameId": "faitofuraito",
+      "sourceCommit": "8946bf12a777d24c7334b887492d62fd93153e23",
+      "deployedCommit": "8946bf12a777d24c7334b887492d62fd93153e23",
+      "capturedAt": "2026-10-09T14:53:50.784Z",
+      "outputs": [
+        {
+          "src": "assets/screenshots/faitofuraito-ce4eff271a44-640.webp",
+          "width": 640,
+          "height": 360,
+          "sha256": "c5c1c2df67305270b1369c3eb4417187ba0d991cdc5c2ddd00dea2dac3e6b183",
+          "bytes": 9648,
+          "format": "image/webp"
+        },
+        {
+          "src": "assets/screenshots/faitofuraito-ce4eff271a44-960.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "85ba341db20b1d6cb3f8da08b4e25009422e6f80f04617d944bf4db6cbb9300e",
+          "bytes": 17812,
+          "format": "image/webp"
+        }
+      ]
+    },
+    {
+      "id": "machimamore",
+      "title": "マチマモレ",
+      "src": "assets/screenshots/machimamore-883dc35fd2d1-960.webp",
+      "srcset": [
+        {
+          "src": "assets/screenshots/machimamore-883dc35fd2d1-960.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "2456ee11143dfc04f29fde56cfe4bb842d3f59669d0d5535866d3c3433f14cb4",
+          "bytes": 29876,
+          "format": "image/webp"
+        },
+        {
+          "src": "assets/screenshots/machimamore-883dc35fd2d1-640.webp",
+          "width": 640,
+          "height": 360,
+          "sha256": "3ea926bc89999c89ab8ae86b1240d8c0f2f5fbe9b747665d3cb6888485a295e8",
+          "bytes": 16392,
+          "format": "image/webp"
+        }
+      ],
+      "width": 960,
+      "height": 540,
+      "alt": "マチマモレの公開版タイトル画面。街と海の背景にUFOが浮かび、画面右側にモード選択と有効な出撃ボタン「街を守りに出撃」が表示されている。",
+      "caption": "公開版のタイトル画面（描画準備完了後、開始前。戦闘画面ではありません）。",
+      "version": "883dc35fd2d1609c7f7df695e2f46acc9e56791942e14e4d3956535c042b552c",
+      "evidence": {
+        "sourceUrl": "https://chameleonjp-lab.github.io/machimamore/",
+        "sourceCommit": "1d27a697ea62dbfa676e1e78968c164552459ec5",
+        "deployedCommit": "1d27a697ea62dbfa676e1e78968c164552459ec5",
+        "capturedAt": "2026-10-09T15:15:53.817Z",
+        "rights": "このタスクでユーザーが公開製品画面の撮影とポータル掲載用派生を明示承認。製品リポジトリ全体のライセンスとは主張しない。公開版NOTICEはThree.jsのMIT表示のみ。製品資料に記された画面素材の来歴はrightsBasisを参照。",
+        "evidenceFile": "docs/evidence/images-current.json",
+        "originalSha256": "883dc35fd2d1609c7f7df695e2f46acc9e56791942e14e4d3956535c042b552c",
+        "derivatives": [
+          {
+            "src": "assets/screenshots/machimamore-883dc35fd2d1-960.webp",
+            "sha256": "2456ee11143dfc04f29fde56cfe4bb842d3f59669d0d5535866d3c3433f14cb4"
+          },
+          {
+            "src": "assets/screenshots/machimamore-883dc35fd2d1-640.webp",
+            "sha256": "3ea926bc89999c89ab8ae86b1240d8c0f2f5fbe9b747665d3cb6888485a295e8"
+          }
+        ],
+        "rightsBasis": [
+          {
+            "path": "docs/PROVENANCE.md",
+            "url": "https://github.com/chameleonjp-lab/machimamore/blob/1d27a697ea62dbfa676e1e78968c164552459ec5/docs/PROVENANCE.md"
+          }
+        ]
+      },
+      "capture": {
+        "state": "published-title-screen-renderer-ready",
+        "gameplayScreenshotAccepted": false,
+        "gameplayScreenshotReason": "Start was not pressed; the scene remains the title/Home screen. No gameplay phase, play-count start, score submission, or ranking action was initiated.",
+        "visualScene": "Home画面に街・海・UFOの製品renderer sceneと、描画準備完了後に有効化された出撃ボタンが見える。",
+        "original": {
+          "path": "/tmp/zero-series-offline-captures/machimamore-883dc35fd2d1-source.png",
+          "format": "png",
+          "width": 1280,
+          "height": 720,
+          "sha256": "883dc35fd2d1609c7f7df695e2f46acc9e56791942e14e4d3956535c042b552c",
+          "bytes": 479951,
+          "capturedAt": "2026-10-09T15:15:53.817Z",
+          "retainedInRepository": false,
+          "fileModifiedAt": "2026-10-09T15:15:54.896Z"
+        },
+        "environment": {
+          "os": "Linux 6.18.44 (x64)",
+          "browser": "Chromium 153.0.8010.12",
+          "browserVersion": "153.0.8010.12",
+          "playwrightVersion": "1.63.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "deviceScaleFactor": 1,
+          "locale": "ja-JP",
+          "reducedMotion": "reduce",
+          "networkMode": "offline; exact hash-verified GET/HEAD replay only",
+          "playwright": "1.63.0"
+        },
+        "interaction": {
+          "startPressed": false,
+          "click": false,
+          "keyboard": false,
+          "pointer": false,
+          "touch": false,
+          "playingPhaseEntered": false,
+          "gameStarted": false,
+          "playCountStart": false,
+          "rankingSubmission": false,
+          "newBattleSession": false
+        },
+        "productState": {
+          "homeVisible": true,
+          "heading": "マチマモレ",
+          "playingVisible": false,
+          "startEnabled": true,
+          "startLabel": "街を守りに出撃",
+          "pilotNameEmpty": null
+        },
+        "network": {
+          "browserOffline": true,
+          "replayedOnlyTlsVerifiedHashMatchedProductFiles": true,
+          "nonGetRequestsAttempted": 0,
+          "externalRequestsFulfilled": 0,
+          "blockedRequests": 0,
+          "staticRequestsServed": 3,
+          "note": "Fresh browser context. Requests were fulfilled only from exact URL/path entries whose bytes matched the TLS-verified observation hashes; all unknown URLs and methods other than GET/HEAD were set to abort. No external request was fulfilled or blocked because none was attempted.",
+          "servedProductRequests": [
+            {
+              "path": "index.html",
+              "sha256": "dae5e25fd272dcf1115e7af756565e940271db243102c5af9a4f2ab6a0947d79",
+              "method": "GET"
+            },
+            {
+              "path": "assets/index-CX-kywWz.js",
+              "sha256": "9d04640ab8527e2b90fae88da3a455d7ca1da658eb0b20d21da04e1202dcceb0",
+              "method": "GET"
+            },
+            {
+              "path": "assets/index-BAyulP5k.css",
+              "sha256": "52bee58f42cf2b7d73afc93ba89df8a27f15cd117f74a857c8d852c602516d65",
+              "method": "GET"
+            }
+          ]
+        },
+        "runtimeErrors": {
+          "console": 0,
+          "page": 0,
+          "details": {
+            "console": [],
+            "page": []
+          }
+        },
+        "personalInformation": {
+          "present": false,
+          "note": "No person, personal name, notification, or account data visible; Faito pilot-name field was blank."
+        },
+        "previewRouteAudit": "No safe production battle-renderer preview route found in the pinned deployed source. Existing production control preview is UI layout only; test fixtures/state injection were excluded.",
+        "capturedAt": "2026-10-09T15:15:53.817Z",
+        "homeState": {
+          "homeVisible": true,
+          "heading": "マチマモレ",
+          "playingVisible": false,
+          "startEnabled": true,
+          "startLabel": "街を守りに出撃",
+          "pilotNameEmpty": null
+        },
+        "homeReadiness": {
+          "ready": true,
+          "signal": "Start enabled with the published ready label after prepareGraphics; startup-error hidden",
+          "startEnabled": true,
+          "startLabel": "街を守りに出撃",
+          "statusVisible": false,
+          "statusText": null,
+          "graphicsError": null,
+          "timedOut": false,
+          "timeoutMs": 20000,
+          "waitedMs": 2497
+        },
+        "replayObservationFile": "/workspace/game-sources/public-assets/machimamore/observation.json",
+        "replayBundleFiles": [
+          {
+            "path": "index.html",
+            "sha256": "dae5e25fd272dcf1115e7af756565e940271db243102c5af9a4f2ab6a0947d79"
+          },
+          {
+            "path": "assets/index-CX-kywWz.js",
+            "sha256": "9d04640ab8527e2b90fae88da3a455d7ca1da658eb0b20d21da04e1202dcceb0"
+          },
+          {
+            "path": "assets/index-BAyulP5k.css",
+            "sha256": "52bee58f42cf2b7d73afc93ba89df8a27f15cd117f74a857c8d852c602516d65"
+          }
+        ]
+      },
+      "publicationEvidence": {
+        "manifestPath": "/workspace/game-sources/public-assets/machimamore/deployment.json",
+        "manifestSha256": "ab92295564225afb5fe84a8b4c9596f3537ed3efdf5df43cd309e0d3d8626d8a",
+        "observationPath": "/workspace/game-sources/public-assets/machimamore/observation-at-capture.json",
+        "observationSha256": "e3faa8e9581820d645f8bad21d9a866b95d3cc2a54d8bfe8df1192d4bbffaf34",
+        "observedAt": "2026-10-09T14:49:02.751924+00:00",
+        "tlsVerificationEnabled": true,
+        "expectedHashSource": "public deployment manifest",
+        "allProductHashesMatch": true,
+        "productFiles": [
+          {
+            "path": "artifact-manifest.json",
+            "sha256": "57742db53f439b2641c8c4b6f8eab3cf3264d9217cce217002531d58f3111589",
+            "bytes": 660,
+            "hashMatches": true
+          },
+          {
+            "path": "assets/index-BAyulP5k.css",
+            "sha256": "52bee58f42cf2b7d73afc93ba89df8a27f15cd117f74a857c8d852c602516d65",
+            "bytes": 26978,
+            "hashMatches": true
+          },
+          {
+            "path": "assets/index-CX-kywWz.js",
+            "sha256": "9d04640ab8527e2b90fae88da3a455d7ca1da658eb0b20d21da04e1202dcceb0",
+            "bytes": 710768,
+            "hashMatches": true
+          },
+          {
+            "path": "index.html",
+            "sha256": "dae5e25fd272dcf1115e7af756565e940271db243102c5af9a4f2ab6a0947d79",
+            "bytes": 8611,
+            "hashMatches": true
+          },
+          {
+            "path": "third-party-notices.txt",
+            "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+            "bytes": 1081,
+            "hashMatches": true
+          }
+        ],
+        "currentMainCommitAtObservation": "192c075532a8f0d2810a444ae5ac299cdfec9f1a",
+        "latestMainDiffersFromDeployedSource": true,
+        "replayPaths": [
+          "artifact-manifest.json",
+          "assets/index-BAyulP5k.css",
+          "assets/index-CX-kywWz.js",
+          "index.html"
+        ],
+        "replayObservationFile": "/workspace/game-sources/public-assets/machimamore/observation.json"
+      },
+      "rightsReview": {
+        "repoWideLicenseFound": false,
+        "thirdPartyNotice": "third-party-notices.txt contains a Three.js MIT notice; this is not treated as a repository-wide license.",
+        "rightsBasis": [
+          {
+            "path": "docs/PROVENANCE.md",
+            "url": "https://github.com/chameleonjp-lab/machimamore/blob/1d27a697ea62dbfa676e1e78968c164552459ec5/docs/PROVENANCE.md"
+          }
+        ],
+        "determination": "実際の公開版の製品コードが描画したHome／タイトル画面を撮影。掲載用スクリーンショットの利用はこのタスクでのユーザー明示承認に基づく。各作品の公開ソース資料は素材来歴や第三者素材方針の記録として参照するが、リポジトリ全体のライセンス付与とは扱わない。social-cardや検査用fixtureは使っていない。"
+      },
+      "gameId": "machimamore",
+      "sourceCommit": "1d27a697ea62dbfa676e1e78968c164552459ec5",
+      "deployedCommit": "1d27a697ea62dbfa676e1e78968c164552459ec5",
+      "capturedAt": "2026-10-09T15:15:53.817Z",
+      "outputs": [
+        {
+          "src": "assets/screenshots/machimamore-883dc35fd2d1-960.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "2456ee11143dfc04f29fde56cfe4bb842d3f59669d0d5535866d3c3433f14cb4",
+          "bytes": 29876,
+          "format": "image/webp"
+        },
+        {
+          "src": "assets/screenshots/machimamore-883dc35fd2d1-640.webp",
+          "width": 640,
+          "height": 360,
+          "sha256": "3ea926bc89999c89ab8ae86b1240d8c0f2f5fbe9b747665d3cb6888485a295e8",
+          "bytes": 16392,
+          "format": "image/webp"
+        }
+      ],
+      "supersededCapture": {
+        "sourceSha256": "9fdec2cadc003531bf71406c6bcc4f6817cc418c8bc881eb2481887ef342711a",
+        "outputs": [
+          {
+            "src": "assets/screenshots/machimamore-9fdec2cadc00-640.webp",
+            "sha256": "5bc7ffb13e9d94489e30dcaaae5f167ae323811cd655d134deb62fd31c7fa9bc"
+          },
+          {
+            "src": "assets/screenshots/machimamore-9fdec2cadc00-960.webp",
+            "sha256": "d4c0dc14535b961621fc8c8fa9b3566055772fceb95537b12a809a412876ebc4"
+          }
+        ],
+        "reason": "Earlier capture followed only a fixed one-second delay and showed Start disabled; replaced after observing the official renderer-ready signal."
+      }
+    },
+    {
+      "id": "gekichin",
+      "title": "ゲキチン",
+      "src": "assets/screenshots/gekichin-214e1a7181ab-960.webp",
+      "srcset": [
+        {
+          "src": "assets/screenshots/gekichin-214e1a7181ab-640.webp",
+          "width": 640,
+          "height": 360,
+          "sha256": "72c69f278bef4a9193e4c844fb8947ee1bd19361dc51ee4b22eb3d1c36aca47c",
+          "bytes": 9266,
+          "format": "image/webp"
+        },
+        {
+          "src": "assets/screenshots/gekichin-214e1a7181ab-960.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "a8bbbabb9e6529934249b350fd11a66cf2ed21e2b506479a52221c0ef77263bb",
+          "bytes": 17328,
+          "format": "image/webp"
+        }
+      ],
+      "width": 960,
+      "height": 540,
+      "alt": "ゲキチンの公開版タイトル画面。中央のパネルにタイトル、母艦と砲台の説明、モード選択と開始ボタンが表示され、背景は暗い空と水平線。",
+      "caption": "公開版のタイトル画面（戦闘画面ではありません）。",
+      "version": "214e1a7181abb4b8c7da3a51b9cd0a3f74eb1cbfac55210d81662638049a329d",
+      "evidence": {
+        "sourceUrl": "https://chameleonjp-lab.github.io/gekichin/",
+        "sourceCommit": "de500c3e0e077fe2bab636dc2a382a8796ea8b9e",
+        "deployedCommit": "de500c3e0e077fe2bab636dc2a382a8796ea8b9e",
+        "capturedAt": "2026-10-09T14:54:53.424Z",
+        "rights": "このタスクでユーザーが公開製品画面の撮影とポータル掲載用派生を明示承認。製品リポジトリ全体のライセンスとは主張しない。公開版NOTICEはThree.jsのMIT表示のみ。製品資料に記された画面素材の来歴はrightsBasisを参照。",
+        "evidenceFile": "docs/evidence/images-current.json",
+        "originalSha256": "214e1a7181abb4b8c7da3a51b9cd0a3f74eb1cbfac55210d81662638049a329d",
+        "derivatives": [
+          {
+            "src": "assets/screenshots/gekichin-214e1a7181ab-640.webp",
+            "sha256": "72c69f278bef4a9193e4c844fb8947ee1bd19361dc51ee4b22eb3d1c36aca47c"
+          },
+          {
+            "src": "assets/screenshots/gekichin-214e1a7181ab-960.webp",
+            "sha256": "a8bbbabb9e6529934249b350fd11a66cf2ed21e2b506479a52221c0ef77263bb"
+          }
+        ],
+        "rightsBasis": [
+          {
+            "path": "docs/P0_BASELINE.md",
+            "url": "https://github.com/chameleonjp-lab/gekichin/blob/de500c3e0e077fe2bab636dc2a382a8796ea8b9e/docs/P0_BASELINE.md"
+          },
+          {
+            "path": "docs/COMBAT_PROVENANCE.md",
+            "url": "https://github.com/chameleonjp-lab/gekichin/blob/de500c3e0e077fe2bab636dc2a382a8796ea8b9e/docs/COMBAT_PROVENANCE.md"
+          }
+        ]
+      },
+      "capture": {
+        "state": "published-title-screen",
+        "gameplayScreenshotAccepted": false,
+        "gameplayScreenshotReason": "タイトル画面に母艦・砲台の戦闘レンダリングがなく、Startなしの安全な製品preview経路を確認できていない。",
+        "visualScene": "Home画面の説明パネルと暗い空・水平線が見える。母艦や砲台の戦闘レンダリングは表示されない。",
+        "original": {
+          "format": "image/png",
+          "width": 1280,
+          "height": 720,
+          "bytes": 342944,
+          "sha256": "214e1a7181abb4b8c7da3a51b9cd0a3f74eb1cbfac55210d81662638049a329d",
+          "capturedAt": "2026-10-09T14:54:53.424Z",
+          "retainedInRepository": false,
+          "temporaryPath": "/tmp/zero-series-offline-captures/gekichin-214e1a7181ab-source.png",
+          "fileModifiedAt": "2026-10-09T14:54:53.136Z"
+        },
+        "environment": {
+          "os": "Linux 6.18.44 x64",
+          "browser": "Chromium 153.0.8010.12",
+          "playwright": "1.63.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "deviceScaleFactor": 1,
+          "locale": "ja-JP",
+          "reducedMotion": "reduce"
+        },
+        "interaction": {
+          "startPressed": false,
+          "click": false,
+          "keyboard": false,
+          "pointer": false,
+          "touch": false,
+          "playingPhaseEntered": false,
+          "gameStarted": false,
+          "playCountStart": false,
+          "rankingSubmission": false,
+          "newBattleSession": false
+        },
+        "productState": {
+          "homeVisible": true,
+          "heading": "ゲキチン",
+          "playingVisible": false,
+          "pilotNameEmpty": null
+        },
+        "network": {
+          "browserOffline": true,
+          "replayedOnlyTlsVerifiedHashMatchedProductFiles": true,
+          "nonGetRequestsAttempted": 0,
+          "externalRequestsFulfilled": 0,
+          "blockedRequests": 0,
+          "staticRequestsServed": 3,
+          "note": "Fresh browser context. Requests were fulfilled only from exact URL/path entries whose bytes matched the TLS-verified observation hashes; all unknown URLs and methods other than GET/HEAD were set to abort. No external request was fulfilled or blocked because none was attempted."
+        },
+        "runtimeErrors": {
+          "console": 0,
+          "page": 0
+        },
+        "personalInformation": {
+          "present": false,
+          "note": "No person, personal name, notification, or account data visible; Faito pilot-name field was blank."
+        },
+        "previewRouteAudit": "No safe production battle-renderer preview route found in the pinned deployed source. Existing production control preview is UI layout only; test fixtures/state injection were excluded."
+      },
+      "publicationEvidence": {
+        "manifestPath": "/workspace/game-sources/public-assets/gekichin/deployment.json",
+        "manifestSha256": "7fd7fedf350fa67948a113ef9aebfe90049a876354354675a5debbe88e820964",
+        "observationPath": "/workspace/game-sources/public-assets/gekichin/observation-at-capture.json",
+        "observationSha256": "38ebc984b2f81a995c0617923952a8c84f2ee6999c30516e4a2c541c970aecd3",
+        "observedAt": "2026-10-09T14:49:02.674629+00:00",
+        "tlsVerificationEnabled": true,
+        "expectedHashSource": "public deployment manifest",
+        "allProductHashesMatch": true,
+        "productFiles": [
+          {
+            "path": "assets/index-BufJBCcE.css",
+            "sha256": "d89927dcc6ca023fc4eb27a7d824215101184aeac9f2505e117eb80b76bb89bf",
+            "bytes": 23657,
+            "hashMatches": true
+          },
+          {
+            "path": "assets/index-Ca9XU86d.js",
+            "sha256": "75a38d906ca0775e2a1b7322366f3dfeb97a00edfd817ca00efc6f356f34cb9c",
+            "bytes": 751190,
+            "hashMatches": true
+          },
+          {
+            "path": "index.html",
+            "sha256": "1856e5b784410ffd8af94e7c8610f9def8ed0bc3f157062c28a7dd80c9b09b6a",
+            "bytes": 610,
+            "hashMatches": true
+          },
+          {
+            "path": "third-party-notices.txt",
+            "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+            "bytes": 1082,
+            "hashMatches": true
+          }
+        ],
+        "currentMainCommitAtObservation": "01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3",
+        "latestMainDiffersFromDeployedSource": true
+      },
+      "rightsReview": {
+        "repoWideLicenseFound": false,
+        "thirdPartyNotice": "third-party-notices.txt contains a Three.js MIT notice; this is not treated as a repository-wide license.",
+        "rightsBasis": [
+          {
+            "path": "docs/P0_BASELINE.md",
+            "url": "https://github.com/chameleonjp-lab/gekichin/blob/de500c3e0e077fe2bab636dc2a382a8796ea8b9e/docs/P0_BASELINE.md"
+          },
+          {
+            "path": "docs/COMBAT_PROVENANCE.md",
+            "url": "https://github.com/chameleonjp-lab/gekichin/blob/de500c3e0e077fe2bab636dc2a382a8796ea8b9e/docs/COMBAT_PROVENANCE.md"
+          }
+        ],
+        "determination": "実際の公開版の製品コードが描画したHome／タイトル画面を撮影。掲載用スクリーンショットの利用はこのタスクでのユーザー明示承認に基づく。各作品の公開ソース資料は素材来歴や第三者素材方針の記録として参照するが、リポジトリ全体のライセンス付与とは扱わない。social-cardや検査用fixtureは使っていない。"
+      },
+      "gameId": "gekichin",
+      "sourceCommit": "de500c3e0e077fe2bab636dc2a382a8796ea8b9e",
+      "deployedCommit": "de500c3e0e077fe2bab636dc2a382a8796ea8b9e",
+      "capturedAt": "2026-10-09T14:54:53.424Z",
+      "outputs": [
+        {
+          "src": "assets/screenshots/gekichin-214e1a7181ab-640.webp",
+          "width": 640,
+          "height": 360,
+          "sha256": "72c69f278bef4a9193e4c844fb8947ee1bd19361dc51ee4b22eb3d1c36aca47c",
+          "bytes": 9266,
+          "format": "image/webp"
+        },
+        {
+          "src": "assets/screenshots/gekichin-214e1a7181ab-960.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "a8bbbabb9e6529934249b350fd11a66cf2ed21e2b506479a52221c0ef77263bb",
+          "bytes": 17328,
+          "format": "image/webp"
+        }
+      ]
+    },
+    {
+      "id": "uchiotose",
+      "title": "ウチオトセ",
+      "src": "assets/screenshots/uchiotose-f1e85d80c44b-960.webp",
+      "srcset": [
+        {
+          "src": "assets/screenshots/uchiotose-f1e85d80c44b-960.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "e356e4a0b73b1a9f8c45567b70b390a8a5ed366ef12fe67c336e503e80adc935",
+          "bytes": 13140,
+          "format": "image/webp"
+        },
+        {
+          "src": "assets/screenshots/uchiotose-f1e85d80c44b-640.webp",
+          "width": 640,
+          "height": 360,
+          "sha256": "dad5894b8ed5ad7ab6ae34b4b34fb004df88dd1c1e4abbb8e30b19081f644c4f",
+          "bytes": 7836,
+          "format": "image/webp"
+        }
+      ],
+      "width": 960,
+      "height": 540,
+      "alt": "ウチオトセの公開版タイトル画面。浮遊島と自機・艦隊の製品3D背景に、ゲーム名、戦力数、モード選択と有効な作戦開始ボタンが表示されている。",
+      "caption": "公開版のタイトル画面（描画準備完了後、開始前。戦闘画面ではありません）。",
+      "version": "f1e85d80c44b272e6431ea95220b03973ef80648c105e0fe1fa88b7ed66794a9",
+      "evidence": {
+        "sourceUrl": "https://chameleonjp-lab.github.io/uchiotose/",
+        "sourceCommit": "2a7e815c70baf9dc65721fc938909b6ab083f074",
+        "deployedCommit": "2a7e815c70baf9dc65721fc938909b6ab083f074",
+        "deployedBranchCommit": "1307117008dc72f9031a8c345b6ac077fc8ff30b",
+        "capturedAt": "2026-10-09T15:16:22.225Z",
+        "rights": "このタスクでユーザーが公開製品画面の撮影とポータル掲載用派生を明示承認。製品リポジトリ全体のライセンスとは主張しない。公開版NOTICEはThree.jsのMIT表示のみ。製品資料に記された画面素材の来歴はrightsBasisを参照。",
+        "evidenceFile": "docs/evidence/images-current.json",
+        "originalSha256": "f1e85d80c44b272e6431ea95220b03973ef80648c105e0fe1fa88b7ed66794a9",
+        "derivatives": [
+          {
+            "src": "assets/screenshots/uchiotose-f1e85d80c44b-960.webp",
+            "sha256": "e356e4a0b73b1a9f8c45567b70b390a8a5ed366ef12fe67c336e503e80adc935"
+          },
+          {
+            "src": "assets/screenshots/uchiotose-f1e85d80c44b-640.webp",
+            "sha256": "dad5894b8ed5ad7ab6ae34b4b34fb004df88dd1c1e4abbb8e30b19081f644c4f"
+          }
+        ],
+        "rightsBasis": [
+          {
+            "path": "docs/REQUIREMENTS.md",
+            "url": "https://github.com/chameleonjp-lab/uchiotose/blob/2a7e815c70baf9dc65721fc938909b6ab083f074/docs/REQUIREMENTS.md"
+          },
+          {
+            "path": "docs/IMPLEMENTATION_RELEASE.md",
+            "url": "https://github.com/chameleonjp-lab/uchiotose/blob/2a7e815c70baf9dc65721fc938909b6ab083f074/docs/IMPLEMENTATION_RELEASE.md"
+          }
+        ]
+      },
+      "capture": {
+        "state": "published-title-screen-renderer-ready",
+        "gameplayScreenshotAccepted": false,
+        "gameplayScreenshotReason": "Start was not pressed; the scene remains the title/Home screen. No gameplay phase, play-count start, score submission, or ranking action was initiated.",
+        "visualScene": "Home画面に浮遊島、自機、艦隊の製品renderer sceneと、描画準備完了後に有効化された作戦開始ボタンが見える。",
+        "original": {
+          "path": "/tmp/zero-series-offline-captures/uchiotose-f1e85d80c44b-source.png",
+          "format": "png",
+          "width": 1280,
+          "height": 720,
+          "sha256": "f1e85d80c44b272e6431ea95220b03973ef80648c105e0fe1fa88b7ed66794a9",
+          "bytes": 178312,
+          "capturedAt": "2026-10-09T15:16:22.225Z",
+          "retainedInRepository": false,
+          "fileModifiedAt": "2026-10-09T15:16:22.337Z"
+        },
+        "environment": {
+          "os": "Linux 6.18.44 (x64)",
+          "browser": "Chromium 153.0.8010.12",
+          "browserVersion": "153.0.8010.12",
+          "playwrightVersion": "1.63.0",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "deviceScaleFactor": 1,
+          "locale": "ja-JP",
+          "reducedMotion": "reduce",
+          "networkMode": "offline; exact hash-verified GET/HEAD replay only",
+          "playwright": "1.63.0"
+        },
+        "interaction": {
+          "startPressed": false,
+          "click": false,
+          "keyboard": false,
+          "pointer": false,
+          "touch": false,
+          "playingPhaseEntered": false,
+          "gameStarted": false,
+          "playCountStart": false,
+          "rankingSubmission": false,
+          "newBattleSession": false
+        },
+        "productState": {
+          "homeVisible": true,
+          "heading": "ウチオトセ",
+          "playingVisible": false,
+          "startEnabled": true,
+          "startLabel": "作戦開始 ↗",
+          "pilotNameEmpty": null
+        },
+        "network": {
+          "browserOffline": true,
+          "replayedOnlyTlsVerifiedHashMatchedProductFiles": true,
+          "nonGetRequestsAttempted": 0,
+          "externalRequestsFulfilled": 0,
+          "blockedRequests": 0,
+          "staticRequestsServed": 3,
+          "note": "Fresh browser context. Requests were fulfilled only from exact URL/path entries whose bytes matched the TLS-verified observation hashes; all unknown URLs and methods other than GET/HEAD were set to abort. No external request was fulfilled or blocked because none was attempted.",
+          "servedProductRequests": [
+            {
+              "path": "index.html",
+              "sha256": "57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e",
+              "method": "GET"
+            },
+            {
+              "path": "assets/index-6rKQhKs9.js",
+              "sha256": "43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639",
+              "method": "GET"
+            },
+            {
+              "path": "assets/index-jjlx_KNJ.css",
+              "sha256": "2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382",
+              "method": "GET"
+            }
+          ]
+        },
+        "runtimeErrors": {
+          "console": 0,
+          "page": 0,
+          "details": {
+            "console": [],
+            "page": []
+          }
+        },
+        "personalInformation": {
+          "present": false,
+          "note": "No person, personal name, notification, or account data visible; Faito pilot-name field was blank."
+        },
+        "previewRouteAudit": "No safe production battle-renderer preview route found in the pinned deployed source. Existing production control preview is UI layout only; test fixtures/state injection were excluded.",
+        "capturedAt": "2026-10-09T15:16:22.225Z",
+        "homeState": {
+          "homeVisible": true,
+          "heading": "ウチオトセ",
+          "playingVisible": false,
+          "startEnabled": true,
+          "startLabel": "作戦開始 ↗",
+          "pilotNameEmpty": null
+        },
+        "homeReadiness": {
+          "ready": true,
+          "signal": "Start enabled and #p1-status hidden after renderer.prepare and pollRender ready",
+          "startEnabled": true,
+          "startLabel": "作戦開始 ↗",
+          "statusVisible": false,
+          "statusText": "準備完了 · 操作設定とルールを確認して出撃できます",
+          "graphicsError": null,
+          "timedOut": false,
+          "timeoutMs": 20000,
+          "waitedMs": 2511
+        },
+        "replayObservationFile": "/workspace/game-sources/public-assets/uchiotose/observation.json",
+        "replayBundleFiles": [
+          {
+            "path": "index.html",
+            "sha256": "57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e"
+          },
+          {
+            "path": "assets/index-6rKQhKs9.js",
+            "sha256": "43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639"
+          },
+          {
+            "path": "assets/index-jjlx_KNJ.css",
+            "sha256": "2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382"
+          }
+        ]
+      },
+      "publicationEvidence": {
+        "manifestPath": "/workspace/game-sources/public-assets/uchiotose/release.json",
+        "manifestSha256": "912aa5163fc46ab06aa80387c475ca1abef960c72f27ef0a49f43a3fc4180cb7",
+        "observationPath": "/workspace/game-sources/public-assets/uchiotose/observation-at-capture.json",
+        "observationSha256": "676c84f3e725c6bdb658e9053abc6f17151067f8029f9c98aed96c3e5f3ee80a",
+        "observedAt": "2026-10-09T14:49:03.013507+00:00",
+        "tlsVerificationEnabled": true,
+        "expectedHashSource": "gh-pages exact tree",
+        "allProductHashesMatch": true,
+        "productFiles": [
+          {
+            "path": ".nojekyll",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "bytes": 0,
+            "hashMatches": true
+          },
+          {
+            "path": "assets/index-6rKQhKs9.js",
+            "sha256": "43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639",
+            "bytes": 784778,
+            "hashMatches": true
+          },
+          {
+            "path": "assets/index-jjlx_KNJ.css",
+            "sha256": "2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382",
+            "bytes": 28496,
+            "hashMatches": true
+          },
+          {
+            "path": "index.html",
+            "sha256": "57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e",
+            "bytes": 7456,
+            "hashMatches": true
+          },
+          {
+            "path": "release.json",
+            "sha256": "912aa5163fc46ab06aa80387c475ca1abef960c72f27ef0a49f43a3fc4180cb7",
+            "bytes": 112,
+            "hashMatches": true
+          },
+          {
+            "path": "third-party-notices.txt",
+            "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+            "bytes": 1082,
+            "hashMatches": true
+          }
+        ],
+        "currentMainCommitAtObservation": "7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8",
+        "latestMainDiffersFromDeployedSource": true,
+        "replayPaths": [
+          "assets/index-6rKQhKs9.js",
+          "assets/index-jjlx_KNJ.css",
+          "index.html",
+          "release.json"
+        ],
+        "replayObservationFile": "/workspace/game-sources/public-assets/uchiotose/observation.json"
+      },
+      "rightsReview": {
+        "repoWideLicenseFound": false,
+        "thirdPartyNotice": "third-party-notices.txt contains a Three.js MIT notice; this is not treated as a repository-wide license.",
+        "rightsBasis": [
+          {
+            "path": "docs/REQUIREMENTS.md",
+            "url": "https://github.com/chameleonjp-lab/uchiotose/blob/2a7e815c70baf9dc65721fc938909b6ab083f074/docs/REQUIREMENTS.md"
+          },
+          {
+            "path": "docs/IMPLEMENTATION_RELEASE.md",
+            "url": "https://github.com/chameleonjp-lab/uchiotose/blob/2a7e815c70baf9dc65721fc938909b6ab083f074/docs/IMPLEMENTATION_RELEASE.md"
+          }
+        ],
+        "determination": "実際の公開版の製品コードが描画したHome／タイトル画面を撮影。掲載用スクリーンショットの利用はこのタスクでのユーザー明示承認に基づく。各作品の公開ソース資料は素材来歴や第三者素材方針の記録として参照するが、リポジトリ全体のライセンス付与とは扱わない。social-cardや検査用fixtureは使っていない。"
+      },
+      "gameId": "uchiotose",
+      "sourceCommit": "2a7e815c70baf9dc65721fc938909b6ab083f074",
+      "deployedCommit": "2a7e815c70baf9dc65721fc938909b6ab083f074",
+      "capturedAt": "2026-10-09T15:16:22.225Z",
+      "outputs": [
+        {
+          "src": "assets/screenshots/uchiotose-f1e85d80c44b-960.webp",
+          "width": 960,
+          "height": 540,
+          "sha256": "e356e4a0b73b1a9f8c45567b70b390a8a5ed366ef12fe67c336e503e80adc935",
+          "bytes": 13140,
+          "format": "image/webp"
+        },
+        {
+          "src": "assets/screenshots/uchiotose-f1e85d80c44b-640.webp",
+          "width": 640,
+          "height": 360,
+          "sha256": "dad5894b8ed5ad7ab6ae34b4b34fb004df88dd1c1e4abbb8e30b19081f644c4f",
+          "bytes": 7836,
+          "format": "image/webp"
+        }
+      ],
+      "supersededCapture": {
+        "sourceSha256": "1c87c1f8d272e2e12acd4dff9cc6f44c96084424947d182e2499992f5bbf6f75",
+        "outputs": [
+          {
+            "src": "assets/screenshots/uchiotose-1c87c1f8d272-640.webp",
+            "sha256": "64e9aba110078644a0647f7466bd2d724326a9fdb206a32f54d41dc150809a6b"
+          },
+          {
+            "src": "assets/screenshots/uchiotose-1c87c1f8d272-960.webp",
+            "sha256": "1e9ccf8cf1aeb13932e727734e402faf0914525e62ec63472a94451a2bb1cc66"
+          }
+        ],
+        "reason": "Earlier capture followed only a fixed one-second delay and showed Start disabled; replaced after observing the official renderer-ready signal."
+      }
+    }
+  ],
+  "notCaptured": [
+    {
+      "id": "senryou",
+      "reason": "At capture time the publication_catalog review had not yet provided verified public deployment/source evidence; capture was deferred."
+    },
+    {
+      "id": "fantasia",
+      "reason": "At capture time no verified current public play URL or deployed source commit was established; capture was deferred."
+    },
+    {
+      "id": "nusumidase",
+      "reason": "At capture time no verified public implementation/deployment was established; capture was deferred."
+    }
+  ],
+  "existingEvidenceReview": {
+    "portalDesktop": "docs/evidence/portal-desktop.png is a screenshot of the portal UI, not a product screen.",
+    "portalMobile": "docs/evidence/portal-mobile.png is a screenshot of the portal UI, not a product screen.",
+    "productRepoTestCaptures": "Previously available captures were not reused because they did not provide matching deployed-source provenance and safe Home-only capture conditions for this task.",
+    "faitofuraitoSocialCard": "The published social-card.png is a sharing graphic and was excluded as a product screenshot."
+  }
+}

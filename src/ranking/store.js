@@ -17,6 +17,7 @@ export function createRankingStore({ adapter, catalog, read, now = Date.now, set
   const cards = new Map();
   let highWater = -Infinity;
   let destroyed = false;
+  let suspended = false;
 
   for (const gameId of adapter.gameIds) {
     const descriptor = adapter.describe(gameId);
@@ -92,6 +93,7 @@ export function createRankingStore({ adapter, catalog, read, now = Date.now, set
   }
 
   function scheduleCache(key, entry) {
+    if (suspended || destroyed) return;
     const target = entry.age < FRESH_MS ? FRESH_MS : STALE_MS + 1;
     if (entry.timer !== null && entry.target === target) return;
     clearTimer(entry.timer);
@@ -150,7 +152,7 @@ export function createRankingStore({ adapter, catalog, read, now = Date.now, set
       sourceUpdatedAt: entry?.result.sourceUpdatedAt ?? null,
       score: descriptor.score,
       errorCode: unavailable ? null : card.error,
-      retryDisabled: Boolean(unavailable || pending || card.cooldownTimer !== null || destroyed),
+      retryDisabled: Boolean(unavailable || pending || card.cooldownTimer !== null || destroyed || suspended),
     });
   }
 
@@ -165,7 +167,7 @@ export function createRankingStore({ adapter, catalog, read, now = Date.now, set
   }
 
   function refresh() {
-    if (destroyed) return;
+    if (destroyed || suspended) return;
     reconcile();
     for (const card of cards.values()) emit(card);
   }
@@ -185,7 +187,7 @@ export function createRankingStore({ adapter, catalog, read, now = Date.now, set
 
   function start(card, force) {
     reconcile();
-    if (destroyed || availability(card)) {
+    if (destroyed || suspended || availability(card)) {
       emit(card);
       return Promise.resolve(snapshot(card));
     }
@@ -297,6 +299,36 @@ export function createRankingStore({ adapter, catalog, read, now = Date.now, set
     return () => card.listeners.delete(listener);
   }
 
+  // A persisted page must keep its selected modes and valid memory cache.
+  // Cancel traffic while hidden, then resume only interrupted requests.
+  function suspend() {
+    if (destroyed || suspended) return;
+    suspended = true;
+    for (const card of cards.values()) {
+      card.interrupted = card.request !== null;
+      card.generation += 1;
+      detach(card);
+      clearTimer(card.cooldownTimer);
+      card.cooldownTimer = null;
+    }
+    for (const entry of cache.values()) {
+      clearTimer(entry.timer);
+      entry.timer = null;
+      entry.target = null;
+    }
+  }
+
+  function resume() {
+    if (destroyed || !suspended) return;
+    suspended = false;
+    refresh();
+    for (const card of cards.values()) {
+      const interrupted = card.interrupted;
+      card.interrupted = false;
+      if (interrupted) void start(card, false);
+    }
+  }
+
   function destroy() {
     destroyed = true;
     for (const card of cards.values()) {
@@ -310,7 +342,7 @@ export function createRankingStore({ adapter, catalog, read, now = Date.now, set
   }
 
   return {
-    getState, load, select, retry, refresh, subscribe, destroy,
+    getState, load, select, retry, refresh, subscribe, suspend, resume, destroy,
     stop: (gameId, modeId) => setPolicy(gameId, modeId, 'stopped'),
     disconnect: (gameId, modeId) => setPolicy(gameId, modeId, 'not_connected'),
   };

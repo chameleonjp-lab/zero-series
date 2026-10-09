@@ -1,0 +1,52 @@
+{
+  "observedAt": "2026-10-09T14:47:52.420418+00:00",
+  "mainRevision": "ce51a8de9fd1b8c367a60f0978d8bf071b042e5d",
+  "publicUrl": "https://chameleonjp-lab.github.io/zero-series/",
+  "sourceRevision": "ce51a8de9fd1b8c367a60f0978d8bf071b042e5d",
+  "rankingConnected": [],
+  "imageStatus": "placeholder",
+  "assets": {
+    "index.html": {
+      "sha256": "03fa9026954e4234643a1630639c5b6d94c8906d1016299599548012d2e2717f",
+      "bytes": 11169,
+      "matchesManifest": true
+    },
+    "src/catalog.js": {
+      "sha256": "57f909e7dd792c923c18f7289fcbbe3afb25d9874dca15126412e399e19e13e1",
+      "bytes": 26210,
+      "matchesManifest": true
+    },
+    "src/portal.js": {
+      "sha256": "7209a817f267203e89b9d32dd72f94d8dea333619192ea9c2b98925e0f61ac84",
+      "bytes": 1287,
+      "matchesManifest": true
+    },
+    "src/styles.css": {
+      "sha256": "fe419eeb6ee6b800985547e017feae8ca79fbb9f9d13a12a9a2d48b430966095",
+      "bytes": 4580,
+      "matchesManifest": true
+    },
+    "src/ranking/adapter.js": {
+      "sha256": "b6ba82c7e7839c3f48bcc4d660bb428c6c9b0f419817bd77152d79fe72ad5f17",
+      "bytes": 7701,
+      "matchesManifest": true
+    },
+    "src/ranking/requests.js": {
+      "sha256": "9348e5b6decbeaeff7b134aca0c64b8f6935bb6c07244248c44b86f623d68bf9",
+      "bytes": 3960,
+      "matchesManifest": true
+    },
+    "src/ranking/store.js": {
+      "sha256": "1d98fe342f692e9b0ddb236f9d771ec72a9512d637ea2bd581d0666fb4746581",
+      "bytes": 10583,
+      "matchesManifest": true
+    },
+    "src/ranking/view.js": {
+      "sha256": "03c3ba47343ad2b872aee5da0225a672d071658cea781e68653cc6fc12706c44",
+      "bytes": 2170,
+      "matchesManifest": true
+    }
+  },
+  "openPullRequests": [],
+  "applicableAgentFiles": []
+}

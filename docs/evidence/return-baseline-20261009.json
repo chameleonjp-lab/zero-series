@@ -1,0 +1,15 @@
+{
+  "sourceRevision": "ce51a8de9fd1b8c367a60f0978d8bf071b042e5d",
+  "browser": "153.0.8010.12",
+  "observedAt": "2026-10-09T14:51:28.854Z",
+  "method": "Synthetic persisted pagehide/pageshow on the current production module; no game navigation or start. Physical Safari BFCache still untested.",
+  "before": {
+    "mode": "easy",
+    "scrollY": 918
+  },
+  "after": {
+    "mode": "normal",
+    "scrollY": 918
+  },
+  "forcedNavigation": true
+}

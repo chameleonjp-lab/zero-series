@@ -1,0 +1,36 @@
+{
+  "observedAt": "2026-10-09T15:30:46.908708+00:00",
+  "run": {
+    "conclusion": "success",
+    "created_at": "2026-10-06T09:52:19Z",
+    "event": "push",
+    "head_branch": "main",
+    "head_sha": "ce51a8de9fd1b8c367a60f0978d8bf071b042e5d",
+    "html_url": "https://github.com/chameleonjp-lab/zero-series/actions/runs/37445934859",
+    "id": 37445934859,
+    "path": ".github/workflows/pages.yml",
+    "status": "completed",
+    "updated_at": "2026-10-06T09:54:06Z"
+  },
+  "jobs": [
+    {
+      "completed_at": "2026-10-06T09:53:51Z",
+      "conclusion": "success",
+      "html_url": "https://github.com/chameleonjp-lab/zero-series/actions/runs/37445934859/job/112210642214",
+      "id": 112210642214,
+      "name": "verify",
+      "started_at": "2026-10-06T09:52:27Z",
+      "status": "completed"
+    },
+    {
+      "completed_at": "2026-10-06T09:54:05Z",
+      "conclusion": "success",
+      "html_url": "https://github.com/chameleonjp-lab/zero-series/actions/runs/37445934859/job/112211206384",
+      "id": 112211206384,
+      "name": "deploy",
+      "started_at": "2026-10-06T09:53:54Z",
+      "status": "completed"
+    }
+  ],
+  "scope": "Read-only historical published main run; not the new portal candidate"
+}
