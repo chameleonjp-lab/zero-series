@@ -1,0 +1,14 @@
+{
+  "measuredAt": "2026-10-05T03:56:14.243Z",
+  "browser": "153.0.8010.12",
+  "viewport": "390x844 touch emulation",
+  "network": "150ms latency, 1.6Mbps download, 750Kbps upload, cache disabled",
+  "cpu": "4x slowdown",
+  "lcp": 572,
+  "cls": 0,
+  "requests": 8,
+  "transferBytes": 63099,
+  "overflow": false,
+  "gzipBytes": 17001,
+  "physicalDevice": false
+}

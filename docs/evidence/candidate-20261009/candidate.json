@@ -1,0 +1,101 @@
+{
+  "measuredAt": "2026-10-09T15:22:59.730Z",
+  "sourceRevision": "bd2edf6c58f1b7787a07f285df781cf9bfdc3915",
+  "physicalDevice": false,
+  "gzipBytes": 30199,
+  "imageBytes": 142152,
+  "assetCount": 21,
+  "rankingConnected": [],
+  "visuals": [
+    {
+      "filename": "portal-chromium-mobile.png",
+      "browser": "chromium",
+      "version": "153.0.8010.12",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sourceRevision": "bd2edf6c58f1b7787a07f285df781cf9bfdc3915",
+      "imageCount": 5,
+      "blockedRequests": 0,
+      "pageErrors": 0,
+      "sha256": "2a5522ed4dd9686efab43970fbc2260673fe7c2450e9f860f35a1adc98117106"
+    },
+    {
+      "filename": "portal-chromium-desktop.png",
+      "browser": "chromium",
+      "version": "153.0.8010.12",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "sourceRevision": "bd2edf6c58f1b7787a07f285df781cf9bfdc3915",
+      "imageCount": 5,
+      "blockedRequests": 0,
+      "pageErrors": 0,
+      "sha256": "7802dd2ade84a87f63738cd952bc7fe286f0b6fe5facc5fb895f1ece9e96d3ac"
+    },
+    {
+      "filename": "portal-webkit-mobile.png",
+      "browser": "webkit",
+      "version": "26.6",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "sourceRevision": "bd2edf6c58f1b7787a07f285df781cf9bfdc3915",
+      "imageCount": 5,
+      "blockedRequests": 0,
+      "pageErrors": 0,
+      "sha256": "1c86299bc5d75e596461a3594913d29390b93e0579a26d6b8365ff9867d211f1"
+    },
+    {
+      "filename": "portal-webkit-desktop.png",
+      "browser": "webkit",
+      "version": "26.6",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "sourceRevision": "bd2edf6c58f1b7787a07f285df781cf9bfdc3915",
+      "imageCount": 5,
+      "blockedRequests": 0,
+      "pageErrors": 0,
+      "sha256": "7c94c85b728682594a983bdfe22bf220436df7551b150de4da24fe7d9244947d"
+    }
+  ],
+  "performance": {
+    "browser": "153.0.8010.12",
+    "viewport": "390x844 touch emulation",
+    "network": "150ms latency, 1.6Mbps download, 750Kbps upload, cache disabled",
+    "cpu": "4x slowdown",
+    "lcp": 652,
+    "cls": 0,
+    "transferBytes": 161761,
+    "requests": 13,
+    "overflow": false
+  },
+  "budgets": {
+    "gzipBytes": {
+      "limit": 150000,
+      "actual": 30199
+    },
+    "initialBytes": {
+      "limit": 500000,
+      "actual": 161761
+    },
+    "imagesBytes": {
+      "limit": 1000000,
+      "actual": 142152
+    },
+    "lcpMs": {
+      "limit": 2500,
+      "actual": 652
+    },
+    "cls": {
+      "limit": 0.1,
+      "actual": 0
+    }
+  },
+  "budgetPassed": true
+}

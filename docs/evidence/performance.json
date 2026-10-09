@@ -1,14 +1,50 @@
 {
-  "measuredAt": "2026-10-05T03:56:14.243Z",
+  "measuredAt": "2026-10-09T15:22:59.730Z",
+  "sourceRevision": "bd2edf6c58f1b7787a07f285df781cf9bfdc3915",
   "browser": "153.0.8010.12",
   "viewport": "390x844 touch emulation",
   "network": "150ms latency, 1.6Mbps download, 750Kbps upload, cache disabled",
   "cpu": "4x slowdown",
-  "lcp": 572,
+  "lcp": 652,
   "cls": 0,
-  "requests": 8,
-  "transferBytes": 63099,
+  "transferBytes": 161761,
+  "requests": 13,
   "overflow": false,
-  "gzipBytes": 17001,
-  "physicalDevice": false
+  "gzipBytes": 30199,
+  "imageBytes": 142152,
+  "imageGames": 5,
+  "imageVariants": 10,
+  "assetCount": 21,
+  "physicalDevice": false,
+  "rankingConnected": [],
+  "networkEnforcement": "CDP emulation and route.continue to the checked local static server; no route.fetch/fulfill in performance measurement",
+  "budgets": {
+    "gzipBytes": {
+      "limit": 150000,
+      "actual": 30199
+    },
+    "initialBytes": {
+      "limit": 500000,
+      "actual": 161761
+    },
+    "imagesBytes": {
+      "limit": 1000000,
+      "actual": 142152
+    },
+    "lcpMs": {
+      "limit": 2500,
+      "actual": 652
+    },
+    "cls": {
+      "limit": 0.1,
+      "actual": 0
+    }
+  },
+  "budgetPassed": true,
+  "limitations": [
+    "Single cloud simulation, not physical iPhone performance",
+    "No live ranking scope enabled",
+    "Three screenshot placeholders; remeasure when remaining images or live rankings are added"
+  ],
+  "historicalRecord": "performance-20261005.json"
 }
