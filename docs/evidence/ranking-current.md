@@ -1,6 +1,7 @@
 # Ranking connection recheck
 
-Checked: 2026-10-09 14:58 UTC  
+Checked: 2026-10-09 14:58 UTC
+
 Scope: read-only inspection of the current shared repository and Supabase metadata for the eight-game Zero Series portal. No player or score rows were read. No start, finish, submit, retry, or resume RPC was called. No database object or permission was changed.
 
 ## Decision
