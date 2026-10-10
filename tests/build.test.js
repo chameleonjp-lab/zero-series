@@ -13,7 +13,7 @@ const temporary=async t=>{const path=await mkdtemp(join(tmpdir(),'zero-build-'))
 test('every distributed file and screenshot is hashed; source and image cache versions agree', async t=>{
   const outputDir=await temporary(t);
   const result=await buildPortal({revision,outputDir});
-  assert.equal(result.imageCount,5);assert.deepEqual(result.rankingConnected,[]);
+  assert.equal(result.imageCount,2);assert.deepEqual(result.rankingConnected,[]);
   const manifest=JSON.parse(await readFile(join(outputDir,'deployment.json'),'utf8'));
   const files=(await readdir(outputDir,{recursive:true,withFileTypes:true})).filter(entry=>entry.isFile()&&entry.name!=='deployment.json').map(entry=>relative(resolve(outputDir),resolve(entry.parentPath,entry.name))).sort();
   assert.deepEqual(Object.keys(manifest.assetHashes).sort(),files);
@@ -21,11 +21,11 @@ test('every distributed file and screenshot is hashed; source and image cache ve
   for(const file of files) assert.equal(createHash('sha256').update(await readFile(join(outputDir,file))).digest('hex'),manifest.assetHashes[file],file);
   const html=await readFile(join(outputDir,'index.html'),'utf8');
   assert.ok(html.includes(`name="source-revision" content="${revision}"`));
-  assert.equal((html.match(/data-thumbnail /g)||[]).length,5);
+  assert.equal((html.match(/data-thumbnail /g)||[]).length,2);
   assert.equal((html.match(/loading="eager"/g)||[]).length,1);
-  assert.equal((html.match(/loading="lazy"/g)||[]).length,4);
+  assert.equal((html.match(/loading="lazy"/g)||[]).length,1);
   for(const game of catalog.filter(game=>game.thumbnail)) for(const image of game.thumbnail.variants) assert.ok(html.includes(`${image.src}?v=${image.sha256}`));
-  assert.equal(manifest.images.length,5);assert.equal(manifest.imageStatus,'public_title_screenshots');
+  assert.equal(manifest.images.length,2);assert.equal(manifest.imageStatus,'public_title_screenshots');
   const module=await readFile(join(outputDir,'src/portal.js'),'utf8');
   assert.ok(module.includes(`./ranking/reader.js?v=${revision}`));
 });

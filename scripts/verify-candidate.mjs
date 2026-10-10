@@ -75,7 +75,7 @@ try{
           }
           // Full-page captures need the lower, intentionally lazy images too.
           for(const image of await page.locator('[data-thumbnail]').all()){await image.scrollIntoViewIfNeeded();}
-          await page.locator('[data-image-state="ready"]').nth(4).waitFor();
+          await page.locator('[data-image-state="ready"]').nth(manifest.images.length-1).waitFor();
           await page.evaluate(()=>scrollTo(0,0));
           const filename=`portal-${name}-${view}.png`;
           await page.screenshot({path:resolve(out,filename),fullPage:true});

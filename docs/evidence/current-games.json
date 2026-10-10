@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "portalBaseCommit": "ce51a8de9fd1b8c367a60f0978d8bf071b042e5d",
-  "observedAt": "2026-10-09T15:03:20.539879+00:00",
-  "sourceObservedAt": "2026-10-09T14:46:27Z",
-  "observationScope": "Read-only repository metadata, pinned source, official publication assets, and GitHub Actions records. Public games were not started.",
+  "portalBaseCommit": "cb7b983b2c52651c954417f00e20cd9f659bfea3",
+  "observedAt": "2026-10-10T03:33:43.645878+00:00",
+  "sourceObservedAt": "2026-10-10T03:37:05.838473+00:00",
+  "observationScope": "Incremental current-source and publication refresh for five games, backed by TLS asset hashes, exact production builds and successful deploy jobs. Earlier observations for the other games retain their own timestamps. Current title screenshots are displayed only for Kaisen and Faitofuraito; three historical captures are not retagged. No public game was started.",
   "commitFieldSemantics": {
     "sourceCommit": "Latest main source used as the introduction evidence",
     "publicationEvidence.deployedCommit": "Source SHA recorded by the currently served deployment/release manifest",
@@ -589,18 +589,16 @@
       "releaseState": "published",
       "playUrl": "https://chameleonjp-lab.github.io/machimamore/",
       "repositoryUrl": "https://github.com/chameleonjp-lab/machimamore",
-      "sourceCommit": "192c075532a8f0d2810a444ae5ac299cdfec9f1a",
-      "sourceRoot": "https://github.com/chameleonjp-lab/machimamore/tree/192c075532a8f0d2810a444ae5ac299cdfec9f1a",
-      "sourceTree": "544b63027f96f1a4b21ae66602c3e3492696ab47",
+      "sourceCommit": "cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70",
+      "sourceRoot": "https://github.com/chameleonjp-lab/machimamore/tree/cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70",
+      "sourceTree": "d738268cee36630a50256fb0933e8dbc9f97a5e0",
       "readmeBlob": "1d0de59a29c5aba26d04c28da404f8970413ac4c",
-      "sourceObservedAt": "2026-10-09T14:46:27Z",
+      "sourceObservedAt": "2026-10-10T03:17:40.327453+00:00",
       "descriptionSources": [
-        "https://github.com/chameleonjp-lab/machimamore/blob/192c075532a8f0d2810a444ae5ac299cdfec9f1a/README.md",
-        "https://github.com/chameleonjp-lab/machimamore/blob/192c075532a8f0d2810a444ae5ac299cdfec9f1a/src/main.ts",
-        "https://github.com/chameleonjp-lab/machimamore/blob/1d27a697ea62dbfa676e1e78968c164552459ec5/README.md"
+        "https://github.com/chameleonjp-lab/machimamore/blob/cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70/README.md",
+        "https://github.com/chameleonjp-lab/machimamore/blob/cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70/src/main.ts",
+        "https://github.com/chameleonjp-lab/machimamore/blob/cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70/README.md"
       ],
-      "openPullRequests": [],
-      "openPullRequestsObservedAt": "2026-10-09T15:02:28Z",
       "repositoryMetadata": {
         "defaultBranch": "main",
         "hasPages": true,
@@ -609,332 +607,127 @@
       },
       "sourceVerificationRuns": [
         {
-          "runId": 37762051988,
-          "name": "Unit, build and UI checks",
-          "headCommit": "192c075532a8f0d2810a444ae5ac299cdfec9f1a",
+          "runId": 38019861713,
+          "name": "Successful Pages publication",
+          "headCommit": "cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70",
           "conclusion": "success",
           "status": "completed",
-          "url": "https://github.com/chameleonjp-lab/machimamore/actions/runs/37762051988",
-          "updatedAt": "2026-10-08T10:15:03Z"
+          "url": "https://github.com/chameleonjp-lab/machimamore/actions/runs/38019861713",
+          "updatedAt": "2026-10-10T03:16:35Z"
         }
       ],
       "publicationEvidence": {
         "verified": true,
         "officialUrl": "https://chameleonjp-lab.github.io/machimamore/",
         "candidateUrl": null,
-        "deployedCommit": "1d27a697ea62dbfa676e1e78968c164552459ec5",
-        "sourceIsLatestMain": false,
-        "checkedAt": "2026-10-09T14:49:02.751924+00:00",
+        "deployedCommit": "cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70",
+        "sourceIsLatestMain": true,
+        "checkedAt": "2026-10-10T03:17:40.327453+00:00",
         "method": [
-          "TLS-verified HTTPS GET of the official HTML, manifest, and every current product file; SHA-256 comparison",
+          "TLS-verified HTTPS GET of the official HTML, deployment manifest, and every current product file; SHA-256 comparison",
           "Successful corresponding GitHub Pages Actions run and deploy job read independently",
-          "Pinned deployed-source production build compared byte for byte to the current public product assets",
-          "Current deployed bytes were replayed offline in a fresh Chromium context; the actual Home/title pixels were captured and reviewed without any start or input operation"
+          "Pinned current-main production build compared byte for byte to the current public product assets"
         ],
         "sources": [
           "https://chameleonjp-lab.github.io/machimamore/deployment.json",
-          "https://github.com/chameleonjp-lab/machimamore/actions/runs/37394426765",
-          "https://github.com/chameleonjp-lab/machimamore/tree/1d27a697ea62dbfa676e1e78968c164552459ec5",
-          "docs/evidence/images-current.json"
+          "https://github.com/chameleonjp-lab/machimamore/actions/runs/38019861713",
+          "https://github.com/chameleonjp-lab/machimamore/tree/cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70"
         ],
         "unknown": [
           "Game start, live gameplay, score submission, physical iPhone, human controls, GPU performance and audio acceptance were not performed",
-          "This observation does not prove all game features or release acceptance completed",
-          "Latest main includes later source changes; those changes are not claimed to be present in this public deployment",
-          "The Home observation is offline replay of exact deployed bytes; no direct live browser or combat-screen acceptance is claimed"
+          "Current product source and published bytes are verified; full gameplay/release acceptance is not claimed",
+          "No title screenshot is claimed for this new deployed source; historical images are not retagged"
         ],
         "evidenceFile": "docs/evidence/current-games.json",
         "artifactHashes": {
-          "artifact-manifest.json": "57742db53f439b2641c8c4b6f8eab3cf3264d9217cce217002531d58f3111589",
-          "assets/index-BAyulP5k.css": "52bee58f42cf2b7d73afc93ba89df8a27f15cd117f74a857c8d852c602516d65",
-          "assets/index-CX-kywWz.js": "9d04640ab8527e2b90fae88da3a455d7ca1da658eb0b20d21da04e1202dcceb0",
-          "index.html": "dae5e25fd272dcf1115e7af756565e940271db243102c5af9a4f2ab6a0947d79",
+          "artifact-manifest.json": "648231e89c25af736346da4822afbc16ebc7e718c8382c4d3e208bd0396413ee",
+          "assets/index-HVHVUVZ-.css": "9be6cdcdbbbe9a9774071aee82eb7052022eec3af68b6385e949ce77d28ba824",
+          "assets/index-oETSqCgi.js": "071fd026445754c1fee42701dbef2be15d23b4acbe7f05972173bb482aaa0570",
+          "index.html": "b4ca6aa64aed0c1e5edf71f51ecf092cf0403de88852108a9b8cd18f9a94275b",
           "third-party-notices.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
         },
-        "manifestSha256": "ab92295564225afb5fe84a8b4c9596f3537ed3efdf5df43cd309e0d3d8626d8a",
+        "manifestSha256": "dc9853c72a3d76f5eea9c16f4a983b6e9aef0eb093ed0d500e91a21113d6eaf5",
+        "manifestFile": "deployment.json",
         "allProductHashesMatch": true,
         "productFileCount": 5,
         "deployedSourceProductBytesMatch": true,
-        "currentMainProductBytesMatch": null,
+        "currentMainProductBytesMatch": true,
         "deploymentRecord": {
           "kind": "github_actions",
-          "runId": 37394426765,
-          "runUrl": "https://github.com/chameleonjp-lab/machimamore/actions/runs/37394426765",
-          "headCommit": "1d27a697ea62dbfa676e1e78968c164552459ec5",
+          "runId": 38019861713,
+          "runUrl": "https://github.com/chameleonjp-lab/machimamore/actions/runs/38019861713",
+          "headCommit": "cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70",
           "headBranch": "main",
           "status": "completed",
           "conclusion": "success",
-          "createdAt": "2026-10-06T00:31:06Z",
-          "updatedAt": "2026-10-06T00:37:53Z",
-          "deployJobId": 112048717497,
-          "completedRecordAt": "2026-10-06T00:37:52Z",
+          "createdAt": "2026-10-10T03:14:29Z",
+          "updatedAt": "2026-10-10T03:16:35Z",
+          "deployJobId": 114118588781,
+          "completedRecordAt": "2026-10-10T03:16:34Z",
           "deployJobConclusion": "success"
         },
-        "assetObservations": [
-          {
-            "path": "artifact-manifest.json",
-            "url": "https://chameleonjp-lab.github.io/machimamore/artifact-manifest.json",
-            "finalUrl": "https://chameleonjp-lab.github.io/machimamore/artifact-manifest.json",
-            "status": 200,
-            "sha256": "57742db53f439b2641c8c4b6f8eab3cf3264d9217cce217002531d58f3111589",
-            "bytes": 660,
-            "observedAt": "2026-10-09T14:49:01.946515+00:00",
-            "expectedSha256": "57742db53f439b2641c8c4b6f8eab3cf3264d9217cce217002531d58f3111589",
-            "hashMatches": true
-          },
-          {
-            "path": "assets/index-BAyulP5k.css",
-            "url": "https://chameleonjp-lab.github.io/machimamore/assets/index-BAyulP5k.css",
-            "finalUrl": "https://chameleonjp-lab.github.io/machimamore/assets/index-BAyulP5k.css",
-            "status": 200,
-            "sha256": "52bee58f42cf2b7d73afc93ba89df8a27f15cd117f74a857c8d852c602516d65",
-            "bytes": 26978,
-            "observedAt": "2026-10-09T14:49:02.184957+00:00",
-            "expectedSha256": "52bee58f42cf2b7d73afc93ba89df8a27f15cd117f74a857c8d852c602516d65",
-            "hashMatches": true
-          },
-          {
-            "path": "assets/index-CX-kywWz.js",
-            "url": "https://chameleonjp-lab.github.io/machimamore/assets/index-CX-kywWz.js",
-            "finalUrl": "https://chameleonjp-lab.github.io/machimamore/assets/index-CX-kywWz.js",
-            "status": 200,
-            "sha256": "9d04640ab8527e2b90fae88da3a455d7ca1da658eb0b20d21da04e1202dcceb0",
-            "bytes": 710768,
-            "observedAt": "2026-10-09T14:49:02.442737+00:00",
-            "expectedSha256": "9d04640ab8527e2b90fae88da3a455d7ca1da658eb0b20d21da04e1202dcceb0",
-            "hashMatches": true
-          },
-          {
-            "path": "deployment.json",
-            "url": "https://chameleonjp-lab.github.io/machimamore/deployment.json",
-            "finalUrl": "https://chameleonjp-lab.github.io/machimamore/deployment.json",
-            "status": 200,
-            "sha256": "ab92295564225afb5fe84a8b4c9596f3537ed3efdf5df43cd309e0d3d8626d8a",
-            "bytes": 1106,
-            "observedAt": "2026-10-09T14:47:56.778208+00:00"
-          },
-          {
-            "path": "index.html",
-            "url": "https://chameleonjp-lab.github.io/machimamore/index.html",
-            "finalUrl": "https://chameleonjp-lab.github.io/machimamore/index.html",
-            "status": 200,
-            "sha256": "dae5e25fd272dcf1115e7af756565e940271db243102c5af9a4f2ab6a0947d79",
-            "bytes": 8611,
-            "observedAt": "2026-10-09T14:47:56.452174+00:00",
-            "expectedSha256": "dae5e25fd272dcf1115e7af756565e940271db243102c5af9a4f2ab6a0947d79",
-            "hashMatches": true
-          },
-          {
-            "path": "third-party-notices.txt",
-            "url": "https://chameleonjp-lab.github.io/machimamore/third-party-notices.txt",
-            "finalUrl": "https://chameleonjp-lab.github.io/machimamore/third-party-notices.txt",
-            "status": 200,
-            "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
-            "bytes": 1081,
-            "observedAt": "2026-10-09T14:49:02.639204+00:00",
-            "expectedSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
-            "hashMatches": true
-          }
-        ],
-        "independentBuild": {
-          "sourceCommit": "1d27a697ea62dbfa676e1e78968c164552459ec5",
-          "nodeVersion": "v24.19.0",
-          "buildCommand": "npm run build; npm run check:dist",
-          "buildPassed": true,
-          "files": [
-            {
-              "path": "artifact-manifest.json",
-              "buildFilePresent": true,
-              "buildSha256": "57742db53f439b2641c8c4b6f8eab3cf3264d9217cce217002531d58f3111589",
-              "publicSha256": "57742db53f439b2641c8c4b6f8eab3cf3264d9217cce217002531d58f3111589",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "assets/index-BAyulP5k.css",
-              "buildFilePresent": true,
-              "buildSha256": "52bee58f42cf2b7d73afc93ba89df8a27f15cd117f74a857c8d852c602516d65",
-              "publicSha256": "52bee58f42cf2b7d73afc93ba89df8a27f15cd117f74a857c8d852c602516d65",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "assets/index-CX-kywWz.js",
-              "buildFilePresent": true,
-              "buildSha256": "9d04640ab8527e2b90fae88da3a455d7ca1da658eb0b20d21da04e1202dcceb0",
-              "publicSha256": "9d04640ab8527e2b90fae88da3a455d7ca1da658eb0b20d21da04e1202dcceb0",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "deployment.json",
-              "buildFilePresent": false,
-              "buildSha256": null,
-              "publicSha256": "ab92295564225afb5fe84a8b4c9596f3537ed3efdf5df43cd309e0d3d8626d8a",
-              "exactBytesMatch": false
-            },
-            {
-              "path": "index.html",
-              "buildFilePresent": true,
-              "buildSha256": "dae5e25fd272dcf1115e7af756565e940271db243102c5af9a4f2ab6a0947d79",
-              "publicSha256": "dae5e25fd272dcf1115e7af756565e940271db243102c5af9a4f2ab6a0947d79",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "third-party-notices.txt",
-              "buildFilePresent": true,
-              "buildSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
-              "publicSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
-              "exactBytesMatch": true
-            }
-          ],
-          "allProductBytesMatch": true,
-          "currentMainRuntimeSourceChangedPaths": [
-            "index.html",
-            "package.json",
-            "src/common-shell.css",
-            "src/control-obstacles.ts",
-            "src/control-settings.ts",
-            "src/flight-markers.ts",
-            "src/flight-types.ts",
-            "src/flight.ts",
-            "src/input.ts",
-            "src/keyboard-settings.ts",
-            "src/main.ts",
-            "src/rules-guide.ts",
-            "src/scene.ts",
-            "src/settings-storage.ts",
-            "src/style.css",
-            "src/throttle-control.ts",
-            "src/throttle-lever.ts",
-            "src/ui-test-driver.ts"
-          ]
-        },
         "deployedArtifactBytesMatch": null,
-        "ciArtifactContentObservation": {
-          "completed": false,
-          "reason": "GitHub artifact metadata was read, but the tool-returned temporary file-service ZIP download returned HTTP 403 in this cloud environment; no ZIP content parity claim is made",
-          "artifacts": [
-            {
-              "artifactId": 11383121420,
-              "name": "deployment-verification-1d27a697ea62dbfa676e1e78968c164552459ec5",
-              "zipDigest": "sha256:183390e307ac45e3984b8b679c124a01cbc22e18860b99245d3ad72a3f455b61",
-              "expired": false
-            },
-            {
-              "artifactId": 11382891550,
-              "name": "github-pages",
-              "zipDigest": "sha256:8bf3d53370657c14944d5a2f402adbeb2a9c521c21edeab750f66aca29d7a5f3",
-              "expired": false
-            }
-          ]
-        },
-        "sourceContentDigest": "f5cf45e8fc5907fcd8113596c8fb14d6d1e461e34f428547ae5fb9610bd41043",
-        "sourceManifestSha256": "c9ef9cd15a779cf1e0a5715ef39d39e3efdc367d8f12f5d07857ac4d8831725b",
-        "sourceValidation": {
-          "sourceCommit": "1d27a697ea62dbfa676e1e78968c164552459ec5",
-          "sourceInputFileCount": 81,
-          "sourceContentDigest": "f5cf45e8fc5907fcd8113596c8fb14d6d1e461e34f428547ae5fb9610bd41043",
-          "matchesPublicDeploymentDigest": true
-        },
-        "deploymentManifestMatchesIndependentBuild": null,
-        "manifestVariance": "All five product files match the independent deployed-source build. The CI-only source-manifest generation timestamp and deployment.json were not reconstructed or claimed to match a new build.",
         "entryUrlObservation": {
           "url": "https://chameleonjp-lab.github.io/machimamore/",
           "finalUrl": "https://chameleonjp-lab.github.io/machimamore/",
           "status": 200,
-          "sha256": "dae5e25fd272dcf1115e7af756565e940271db243102c5af9a4f2ab6a0947d79",
-          "bytes": 8611,
-          "observedAt": "2026-10-09T15:02:33.300445+00:00",
+          "sha256": "b4ca6aa64aed0c1e5edf71f51ecf092cf0403de88852108a9b8cd18f9a94275b",
+          "bytes": 9302,
+          "observedAt": "2026-10-10T03:17:40.327453+00:00",
           "matchesObservedIndexHtml": true,
           "tlsVerificationEnabled": true
         },
-        "homeCheck": {
-          "sourceCommit": "1d27a697ea62dbfa676e1e78968c164552459ec5",
-          "deployedCommit": "1d27a697ea62dbfa676e1e78968c164552459ec5",
-          "checkedAt": "2026-10-09T15:15:53.817Z",
-          "appliesToCurrentDeployedSource": true,
-          "appliesToLatestMain": false,
-          "method": "deployed_byte_replay",
-          "evidenceFile": "docs/evidence/images-current.json",
-          "browser": "Chromium 153.0.8010.12",
-          "playwright": "1.63.0",
-          "viewport": {
-            "width": 1280,
-            "height": 720
-          },
-          "deviceScaleFactor": 1,
-          "homeVisible": true,
-          "playingVisible": false,
-          "homeRendererVisible": true,
-          "gameStarted": false,
-          "inputPerformed": false,
-          "pageErrorCount": 0,
-          "consoleErrorCount": 0,
-          "network": {
-            "browserOffline": true,
-            "replayedOnlyTlsVerifiedHashMatchedProductFiles": true,
-            "nonGetRequestsAttempted": 0,
-            "externalRequestsFulfilled": 0,
-            "blockedRequests": 0,
-            "staticRequestsServed": 3,
-            "note": "Fresh browser context. Requests were fulfilled only from exact URL/path entries whose bytes matched the TLS-verified observation hashes; all unknown URLs and methods other than GET/HEAD were set to abort. No external request was fulfilled or blocked because none was attempted.",
-            "servedProductRequests": [
-              {
-                "path": "index.html",
-                "sha256": "dae5e25fd272dcf1115e7af756565e940271db243102c5af9a4f2ab6a0947d79",
-                "method": "GET"
-              },
-              {
-                "path": "assets/index-CX-kywWz.js",
-                "sha256": "9d04640ab8527e2b90fae88da3a455d7ca1da658eb0b20d21da04e1202dcceb0",
-                "method": "GET"
-              },
-              {
-                "path": "assets/index-BAyulP5k.css",
-                "sha256": "52bee58f42cf2b7d73afc93ba89df8a27f15cd117f74a857c8d852c602516d65",
-                "method": "GET"
-              }
-            ]
-          },
-          "gameplayScreenshotAccepted": false,
-          "originalScreenshotSha256": "883dc35fd2d1609c7f7df695e2f46acc9e56791942e14e4d3956535c042b552c",
-          "capturedAt": "2026-10-09T15:15:53.817Z",
-          "screenshotOutputs": [
+        "deploymentManifest": {
+          "schema": 1,
+          "repository": "chameleonjp-lab/machimamore",
+          "commit": "cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70",
+          "sourceContentDigest": "37ef1ac1631b2fd306896fb81bd5cd6b4387b752927a646569996e71b8e78fe5",
+          "sourceManifestSha256": "671aa8565a0dc5f473b2c28e8a9f3d09164b4e60e9269218736f815160606d24",
+          "files": [
             {
-              "src": "assets/screenshots/machimamore-883dc35fd2d1-960.webp",
-              "width": 960,
-              "height": 540,
-              "sha256": "2456ee11143dfc04f29fde56cfe4bb842d3f59669d0d5535866d3c3433f14cb4",
-              "bytes": 29876,
-              "format": "image/webp"
+              "path": "artifact-manifest.json",
+              "bytes": 660,
+              "sha256": "648231e89c25af736346da4822afbc16ebc7e718c8382c4d3e208bd0396413ee"
             },
             {
-              "src": "assets/screenshots/machimamore-883dc35fd2d1-640.webp",
-              "width": 640,
-              "height": 360,
-              "sha256": "3ea926bc89999c89ab8ae86b1240d8c0f2f5fbe9b747665d3cb6888485a295e8",
-              "bytes": 16392,
-              "format": "image/webp"
+              "path": "assets/index-HVHVUVZ-.css",
+              "bytes": 34702,
+              "sha256": "9be6cdcdbbbe9a9774071aee82eb7052022eec3af68b6385e949ce77d28ba824"
+            },
+            {
+              "path": "assets/index-oETSqCgi.js",
+              "bytes": 729658,
+              "sha256": "071fd026445754c1fee42701dbef2be15d23b4acbe7f05972173bb482aaa0570"
+            },
+            {
+              "path": "index.html",
+              "bytes": 9302,
+              "sha256": "b4ca6aa64aed0c1e5edf71f51ecf092cf0403de88852108a9b8cd18f9a94275b"
+            },
+            {
+              "path": "third-party-notices.txt",
+              "bytes": 1081,
+              "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
             }
           ],
-          "startEnabled": true,
-          "startLabel": "街を守りに出撃",
-          "startPressed": false,
-          "homeReadiness": {
-            "ready": true,
-            "signal": "Start enabled with the published ready label after prepareGraphics; startup-error hidden",
-            "startEnabled": true,
-            "startLabel": "街を守りに出撃",
-            "statusVisible": false,
-            "statusText": null,
-            "graphicsError": null,
-            "timedOut": false,
-            "timeoutMs": 20000,
-            "waitedMs": 2497
-          }
+          "sourceTree": "d738268cee36630a50256fb0933e8dbc9f97a5e0",
+          "workflowCommit": "cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70",
+          "publicationAuthorizationDate": "2026-10-10",
+          "publicationScope": "User-requested verification build; final physical-phone and gameplay acceptance are not claimed"
+        },
+        "sourceContentDigest": "37ef1ac1631b2fd306896fb81bd5cd6b4387b752927a646569996e71b8e78fe5",
+        "sourceManifestSha256": "671aa8565a0dc5f473b2c28e8a9f3d09164b4e60e9269218736f815160606d24",
+        "deploymentManifestMatchesIndependentBuild": null,
+        "manifestVariance": "The source-manifest generation timestamp was not reconstructed; public product files and the source content digest match independently",
+        "sourceValidation": {
+          "sourceInputFileCount": 95,
+          "matchesPublicDeploymentDigest": true
         }
       },
       "rankingReadPerformed": false,
       "gameStarted": false,
-      "sourceRecheckedAt": "2026-10-09T15:02:28Z"
+      "sourceRecheckedAt": "2026-10-10T03:17:40.327453+00:00",
+      "contentUpdatedAt": "2026-10-10T03:33:43.645878+00:00"
     },
     {
       "id": "gekichin",
@@ -944,18 +737,16 @@
       "releaseState": "published",
       "playUrl": "https://chameleonjp-lab.github.io/gekichin/",
       "repositoryUrl": "https://github.com/chameleonjp-lab/gekichin",
-      "sourceCommit": "01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3",
-      "sourceRoot": "https://github.com/chameleonjp-lab/gekichin/tree/01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3",
-      "sourceTree": "8218dc2e7b9fee02ca2b6b5e84b86a023a837396",
+      "sourceCommit": "cd9431c53d64543c0d49e562dea9ea03d22a609c",
+      "sourceRoot": "https://github.com/chameleonjp-lab/gekichin/tree/cd9431c53d64543c0d49e562dea9ea03d22a609c",
+      "sourceTree": "cd20996628a72ed4128ce8de4135bf1dcdc6392f",
       "readmeBlob": "9d0cfacf52833d90d39f02a9ab1c1c57dee30aa0",
-      "sourceObservedAt": "2026-10-09T14:46:27Z",
+      "sourceObservedAt": "2026-10-10T03:19:35.105627+00:00",
       "descriptionSources": [
-        "https://github.com/chameleonjp-lab/gekichin/blob/01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3/src/main.ts",
-        "https://github.com/chameleonjp-lab/gekichin/blob/01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3/docs/IMPLEMENTATION_STATUS.md",
-        "https://github.com/chameleonjp-lab/gekichin/blob/de500c3e0e077fe2bab636dc2a382a8796ea8b9e/src/main.ts"
+        "https://github.com/chameleonjp-lab/gekichin/blob/cd9431c53d64543c0d49e562dea9ea03d22a609c/src/main.ts",
+        "https://github.com/chameleonjp-lab/gekichin/blob/cd9431c53d64543c0d49e562dea9ea03d22a609c/docs/IMPLEMENTATION_STATUS.md",
+        "https://github.com/chameleonjp-lab/gekichin/blob/cd9431c53d64543c0d49e562dea9ea03d22a609c/src/main.ts"
       ],
-      "openPullRequests": [],
-      "openPullRequestsObservedAt": "2026-10-09T15:02:28Z",
       "repositoryMetadata": {
         "defaultBranch": "main",
         "hasPages": true,
@@ -964,237 +755,111 @@
       },
       "sourceVerificationRuns": [
         {
-          "runId": 37762087980,
-          "name": "Implementation checks",
-          "headCommit": "01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3",
+          "runId": 38019866234,
+          "name": "Successful Pages publication",
+          "headCommit": "cd9431c53d64543c0d49e562dea9ea03d22a609c",
           "conclusion": "success",
           "status": "completed",
-          "url": "https://github.com/chameleonjp-lab/gekichin/actions/runs/37762087980",
-          "updatedAt": "2026-10-08T10:15:10Z"
+          "url": "https://github.com/chameleonjp-lab/gekichin/actions/runs/38019866234",
+          "updatedAt": "2026-10-10T03:16:43Z"
         }
       ],
       "publicationEvidence": {
         "verified": true,
         "officialUrl": "https://chameleonjp-lab.github.io/gekichin/",
         "candidateUrl": null,
-        "deployedCommit": "de500c3e0e077fe2bab636dc2a382a8796ea8b9e",
-        "sourceIsLatestMain": false,
-        "checkedAt": "2026-10-09T14:49:02.674629+00:00",
+        "deployedCommit": "cd9431c53d64543c0d49e562dea9ea03d22a609c",
+        "sourceIsLatestMain": true,
+        "checkedAt": "2026-10-10T03:19:35.105627+00:00",
         "method": [
-          "TLS-verified HTTPS GET of the official HTML, manifest, and every current product file; SHA-256 comparison",
+          "TLS-verified HTTPS GET of the official HTML, deployment manifest, and every current product file; SHA-256 comparison",
           "Successful corresponding GitHub Pages Actions run and deploy job read independently",
-          "Pinned deployed-source production build compared byte for byte to the current public product assets",
-          "Current deployed bytes were replayed offline in a fresh Chromium context; the actual Home/title pixels were captured and reviewed without any start or input operation"
+          "Pinned current-main production build compared byte for byte to the current public product assets"
         ],
         "sources": [
           "https://chameleonjp-lab.github.io/gekichin/deployment.json",
-          "https://github.com/chameleonjp-lab/gekichin/actions/runs/37476863919",
-          "https://github.com/chameleonjp-lab/gekichin/tree/de500c3e0e077fe2bab636dc2a382a8796ea8b9e",
-          "docs/evidence/images-current.json"
+          "https://github.com/chameleonjp-lab/gekichin/actions/runs/38019866234",
+          "https://github.com/chameleonjp-lab/gekichin/tree/cd9431c53d64543c0d49e562dea9ea03d22a609c"
         ],
         "unknown": [
           "Game start, live gameplay, score submission, physical iPhone, human controls, GPU performance and audio acceptance were not performed",
-          "This observation does not prove all game features or release acceptance completed",
-          "Latest main includes later source changes; those changes are not claimed to be present in this public deployment",
-          "The Home observation is offline replay of exact deployed bytes; no direct live browser or combat-screen acceptance is claimed"
+          "Current product source and published bytes are verified; full gameplay/release acceptance is not claimed",
+          "No title screenshot is claimed for this new deployed source; historical images are not retagged"
         ],
         "evidenceFile": "docs/evidence/current-games.json",
         "artifactHashes": {
-          "assets/index-BufJBCcE.css": "d89927dcc6ca023fc4eb27a7d824215101184aeac9f2505e117eb80b76bb89bf",
-          "assets/index-Ca9XU86d.js": "75a38d906ca0775e2a1b7322366f3dfeb97a00edfd817ca00efc6f356f34cb9c",
-          "index.html": "1856e5b784410ffd8af94e7c8610f9def8ed0bc3f157062c28a7dd80c9b09b6a",
+          "assets/index-BKPe2TDn.css": "29b85fd6c6e25fedbc8591d2d6863d176d820425956827dd761d63ba2aaa408c",
+          "assets/index-BcgCHwIl.js": "e8a421537de54698483df7f19ef15ab9845a844e0f2adebb4352b1b0a3da144c",
+          "index.html": "f974e38224508984d9886da0f1b0ac2584c8996ab2baeb7f4a82156c67e72735",
           "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
         },
-        "manifestSha256": "7fd7fedf350fa67948a113ef9aebfe90049a876354354675a5debbe88e820964",
+        "manifestSha256": "06c9fdcd566e6a620ca9d6847712b0d3a91ae99550cb3b91a740c55caa683dc4",
+        "manifestFile": "deployment.json",
         "allProductHashesMatch": true,
         "productFileCount": 4,
         "deployedSourceProductBytesMatch": true,
-        "currentMainProductBytesMatch": null,
+        "currentMainProductBytesMatch": true,
         "deploymentRecord": {
           "kind": "github_actions",
-          "runId": 37476863919,
-          "runUrl": "https://github.com/chameleonjp-lab/gekichin/actions/runs/37476863919",
-          "headCommit": "de500c3e0e077fe2bab636dc2a382a8796ea8b9e",
+          "runId": 38019866234,
+          "runUrl": "https://github.com/chameleonjp-lab/gekichin/actions/runs/38019866234",
+          "headCommit": "cd9431c53d64543c0d49e562dea9ea03d22a609c",
           "headBranch": "main",
           "status": "completed",
           "conclusion": "success",
-          "createdAt": "2026-10-06T14:11:20Z",
-          "updatedAt": "2026-10-06T14:21:21Z",
-          "deployJobId": 112319141560,
-          "completedRecordAt": "2026-10-06T14:21:20Z",
+          "createdAt": "2026-10-10T03:14:34Z",
+          "updatedAt": "2026-10-10T03:16:43Z",
+          "deployJobId": 114118614825,
+          "completedRecordAt": "2026-10-10T03:16:42Z",
           "deployJobConclusion": "success"
         },
-        "assetObservations": [
-          {
-            "path": "assets/index-BufJBCcE.css",
-            "url": "https://chameleonjp-lab.github.io/gekichin/assets/index-BufJBCcE.css",
-            "finalUrl": "https://chameleonjp-lab.github.io/gekichin/assets/index-BufJBCcE.css",
-            "status": 200,
-            "sha256": "d89927dcc6ca023fc4eb27a7d824215101184aeac9f2505e117eb80b76bb89bf",
-            "bytes": 23657,
-            "observedAt": "2026-10-09T14:49:01.946853+00:00",
-            "expectedSha256": "d89927dcc6ca023fc4eb27a7d824215101184aeac9f2505e117eb80b76bb89bf",
-            "hashMatches": true
-          },
-          {
-            "path": "assets/index-Ca9XU86d.js",
-            "url": "https://chameleonjp-lab.github.io/gekichin/assets/index-Ca9XU86d.js",
-            "finalUrl": "https://chameleonjp-lab.github.io/gekichin/assets/index-Ca9XU86d.js",
-            "status": 200,
-            "sha256": "75a38d906ca0775e2a1b7322366f3dfeb97a00edfd817ca00efc6f356f34cb9c",
-            "bytes": 751190,
-            "observedAt": "2026-10-09T14:49:02.228369+00:00",
-            "expectedSha256": "75a38d906ca0775e2a1b7322366f3dfeb97a00edfd817ca00efc6f356f34cb9c",
-            "hashMatches": true
-          },
-          {
-            "path": "deployment.json",
-            "url": "https://chameleonjp-lab.github.io/gekichin/deployment.json",
-            "finalUrl": "https://chameleonjp-lab.github.io/gekichin/deployment.json",
-            "status": 200,
-            "sha256": "7fd7fedf350fa67948a113ef9aebfe90049a876354354675a5debbe88e820964",
-            "bytes": 759,
-            "observedAt": "2026-10-09T14:47:56.754980+00:00"
-          },
-          {
-            "path": "index.html",
-            "url": "https://chameleonjp-lab.github.io/gekichin/index.html",
-            "finalUrl": "https://chameleonjp-lab.github.io/gekichin/index.html",
-            "status": 200,
-            "sha256": "1856e5b784410ffd8af94e7c8610f9def8ed0bc3f157062c28a7dd80c9b09b6a",
-            "bytes": 610,
-            "observedAt": "2026-10-09T14:47:56.452935+00:00",
-            "expectedSha256": "1856e5b784410ffd8af94e7c8610f9def8ed0bc3f157062c28a7dd80c9b09b6a",
-            "hashMatches": true
-          },
-          {
-            "path": "third-party-notices.txt",
-            "url": "https://chameleonjp-lab.github.io/gekichin/third-party-notices.txt",
-            "finalUrl": "https://chameleonjp-lab.github.io/gekichin/third-party-notices.txt",
-            "status": 200,
-            "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
-            "bytes": 1082,
-            "observedAt": "2026-10-09T14:49:02.571239+00:00",
-            "expectedSha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
-            "hashMatches": true
-          }
-        ],
-        "independentBuild": {
-          "sourceCommit": "de500c3e0e077fe2bab636dc2a382a8796ea8b9e",
-          "nodeVersion": "v24.19.0",
-          "buildCommand": "npm run build",
-          "buildPassed": true,
-          "files": [
-            {
-              "path": "assets/index-BufJBCcE.css",
-              "buildFilePresent": true,
-              "buildSha256": "d89927dcc6ca023fc4eb27a7d824215101184aeac9f2505e117eb80b76bb89bf",
-              "publicSha256": "d89927dcc6ca023fc4eb27a7d824215101184aeac9f2505e117eb80b76bb89bf",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "assets/index-Ca9XU86d.js",
-              "buildFilePresent": true,
-              "buildSha256": "75a38d906ca0775e2a1b7322366f3dfeb97a00edfd817ca00efc6f356f34cb9c",
-              "publicSha256": "75a38d906ca0775e2a1b7322366f3dfeb97a00edfd817ca00efc6f356f34cb9c",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "deployment.json",
-              "buildFilePresent": true,
-              "buildSha256": "7fd7fedf350fa67948a113ef9aebfe90049a876354354675a5debbe88e820964",
-              "publicSha256": "7fd7fedf350fa67948a113ef9aebfe90049a876354354675a5debbe88e820964",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "index.html",
-              "buildFilePresent": true,
-              "buildSha256": "1856e5b784410ffd8af94e7c8610f9def8ed0bc3f157062c28a7dd80c9b09b6a",
-              "publicSha256": "1856e5b784410ffd8af94e7c8610f9def8ed0bc3f157062c28a7dd80c9b09b6a",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "third-party-notices.txt",
-              "buildFilePresent": true,
-              "buildSha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
-              "publicSha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
-              "exactBytesMatch": true
-            }
-          ],
-          "allProductBytesMatch": true,
-          "currentMainRuntimeSourceChangedPaths": [
-            "package.json",
-            "src/common-shell.css",
-            "src/main.ts"
-          ]
-        },
         "deployedArtifactBytesMatch": null,
-        "ciArtifactContentObservation": {
-          "completed": false,
-          "reason": "GitHub artifact metadata was read, but the tool-returned temporary file-service ZIP download returned HTTP 403 in this cloud environment; no ZIP content parity claim is made",
-          "artifacts": [
-            {
-              "artifactId": 11419627517,
-              "name": "github-pages",
-              "zipDigest": "sha256:ea92ec32d3ed53bf6f88a98d55b4ecbd94b3067f96f32559565e95ccecf37ed5",
-              "expired": false
-            },
-            {
-              "artifactId": 11419228923,
-              "name": "deployment-verification-de500c3e0e077fe2bab636dc2a382a8796ea8b9e",
-              "zipDigest": "sha256:f81cf13df9ee044103d0b08cf125114f1d0ea08fa5a09e8c8f7c34e3929a87c9",
-              "expired": false
-            }
-          ]
-        },
         "entryUrlObservation": {
           "url": "https://chameleonjp-lab.github.io/gekichin/",
           "finalUrl": "https://chameleonjp-lab.github.io/gekichin/",
           "status": 200,
-          "sha256": "1856e5b784410ffd8af94e7c8610f9def8ed0bc3f157062c28a7dd80c9b09b6a",
+          "sha256": "f974e38224508984d9886da0f1b0ac2584c8996ab2baeb7f4a82156c67e72735",
           "bytes": 610,
-          "observedAt": "2026-10-09T15:02:33.299530+00:00",
+          "observedAt": "2026-10-10T03:19:35.105627+00:00",
           "matchesObservedIndexHtml": true,
           "tlsVerificationEnabled": true
         },
-        "homeCheck": {
-          "sourceCommit": "de500c3e0e077fe2bab636dc2a382a8796ea8b9e",
-          "deployedCommit": "de500c3e0e077fe2bab636dc2a382a8796ea8b9e",
-          "checkedAt": "2026-10-09T14:54:53.424Z",
-          "appliesToCurrentDeployedSource": true,
-          "appliesToLatestMain": false,
-          "method": "deployed_byte_replay",
-          "evidenceFile": "docs/evidence/images-current.json",
-          "browser": "Chromium 153.0.8010.12",
-          "playwright": "1.63.0",
-          "viewport": {
-            "width": 1280,
-            "height": 720
-          },
-          "deviceScaleFactor": 1,
-          "homeVisible": true,
-          "playingVisible": false,
-          "homeRendererVisible": false,
-          "gameStarted": false,
-          "inputPerformed": false,
-          "pageErrorCount": 0,
-          "consoleErrorCount": 0,
-          "network": {
-            "browserOffline": true,
-            "replayedOnlyTlsVerifiedHashMatchedProductFiles": true,
-            "nonGetRequestsAttempted": 0,
-            "externalRequestsFulfilled": 0,
-            "blockedRequests": 0,
-            "staticRequestsServed": 3,
-            "note": "Fresh browser context. Requests were fulfilled only from exact URL/path entries whose bytes matched the TLS-verified observation hashes; all unknown URLs and methods other than GET/HEAD were set to abort. No external request was fulfilled or blocked because none was attempted."
-          },
-          "gameplayScreenshotAccepted": false,
-          "originalScreenshotSha256": "214e1a7181abb4b8c7da3a51b9cd0a3f74eb1cbfac55210d81662638049a329d"
+        "deploymentManifest": {
+          "schema": 1,
+          "repository": "chameleonjp-lab/gekichin",
+          "commit": "cd9431c53d64543c0d49e562dea9ea03d22a609c",
+          "files": [
+            {
+              "path": "assets/index-BKPe2TDn.css",
+              "bytes": 31645,
+              "sha256": "29b85fd6c6e25fedbc8591d2d6863d176d820425956827dd761d63ba2aaa408c"
+            },
+            {
+              "path": "assets/index-BcgCHwIl.js",
+              "bytes": 752564,
+              "sha256": "e8a421537de54698483df7f19ef15ab9845a844e0f2adebb4352b1b0a3da144c"
+            },
+            {
+              "path": "index.html",
+              "bytes": 610,
+              "sha256": "f974e38224508984d9886da0f1b0ac2584c8996ab2baeb7f4a82156c67e72735"
+            },
+            {
+              "path": "third-party-notices.txt",
+              "bytes": 1082,
+              "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+            }
+          ],
+          "sourceTree": "cd20996628a72ed4128ce8de4135bf1dcdc6392f",
+          "workflowCommit": "cd9431c53d64543c0d49e562dea9ea03d22a609c",
+          "publicationAuthorizationDate": "2026-10-10",
+          "publicationScope": "User-requested verification build; final physical-phone and gameplay acceptance are not claimed"
         }
       },
       "rankingReadPerformed": false,
       "gameStarted": false,
-      "sourceRecheckedAt": "2026-10-09T15:02:28Z"
+      "sourceRecheckedAt": "2026-10-10T03:19:35.105627+00:00",
+      "contentUpdatedAt": "2026-10-10T03:33:43.645878+00:00"
     },
     {
       "id": "uchiotose",
@@ -1204,18 +869,16 @@
       "releaseState": "published",
       "playUrl": "https://chameleonjp-lab.github.io/uchiotose/",
       "repositoryUrl": "https://github.com/chameleonjp-lab/uchiotose",
-      "sourceCommit": "7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8",
-      "sourceRoot": "https://github.com/chameleonjp-lab/uchiotose/tree/7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8",
-      "sourceTree": "45274c0d3f5682fd6bac757cd8fc7ce90616cc86",
+      "sourceCommit": "0d00ef31a44786e23a0e93aae2bda6d78c15ccdf",
+      "sourceRoot": "https://github.com/chameleonjp-lab/uchiotose/tree/0d00ef31a44786e23a0e93aae2bda6d78c15ccdf",
+      "sourceTree": "47945ee0f0bfc36d930dd78392ce9d89d53fd322",
       "readmeBlob": "508468d43f8d46de413991d6873ec2b1ef46c8b6",
-      "sourceObservedAt": "2026-10-09T14:46:27Z",
+      "sourceObservedAt": "2026-10-10T03:21:38.077195+00:00",
       "descriptionSources": [
-        "https://github.com/chameleonjp-lab/uchiotose/blob/7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8/README.md",
-        "https://github.com/chameleonjp-lab/uchiotose/blob/7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8/src/main.ts",
-        "https://github.com/chameleonjp-lab/uchiotose/blob/2a7e815c70baf9dc65721fc938909b6ab083f074/README.md"
+        "https://github.com/chameleonjp-lab/uchiotose/blob/0d00ef31a44786e23a0e93aae2bda6d78c15ccdf/README.md",
+        "https://github.com/chameleonjp-lab/uchiotose/blob/0d00ef31a44786e23a0e93aae2bda6d78c15ccdf/src/main.ts",
+        "https://github.com/chameleonjp-lab/uchiotose/blob/0d00ef31a44786e23a0e93aae2bda6d78c15ccdf/README.md"
       ],
-      "openPullRequests": [],
-      "openPullRequestsObservedAt": "2026-10-09T15:02:28Z",
       "repositoryMetadata": {
         "defaultBranch": "main",
         "hasPages": true,
@@ -1224,464 +887,327 @@
       },
       "sourceVerificationRuns": [
         {
-          "runId": 37880918795,
-          "name": "Browser acceptance",
-          "headCommit": "7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8",
+          "runId": 38018823568,
+          "name": "Successful Pages publication",
+          "headCommit": "df1827e37d962d14cb75ca8038d0c6bf36c9435b",
           "conclusion": "success",
           "status": "completed",
-          "url": "https://github.com/chameleonjp-lab/uchiotose/actions/runs/37880918795",
-          "updatedAt": "2026-10-09T03:49:46Z"
+          "url": "https://github.com/chameleonjp-lab/uchiotose/actions/runs/38018823568",
+          "updatedAt": "2026-10-10T02:57:28Z"
         }
       ],
       "publicationEvidence": {
         "verified": true,
         "officialUrl": "https://chameleonjp-lab.github.io/uchiotose/",
         "candidateUrl": null,
-        "deployedCommit": "2a7e815c70baf9dc65721fc938909b6ab083f074",
-        "sourceIsLatestMain": false,
-        "checkedAt": "2026-10-09T14:49:03.013507+00:00",
+        "deployedCommit": "0d00ef31a44786e23a0e93aae2bda6d78c15ccdf",
+        "sourceIsLatestMain": true,
+        "checkedAt": "2026-10-10T03:21:38.077195+00:00",
         "method": [
-          "TLS-verified HTTPS GET of the official HTML, manifest, and every current product file; SHA-256 comparison",
+          "TLS-verified HTTPS GET of the official HTML, deployment manifest, and every current product file; SHA-256 comparison",
           "Successful corresponding GitHub Pages Actions run and deploy job read independently",
-          "Pinned deployed-source production build compared byte for byte to the current public product assets",
-          "All observed public files, including the manifest, match the exact gh-pages branch tree",
-          "Current deployed bytes were replayed offline in a fresh Chromium context; the actual Home/title pixels were captured and reviewed without any start or input operation"
+          "Pinned current-main production build compared byte for byte to the current public product assets"
         ],
         "sources": [
-          "https://chameleonjp-lab.github.io/uchiotose/release.json",
-          "https://github.com/chameleonjp-lab/uchiotose/actions/runs/37439104263",
-          "https://github.com/chameleonjp-lab/uchiotose/tree/2a7e815c70baf9dc65721fc938909b6ab083f074",
-          "docs/evidence/images-current.json"
+          "https://chameleonjp-lab.github.io/uchiotose/deployment.json",
+          "https://github.com/chameleonjp-lab/uchiotose/actions/runs/38018823568",
+          "https://github.com/chameleonjp-lab/uchiotose/tree/0d00ef31a44786e23a0e93aae2bda6d78c15ccdf"
         ],
         "unknown": [
           "Game start, live gameplay, score submission, physical iPhone, human controls, GPU performance and audio acceptance were not performed",
-          "This observation does not prove all game features or release acceptance completed",
-          "Latest main includes later source changes; those changes are not claimed to be present in this public deployment",
-          "The Home observation is offline replay of exact deployed bytes; no direct live browser or combat-screen acceptance is claimed"
+          "Current product source and published bytes are verified; full gameplay/release acceptance is not claimed",
+          "No title screenshot is claimed for this new deployed source; historical images are not retagged"
         ],
         "evidenceFile": "docs/evidence/current-games.json",
         "artifactHashes": {
-          ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-          "assets/index-6rKQhKs9.js": "43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639",
-          "assets/index-jjlx_KNJ.css": "2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382",
-          "index.html": "57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e",
-          "release.json": "912aa5163fc46ab06aa80387c475ca1abef960c72f27ef0a49f43a3fc4180cb7",
+          "assets/index-BF7Y2cGw.js": "3338ca7bc302878339bf5471aca43eecc24d2c204d6604cea7949d23bf3261c7",
+          "assets/index-CM_NdGef.css": "da43ec868b2376e44fca82231ce10e744bf4435d158bdfc3698576a6aca177b7",
+          "index.html": "41d29d4e9dfb63b2a218c965334b014581a3f746f68d3404f9663cb29a16acd4",
           "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
         },
-        "manifestSha256": "912aa5163fc46ab06aa80387c475ca1abef960c72f27ef0a49f43a3fc4180cb7",
+        "manifestSha256": "6850bb50df1efdb3e95c4806b654cdd92c24606ead961ce4346b86b9b6ae2d5f",
+        "manifestFile": "deployment.json",
         "allProductHashesMatch": true,
-        "productFileCount": 6,
+        "productFileCount": 4,
         "deployedSourceProductBytesMatch": true,
-        "currentMainProductBytesMatch": null,
+        "currentMainProductBytesMatch": true,
         "deploymentRecord": {
           "kind": "github_pages_branch",
-          "runId": 37439104263,
-          "runUrl": "https://github.com/chameleonjp-lab/uchiotose/actions/runs/37439104263",
-          "headCommit": "1307117008dc72f9031a8c345b6ac077fc8ff30b",
+          "runId": 38018823568,
+          "runUrl": "https://github.com/chameleonjp-lab/uchiotose/actions/runs/38018823568",
+          "headCommit": "df1827e37d962d14cb75ca8038d0c6bf36c9435b",
           "headBranch": "gh-pages",
           "status": "completed",
           "conclusion": "success",
-          "createdAt": "2026-10-06T08:52:59Z",
-          "updatedAt": "2026-10-06T08:53:22Z",
-          "deployJobId": 112188202107,
-          "completedRecordAt": "2026-10-06T08:53:21Z",
+          "createdAt": "2026-10-10T02:57:06Z",
+          "updatedAt": "2026-10-10T02:57:28Z",
+          "deployJobId": 114115088259,
+          "completedRecordAt": "2026-10-10T02:57:27Z",
           "deployJobConclusion": "success"
         },
-        "assetObservations": [
-          {
-            "path": ".nojekyll",
-            "url": "https://chameleonjp-lab.github.io/uchiotose/.nojekyll",
-            "finalUrl": "https://chameleonjp-lab.github.io/uchiotose/.nojekyll",
-            "status": 200,
-            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-            "bytes": 0,
-            "observedAt": "2026-10-09T14:49:01.968423+00:00",
-            "expectedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-            "hashMatches": true
-          },
-          {
-            "path": "assets/index-6rKQhKs9.js",
-            "url": "https://chameleonjp-lab.github.io/uchiotose/assets/index-6rKQhKs9.js",
-            "finalUrl": "https://chameleonjp-lab.github.io/uchiotose/assets/index-6rKQhKs9.js",
-            "status": 200,
-            "sha256": "43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639",
-            "bytes": 784778,
-            "observedAt": "2026-10-09T14:49:02.215774+00:00",
-            "expectedSha256": "43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639",
-            "hashMatches": true
-          },
-          {
-            "path": "assets/index-jjlx_KNJ.css",
-            "url": "https://chameleonjp-lab.github.io/uchiotose/assets/index-jjlx_KNJ.css",
-            "finalUrl": "https://chameleonjp-lab.github.io/uchiotose/assets/index-jjlx_KNJ.css",
-            "status": 200,
-            "sha256": "2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382",
-            "bytes": 28496,
-            "observedAt": "2026-10-09T14:49:02.576828+00:00",
-            "expectedSha256": "2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382",
-            "hashMatches": true
-          },
-          {
-            "path": "index.html",
-            "url": "https://chameleonjp-lab.github.io/uchiotose/index.html",
-            "finalUrl": "https://chameleonjp-lab.github.io/uchiotose/index.html",
-            "status": 200,
-            "sha256": "57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e",
-            "bytes": 7456,
-            "observedAt": "2026-10-09T14:47:56.452636+00:00",
-            "expectedSha256": "57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e",
-            "hashMatches": true
-          },
-          {
-            "path": "release.json",
-            "url": "https://chameleonjp-lab.github.io/uchiotose/release.json",
-            "finalUrl": "https://chameleonjp-lab.github.io/uchiotose/release.json",
-            "status": 200,
-            "sha256": "912aa5163fc46ab06aa80387c475ca1abef960c72f27ef0a49f43a3fc4180cb7",
-            "bytes": 112,
-            "observedAt": "2026-10-09T14:47:56.793791+00:00",
-            "expectedSha256": "912aa5163fc46ab06aa80387c475ca1abef960c72f27ef0a49f43a3fc4180cb7",
-            "hashMatches": true
-          },
-          {
-            "path": "third-party-notices.txt",
-            "url": "https://chameleonjp-lab.github.io/uchiotose/third-party-notices.txt",
-            "finalUrl": "https://chameleonjp-lab.github.io/uchiotose/third-party-notices.txt",
-            "status": 200,
-            "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
-            "bytes": 1082,
-            "observedAt": "2026-10-09T14:49:02.802967+00:00",
-            "expectedSha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
-            "hashMatches": true
-          }
-        ],
-        "independentBuild": {
-          "sourceCommit": "2a7e815c70baf9dc65721fc938909b6ab083f074",
-          "nodeVersion": "v24.19.0",
-          "buildCommand": "npm run build",
-          "packagingMethod": "The release.json and empty .nojekyll were independently reconstructed from the pinned source commit, using the same JSON shape as scripts/prepare-pages.mjs; that script was not executed in the archive because it queries git HEAD",
-          "buildPassed": true,
-          "checkedAt": "2026-10-09T14:58:36.202873+00:00",
-          "files": [
-            {
-              "path": ".nojekyll",
-              "buildFilePresent": true,
-              "buildSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "publicSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "assets/index-6rKQhKs9.js",
-              "buildFilePresent": true,
-              "buildSha256": "43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639",
-              "publicSha256": "43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "assets/index-jjlx_KNJ.css",
-              "buildFilePresent": true,
-              "buildSha256": "2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382",
-              "publicSha256": "2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "index.html",
-              "buildFilePresent": true,
-              "buildSha256": "57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e",
-              "publicSha256": "57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "release.json",
-              "buildFilePresent": true,
-              "buildSha256": "912aa5163fc46ab06aa80387c475ca1abef960c72f27ef0a49f43a3fc4180cb7",
-              "publicSha256": "912aa5163fc46ab06aa80387c475ca1abef960c72f27ef0a49f43a3fc4180cb7",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "third-party-notices.txt",
-              "buildFilePresent": true,
-              "buildSha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
-              "publicSha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
-              "exactBytesMatch": true
-            }
-          ],
-          "allProductBytesMatch": true,
-          "currentMainRuntimeSourceChangedPaths": [
-            "index.html",
-            "package.json",
-            "src/control-obstacles.ts",
-            "src/control-settings.ts",
-            "src/flight-types.ts",
-            "src/flight.ts",
-            "src/hud-overlay.ts",
-            "src/input.ts",
-            "src/keyboard-settings.ts",
-            "src/main.ts",
-            "src/rules-guide.ts",
-            "src/settings-storage.ts",
-            "src/style.css",
-            "src/throttle-lever.ts",
-            "src/ui-controller.ts",
-            "src/ui-view.ts",
-            "src/world-renderer.ts"
-          ]
-        },
         "deployedArtifactBytesMatch": null,
-        "ciArtifactContentObservation": {
-          "completed": false,
-          "reason": "The branch-based Pages run exposes no downloadable github-pages artifact in the observed artifacts endpoint; exact public bytes were compared with the pinned gh-pages branch instead"
-        },
-        "deployedBranchCommit": "1307117008dc72f9031a8c345b6ac077fc8ff30b",
-        "deployedBranchBytesMatch": true,
-        "branchValidation": {
-          "deployedBranchCommit": "1307117008dc72f9031a8c345b6ac077fc8ff30b",
-          "files": [
-            {
-              "path": ".nojekyll",
-              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "assets/index-6rKQhKs9.js",
-              "sha256": "43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "assets/index-jjlx_KNJ.css",
-              "sha256": "2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "index.html",
-              "sha256": "57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "release.json",
-              "sha256": "912aa5163fc46ab06aa80387c475ca1abef960c72f27ef0a49f43a3fc4180cb7",
-              "exactBytesMatch": true
-            },
-            {
-              "path": "third-party-notices.txt",
-              "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
-              "exactBytesMatch": true
-            }
-          ],
-          "allObservedFilesMatch": true
-        },
-        "releaseManifest": {
-          "commit": "2a7e815c70baf9dc65721fc938909b6ab083f074",
-          "rulesVersion": "uchiotose-1",
-          "ranking": false
-        },
         "entryUrlObservation": {
           "url": "https://chameleonjp-lab.github.io/uchiotose/",
           "finalUrl": "https://chameleonjp-lab.github.io/uchiotose/",
           "status": 200,
-          "sha256": "57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e",
-          "bytes": 7456,
-          "observedAt": "2026-10-09T15:02:33.299999+00:00",
+          "sha256": "41d29d4e9dfb63b2a218c965334b014581a3f746f68d3404f9663cb29a16acd4",
+          "bytes": 8308,
+          "observedAt": "2026-10-10T03:21:38.077195+00:00",
           "matchesObservedIndexHtml": true,
           "tlsVerificationEnabled": true
         },
-        "homeCheck": {
-          "sourceCommit": "2a7e815c70baf9dc65721fc938909b6ab083f074",
-          "deployedCommit": "2a7e815c70baf9dc65721fc938909b6ab083f074",
-          "checkedAt": "2026-10-09T15:16:22.225Z",
-          "appliesToCurrentDeployedSource": true,
-          "appliesToLatestMain": false,
-          "method": "deployed_byte_replay",
-          "evidenceFile": "docs/evidence/images-current.json",
-          "browser": "Chromium 153.0.8010.12",
-          "playwright": "1.63.0",
-          "viewport": {
-            "width": 1280,
-            "height": 720
+        "deploymentManifest": {
+          "repository": "chameleonjp-lab/uchiotose",
+          "commit": "0d00ef31a44786e23a0e93aae2bda6d78c15ccdf",
+          "sourceTree": "47945ee0f0bfc36d930dd78392ce9d89d53fd322",
+          "files": {
+            "assets/index-BF7Y2cGw.js": "3338ca7bc302878339bf5471aca43eecc24d2c204d6604cea7949d23bf3261c7",
+            "assets/index-CM_NdGef.css": "da43ec868b2376e44fca82231ce10e744bf4435d158bdfc3698576a6aca177b7",
+            "index.html": "41d29d4e9dfb63b2a218c965334b014581a3f746f68d3404f9663cb29a16acd4",
+            "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
           },
-          "deviceScaleFactor": 1,
-          "homeVisible": true,
-          "playingVisible": false,
-          "homeRendererVisible": true,
-          "gameStarted": false,
-          "inputPerformed": false,
-          "pageErrorCount": 0,
-          "consoleErrorCount": 0,
-          "network": {
-            "browserOffline": true,
-            "replayedOnlyTlsVerifiedHashMatchedProductFiles": true,
-            "nonGetRequestsAttempted": 0,
-            "externalRequestsFulfilled": 0,
-            "blockedRequests": 0,
-            "staticRequestsServed": 3,
-            "note": "Fresh browser context. Requests were fulfilled only from exact URL/path entries whose bytes matched the TLS-verified observation hashes; all unknown URLs and methods other than GET/HEAD were set to abort. No external request was fulfilled or blocked because none was attempted.",
-            "servedProductRequests": [
-              {
-                "path": "index.html",
-                "sha256": "57062efb52f8ce0a2f3784b0a5f3de25a309c28b85061749b39501a5622b9b3e",
-                "method": "GET"
-              },
-              {
-                "path": "assets/index-6rKQhKs9.js",
-                "sha256": "43c37845c5c40f00a614d813d5f68dad97d5d73ef46161725494bd19702cc639",
-                "method": "GET"
-              },
-              {
-                "path": "assets/index-jjlx_KNJ.css",
-                "sha256": "2dfeffc8772c95dc1673934db5bf8048ddde79d6e3a541dbf81dcaf3b36d1382",
-                "method": "GET"
-              }
-            ]
-          },
-          "gameplayScreenshotAccepted": false,
-          "originalScreenshotSha256": "f1e85d80c44b272e6431ea95220b03973ef80648c105e0fe1fa88b7ed66794a9",
-          "capturedAt": "2026-10-09T15:16:22.225Z",
-          "screenshotOutputs": [
-            {
-              "src": "assets/screenshots/uchiotose-f1e85d80c44b-960.webp",
-              "width": 960,
-              "height": 540,
-              "sha256": "e356e4a0b73b1a9f8c45567b70b390a8a5ed366ef12fe67c336e503e80adc935",
-              "bytes": 13140,
-              "format": "image/webp"
-            },
-            {
-              "src": "assets/screenshots/uchiotose-f1e85d80c44b-640.webp",
-              "width": 640,
-              "height": 360,
-              "sha256": "dad5894b8ed5ad7ab6ae34b4b34fb004df88dd1c1e4abbb8e30b19081f644c4f",
-              "bytes": 7836,
-              "format": "image/webp"
-            }
-          ],
-          "startEnabled": true,
-          "startLabel": "作戦開始 ↗",
-          "startPressed": false,
-          "homeReadiness": {
-            "ready": true,
-            "signal": "Start enabled and #p1-status hidden after renderer.prepare and pollRender ready",
-            "startEnabled": true,
-            "startLabel": "作戦開始 ↗",
-            "statusVisible": false,
-            "statusText": "準備完了 · 操作設定とルールを確認して出撃できます",
-            "graphicsError": null,
-            "timedOut": false,
-            "timeoutMs": 20000,
-            "waitedMs": 2511
-          }
-        }
+          "publicationAuthorizationDate": "2026-10-10",
+          "publicationScope": "User-requested publication; physical-phone acceptance not claimed"
+        },
+        "deployedBranchCommit": "df1827e37d962d14cb75ca8038d0c6bf36c9435b",
+        "deployedBranchBytesMatch": true
       },
       "rankingReadPerformed": false,
       "gameStarted": false,
-      "sourceRecheckedAt": "2026-10-09T15:02:28Z"
+      "sourceRecheckedAt": "2026-10-10T03:21:38.077195+00:00",
+      "contentUpdatedAt": "2026-10-10T03:33:43.645878+00:00"
     },
     {
       "id": "senryou",
       "displayOrder": 6,
       "title": "センリョウ",
-      "description": "戦闘機で地上戦へ介入し、歩兵による拠点占領を支援する一戦完結型ゲーム。実装候補の検証を進めており、公開入口は確認中です。",
-      "releaseState": "unverified",
-      "playUrl": null,
+      "description": "戦闘機で両軍の地上戦へ介入し、歩兵による拠点占領を支援する一戦完結型のゲーム。イージーとノーマルで挑戦できます。",
+      "releaseState": "published",
+      "playUrl": "https://chameleonjp-lab.github.io/senryou/",
       "repositoryUrl": "https://github.com/chameleonjp-lab/senryou",
-      "sourceCommit": "6ad011e951f5217abf65ad2e1291717b365b36ca",
-      "sourceRoot": "https://github.com/chameleonjp-lab/senryou/tree/6ad011e951f5217abf65ad2e1291717b365b36ca",
-      "sourceTree": "1eaa1f682f8f2de31b250fba4d63fa79f59b97a1",
+      "sourceCommit": "210f6a782f2499367651f9678b383b754d3b1101",
+      "sourceRoot": "https://github.com/chameleonjp-lab/senryou/tree/210f6a782f2499367651f9678b383b754d3b1101",
+      "sourceTree": "e87b20f0484e0235061cd925fb91913a3591554d",
       "readmeBlob": "288b0713d665890d52afef838ce738537ffba64c",
-      "sourceObservedAt": "2026-10-09T14:46:27Z",
+      "sourceObservedAt": "2026-10-10T03:19:35.107698+00:00",
       "descriptionSources": [
-        "https://github.com/chameleonjp-lab/senryou/blob/6ad011e951f5217abf65ad2e1291717b365b36ca/README.md",
-        "https://github.com/chameleonjp-lab/senryou/blob/6ad011e951f5217abf65ad2e1291717b365b36ca/docs/VERIFICATION.md"
+        "https://github.com/chameleonjp-lab/senryou/blob/210f6a782f2499367651f9678b383b754d3b1101/README.md",
+        "https://github.com/chameleonjp-lab/senryou/blob/210f6a782f2499367651f9678b383b754d3b1101/docs/VERIFICATION.md"
       ],
-      "openPullRequests": [],
-      "openPullRequestsObservedAt": "2026-10-09T15:02:28Z",
       "repositoryMetadata": {
         "defaultBranch": "main",
         "hasPages": true,
         "homepage": null,
         "observedAt": "2026-10-09T14:46:27Z"
       },
-      "sourceVerificationRuns": [],
+      "sourceVerificationRuns": [
+        {
+          "runId": 38019994971,
+          "name": "Successful Pages publication",
+          "headCommit": "210f6a782f2499367651f9678b383b754d3b1101",
+          "conclusion": "success",
+          "status": "completed",
+          "url": "https://github.com/chameleonjp-lab/senryou/actions/runs/38019994971",
+          "updatedAt": "2026-10-10T03:17:53Z"
+        }
+      ],
       "publicationEvidence": {
-        "verified": false,
-        "officialUrl": null,
+        "verified": true,
+        "officialUrl": "https://chameleonjp-lab.github.io/senryou/",
         "candidateUrl": null,
-        "deployedCommit": null,
-        "checkedAt": "2026-10-09T14:46:27Z",
+        "deployedCommit": "210f6a782f2499367651f9678b383b754d3b1101",
+        "sourceIsLatestMain": true,
+        "checkedAt": "2026-10-10T03:19:35.107698+00:00",
         "method": [
-          "Current main pinned SHA, README and all official source documents searched",
-          "Repository metadata, gh-pages branch presence, and Actions runs read independently"
+          "TLS-verified HTTPS GET of the official HTML, deployment manifest, and every current product file; SHA-256 comparison",
+          "Successful corresponding GitHub Pages Actions run and deploy job read independently",
+          "Pinned current-main production build compared byte for byte to the current public product assets"
         ],
         "sources": [
-          "https://github.com/chameleonjp-lab/senryou/blob/6ad011e951f5217abf65ad2e1291717b365b36ca/README.md",
-          "https://github.com/chameleonjp-lab/senryou/blob/6ad011e951f5217abf65ad2e1291717b365b36ca/docs/VERIFICATION.md"
+          "https://chameleonjp-lab.github.io/senryou/deployment.json",
+          "https://github.com/chameleonjp-lab/senryou/actions/runs/38019994971",
+          "https://github.com/chameleonjp-lab/senryou/tree/210f6a782f2499367651f9678b383b754d3b1101"
         ],
         "unknown": [
-          "No official current play URL or deployed source commit could be established from the main README, documentation, HTML, JSON, workflows, or public branch/run records",
-          "has_pages=true is observed repository configuration and does not establish a playable release"
+          "Game start, live gameplay, score submission, physical iPhone, human controls, GPU performance and audio acceptance were not performed",
+          "Current product source and published bytes are verified; full gameplay/release acceptance is not claimed",
+          "No title screenshot is claimed for this new deployed source; historical images are not retagged",
+          "Existing crowded world labels in the small landscape HUD remain outside full HUD visibility acceptance; the common Home/settings/Pause/Result shell was reviewed"
         ],
         "evidenceFile": "docs/evidence/current-games.json",
-        "deploymentRecord": null,
-        "artifactHashes": {}
+        "artifactHashes": {
+          "assets/index-CkCmlMuT.css": "480064817b4725f809216694d2b799f560fb957a8701c85e6725d9f68472aeb2",
+          "assets/index-Ds8l9eZj.js": "9f4ea213b9a6d01a2bb8478ffa7c772c29c93a1d2949f73440a47aebd2d5ad73",
+          "index.html": "2a806eca67f4b6bae96ba33c207e9b5668d6de342425b2fbd9e1d5b603907922",
+          "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+        },
+        "manifestSha256": "06e2cffcfbb6468f2c0e7cd3195b8812d8b8a986bdfedc9eb119a45f82bd4925",
+        "manifestFile": "deployment.json",
+        "allProductHashesMatch": true,
+        "productFileCount": 4,
+        "deployedSourceProductBytesMatch": true,
+        "currentMainProductBytesMatch": true,
+        "deploymentRecord": {
+          "kind": "github_actions",
+          "runId": 38019994971,
+          "runUrl": "https://github.com/chameleonjp-lab/senryou/actions/runs/38019994971",
+          "headCommit": "210f6a782f2499367651f9678b383b754d3b1101",
+          "headBranch": "main",
+          "status": "completed",
+          "conclusion": "success",
+          "createdAt": "2026-10-10T03:16:43Z",
+          "updatedAt": "2026-10-10T03:17:53Z",
+          "deployJobId": 114118823138,
+          "completedRecordAt": "2026-10-10T03:17:52Z",
+          "deployJobConclusion": "success"
+        },
+        "deployedArtifactBytesMatch": null,
+        "entryUrlObservation": {
+          "url": "https://chameleonjp-lab.github.io/senryou/",
+          "finalUrl": "https://chameleonjp-lab.github.io/senryou/",
+          "status": 200,
+          "sha256": "2a806eca67f4b6bae96ba33c207e9b5668d6de342425b2fbd9e1d5b603907922",
+          "bytes": 11545,
+          "observedAt": "2026-10-10T03:19:35.107698+00:00",
+          "matchesObservedIndexHtml": true,
+          "tlsVerificationEnabled": true
+        },
+        "deploymentManifest": {
+          "repository": "chameleonjp-lab/senryou",
+          "commit": "210f6a782f2499367651f9678b383b754d3b1101",
+          "files": {
+            "assets/index-CkCmlMuT.css": "480064817b4725f809216694d2b799f560fb957a8701c85e6725d9f68472aeb2",
+            "assets/index-Ds8l9eZj.js": "9f4ea213b9a6d01a2bb8478ffa7c772c29c93a1d2949f73440a47aebd2d5ad73",
+            "index.html": "2a806eca67f4b6bae96ba33c207e9b5668d6de342425b2fbd9e1d5b603907922",
+            "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+          },
+          "sourceTree": "e87b20f0484e0235061cd925fb91913a3591554d",
+          "workflowCommit": "210f6a782f2499367651f9678b383b754d3b1101",
+          "publicationAuthorizationDate": "2026-10-10",
+          "publicationScope": "User-requested verification build; final physical-phone and gameplay acceptance are not claimed"
+        }
       },
       "rankingReadPerformed": false,
       "gameStarted": false,
-      "sourceRecheckedAt": "2026-10-09T15:02:28Z"
+      "sourceRecheckedAt": "2026-10-10T03:19:35.107698+00:00",
+      "contentUpdatedAt": "2026-10-10T03:33:43.645878+00:00"
     },
     {
       "id": "fantasia",
       "displayOrder": 7,
       "title": "ファンタジア",
-      "description": "剣と魔法の世界で、7方面へ進む味方軍を戦闘機で支援する占領戦タイムアタック。実装候補の受入検証が残っており、公開に向けて準備中です。",
-      "releaseState": "preparing",
-      "playUrl": null,
+      "description": "剣と魔法の世界で、7方面へ進む味方軍を戦闘機で支援する占領戦タイムアタック。イージーとノーマルで挑戦できます。",
+      "releaseState": "published",
+      "playUrl": "https://chameleonjp-lab.github.io/fantasia/",
       "repositoryUrl": "https://github.com/chameleonjp-lab/fantasia",
-      "sourceCommit": "08f2c98582a627992e3c375ceb71f77cf0fbdc23",
-      "sourceRoot": "https://github.com/chameleonjp-lab/fantasia/tree/08f2c98582a627992e3c375ceb71f77cf0fbdc23",
-      "sourceTree": "e2a8faf42daa3c13e550d85fa8d2374947773b27",
+      "sourceCommit": "7b59137065ae7af26b37f0fa304c16bf7483ed50",
+      "sourceRoot": "https://github.com/chameleonjp-lab/fantasia/tree/7b59137065ae7af26b37f0fa304c16bf7483ed50",
+      "sourceTree": "ceda209512a84035e6070113ff6d24140b3a2a95",
       "readmeBlob": "f7619dad79a7434bc961b742905c4a6467a1788a",
-      "sourceObservedAt": "2026-10-09T14:46:27Z",
+      "sourceObservedAt": "2026-10-10T03:32:26.386694+00:00",
       "descriptionSources": [
-        "https://github.com/chameleonjp-lab/fantasia/blob/08f2c98582a627992e3c375ceb71f77cf0fbdc23/README.md",
-        "https://github.com/chameleonjp-lab/fantasia/blob/08f2c98582a627992e3c375ceb71f77cf0fbdc23/docs/RELEASE_GATE.json",
-        "https://github.com/chameleonjp-lab/fantasia/blob/08f2c98582a627992e3c375ceb71f77cf0fbdc23/docs/DELIVERY_STATUS.md"
+        "https://github.com/chameleonjp-lab/fantasia/blob/7b59137065ae7af26b37f0fa304c16bf7483ed50/README.md",
+        "https://github.com/chameleonjp-lab/fantasia/blob/7b59137065ae7af26b37f0fa304c16bf7483ed50/docs/RELEASE_GATE.json",
+        "https://github.com/chameleonjp-lab/fantasia/blob/7b59137065ae7af26b37f0fa304c16bf7483ed50/docs/DELIVERY_STATUS.md"
       ],
-      "openPullRequests": [],
-      "openPullRequestsObservedAt": "2026-10-09T15:02:28Z",
       "repositoryMetadata": {
         "defaultBranch": "main",
         "hasPages": true,
         "homepage": null,
         "observedAt": "2026-10-09T14:46:27Z"
       },
-      "sourceVerificationRuns": [],
+      "sourceVerificationRuns": [
+        {
+          "runId": 38020805395,
+          "name": "Successful Pages publication",
+          "headCommit": "7b59137065ae7af26b37f0fa304c16bf7483ed50",
+          "conclusion": "success",
+          "status": "completed",
+          "url": "https://github.com/chameleonjp-lab/fantasia/actions/runs/38020805395",
+          "updatedAt": "2026-10-10T03:32:07Z"
+        }
+      ],
       "publicationEvidence": {
-        "verified": false,
-        "officialUrl": null,
+        "verified": true,
+        "officialUrl": "https://chameleonjp-lab.github.io/fantasia/",
         "candidateUrl": null,
-        "deployedCommit": null,
-        "checkedAt": "2026-10-09T14:46:27Z",
+        "deployedCommit": "7b59137065ae7af26b37f0fa304c16bf7483ed50",
+        "sourceIsLatestMain": true,
+        "checkedAt": "2026-10-10T03:32:26.386694+00:00",
         "method": [
-          "Current main pinned SHA, README and all official source documents searched",
-          "Repository metadata, gh-pages branch presence, and Actions runs read independently"
+          "TLS-verified HTTPS GET of the official HTML, deployment manifest, and every current product file; SHA-256 comparison",
+          "Successful corresponding GitHub Pages Actions run and deploy job read independently",
+          "Pinned current-main production build compared byte for byte to the current public product assets"
         ],
         "sources": [
-          "https://github.com/chameleonjp-lab/fantasia/blob/08f2c98582a627992e3c375ceb71f77cf0fbdc23/README.md",
-          "https://github.com/chameleonjp-lab/fantasia/blob/08f2c98582a627992e3c375ceb71f77cf0fbdc23/docs/RELEASE_GATE.json",
-          "https://github.com/chameleonjp-lab/fantasia/blob/08f2c98582a627992e3c375ceb71f77cf0fbdc23/docs/DELIVERY_STATUS.md"
+          "https://chameleonjp-lab.github.io/fantasia/deployment.json",
+          "https://github.com/chameleonjp-lab/fantasia/actions/runs/38020805395",
+          "https://github.com/chameleonjp-lab/fantasia/tree/7b59137065ae7af26b37f0fa304c16bf7483ed50"
         ],
         "unknown": [
-          "No official current play URL or deployed source commit could be established from the main README, documentation, HTML, JSON, workflows, or public branch/run records",
-          "has_pages=true is observed repository configuration and does not establish a playable release",
-          "Current checked-in docs/RELEASE_GATE.json has ready:false; README and delivery status explicitly leave publication acceptance incomplete"
+          "Game start, live gameplay, score submission, physical iPhone, human controls, GPU performance and audio acceptance were not performed",
+          "Current product source and published bytes are verified; full gameplay/release acceptance is not claimed",
+          "No title screenshot is claimed for this new deployed source; historical images are not retagged",
+          "docs/RELEASE_GATE.json remains ready:false; this user-requested verification publication does not complete its formal gameplay and physical-phone acceptance"
         ],
         "evidenceFile": "docs/evidence/current-games.json",
-        "deploymentRecord": null,
-        "artifactHashes": {},
+        "artifactHashes": {
+          "assets/index-BOqdvI6-.css": "5070fa014994f06eadf7c2325c05c494968cbf03bb313f2ca99b3dc551c723b4",
+          "assets/index-Q6uXPGvk.js": "9bb935d5a401600caab414ca027afd61b27c1ee3a3331ba402828f15f589fd9d",
+          "index.html": "218e681cedc5da3afbc9e3c9e1b8ad2f6f7fd400d822744379d9892a6bd328d7",
+          "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+        },
+        "manifestSha256": "ee72333c50c1e59545b8de40775b25fd925d8275cc640972bdff35f73e0c12bb",
+        "manifestFile": "deployment.json",
+        "allProductHashesMatch": true,
+        "productFileCount": 4,
+        "deployedSourceProductBytesMatch": true,
+        "currentMainProductBytesMatch": true,
+        "deploymentRecord": {
+          "kind": "github_actions",
+          "runId": 38020805395,
+          "runUrl": "https://github.com/chameleonjp-lab/fantasia/actions/runs/38020805395",
+          "headCommit": "7b59137065ae7af26b37f0fa304c16bf7483ed50",
+          "headBranch": "main",
+          "status": "completed",
+          "conclusion": "success",
+          "createdAt": "2026-10-10T03:30:35Z",
+          "updatedAt": "2026-10-10T03:32:07Z",
+          "deployJobId": 114121401375,
+          "completedRecordAt": "2026-10-10T03:32:06Z",
+          "deployJobConclusion": "success"
+        },
+        "deployedArtifactBytesMatch": null,
+        "entryUrlObservation": {
+          "url": "https://chameleonjp-lab.github.io/fantasia/",
+          "finalUrl": "https://chameleonjp-lab.github.io/fantasia/",
+          "status": 200,
+          "sha256": "218e681cedc5da3afbc9e3c9e1b8ad2f6f7fd400d822744379d9892a6bd328d7",
+          "bytes": 12347,
+          "observedAt": "2026-10-10T03:32:26.386694+00:00",
+          "matchesObservedIndexHtml": true,
+          "tlsVerificationEnabled": true
+        },
+        "deploymentManifest": {
+          "repository": "chameleonjp-lab/fantasia",
+          "commit": "7b59137065ae7af26b37f0fa304c16bf7483ed50",
+          "files": {
+            "assets/index-BOqdvI6-.css": "5070fa014994f06eadf7c2325c05c494968cbf03bb313f2ca99b3dc551c723b4",
+            "assets/index-Q6uXPGvk.js": "9bb935d5a401600caab414ca027afd61b27c1ee3a3331ba402828f15f589fd9d",
+            "index.html": "218e681cedc5da3afbc9e3c9e1b8ad2f6f7fd400d822744379d9892a6bd328d7",
+            "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+          },
+          "sourceTree": "ceda209512a84035e6070113ff6d24140b3a2a95",
+          "workflowCommit": "7b59137065ae7af26b37f0fa304c16bf7483ed50",
+          "publicationAuthorizationDate": "2026-10-10",
+          "publicationScope": "User-requested verification build; final physical-phone and gameplay acceptance are not claimed"
+        },
         "releaseGateReady": false
       },
       "rankingReadPerformed": false,
       "gameStarted": false,
-      "sourceRecheckedAt": "2026-10-09T15:02:28Z"
+      "sourceRecheckedAt": "2026-10-10T03:32:26.386694+00:00",
+      "contentUpdatedAt": "2026-10-10T03:33:43.645878+00:00"
     },
     {
       "id": "nusumidase",
@@ -1738,68 +1264,122 @@
     }
   ],
   "limitations": [
-    "Repository homepage is null for all eight repositories at observation time",
-    "Only five existing officially verified URLs are enabled; no new URL was inferred from a repository naming convention",
+    "Repository homepage fields in the dated 2026-10-09 metadata snapshot were null; current official URLs are established by successful deploy records and verified public bytes",
+    "Seven officially verified URLs are enabled; Nusumidase contains no game implementation and remains unavailable. URLs were verified by served bytes, not inferred only from repository names",
     "Production rebuild and asset equality are publication provenance checks, not gameplay or physical-device acceptance",
-    "No DB, RPC, player-name, score, game-start, setting-save, or remote write operation was performed by this observation task"
+    "Publication observations are read-only TLS GET and repository metadata reads; authorized repository/Pages changes are recorded separately. No DB/RPC, player-name, score submission or public game-start operation was performed"
   ],
-  "finalRepositoryRecheckAt": "2026-10-09T15:02:28Z",
+  "historicalRepositoryRecheck": {
+    "observedAt": "2026-10-09T15:02:28Z",
+    "records": [
+      {
+        "id": "kaisen",
+        "sourceCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032"
+      },
+      {
+        "id": "faitofuraito",
+        "sourceCommit": "8946bf12a777d24c7334b887492d62fd93153e23",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "8946bf12a777d24c7334b887492d62fd93153e23"
+      },
+      {
+        "id": "machimamore",
+        "sourceCommit": "192c075532a8f0d2810a444ae5ac299cdfec9f1a",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "192c075532a8f0d2810a444ae5ac299cdfec9f1a"
+      },
+      {
+        "id": "gekichin",
+        "sourceCommit": "01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3"
+      },
+      {
+        "id": "uchiotose",
+        "sourceCommit": "7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8"
+      },
+      {
+        "id": "senryou",
+        "sourceCommit": "6ad011e951f5217abf65ad2e1291717b365b36ca",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "6ad011e951f5217abf65ad2e1291717b365b36ca"
+      },
+      {
+        "id": "fantasia",
+        "sourceCommit": "08f2c98582a627992e3c375ceb71f77cf0fbdc23",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "08f2c98582a627992e3c375ceb71f77cf0fbdc23"
+      },
+      {
+        "id": "nusumidase",
+        "sourceCommit": "c604c7990e5ba9a599898ede6c1ccb4b42970b51",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "c604c7990e5ba9a599898ede6c1ccb4b42970b51"
+      }
+    ]
+  },
+  "finalRepositoryRecheckAt": "2026-10-10T03:37:05.838473+00:00",
+  "finalRepositoryRecheckScope": "All eight current main refs; open pull request lists were not rechecked. The previous full recheck is retained as a dated historical record.",
   "finalRepositoryRecheck": [
     {
       "id": "kaisen",
+      "recheckedMainCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
       "sourceCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032"
+      "sourceUnchanged": true
     },
     {
       "id": "faitofuraito",
+      "recheckedMainCommit": "8946bf12a777d24c7334b887492d62fd93153e23",
       "sourceCommit": "8946bf12a777d24c7334b887492d62fd93153e23",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "8946bf12a777d24c7334b887492d62fd93153e23"
+      "sourceUnchanged": true
     },
     {
       "id": "machimamore",
-      "sourceCommit": "192c075532a8f0d2810a444ae5ac299cdfec9f1a",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "192c075532a8f0d2810a444ae5ac299cdfec9f1a"
+      "recheckedMainCommit": "cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70",
+      "sourceCommit": "cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70",
+      "sourceUnchanged": true
     },
     {
       "id": "gekichin",
-      "sourceCommit": "01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3"
+      "recheckedMainCommit": "cd9431c53d64543c0d49e562dea9ea03d22a609c",
+      "sourceCommit": "cd9431c53d64543c0d49e562dea9ea03d22a609c",
+      "sourceUnchanged": true
     },
     {
       "id": "uchiotose",
-      "sourceCommit": "7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8"
+      "recheckedMainCommit": "0d00ef31a44786e23a0e93aae2bda6d78c15ccdf",
+      "sourceCommit": "0d00ef31a44786e23a0e93aae2bda6d78c15ccdf",
+      "sourceUnchanged": true
     },
     {
       "id": "senryou",
-      "sourceCommit": "6ad011e951f5217abf65ad2e1291717b365b36ca",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "6ad011e951f5217abf65ad2e1291717b365b36ca"
+      "recheckedMainCommit": "210f6a782f2499367651f9678b383b754d3b1101",
+      "sourceCommit": "210f6a782f2499367651f9678b383b754d3b1101",
+      "sourceUnchanged": true
     },
     {
       "id": "fantasia",
-      "sourceCommit": "08f2c98582a627992e3c375ceb71f77cf0fbdc23",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "08f2c98582a627992e3c375ceb71f77cf0fbdc23"
+      "recheckedMainCommit": "7b59137065ae7af26b37f0fa304c16bf7483ed50",
+      "sourceCommit": "7b59137065ae7af26b37f0fa304c16bf7483ed50",
+      "sourceUnchanged": true
     },
     {
       "id": "nusumidase",
+      "recheckedMainCommit": "c604c7990e5ba9a599898ede6c1ccb4b42970b51",
       "sourceCommit": "c604c7990e5ba9a599898ede6c1ccb4b42970b51",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "c604c7990e5ba9a599898ede6c1ccb4b42970b51"
+      "sourceUnchanged": true
     }
   ]
 }
