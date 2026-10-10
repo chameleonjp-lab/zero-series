@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "portalBaseCommit": "cb7b983b2c52651c954417f00e20cd9f659bfea3",
   "observedAt": "2026-10-10T03:33:43.645878+00:00",
-  "sourceObservedAt": "2026-10-09T14:46:27Z",
+  "sourceObservedAt": "2026-10-10T03:37:05.838473+00:00",
   "observationScope": "Incremental current-source and publication refresh for five games, backed by TLS asset hashes, exact production builds and successful deploy jobs. Earlier observations for the other games retain their own timestamps. Current title screenshots are displayed only for Kaisen and Faitofuraito; three historical captures are not retagged. No public game was started.",
   "commitFieldSemantics": {
     "sourceCommit": "Latest main source used as the introduction evidence",
@@ -1264,68 +1264,122 @@
     }
   ],
   "limitations": [
-    "Repository homepage is null for all eight repositories at observation time",
-    "Only five existing officially verified URLs are enabled; no new URL was inferred from a repository naming convention",
+    "Repository homepage fields in the dated 2026-10-09 metadata snapshot were null; current official URLs are established by successful deploy records and verified public bytes",
+    "Seven officially verified URLs are enabled; Nusumidase contains no game implementation and remains unavailable. URLs were verified by served bytes, not inferred only from repository names",
     "Production rebuild and asset equality are publication provenance checks, not gameplay or physical-device acceptance",
-    "No DB, RPC, player-name, score, game-start, setting-save, or remote write operation was performed by this observation task"
+    "Publication observations are read-only TLS GET and repository metadata reads; authorized repository/Pages changes are recorded separately. No DB/RPC, player-name, score submission or public game-start operation was performed"
   ],
-  "finalRepositoryRecheckAt": "2026-10-09T15:02:28Z",
+  "historicalRepositoryRecheck": {
+    "observedAt": "2026-10-09T15:02:28Z",
+    "records": [
+      {
+        "id": "kaisen",
+        "sourceCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032"
+      },
+      {
+        "id": "faitofuraito",
+        "sourceCommit": "8946bf12a777d24c7334b887492d62fd93153e23",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "8946bf12a777d24c7334b887492d62fd93153e23"
+      },
+      {
+        "id": "machimamore",
+        "sourceCommit": "192c075532a8f0d2810a444ae5ac299cdfec9f1a",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "192c075532a8f0d2810a444ae5ac299cdfec9f1a"
+      },
+      {
+        "id": "gekichin",
+        "sourceCommit": "01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3"
+      },
+      {
+        "id": "uchiotose",
+        "sourceCommit": "7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8"
+      },
+      {
+        "id": "senryou",
+        "sourceCommit": "6ad011e951f5217abf65ad2e1291717b365b36ca",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "6ad011e951f5217abf65ad2e1291717b365b36ca"
+      },
+      {
+        "id": "fantasia",
+        "sourceCommit": "08f2c98582a627992e3c375ceb71f77cf0fbdc23",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "08f2c98582a627992e3c375ceb71f77cf0fbdc23"
+      },
+      {
+        "id": "nusumidase",
+        "sourceCommit": "c604c7990e5ba9a599898ede6c1ccb4b42970b51",
+        "sourceUnchanged": true,
+        "openPullRequests": [],
+        "recheckedMainCommit": "c604c7990e5ba9a599898ede6c1ccb4b42970b51"
+      }
+    ]
+  },
+  "finalRepositoryRecheckAt": "2026-10-10T03:37:05.838473+00:00",
+  "finalRepositoryRecheckScope": "All eight current main refs; open pull request lists were not rechecked. The previous full recheck is retained as a dated historical record.",
   "finalRepositoryRecheck": [
     {
       "id": "kaisen",
+      "recheckedMainCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
       "sourceCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "519fd0d50dfb2ce9a1145c0b58a1301b5c74d032"
+      "sourceUnchanged": true
     },
     {
       "id": "faitofuraito",
+      "recheckedMainCommit": "8946bf12a777d24c7334b887492d62fd93153e23",
       "sourceCommit": "8946bf12a777d24c7334b887492d62fd93153e23",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "8946bf12a777d24c7334b887492d62fd93153e23"
+      "sourceUnchanged": true
     },
     {
       "id": "machimamore",
-      "sourceCommit": "192c075532a8f0d2810a444ae5ac299cdfec9f1a",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "192c075532a8f0d2810a444ae5ac299cdfec9f1a"
+      "recheckedMainCommit": "cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70",
+      "sourceCommit": "cb7d698a50abb8bbb53b00c2e0071fc7cfc28b70",
+      "sourceUnchanged": true
     },
     {
       "id": "gekichin",
-      "sourceCommit": "01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "01d9d9ccf5ff3e4cf7134ed3c08c999d879319d3"
+      "recheckedMainCommit": "cd9431c53d64543c0d49e562dea9ea03d22a609c",
+      "sourceCommit": "cd9431c53d64543c0d49e562dea9ea03d22a609c",
+      "sourceUnchanged": true
     },
     {
       "id": "uchiotose",
-      "sourceCommit": "7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "7506b4c883f7ed0154f6bb3ddc902e62a73eb2c8"
+      "recheckedMainCommit": "0d00ef31a44786e23a0e93aae2bda6d78c15ccdf",
+      "sourceCommit": "0d00ef31a44786e23a0e93aae2bda6d78c15ccdf",
+      "sourceUnchanged": true
     },
     {
       "id": "senryou",
-      "sourceCommit": "6ad011e951f5217abf65ad2e1291717b365b36ca",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "6ad011e951f5217abf65ad2e1291717b365b36ca"
+      "recheckedMainCommit": "210f6a782f2499367651f9678b383b754d3b1101",
+      "sourceCommit": "210f6a782f2499367651f9678b383b754d3b1101",
+      "sourceUnchanged": true
     },
     {
       "id": "fantasia",
-      "sourceCommit": "08f2c98582a627992e3c375ceb71f77cf0fbdc23",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "08f2c98582a627992e3c375ceb71f77cf0fbdc23"
+      "recheckedMainCommit": "7b59137065ae7af26b37f0fa304c16bf7483ed50",
+      "sourceCommit": "7b59137065ae7af26b37f0fa304c16bf7483ed50",
+      "sourceUnchanged": true
     },
     {
       "id": "nusumidase",
+      "recheckedMainCommit": "c604c7990e5ba9a599898ede6c1ccb4b42970b51",
       "sourceCommit": "c604c7990e5ba9a599898ede6c1ccb4b42970b51",
-      "sourceUnchanged": true,
-      "openPullRequests": [],
-      "recheckedMainCommit": "c604c7990e5ba9a599898ede6c1ccb4b42970b51"
+      "sourceUnchanged": true
     }
   ]
 }
