@@ -44,7 +44,10 @@ test('8 static cards, unavailable states and local-only ranking',async({page,con
   await expect(page.locator('#gekichin a.action')).toHaveAttribute('href','https://chameleonjp-lab.github.io/gekichin/');
   await expect(page.locator('#gekichin .unavailable')).toHaveCount(0);
   await expect(page.locator('#gekichin [data-ranking-status]')).toHaveText('ランキング未接続');
-  await expect(page.locator('a.action')).toHaveCount(5);
+  await expect(page.locator('#senryou a.action')).toHaveAttribute('href','https://chameleonjp-lab.github.io/senryou/');
+  await expect(page.locator('#fantasia a.action')).toHaveAttribute('href','https://chameleonjp-lab.github.io/fantasia/');
+  await expect(page.locator('#nusumidase a.action')).toHaveCount(0);
+  await expect(page.locator('a.action')).toHaveCount(7);
   await expect(page.locator('[data-ranking-status]')).toHaveText(Array(8).fill('ランキング未接続'));
   await page.locator('[data-mode]').selectOption('easy');
   await expect(page.locator('#faitofuraito [data-scope]')).toContainText('イージー');
@@ -375,7 +378,10 @@ test('offline keeps static cards and confirmed links',async({page,context})=>{
   await page.locator('[data-mode]').selectOption('easy');
   await expect(page.locator('#faitofuraito [data-scope]')).toContainText('イージー');
   await expect(page.locator('article')).toHaveCount(8);
-  await expect(page.locator('a.action')).toHaveCount(5);
+  await expect(page.locator('#senryou a.action')).toHaveAttribute('href','https://chameleonjp-lab.github.io/senryou/');
+  await expect(page.locator('#fantasia a.action')).toHaveAttribute('href','https://chameleonjp-lab.github.io/fantasia/');
+  await expect(page.locator('#nusumidase a.action')).toHaveCount(0);
+  await expect(page.locator('a.action')).toHaveCount(7);
   await expect(page.locator('[data-ranking-status]')).toHaveText(Array(8).fill('ランキング未接続'));
 });
 
