@@ -742,20 +742,20 @@ export const catalog = [
     "releaseState": "published",
     "playUrl": "https://chameleonjp-lab.github.io/senryou/",
     "repositoryUrl": "https://github.com/chameleonjp-lab/senryou",
-    "sourceCommit": "210f6a782f2499367651f9678b383b754d3b1101",
-    "sourceRoot": "https://github.com/chameleonjp-lab/senryou/tree/210f6a782f2499367651f9678b383b754d3b1101",
-    "sourceObservedAt": "2026-10-10T03:19:35.107698+00:00",
+    "sourceCommit": "43b1073fd9d9ee2285032787ca691e6a506fa647",
+    "sourceRoot": "https://github.com/chameleonjp-lab/senryou/tree/43b1073fd9d9ee2285032787ca691e6a506fa647",
+    "sourceObservedAt": "2026-10-11T01:25:56.725815+00:00",
     "descriptionSources": [
-      "https://github.com/chameleonjp-lab/senryou/blob/210f6a782f2499367651f9678b383b754d3b1101/README.md",
-      "https://github.com/chameleonjp-lab/senryou/blob/210f6a782f2499367651f9678b383b754d3b1101/docs/VERIFICATION.md"
+      "https://github.com/chameleonjp-lab/senryou/blob/43b1073fd9d9ee2285032787ca691e6a506fa647/README.md",
+      "https://github.com/chameleonjp-lab/senryou/blob/43b1073fd9d9ee2285032787ca691e6a506fa647/docs/VERIFICATION.md"
     ],
     "publicationEvidence": {
       "verified": true,
       "officialUrl": "https://chameleonjp-lab.github.io/senryou/",
       "candidateUrl": null,
-      "deployedCommit": "210f6a782f2499367651f9678b383b754d3b1101",
+      "deployedCommit": "43b1073fd9d9ee2285032787ca691e6a506fa647",
       "sourceIsLatestMain": true,
-      "checkedAt": "2026-10-10T03:19:35.107698+00:00",
+      "checkedAt": "2026-10-11T01:25:56.725815+00:00",
       "method": [
         "TLS-verified HTTPS GET of the official HTML, deployment manifest, and every current product file; SHA-256 comparison",
         "Successful corresponding GitHub Pages Actions run and deploy job read independently",
@@ -763,23 +763,23 @@ export const catalog = [
       ],
       "sources": [
         "https://chameleonjp-lab.github.io/senryou/deployment.json",
-        "https://github.com/chameleonjp-lab/senryou/actions/runs/38019994971",
-        "https://github.com/chameleonjp-lab/senryou/tree/210f6a782f2499367651f9678b383b754d3b1101"
+        "https://github.com/chameleonjp-lab/senryou/actions/runs/38101708409",
+        "https://github.com/chameleonjp-lab/senryou/tree/43b1073fd9d9ee2285032787ca691e6a506fa647"
       ],
       "unknown": [
         "Game start, live gameplay, score submission, physical iPhone, human controls, GPU performance and audio acceptance were not performed",
         "Current product source and published bytes are verified; full gameplay/release acceptance is not claimed",
         "No title screenshot is claimed for this new deployed source; historical images are not retagged",
-        "Existing crowded world labels in the small landscape HUD remain outside full HUD visibility acceptance; the common Home/settings/Pause/Result shell was reviewed"
+        "Compact landscape and portrait world labels, including radar distance and DOM text 200%, were checked in 37 fixed UI-only images; Canvas text 200%, live gameplay and arbitrary crowded missions are not accepted by this check"
       ],
       "evidenceFile": "docs/evidence/current-games.json",
       "artifactHashes": {
+        "assets/index-BPq3XU-P.js": "00e02328f77e8fb43f64c27795b0ca674b9eabaa8c409942068c27e64694f4f1",
         "assets/index-CkCmlMuT.css": "480064817b4725f809216694d2b799f560fb957a8701c85e6725d9f68472aeb2",
-        "assets/index-Ds8l9eZj.js": "9f4ea213b9a6d01a2bb8478ffa7c772c29c93a1d2949f73440a47aebd2d5ad73",
-        "index.html": "2a806eca67f4b6bae96ba33c207e9b5668d6de342425b2fbd9e1d5b603907922",
+        "index.html": "4e0a38f04f87c46389846781444e0ee443bea775e7644fd8ee35cfa94a6335ce",
         "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
       },
-      "manifestSha256": "06e2cffcfbb6468f2c0e7cd3195b8812d8b8a986bdfedc9eb119a45f82bd4925",
+      "manifestSha256": "abaf8d31b1329137dfba548ea62bc1c5b14d797d7937d3527fd76ef6b0d2ea2e",
       "manifestFile": "deployment.json",
       "allProductHashesMatch": true,
       "productFileCount": 4,
@@ -787,16 +787,18 @@ export const catalog = [
       "currentMainProductBytesMatch": true,
       "deploymentRecord": {
         "kind": "github_actions",
-        "runId": 38019994971,
-        "runUrl": "https://github.com/chameleonjp-lab/senryou/actions/runs/38019994971",
-        "headCommit": "210f6a782f2499367651f9678b383b754d3b1101",
+        "runId": 38101708409,
+        "runUrl": "https://github.com/chameleonjp-lab/senryou/actions/runs/38101708409",
+        "headCommit": "43b1073fd9d9ee2285032787ca691e6a506fa647",
         "headBranch": "main",
         "status": "completed",
         "conclusion": "success",
-        "createdAt": "2026-10-10T03:16:43Z",
-        "updatedAt": "2026-10-10T03:17:53Z",
-        "deployJobId": 114118823138,
-        "completedRecordAt": "2026-10-10T03:17:52Z",
+        "createdAt": "2026-10-11T01:24:06Z",
+        "updatedAt": "2026-10-11T01:25:36Z",
+        "buildJobId": 114358811638,
+        "buildJobConclusion": "success",
+        "deployJobId": 114359022489,
+        "completedRecordAt": "2026-10-11T01:25:35Z",
         "deployJobConclusion": "success"
       },
       "deployedArtifactBytesMatch": null,
@@ -804,24 +806,24 @@ export const catalog = [
         "url": "https://chameleonjp-lab.github.io/senryou/",
         "finalUrl": "https://chameleonjp-lab.github.io/senryou/",
         "status": 200,
-        "sha256": "2a806eca67f4b6bae96ba33c207e9b5668d6de342425b2fbd9e1d5b603907922",
+        "sha256": "4e0a38f04f87c46389846781444e0ee443bea775e7644fd8ee35cfa94a6335ce",
         "bytes": 11545,
-        "observedAt": "2026-10-10T03:19:35.107698+00:00",
+        "observedAt": "2026-10-11T01:25:56.725815+00:00",
         "matchesObservedIndexHtml": true,
         "tlsVerificationEnabled": true
       },
       "deploymentManifest": {
         "repository": "chameleonjp-lab/senryou",
-        "commit": "210f6a782f2499367651f9678b383b754d3b1101",
+        "commit": "43b1073fd9d9ee2285032787ca691e6a506fa647",
         "files": {
+          "assets/index-BPq3XU-P.js": "00e02328f77e8fb43f64c27795b0ca674b9eabaa8c409942068c27e64694f4f1",
           "assets/index-CkCmlMuT.css": "480064817b4725f809216694d2b799f560fb957a8701c85e6725d9f68472aeb2",
-          "assets/index-Ds8l9eZj.js": "9f4ea213b9a6d01a2bb8478ffa7c772c29c93a1d2949f73440a47aebd2d5ad73",
-          "index.html": "2a806eca67f4b6bae96ba33c207e9b5668d6de342425b2fbd9e1d5b603907922",
+          "index.html": "4e0a38f04f87c46389846781444e0ee443bea775e7644fd8ee35cfa94a6335ce",
           "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
         },
-        "sourceTree": "e87b20f0484e0235061cd925fb91913a3591554d",
-        "workflowCommit": "210f6a782f2499367651f9678b383b754d3b1101",
-        "publicationAuthorizationDate": "2026-10-10",
+        "sourceTree": "9d2f1dc0efaf852e72cdeb5209f389b7caf71d55",
+        "workflowCommit": "43b1073fd9d9ee2285032787ca691e6a506fa647",
+        "publicationAuthorizationDate": "2026-10-11",
         "publicationScope": "User-requested verification build; final physical-phone and gameplay acceptance are not claimed"
       }
     },
@@ -832,7 +834,7 @@ export const catalog = [
       "defaultMode": null,
       "modes": []
     },
-    "contentUpdatedAt": "2026-10-10T03:33:43.645878+00:00"
+    "contentUpdatedAt": "2026-10-11T01:25:56.725815+00:00"
   },
   {
     "id": "fantasia",
