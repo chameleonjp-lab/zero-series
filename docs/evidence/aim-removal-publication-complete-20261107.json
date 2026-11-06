@@ -1,0 +1,1452 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-06T20:52:17.240611+00:00",
+  "authorization": "User explicitly requested 全て公開 after the eight game fixes were merged",
+  "verificationScope": "The published active product files match the tested source/build at the recorded official URLs. gh-pages source and deployed branch identities remain separate; preserved old assets and publication metadata are listed separately from active products.",
+  "gameCount": 8,
+  "allEightPublicProductBytesVerified": true,
+  "games": [
+    {
+      "id": "kaisen",
+      "title": "カイセン",
+      "repository": "chameleonjp-lab/kaisen",
+      "sourceReceipt": {
+        "file": "publication-kaisen.json",
+        "sha256": "680c41a5521166765700a288129d224d4c12e35df197977d2df73f3c8a33b7dd"
+      },
+      "sourceCommit": "58577fb753a06c7f15cf4141b869db1b34466b38",
+      "sourceTree": "a03ca73cde0cdf9ad091efca651818b64eeda24b",
+      "officialUrl": "https://chameleonjp-lab.github.io/kaisen/",
+      "checkedAt": "2026-11-06T20:36:48.699776+00:00",
+      "run": {
+        "id": 42283696875,
+        "url": "https://github.com/chameleonjp-lab/kaisen/actions/runs/42283696875",
+        "headCommit": "58577fb753a06c7f15cf4141b869db1b34466b38",
+        "headBranch": "main",
+        "status": "completed",
+        "conclusion": "success",
+        "workflowPath": ".github/workflows/deploy-pages.yml"
+      },
+      "deployJob": {
+        "id": 128119467716,
+        "name": "deploy",
+        "conclusion": "success",
+        "completedAt": "2026-11-06T19:55:32Z"
+      },
+      "assets": [
+        {
+          "path": "assets/index-CC4z0vjG.css",
+          "url": "https://chameleonjp-lab.github.io/kaisen/assets/index-CC4z0vjG.css",
+          "status": 200,
+          "bytes": 30778,
+          "sha256": "27a94f1a79f29ec460e9d2493989b05d0870874621a13186c397a5fe3e0c527a",
+          "observedAt": "2026-11-06T20:36:47.863214+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "text/css; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 19:55:26 GMT",
+            "etag": "\"6aee30ae-783a\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:36:47 GMT"
+          }
+        },
+        {
+          "path": "assets/index-CsuA-yZq.js",
+          "url": "https://chameleonjp-lab.github.io/kaisen/assets/index-CsuA-yZq.js",
+          "status": 200,
+          "bytes": 837000,
+          "sha256": "c0dbfdcd4e79942925a1386709efccfc3b319a182b741c92b60fea795c2c3134",
+          "observedAt": "2026-11-06T20:36:48.183119+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "application/javascript; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 19:55:26 GMT",
+            "etag": "\"6aee30ae-cc588\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:36:48 GMT"
+          }
+        },
+        {
+          "path": "index.html",
+          "url": "https://chameleonjp-lab.github.io/kaisen/index.html",
+          "status": 200,
+          "bytes": 12419,
+          "sha256": "bbdcc8b868a6baef189cd399a7289be5a994fecce467f67551f94fc886ceccf4",
+          "observedAt": "2026-11-06T20:36:48.366758+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 19:55:26 GMT",
+            "etag": "\"6aee30ae-3083\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:36:48 GMT"
+          }
+        },
+        {
+          "path": "third-party-notices.txt",
+          "url": "https://chameleonjp-lab.github.io/kaisen/third-party-notices.txt",
+          "status": 200,
+          "bytes": 1082,
+          "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+          "observedAt": "2026-11-06T20:36:48.535400+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "text/plain; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 19:55:26 GMT",
+            "etag": "\"6aee30ae-43a\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:36:48 GMT"
+          }
+        }
+      ],
+      "manifest": {
+        "repository": "chameleonjp-lab/kaisen",
+        "commit": "58577fb753a06c7f15cf4141b869db1b34466b38",
+        "files": {
+          "assets/index-CC4z0vjG.css": "27a94f1a79f29ec460e9d2493989b05d0870874621a13186c397a5fe3e0c527a",
+          "assets/index-CsuA-yZq.js": "c0dbfdcd4e79942925a1386709efccfc3b319a182b741c92b60fea795c2c3134",
+          "index.html": "bbdcc8b868a6baef189cd399a7289be5a994fecce467f67551f94fc886ceccf4",
+          "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+        }
+      },
+      "method": "TLS-verified HTTPS GET of every current production file, compared byte for byte with the exact reviewed production build; successful matching main deployment read separately",
+      "agentDeploymentPerformed": false,
+      "productFileCount": 4,
+      "allProductBytesMatch": true,
+      "physicalPhoneVerified": false,
+      "gameplayAcceptanceClaimed": false
+    },
+    {
+      "id": "faitofuraito",
+      "title": "ファイトフライト",
+      "repository": "chameleonjp-lab/faitofuraito",
+      "sourceReceipt": {
+        "file": "publication-faitofuraito.json",
+        "sha256": "a5c5cc1e1170725a2231339b1853e1844637f23eac6aab2fc2444a73c9fea5a6"
+      },
+      "sourceCommit": "70d2a8d44be70282cd99912f4881c6aab626800f",
+      "sourceTree": "14519830a1edaf5bbe8763dbb47d97ff9e557ca0",
+      "officialUrl": "https://chameleonjp-lab.github.io/faitofuraito/",
+      "checkedAt": "2026-11-06T20:36:49.586889+00:00",
+      "run": {
+        "id": 42283668744,
+        "url": "https://github.com/chameleonjp-lab/faitofuraito/actions/runs/42283668744",
+        "headCommit": "70d2a8d44be70282cd99912f4881c6aab626800f",
+        "headBranch": "main",
+        "status": "completed",
+        "conclusion": "success",
+        "workflowPath": ".github/workflows/checks.yml"
+      },
+      "deployJob": {
+        "id": 128124889621,
+        "name": "deploy",
+        "conclusion": "success",
+        "completedAt": "2026-11-06T20:06:52Z"
+      },
+      "assets": [
+        {
+          "path": "assets/index-Bk2Nwb68.js",
+          "url": "https://chameleonjp-lab.github.io/faitofuraito/assets/index-Bk2Nwb68.js",
+          "status": 200,
+          "bytes": 1212823,
+          "sha256": "604a4c4a46346f590225f73b5ca8394e389a83e2abd6d4b1d04ae0e5b6fb473b",
+          "observedAt": "2026-11-06T20:36:48.240613+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "application/javascript; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:06:39 GMT",
+            "etag": "\"6aee334f-128197\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:36:48 GMT"
+          }
+        },
+        {
+          "path": "assets/index-CfcgTNfg.css",
+          "url": "https://chameleonjp-lab.github.io/faitofuraito/assets/index-CfcgTNfg.css",
+          "status": 200,
+          "bytes": 31256,
+          "sha256": "94428227347712c1269c74b07de397632fa2368e76b324bdedbe1edbeea1eef0",
+          "observedAt": "2026-11-06T20:36:48.649202+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "text/css; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:06:19 GMT",
+            "etag": "\"6aee333b-7a18\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:36:48 GMT"
+          }
+        },
+        {
+          "path": "index.html",
+          "url": "https://chameleonjp-lab.github.io/faitofuraito/index.html",
+          "status": 200,
+          "bytes": 21414,
+          "sha256": "7395a00f05cb042862089534da8f811caf413cf092ed9a236aecc924d4d5ebce",
+          "observedAt": "2026-11-06T20:36:48.860146+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:06:19 GMT",
+            "etag": "\"6aee333b-53a6\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:36:48 GMT"
+          }
+        },
+        {
+          "path": "ranking-manifest.json",
+          "url": "https://chameleonjp-lab.github.io/faitofuraito/ranking-manifest.json",
+          "status": 200,
+          "bytes": 2370,
+          "sha256": "5f3a91f821ea3894ece70d6ee4f2978467df1b3d04692e1a4c943c953085de17",
+          "observedAt": "2026-11-06T20:36:49.064683+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "application/json; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:06:41 GMT",
+            "etag": "\"6aee3351-942\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:36:49 GMT"
+          }
+        },
+        {
+          "path": "social-card-eed6ea12da6e1c73.png",
+          "url": "https://chameleonjp-lab.github.io/faitofuraito/social-card-eed6ea12da6e1c73.png",
+          "status": 200,
+          "bytes": 518677,
+          "sha256": "eed6ea12da6e1c73653a732350a019e83c6ba209f1eeaf773dbdede82eec673b",
+          "observedAt": "2026-11-06T20:36:49.194185+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "image/png",
+            "last-modified": "Fri, 06 Nov 2026 20:06:19 GMT",
+            "etag": "\"6aee333b-7ea15\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:36:49 GMT"
+          }
+        },
+        {
+          "path": "social-card.png",
+          "url": "https://chameleonjp-lab.github.io/faitofuraito/social-card.png",
+          "status": 200,
+          "bytes": 1941845,
+          "sha256": "7a3fb68e0504a3a2ec31178325394cf62a793518f65833645e69661353db8989",
+          "observedAt": "2026-11-06T20:36:49.463019+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "image/png",
+            "last-modified": "Fri, 06 Nov 2026 20:06:19 GMT",
+            "etag": "\"6aee333b-1da155\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:36:49 GMT"
+          }
+        },
+        {
+          "path": "third-party-notices.txt",
+          "url": "https://chameleonjp-lab.github.io/faitofuraito/third-party-notices.txt",
+          "status": 200,
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+          "observedAt": "2026-11-06T20:36:49.586850+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "text/plain; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:06:19 GMT",
+            "etag": "\"6aee333b-439\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:36:49 GMT"
+          }
+        }
+      ],
+      "manifest": null,
+      "method": "TLS-verified HTTPS GET of every current production file, compared byte for byte with the exact reviewed production build; successful matching main deployment read separately",
+      "agentDeploymentPerformed": false,
+      "productFileCount": 7,
+      "allProductBytesMatch": true,
+      "physicalPhoneVerified": false,
+      "gameplayAcceptanceClaimed": false
+    },
+    {
+      "id": "machimamore",
+      "title": "マチマモレ",
+      "repository": "chameleonjp-lab/machimamore",
+      "sourceReceipt": {
+        "file": "publication-machimamore.json",
+        "sha256": "2f6a5043b79405cb432f6da44a617a74688dbb95aeab207cd1546de5219814d8"
+      },
+      "sourceCommit": "e80d98c780216cdb24c8b2f233d33a6ce0ffc579",
+      "sourceTree": "04154d15c1fb56590805b8fdee249d4f48b0461d",
+      "officialUrl": "https://chameleonjp-lab.github.io/machimamore/",
+      "checkedAt": "2026-11-06T20:40:49.631950+00:00",
+      "run": {
+        "id": 42289426494,
+        "url": "https://github.com/chameleonjp-lab/machimamore/actions/runs/42289426494",
+        "headCommit": "e80d98c780216cdb24c8b2f233d33a6ce0ffc579",
+        "headBranch": "main",
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-11-06T20:33:58Z",
+        "updatedAt": "2026-11-06T20:40:13Z"
+      },
+      "deployJob": {
+        "id": 128141545651,
+        "name": "deploy",
+        "conclusion": "success",
+        "completedAt": "2026-11-06T20:40:12Z",
+        "url": "https://github.com/chameleonjp-lab/machimamore/actions/runs/42289426494/job/128141545651"
+      },
+      "assets": [
+        {
+          "path": "artifact-manifest.json",
+          "url": "https://chameleonjp-lab.github.io/machimamore/artifact-manifest.json",
+          "status": 200,
+          "bytes": 661,
+          "sha256": "ce40a0e444ba8bf9fd3c6dba0125f65667cdf208d3a5d534f351c7b822faa4c0",
+          "observedAt": "2026-11-06T20:40:48.707202+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "manifestHashMatches": true,
+          "manifestSizeMatches": true,
+          "headers": {
+            "content-type": "application/json; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:40:07 GMT",
+            "etag": "\"6aee3b27-295\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:40:48 GMT"
+          }
+        },
+        {
+          "path": "assets/index-X9WfUkK9.css",
+          "url": "https://chameleonjp-lab.github.io/machimamore/assets/index-X9WfUkK9.css",
+          "status": 200,
+          "bytes": 39775,
+          "sha256": "020d3ba110e2867aace34da55b8eec4a0269e9f725816bc78ee338c239164c09",
+          "observedAt": "2026-11-06T20:40:48.896121+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "manifestHashMatches": true,
+          "manifestSizeMatches": true,
+          "headers": {
+            "content-type": "text/css; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:40:07 GMT",
+            "etag": "\"6aee3b27-9b5f\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:40:49 GMT"
+          }
+        },
+        {
+          "path": "assets/index-x6Z77ACk.js",
+          "url": "https://chameleonjp-lab.github.io/machimamore/assets/index-x6Z77ACk.js",
+          "status": 200,
+          "bytes": 758760,
+          "sha256": "a1831890d5c74daa6c49ca1c56111cd59eb9dee73d60dae854a90def50eb470f",
+          "observedAt": "2026-11-06T20:40:49.061447+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "manifestHashMatches": true,
+          "manifestSizeMatches": true,
+          "headers": {
+            "content-type": "application/javascript; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:40:07 GMT",
+            "etag": "\"6aee3b27-b93e8\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:40:49 GMT"
+          }
+        },
+        {
+          "path": "index.html",
+          "url": "https://chameleonjp-lab.github.io/machimamore/index.html",
+          "status": 200,
+          "bytes": 10310,
+          "sha256": "6077a37f232c2562d50293d03cb552325ba194d2942495364cb86ee60037a3e9",
+          "observedAt": "2026-11-06T20:40:49.367934+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "manifestHashMatches": true,
+          "manifestSizeMatches": true,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:40:07 GMT",
+            "etag": "\"6aee3b27-2846\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:40:49 GMT"
+          }
+        },
+        {
+          "path": "third-party-notices.txt",
+          "url": "https://chameleonjp-lab.github.io/machimamore/third-party-notices.txt",
+          "status": 200,
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+          "observedAt": "2026-11-06T20:40:49.499367+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "manifestHashMatches": true,
+          "manifestSizeMatches": true,
+          "headers": {
+            "content-type": "text/plain; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:40:07 GMT",
+            "etag": "\"6aee3b27-439\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:40:49 GMT"
+          }
+        }
+      ],
+      "manifest": {
+        "schema": 1,
+        "repository": "chameleonjp-lab/machimamore",
+        "commit": "e80d98c780216cdb24c8b2f233d33a6ce0ffc579",
+        "sourceContentDigest": "931acaffa98318312561041731d377370029cd8b08d38a1f013f14b13a018315",
+        "sourceManifestSha256": "b82bee6ed99ee38e64a6a3159b4abd8b44973306b2d778d85e4ec22cbab96185",
+        "files": [
+          {
+            "path": "artifact-manifest.json",
+            "bytes": 661,
+            "sha256": "ce40a0e444ba8bf9fd3c6dba0125f65667cdf208d3a5d534f351c7b822faa4c0"
+          },
+          {
+            "path": "assets/index-X9WfUkK9.css",
+            "bytes": 39775,
+            "sha256": "020d3ba110e2867aace34da55b8eec4a0269e9f725816bc78ee338c239164c09"
+          },
+          {
+            "path": "assets/index-x6Z77ACk.js",
+            "bytes": 758760,
+            "sha256": "a1831890d5c74daa6c49ca1c56111cd59eb9dee73d60dae854a90def50eb470f"
+          },
+          {
+            "path": "index.html",
+            "bytes": 10310,
+            "sha256": "6077a37f232c2562d50293d03cb552325ba194d2942495364cb86ee60037a3e9"
+          },
+          {
+            "path": "third-party-notices.txt",
+            "bytes": 1081,
+            "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+          }
+        ]
+      },
+      "manifestObservation": {
+        "path": "deployment.json",
+        "url": "https://chameleonjp-lab.github.io/machimamore/deployment.json",
+        "observed_at": "2026-11-06T20:40:48.490441+00:00",
+        "tls_verified": true,
+        "status": 200,
+        "response_url": "https://chameleonjp-lab.github.io/machimamore/deployment.json",
+        "headers": {
+          "content-type": "application/json; charset=utf-8",
+          "last-modified": "Fri, 06 Nov 2026 20:40:07 GMT",
+          "etag": "\"6aee3b27-453\"",
+          "cache-control": "max-age=600",
+          "age": "0",
+          "date": "Fri, 06 Nov 2026 20:40:48 GMT"
+        },
+        "bytes": 1107,
+        "sha256": "0836523f03571184f7423581f7c535422e33d5a62962e93657becb69581a891c",
+        "source_identifier_matches_expected": true
+      },
+      "method": "TLS-verified HTTPS GET of every manifest product; hash and length matched both the public manifest and independently tested product files. Exact main/tree and successful deployment read separately.",
+      "mainAfterPublication": {
+        "repo": "machimamore",
+        "main": "e80d98c780216cdb24c8b2f233d33a6ce0ffc579",
+        "tree": "04154d15c1fb56590805b8fdee249d4f48b0461d",
+        "observed_at": "2026-11-06T20:41:23.014Z"
+      },
+      "verification": {
+        "unit_cases": 232,
+        "ui_cases": 20,
+        "source_evidence": "success",
+        "check_dist": "success",
+        "physical_iphone": "not_run_unavailable"
+      },
+      "agentDeploymentPerformed": true,
+      "sourceContentDigest": "931acaffa98318312561041731d377370029cd8b08d38a1f013f14b13a018315",
+      "productFileCount": 5,
+      "allProductBytesMatch": true,
+      "physicalPhoneVerified": false,
+      "gameplayAcceptanceClaimed": false
+    },
+    {
+      "id": "gekichin",
+      "title": "ゲキチン",
+      "repository": "chameleonjp-lab/gekichin",
+      "sourceReceipt": {
+        "file": "publication-gekichin.json",
+        "sha256": "27fa84e437ec6fe3d1dac733e0a21f699e510906214bc6a34aee1c4f90eb540d"
+      },
+      "sourceCommit": "8a7bd6aca86d0c1eea13c1dcb706c36e9efa98cf",
+      "sourceTree": "4e28a1fd10c00f7a8547655a864ddc1733b8751b",
+      "officialUrl": "https://chameleonjp-lab.github.io/gekichin/",
+      "checkedAt": "2026-11-06T20:38:26.481554+00:00",
+      "run": {
+        "id": 42289430251,
+        "url": "https://github.com/chameleonjp-lab/gekichin/actions/runs/42289430251",
+        "headCommit": "8a7bd6aca86d0c1eea13c1dcb706c36e9efa98cf",
+        "headBranch": "main",
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-11-06T20:33:59Z",
+        "updatedAt": "2026-11-06T20:37:12Z"
+      },
+      "deployJob": {
+        "id": 128140083374,
+        "name": "deploy",
+        "conclusion": "success",
+        "completedAt": "2026-11-06T20:37:11Z",
+        "url": "https://github.com/chameleonjp-lab/gekichin/actions/runs/42289430251/job/128140083374"
+      },
+      "assets": [
+        {
+          "path": "assets/index-CqEX_tlR.css",
+          "url": "https://chameleonjp-lab.github.io/gekichin/assets/index-CqEX_tlR.css",
+          "status": 200,
+          "bytes": 33218,
+          "sha256": "b461a999193bb643071d39db99bbf55f4cfb699247f27aed20673f071190d023",
+          "observedAt": "2026-11-06T20:38:25.853236+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "manifestHashMatches": true,
+          "manifestSizeMatches": true,
+          "headers": {
+            "content-type": "text/css; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:37:04 GMT",
+            "etag": "\"6aee3a70-81c2\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:38:25 GMT"
+          }
+        },
+        {
+          "path": "assets/index-DG4yMjkM.js",
+          "url": "https://chameleonjp-lab.github.io/gekichin/assets/index-DG4yMjkM.js",
+          "status": 200,
+          "bytes": 762217,
+          "sha256": "7736e4c444257d426fec68e41ca0fedfc06d9bafb42e621abdac4a1b2591e272",
+          "observedAt": "2026-11-06T20:38:26.000459+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "manifestHashMatches": true,
+          "manifestSizeMatches": true,
+          "headers": {
+            "content-type": "application/javascript; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:37:04 GMT",
+            "etag": "\"6aee3a70-ba169\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:38:26 GMT"
+          }
+        },
+        {
+          "path": "index.html",
+          "url": "https://chameleonjp-lab.github.io/gekichin/index.html",
+          "status": 200,
+          "bytes": 610,
+          "sha256": "9cbc869e8d2c9fba3fba0e51e295368898891afb57cd223af14f28e04ab83ab1",
+          "observedAt": "2026-11-06T20:38:26.207150+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "manifestHashMatches": true,
+          "manifestSizeMatches": true,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:37:04 GMT",
+            "etag": "\"6aee3a70-262\"",
+            "cache-control": "max-age=600",
+            "date": "Fri, 06 Nov 2026 20:38:26 GMT",
+            "age": "0"
+          }
+        },
+        {
+          "path": "third-party-notices.txt",
+          "url": "https://chameleonjp-lab.github.io/gekichin/third-party-notices.txt",
+          "status": 200,
+          "bytes": 1082,
+          "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+          "observedAt": "2026-11-06T20:38:26.346507+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "manifestHashMatches": true,
+          "manifestSizeMatches": true,
+          "headers": {
+            "content-type": "text/plain; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:37:04 GMT",
+            "etag": "\"6aee3a70-43a\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:38:26 GMT"
+          }
+        }
+      ],
+      "manifest": {
+        "schema": 1,
+        "repository": "chameleonjp-lab/gekichin",
+        "commit": "8a7bd6aca86d0c1eea13c1dcb706c36e9efa98cf",
+        "files": [
+          {
+            "path": "assets/index-CqEX_tlR.css",
+            "bytes": 33218,
+            "sha256": "b461a999193bb643071d39db99bbf55f4cfb699247f27aed20673f071190d023"
+          },
+          {
+            "path": "assets/index-DG4yMjkM.js",
+            "bytes": 762217,
+            "sha256": "7736e4c444257d426fec68e41ca0fedfc06d9bafb42e621abdac4a1b2591e272"
+          },
+          {
+            "path": "index.html",
+            "bytes": 610,
+            "sha256": "9cbc869e8d2c9fba3fba0e51e295368898891afb57cd223af14f28e04ab83ab1"
+          },
+          {
+            "path": "third-party-notices.txt",
+            "bytes": 1082,
+            "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+          }
+        ]
+      },
+      "manifestObservation": {
+        "path": "deployment.json",
+        "url": "https://chameleonjp-lab.github.io/gekichin/deployment.json",
+        "observed_at": "2026-11-06T20:38:25.646232+00:00",
+        "tls_verified": true,
+        "status": 200,
+        "response_url": "https://chameleonjp-lab.github.io/gekichin/deployment.json",
+        "headers": {
+          "content-type": "application/json; charset=utf-8",
+          "last-modified": "Fri, 06 Nov 2026 20:37:04 GMT",
+          "etag": "\"6aee3a70-2f7\"",
+          "cache-control": "max-age=600",
+          "age": "0",
+          "date": "Fri, 06 Nov 2026 20:38:25 GMT"
+        },
+        "bytes": 759,
+        "sha256": "649c943fe461bbeaa58bef60ce6b96f7076f63e36c4352cbfb4141207c84b719",
+        "source_identifier_matches_expected": true
+      },
+      "method": "TLS-verified HTTPS GET of every manifest product; hash and length matched both the public manifest and independently tested product files. Exact main/tree and successful deployment read separately.",
+      "mainAfterPublication": {
+        "repo": "gekichin",
+        "main": "8a7bd6aca86d0c1eea13c1dcb706c36e9efa98cf",
+        "tree": "4e28a1fd10c00f7a8547655a864ddc1733b8751b",
+        "observed_at": "2026-11-06T20:41:23.014Z"
+      },
+      "verification": {
+        "unit_cases": 171,
+        "ui_cases": 8,
+        "pinned_throttle_baseline_comparison": "success",
+        "physical_iphone": "not_run_unavailable"
+      },
+      "agentDeploymentPerformed": true,
+      "productFileCount": 4,
+      "allProductBytesMatch": true,
+      "physicalPhoneVerified": false,
+      "gameplayAcceptanceClaimed": false
+    },
+    {
+      "id": "uchiotose",
+      "title": "ウチオトセ",
+      "repository": "chameleonjp-lab/uchiotose",
+      "sourceReceipt": {
+        "file": "publication-uchiotose.json",
+        "sha256": "d5d71316bfef267bcdc574b3f5c5271f06f4c46e11753278bf232d48c7aefa48"
+      },
+      "sourceCommit": "e2af08dd3d1a9aede5721b657c876e11b1d520c2",
+      "sourceTree": "9b5f864b3d3d62f79fda21103b1ce0b927d9bd7c",
+      "officialUrl": "https://chameleonjp-lab.github.io/uchiotose/",
+      "checkedAt": "2026-11-06T20:44:52.791662+00:00",
+      "run": {
+        "id": 42290626792,
+        "url": "https://github.com/chameleonjp-lab/uchiotose/actions/runs/42290626792",
+        "headCommit": "32346d6420474b0f962575ca2255b7c4410a756c",
+        "headBranch": "gh-pages",
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-11-06T20:42:35Z",
+        "updatedAt": "2026-11-06T20:43:02Z"
+      },
+      "deployJob": {
+        "id": 128142888656,
+        "name": "deploy",
+        "conclusion": "success",
+        "completedAt": "2026-11-06T20:43:01Z",
+        "url": "https://github.com/chameleonjp-lab/uchiotose/actions/runs/42290626792/job/128142888656"
+      },
+      "assets": [
+        {
+          "path": "third-party-notices.txt",
+          "url": "https://chameleonjp-lab.github.io/uchiotose/third-party-notices.txt",
+          "status": 200,
+          "bytes": 1082,
+          "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+          "observedAt": "2026-11-06T20:44:49.045690+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "Python default HTTPS certificate and hostname validation with inherited CA/proxy; no insecure options",
+          "exactBytesMatch": true,
+          "kind": "production-build",
+          "etag": "\"6aee3bce-43a\"",
+          "lastModified": "Fri, 06 Nov 2026 20:42:54 GMT"
+        },
+        {
+          "path": "index.html",
+          "url": "https://chameleonjp-lab.github.io/uchiotose/index.html",
+          "status": 200,
+          "bytes": 8308,
+          "sha256": "0bb64b8fe496ea1a8a97de58514055ca3fe0a017fa1c6605fea282377e02cd75",
+          "observedAt": "2026-11-06T20:44:49.045690+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "Python default HTTPS certificate and hostname validation with inherited CA/proxy; no insecure options",
+          "exactBytesMatch": true,
+          "kind": "production-build",
+          "etag": "\"6aee3bce-2074\"",
+          "lastModified": "Fri, 06 Nov 2026 20:42:54 GMT"
+        },
+        {
+          "path": "assets/index-CM_NdGef.css",
+          "url": "https://chameleonjp-lab.github.io/uchiotose/assets/index-CM_NdGef.css",
+          "status": 200,
+          "bytes": 30913,
+          "sha256": "da43ec868b2376e44fca82231ce10e744bf4435d158bdfc3698576a6aca177b7",
+          "observedAt": "2026-11-06T20:44:49.045690+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "Python default HTTPS certificate and hostname validation with inherited CA/proxy; no insecure options",
+          "exactBytesMatch": true,
+          "kind": "production-build",
+          "etag": "\"6aee3bce-78c1\"",
+          "lastModified": "Fri, 06 Nov 2026 20:42:54 GMT"
+        },
+        {
+          "path": "assets/index-B4gYYk4d.js",
+          "url": "https://chameleonjp-lab.github.io/uchiotose/assets/index-B4gYYk4d.js",
+          "status": 200,
+          "bytes": 809710,
+          "sha256": "e46d1a78e44938dde3dc627979bed68e35ebd74e185a2b843e089eb150ac1936",
+          "observedAt": "2026-11-06T20:44:49.045690+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "Python default HTTPS certificate and hostname validation with inherited CA/proxy; no insecure options",
+          "exactBytesMatch": true,
+          "kind": "production-build",
+          "etag": "\"6aee3bce-c5aee\"",
+          "lastModified": "Fri, 06 Nov 2026 20:42:54 GMT"
+        }
+      ],
+      "additionalPublicFiles": [
+        {
+          "path": ".nojekyll",
+          "url": "https://chameleonjp-lab.github.io/uchiotose/.nojekyll",
+          "status": 200,
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "observedAt": "2026-11-06T20:44:49.045690+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "Python default HTTPS certificate and hostname validation with inherited CA/proxy; no insecure options",
+          "exactBytesMatch": true,
+          "kind": "active",
+          "etag": "\"6aee3bce-0\"",
+          "lastModified": "Fri, 06 Nov 2026 20:42:54 GMT"
+        },
+        {
+          "path": "deployment.json",
+          "url": "https://chameleonjp-lab.github.io/uchiotose/deployment.json",
+          "status": 200,
+          "bytes": 1566,
+          "sha256": "f152f7e6b38dd86e30627fc1af1f5c6e0b5e6e14a29ae0573ee1ba63e2c02bce",
+          "observedAt": "2026-11-06T20:44:49.045690+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "Python default HTTPS certificate and hostname validation with inherited CA/proxy; no insecure options",
+          "exactBytesMatch": true,
+          "kind": "deployment-manifest",
+          "etag": "\"6aee3bce-61e\"",
+          "lastModified": "Fri, 06 Nov 2026 20:42:54 GMT"
+        },
+        {
+          "path": "release.json",
+          "url": "https://chameleonjp-lab.github.io/uchiotose/release.json",
+          "status": 200,
+          "bytes": 112,
+          "sha256": "fe7a96bed78dad63c79c965b2b86566595c9654b5374641ffafdc853d6f6daa3",
+          "observedAt": "2026-11-06T20:44:49.045690+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "Python default HTTPS certificate and hostname validation with inherited CA/proxy; no insecure options",
+          "exactBytesMatch": true,
+          "kind": "active",
+          "etag": "\"6aee3bce-70\"",
+          "lastModified": "Fri, 06 Nov 2026 20:42:54 GMT"
+        },
+        {
+          "path": "assets/index-CWWXGqVN.js",
+          "url": "https://chameleonjp-lab.github.io/uchiotose/assets/index-CWWXGqVN.js",
+          "status": 200,
+          "bytes": 810104,
+          "sha256": "c0e0327ae8f20703fea79758faa05c554f1f08b7ec2917e6212f94658fd62ffc",
+          "observedAt": "2026-11-06T20:44:49.045690+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "Python default HTTPS certificate and hostname validation with inherited CA/proxy; no insecure options",
+          "exactBytesMatch": true,
+          "kind": "retained",
+          "etag": "\"6aee3bce-c5c78\"",
+          "lastModified": "Fri, 06 Nov 2026 20:42:54 GMT"
+        },
+        {
+          "path": "assets/index-DnuEAYz2.js",
+          "url": "https://chameleonjp-lab.github.io/uchiotose/assets/index-DnuEAYz2.js",
+          "status": 200,
+          "bytes": 809582,
+          "sha256": "70cf9d483e5cdb5443e7b218b65fbc74551fc19ee36d0633a89643a2e1134f3c",
+          "observedAt": "2026-11-06T20:44:49.045690+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "Python default HTTPS certificate and hostname validation with inherited CA/proxy; no insecure options",
+          "exactBytesMatch": true,
+          "kind": "retained",
+          "etag": "\"6aee3bce-c5a6e\"",
+          "lastModified": "Fri, 06 Nov 2026 20:42:54 GMT"
+        },
+        {
+          "path": "assets/index-B2mJ0w2C.js",
+          "url": "https://chameleonjp-lab.github.io/uchiotose/assets/index-B2mJ0w2C.js",
+          "status": 200,
+          "bytes": 810389,
+          "sha256": "9d9469bddc55de4f884a17e2445c5608444b31112327d54a1dc4c13460c9ef81",
+          "observedAt": "2026-11-06T20:44:49.045690+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "Python default HTTPS certificate and hostname validation with inherited CA/proxy; no insecure options",
+          "exactBytesMatch": true,
+          "kind": "retained",
+          "etag": "\"6aee3bce-c5d95\"",
+          "lastModified": "Fri, 06 Nov 2026 20:42:54 GMT"
+        },
+        {
+          "path": "assets/index-BF7Y2cGw.js",
+          "url": "https://chameleonjp-lab.github.io/uchiotose/assets/index-BF7Y2cGw.js",
+          "status": 200,
+          "bytes": 799924,
+          "sha256": "3338ca7bc302878339bf5471aca43eecc24d2c204d6604cea7949d23bf3261c7",
+          "observedAt": "2026-11-06T20:44:49.045690+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "Python default HTTPS certificate and hostname validation with inherited CA/proxy; no insecure options",
+          "exactBytesMatch": true,
+          "kind": "retained",
+          "etag": "\"6aee3bce-c34b4\"",
+          "lastModified": "Fri, 06 Nov 2026 20:42:54 GMT"
+        }
+      ],
+      "publicFileCount": 11,
+      "allPublicBytesMatchArtifact": true,
+      "manifest": {
+        "repository": "chameleonjp-lab/uchiotose",
+        "commit": "e2af08dd3d1a9aede5721b657c876e11b1d520c2",
+        "sourceBranch": "main",
+        "sourceTree": "9b5f864b3d3d62f79fda21103b1ce0b927d9bd7c",
+        "sourcePullRequest": 22,
+        "files": {
+          ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "assets/index-B4gYYk4d.js": "e46d1a78e44938dde3dc627979bed68e35ebd74e185a2b843e089eb150ac1936",
+          "assets/index-CM_NdGef.css": "da43ec868b2376e44fca82231ce10e744bf4435d158bdfc3698576a6aca177b7",
+          "index.html": "0bb64b8fe496ea1a8a97de58514055ca3fe0a017fa1c6605fea282377e02cd75",
+          "release.json": "fe7a96bed78dad63c79c965b2b86566595c9654b5374641ffafdc853d6f6daa3",
+          "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+        },
+        "retainedFiles": {
+          "assets/index-B2mJ0w2C.js": "9d9469bddc55de4f884a17e2445c5608444b31112327d54a1dc4c13460c9ef81",
+          "assets/index-BF7Y2cGw.js": "3338ca7bc302878339bf5471aca43eecc24d2c204d6604cea7949d23bf3261c7",
+          "assets/index-CWWXGqVN.js": "c0e0327ae8f20703fea79758faa05c554f1f08b7ec2917e6212f94658fd62ffc",
+          "assets/index-DnuEAYz2.js": "70cf9d483e5cdb5443e7b218b65fbc74551fc19ee36d0633a89643a2e1134f3c"
+        },
+        "previousPagesCommit": "88e00ca0fe7c1cbf2545063c137583343080a3e1",
+        "sourceAcceptanceRun": "https://github.com/chameleonjp-lab/uchiotose/actions/runs/42281245576",
+        "publicationScope": "User requested all tested games public; existing GitHub Pages static artifacts only; all previous hashed assets preserved",
+        "physicalPhoneAccepted": false
+      },
+      "manifestSha256": "f152f7e6b38dd86e30627fc1af1f5c6e0b5e6e14a29ae0573ee1ba63e2c02bce",
+      "manifestPath": "deployment.json",
+      "manifestObservation": {
+        "path": "deployment.json",
+        "url": "https://chameleonjp-lab.github.io/uchiotose/deployment.json",
+        "bytes": 1566,
+        "sha256": "f152f7e6b38dd86e30627fc1af1f5c6e0b5e6e14a29ae0573ee1ba63e2c02bce",
+        "text": "{\n  \"repository\": \"chameleonjp-lab/uchiotose\",\n  \"commit\": \"e2af08dd3d1a9aede5721b657c876e11b1d520c2\",\n  \"sourceBranch\": \"main\",\n  \"sourceTree\": \"9b5f864b3d3d62f79fda21103b1ce0b927d9bd7c\",\n  \"sourcePullRequest\": 22,\n  \"files\": {\n    \".nojekyll\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\n    \"assets/index-B4gYYk4d.js\": \"e46d1a78e44938dde3dc627979bed68e35ebd74e185a2b843e089eb150ac1936\",\n    \"assets/index-CM_NdGef.css\": \"da43ec868b2376e44fca82231ce10e744bf4435d158bdfc3698576a6aca177b7\",\n    \"index.html\": \"0bb64b8fe496ea1a8a97de58514055ca3fe0a017fa1c6605fea282377e02cd75\",\n    \"release.json\": \"fe7a96bed78dad63c79c965b2b86566595c9654b5374641ffafdc853d6f6daa3\",\n    \"third-party-notices.txt\": \"97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f\"\n  },\n  \"retainedFiles\": {\n    \"assets/index-B2mJ0w2C.js\": \"9d9469bddc55de4f884a17e2445c5608444b31112327d54a1dc4c13460c9ef81\",\n    \"assets/index-BF7Y2cGw.js\": \"3338ca7bc302878339bf5471aca43eecc24d2c204d6604cea7949d23bf3261c7\",\n    \"assets/index-CWWXGqVN.js\": \"c0e0327ae8f20703fea79758faa05c554f1f08b7ec2917e6212f94658fd62ffc\",\n    \"assets/index-DnuEAYz2.js\": \"70cf9d483e5cdb5443e7b218b65fbc74551fc19ee36d0633a89643a2e1134f3c\"\n  },\n  \"previousPagesCommit\": \"88e00ca0fe7c1cbf2545063c137583343080a3e1\",\n  \"sourceAcceptanceRun\": \"https://github.com/chameleonjp-lab/uchiotose/actions/runs/42281245576\",\n  \"publicationScope\": \"User requested all tested games public; existing GitHub Pages static artifacts only; all previous hashed assets preserved\",\n  \"physicalPhoneAccepted\": false\n}\n"
+      },
+      "releaseManifest": {
+        "path": "release.json",
+        "url": "https://chameleonjp-lab.github.io/uchiotose/release.json",
+        "bytes": 112,
+        "sha256": "fe7a96bed78dad63c79c965b2b86566595c9654b5374641ffafdc853d6f6daa3",
+        "text": "{\n  \"commit\": \"e2af08dd3d1a9aede5721b657c876e11b1d520c2\",\n  \"rulesVersion\": \"uchiotose-1\",\n  \"ranking\": false\n}\n",
+        "json": {
+          "commit": "e2af08dd3d1a9aede5721b657c876e11b1d520c2",
+          "rulesVersion": "uchiotose-1",
+          "ranking": false
+        }
+      },
+      "deployedBranchCommit": "32346d6420474b0f962575ca2255b7c4410a756c",
+      "deployedBranchTree": "50dd551f1bdbcccaa912ddcb8a70481fa09b6977",
+      "agentDeploymentPerformed": true,
+      "sourceReadme": {
+        "path": "README.md",
+        "blob": "ca12044ab8662656856106b804c242f50c8ed32d",
+        "url": "https://github.com/chameleonjp-lab/uchiotose/blob/e2af08dd3d1a9aede5721b657c876e11b1d520c2/README.md",
+        "canonicalURL": "https://chameleonjp-lab.github.io/uchiotose/",
+        "canonicalLinkPresent": true,
+        "description": "味方艦隊とともに、浮遊島から来る飛行戦士を迎撃する3D飛行ゲーム。Normal/Easy、タッチ・PC操作、設定、一時停止、有限の戦闘と結果表示。"
+      },
+      "entryObservations": [
+        {
+          "kind": "fresh-document",
+          "url": "https://chameleonjp-lab.github.io/uchiotose/",
+          "httpStatus": 200,
+          "bytes": 8308,
+          "sha256": "0bb64b8fe496ea1a8a97de58514055ca3fe0a017fa1c6605fea282377e02cd75",
+          "matchesIndependentBuild": true,
+          "etag": "\"6aee3bce-2074\"",
+          "lastModified": "Fri, 06 Nov 2026 20:42:54 GMT",
+          "requestHeaders": {}
+        },
+        {
+          "kind": "reload-with-old-etag",
+          "url": "https://chameleonjp-lab.github.io/uchiotose/",
+          "httpStatus": 200,
+          "bytes": 8308,
+          "sha256": "0bb64b8fe496ea1a8a97de58514055ca3fe0a017fa1c6605fea282377e02cd75",
+          "matchesIndependentBuild": true,
+          "etag": "\"6aee3bce-2074\"",
+          "lastModified": "Fri, 06 Nov 2026 20:42:54 GMT",
+          "requestHeaders": {
+            "If-None-Match": "\"6ad4948f-2074\""
+          }
+        }
+      ],
+      "method": "Existing GitHub Pages Deploy from branch; static artifact overlay preserving all previous assets",
+      "allOldHashedAssetsPreserved": true,
+      "productFileCount": 4,
+      "allProductBytesMatch": true,
+      "physicalPhoneVerified": false,
+      "gameplayAcceptanceClaimed": false
+    },
+    {
+      "id": "senryou",
+      "title": "センリョウ",
+      "repository": "chameleonjp-lab/senryou",
+      "sourceReceipt": {
+        "file": "publication-senryou.json",
+        "sha256": "7b8e4650365252dd3ebb177c4eb3a3c1d774c2810582667f1fc54077c3c042c0"
+      },
+      "sourceCommit": "afad9179b9a036491fe998bca4005f3d6ae1a646",
+      "sourceTree": "684c9e5d43e4bb8eeeeaea34960501488bb120ea",
+      "officialUrl": "https://chameleonjp-lab.github.io/senryou/",
+      "checkedAt": "2026-11-06T20:51:18.908686+00:00",
+      "run": {
+        "id": 42289937081,
+        "url": "https://github.com/chameleonjp-lab/senryou/actions/runs/42289937081",
+        "headCommit": "afad9179b9a036491fe998bca4005f3d6ae1a646",
+        "headBranch": "main",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      "deployJob": {
+        "id": 128146070615,
+        "name": "deploy",
+        "conclusion": "success",
+        "completedAt": "2026-11-06T20:49:43Z",
+        "url": "https://github.com/chameleonjp-lab/senryou/actions/runs/42289937081/job/128146070615"
+      },
+      "assets": [
+        {
+          "path": "assets/index-CXVdiGu5.js",
+          "url": "https://chameleonjp-lab.github.io/senryou/assets/index-CXVdiGu5.js",
+          "status": 200,
+          "bytes": 832297,
+          "sha256": "c2b33704dbec1c7cee092a4a2067210e6ca17fcdf2a5ba43ae736fff178cf649",
+          "observedAt": "2026-11-06T20:51:17.902496+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "default certificate and hostname verification; no insecure flags",
+          "exactBytesMatch": true,
+          "matchesIndependentMainBuild": true
+        },
+        {
+          "path": "assets/index-cRdNSjf2.css",
+          "url": "https://chameleonjp-lab.github.io/senryou/assets/index-cRdNSjf2.css",
+          "status": 200,
+          "bytes": 45709,
+          "sha256": "edbd6b4494b8a37c31a683fe0c49132315347a4373926c2938b93195d5759ff7",
+          "observedAt": "2026-11-06T20:51:18.126035+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "default certificate and hostname verification; no insecure flags",
+          "exactBytesMatch": true,
+          "matchesIndependentMainBuild": true
+        },
+        {
+          "path": "index.html",
+          "url": "https://chameleonjp-lab.github.io/senryou/index.html",
+          "status": 200,
+          "bytes": 11545,
+          "sha256": "aa599d9bebc96c9bf7bb3cad337409deb684e5e18605d83ce53ef8908b8b1934",
+          "observedAt": "2026-11-06T20:51:18.506173+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "default certificate and hostname verification; no insecure flags",
+          "exactBytesMatch": true,
+          "matchesIndependentMainBuild": true
+        },
+        {
+          "path": "third-party-notices.txt",
+          "url": "https://chameleonjp-lab.github.io/senryou/third-party-notices.txt",
+          "status": 200,
+          "bytes": 1082,
+          "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+          "observedAt": "2026-11-06T20:51:18.671541+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "default certificate and hostname verification; no insecure flags",
+          "exactBytesMatch": true,
+          "matchesIndependentMainBuild": true
+        }
+      ],
+      "additionalPublicFiles": [
+        {
+          "path": "deployment.json",
+          "url": "https://chameleonjp-lab.github.io/senryou/deployment.json",
+          "status": 200,
+          "bytes": 811,
+          "sha256": "e80a4dbd93481e2ab73ddd5f2f4fc2f3bcfca8d1d0abd94d2add20811da3c54b",
+          "observedAt": "2026-11-06T20:51:18.342141+00:00",
+          "tlsVerificationEnabled": true,
+          "tlsMethod": "default certificate and hostname verification; no insecure flags",
+          "exactBytesMatch": true,
+          "matchesIndependentMainBuild": true
+        }
+      ],
+      "publicFileCount": 5,
+      "allPublicBytesMatchArtifact": true,
+      "manifest": {
+        "repository": "chameleonjp-lab/senryou",
+        "commit": "afad9179b9a036491fe998bca4005f3d6ae1a646",
+        "files": {
+          "assets/index-CXVdiGu5.js": "c2b33704dbec1c7cee092a4a2067210e6ca17fcdf2a5ba43ae736fff178cf649",
+          "assets/index-cRdNSjf2.css": "edbd6b4494b8a37c31a683fe0c49132315347a4373926c2938b93195d5759ff7",
+          "index.html": "aa599d9bebc96c9bf7bb3cad337409deb684e5e18605d83ce53ef8908b8b1934",
+          "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+        },
+        "sourceTree": "684c9e5d43e4bb8eeeeaea34960501488bb120ea",
+        "workflowCommit": "afad9179b9a036491fe998bca4005f3d6ae1a646",
+        "publicationAuthorizationDate": "2026-10-18",
+        "publicationScope": "User-requested latest merged main verification build; physical-phone and gameplay acceptance are not claimed"
+      },
+      "manifestSha256": "e80a4dbd93481e2ab73ddd5f2f4fc2f3bcfca8d1d0abd94d2add20811da3c54b",
+      "manifestPath": "deployment.json",
+      "manifestObservation": {
+        "path": "deployment.json",
+        "url": "https://chameleonjp-lab.github.io/senryou/deployment.json",
+        "httpStatus": 200,
+        "bytes": 811,
+        "sha256": "e80a4dbd93481e2ab73ddd5f2f4fc2f3bcfca8d1d0abd94d2add20811da3c54b",
+        "etag": "\"6aee3d63-32b\"",
+        "lastModified": "Fri, 06 Nov 2026 20:49:39 GMT",
+        "contentType": "application/json; charset=utf-8",
+        "tlsVerification": "default certificate and hostname verification; no insecure flags",
+        "observedAt": "2026-11-06T20:51:18.342141+00:00",
+        "artifactBytesMatch": true,
+        "independentMainBuildBytesMatch": true
+      },
+      "agentDeploymentPerformed": true,
+      "sourceReadme": {
+        "path": "README.md",
+        "blob": "a88d38c90ddc253d3fc4719766f4964218b033f1",
+        "sha256": "82ce863244bcd4fb13ed71d4a9dd34de7bc636e4aba1ab71c517655e8e2e59fc",
+        "url": "https://github.com/chameleonjp-lab/senryou/blob/afad9179b9a036491fe998bca4005f3d6ae1a646/README.md",
+        "canonicalUrl": "https://chameleonjp-lab.github.io/senryou/",
+        "canonicalUrlPresent": true
+      },
+      "entryObservations": [
+        {
+          "path": "",
+          "url": "https://chameleonjp-lab.github.io/senryou/?publication_verify=afad9179b9a036491fe998bca4005f3d6ae1a646",
+          "httpStatus": 200,
+          "bytes": 11545,
+          "sha256": "aa599d9bebc96c9bf7bb3cad337409deb684e5e18605d83ce53ef8908b8b1934",
+          "etag": "\"6aee3d63-2d19\"",
+          "lastModified": "Fri, 06 Nov 2026 20:49:39 GMT",
+          "contentType": "text/html; charset=utf-8",
+          "tlsVerification": "default certificate and hostname verification; no insecure flags",
+          "observedAt": "2026-11-06T20:51:18.835900+00:00"
+        },
+        {
+          "path": "",
+          "url": "https://chameleonjp-lab.github.io/senryou/",
+          "httpStatus": 200,
+          "bytes": 11545,
+          "sha256": "aa599d9bebc96c9bf7bb3cad337409deb684e5e18605d83ce53ef8908b8b1934",
+          "etag": "\"6aee3d63-2d19\"",
+          "lastModified": "Fri, 06 Nov 2026 20:49:39 GMT",
+          "contentType": "text/html; charset=utf-8",
+          "tlsVerification": "default certificate and hostname verification; no insecure flags",
+          "observedAt": "2026-11-06T20:51:18.905026+00:00"
+        }
+      ],
+      "method": "Native full publisher gates and exact deployed bytes verified. No physical iPhone or direct public browser operation is claimed. Existing Actions atomic artifact deployment was authorized unchanged; old-asset retention scope applies to gh-pages overlays, not this single eager-bundle Actions publisher.",
+      "deploymentArtifact": {
+        "id": 13540720194,
+        "name": "github-pages",
+        "zipSha256": "7cee6d80124c3aab02ae0419d7f35cf8dcec3992fae3cf88a3ecb4634cffa29c",
+        "zipHashVerified": true,
+        "files": [
+          "assets/index-CXVdiGu5.js",
+          "assets/index-cRdNSjf2.css",
+          "deployment.json",
+          "index.html",
+          "third-party-notices.txt"
+        ]
+      },
+      "productFileCount": 4,
+      "allProductBytesMatch": true,
+      "physicalPhoneVerified": false,
+      "gameplayAcceptanceClaimed": false
+    },
+    {
+      "id": "fantasia",
+      "title": "ファンタジア",
+      "repository": "chameleonjp-lab/fantasia",
+      "sourceReceipt": {
+        "file": "publication-fantasia.json",
+        "sha256": "7504b0fdf16cd2e8ed29196d59fc83cd5670f51eda435fcf050139826b249228"
+      },
+      "sourceCommit": "8e11890b6f88cfd8e6b8e2441f696ef1a401e3dc",
+      "sourceTree": "97b79cc7422c835a387fdf4f075a32fd0a6e1100",
+      "officialUrl": "https://chameleonjp-lab.github.io/fantasia/",
+      "checkedAt": "2026-11-06T20:43:26.499737+00:00",
+      "run": {
+        "id": 42290332116,
+        "url": "https://github.com/chameleonjp-lab/fantasia/actions/runs/42290332116",
+        "headCommit": "8e11890b6f88cfd8e6b8e2441f696ef1a401e3dc",
+        "headBranch": "main",
+        "status": "completed",
+        "conclusion": "success",
+        "workflowPath": ".github/workflows/series-publication-20261010.yml"
+      },
+      "deployJob": {
+        "id": 128142612759,
+        "name": "deploy",
+        "conclusion": "success",
+        "completedAt": "2026-11-06T20:42:28Z"
+      },
+      "assets": [
+        {
+          "path": "assets/index-BOqdvI6-.css",
+          "url": "https://chameleonjp-lab.github.io/fantasia/assets/index-BOqdvI6-.css",
+          "status": 200,
+          "bytes": 50469,
+          "sha256": "5070fa014994f06eadf7c2325c05c494968cbf03bb313f2ca99b3dc551c723b4",
+          "observedAt": "2026-11-06T20:43:25.909433+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "text/css; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:42:22 GMT",
+            "etag": "\"6aee3bae-c525\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:43:25 GMT"
+          }
+        },
+        {
+          "path": "assets/index-C1joEkLX.js",
+          "url": "https://chameleonjp-lab.github.io/fantasia/assets/index-C1joEkLX.js",
+          "status": 200,
+          "bytes": 866414,
+          "sha256": "c6ca94d540e9805a3f3e601a6084aef916f5e0fc245a36f8ade4b34f92b0d8b7",
+          "observedAt": "2026-11-06T20:43:26.161906+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "application/javascript; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:42:22 GMT",
+            "etag": "\"6aee3bae-d386e\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:43:26 GMT"
+          }
+        },
+        {
+          "path": "index.html",
+          "url": "https://chameleonjp-lab.github.io/fantasia/index.html",
+          "status": 200,
+          "bytes": 12347,
+          "sha256": "0c02f5c7dab9b5051fa2482dcd0e99e51e39aed76925158c6db2458510f00141",
+          "observedAt": "2026-11-06T20:43:26.266801+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "text/html; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:42:22 GMT",
+            "etag": "\"6aee3bae-303b\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:43:26 GMT"
+          }
+        },
+        {
+          "path": "third-party-notices.txt",
+          "url": "https://chameleonjp-lab.github.io/fantasia/third-party-notices.txt",
+          "status": 200,
+          "bytes": 1082,
+          "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+          "observedAt": "2026-11-06T20:43:26.367972+00:00",
+          "exactBytesMatch": true,
+          "headers": {
+            "content-type": "text/plain; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:42:22 GMT",
+            "etag": "\"6aee3bae-43a\"",
+            "cache-control": "max-age=600",
+            "age": "0",
+            "date": "Fri, 06 Nov 2026 20:43:26 GMT"
+          }
+        }
+      ],
+      "manifest": {
+        "repository": "chameleonjp-lab/fantasia",
+        "commit": "8e11890b6f88cfd8e6b8e2441f696ef1a401e3dc",
+        "files": {
+          "assets/index-BOqdvI6-.css": "5070fa014994f06eadf7c2325c05c494968cbf03bb313f2ca99b3dc551c723b4",
+          "assets/index-C1joEkLX.js": "c6ca94d540e9805a3f3e601a6084aef916f5e0fc245a36f8ade4b34f92b0d8b7",
+          "index.html": "0c02f5c7dab9b5051fa2482dcd0e99e51e39aed76925158c6db2458510f00141",
+          "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+        },
+        "sourceTree": "97b79cc7422c835a387fdf4f075a32fd0a6e1100",
+        "workflowCommit": "8e11890b6f88cfd8e6b8e2441f696ef1a401e3dc",
+        "publicationAuthorizationDate": "2026-11-07",
+        "publicationScope": "User-requested verification build; final physical-phone and gameplay acceptance are not claimed"
+      },
+      "method": "TLS-verified HTTPS GET of every current production file, compared byte for byte with the exact reviewed production build; successful matching main deployment read separately",
+      "agentDeploymentPerformed": true,
+      "productSourceCommit": "425f1311e0d0210670fe960f0fda7b1cdf75f51f",
+      "productSourceTree": "70f3f141d952f838177058cb00716c43f600e4ee",
+      "publicationPr": "https://github.com/chameleonjp-lab/fantasia/pull/26",
+      "publicationPrCI": "https://github.com/chameleonjp-lab/fantasia/actions/runs/42289729666",
+      "formalReleaseGateUnchanged": true,
+      "productFileCount": 4,
+      "allProductBytesMatch": true,
+      "physicalPhoneVerified": false,
+      "gameplayAcceptanceClaimed": false
+    },
+    {
+      "id": "nusumidase",
+      "title": "ヌスミダセ",
+      "repository": "chameleonjp-lab/nusumidase",
+      "sourceReceipt": {
+        "file": "publication-nusumidase.json",
+        "sha256": "bbb62b97297bae9a6a00d668145e95af1491f7b9f2777010bb833785f76f2b4c"
+      },
+      "sourceCommit": "f33afc8c44de1ba0f540cd08c18cb3f08154ef16",
+      "sourceTree": "add960dce73438e752adc534a7063ef6fdec4040",
+      "officialUrl": "https://chameleonjp-lab.github.io/nusumidase/",
+      "checkedAt": "2026-11-06T20:43:11.122462+00:00",
+      "run": {
+        "id": 42290413067,
+        "url": "https://github.com/chameleonjp-lab/nusumidase/actions/runs/42290413067",
+        "headCommit": "0c3029e7c4c6eb3e871c2956d257c1b9b909ec18",
+        "headBranch": "gh-pages",
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-11-06T20:41:03Z",
+        "updatedAt": "2026-11-06T20:41:28Z"
+      },
+      "deployJob": {
+        "id": 128142151647,
+        "name": "deploy",
+        "conclusion": "success",
+        "completedAt": "2026-11-06T20:41:27Z",
+        "url": "https://github.com/chameleonjp-lab/nusumidase/actions/runs/42290413067/job/128142151647"
+      },
+      "assets": [
+        {
+          "path": "assets/index-A6yjUbUq.css",
+          "url": "https://chameleonjp-lab.github.io/nusumidase/assets/index-A6yjUbUq.css",
+          "status": 200,
+          "bytes": 30981,
+          "sha256": "e42946727f66bdd861b9498ba1336fe6c5f22bb0cb29ad42a57d347fc3be6f84",
+          "verificationRecordedAt": "2026-11-06T20:43:11.122462+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "matchesIndependentMainBuild": true,
+          "kind": "production-build",
+          "responseDate": "Fri, 06 Nov 2026 20:42:15 GMT"
+        },
+        {
+          "path": "assets/index-Y-ykInYK.js",
+          "url": "https://chameleonjp-lab.github.io/nusumidase/assets/index-Y-ykInYK.js",
+          "status": 200,
+          "bytes": 776430,
+          "sha256": "84cd0513e60ff2e3eed330e1d672b79439d28af838abd210f6dc867e3667d23d",
+          "verificationRecordedAt": "2026-11-06T20:43:11.122462+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "matchesIndependentMainBuild": true,
+          "kind": "production-build",
+          "responseDate": "Fri, 06 Nov 2026 20:42:15 GMT"
+        },
+        {
+          "path": "index.html",
+          "url": "https://chameleonjp-lab.github.io/nusumidase/index.html",
+          "status": 200,
+          "bytes": 9717,
+          "sha256": "34ff50b24c32dc88b2829b495a0942c3d24ce970cd0531d0d045b9daebf23da3",
+          "verificationRecordedAt": "2026-11-06T20:43:11.122462+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "matchesIndependentMainBuild": true,
+          "kind": "production-build",
+          "responseDate": "Fri, 06 Nov 2026 20:42:16 GMT"
+        }
+      ],
+      "additionalPublicFiles": [
+        {
+          "path": ".nojekyll",
+          "url": "https://chameleonjp-lab.github.io/nusumidase/.nojekyll",
+          "status": 200,
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "verificationRecordedAt": "2026-11-06T20:43:11.122462+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "matchesIndependentMainBuild": null,
+          "kind": "publication-metadata",
+          "responseDate": "Fri, 06 Nov 2026 20:42:15 GMT"
+        },
+        {
+          "path": "assets/index-BeHMgEnf.js",
+          "url": "https://chameleonjp-lab.github.io/nusumidase/assets/index-BeHMgEnf.js",
+          "status": 200,
+          "bytes": 772470,
+          "sha256": "22ffa721e5f9dfa520275568449b062368b5014c5e57899932c40367588e9855",
+          "verificationRecordedAt": "2026-11-06T20:43:11.122462+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "matchesIndependentMainBuild": null,
+          "kind": "retained-asset",
+          "responseDate": "Fri, 06 Nov 2026 20:42:15 GMT"
+        },
+        {
+          "path": "assets/index-C-n9Iqso.js",
+          "url": "https://chameleonjp-lab.github.io/nusumidase/assets/index-C-n9Iqso.js",
+          "status": 200,
+          "bytes": 775385,
+          "sha256": "9d9cb12b7c39a2d8e4b4e98dd11db47fa60dde96dae8ef1c62b724206d173ffa",
+          "verificationRecordedAt": "2026-11-06T20:43:11.122462+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "matchesIndependentMainBuild": null,
+          "kind": "retained-asset",
+          "responseDate": "Fri, 06 Nov 2026 20:42:15 GMT"
+        },
+        {
+          "path": "version.json",
+          "url": "https://chameleonjp-lab.github.io/nusumidase/version.json",
+          "status": 200,
+          "bytes": 1275,
+          "sha256": "81968185f5661b89957fbcc5c10bad48f18d48dc9d35accd22e2e9fc918dfbcf",
+          "verificationRecordedAt": "2026-11-06T20:43:11.122462+00:00",
+          "tlsVerificationEnabled": true,
+          "exactBytesMatch": true,
+          "matchesIndependentMainBuild": null,
+          "kind": "publication-metadata",
+          "responseDate": "Fri, 06 Nov 2026 20:42:16 GMT"
+        }
+      ],
+      "publicFileCount": 7,
+      "allPublicBytesMatchArtifact": true,
+      "manifest": {
+        "sourceCommit": "f33afc8c44de1ba0f540cd08c18cb3f08154ef16",
+        "sourceBranch": "main",
+        "sourceTree": "add960dce73438e752adc534a7063ef6fdec4040",
+        "sourcePullRequest": 10,
+        "publishedDate": "2026-11-06",
+        "rulesVersion": "nusumidase-ctf-v3",
+        "buildCommand": "npm ci && npm run build",
+        "files": {
+          "assets/index-A6yjUbUq.css": "e42946727f66bdd861b9498ba1336fe6c5f22bb0cb29ad42a57d347fc3be6f84",
+          "assets/index-Y-ykInYK.js": "84cd0513e60ff2e3eed330e1d672b79439d28af838abd210f6dc867e3667d23d",
+          "index.html": "34ff50b24c32dc88b2829b495a0942c3d24ce970cd0531d0d045b9daebf23da3",
+          ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "retainedFiles": {
+          "assets/index-BeHMgEnf.js": "22ffa721e5f9dfa520275568449b062368b5014c5e57899932c40367588e9855",
+          "assets/index-C-n9Iqso.js": "9d9cb12b7c39a2d8e4b4e98dd11db47fa60dde96dae8ef1c62b724206d173ffa"
+        },
+        "previousPagesCommit": "540ffaa930b6809496ebd0ed7fbb6c94cb982db0",
+        "sourceAcceptanceRun": "https://github.com/chameleonjp-lab/nusumidase/actions/runs/42279975389",
+        "physicalIphoneVerified": false,
+        "publicationScope": "User-authorized latest tested merged main; static artifacts only; previous hashed assets preserved; physical-phone acceptance not claimed"
+      },
+      "manifestSha256": "81968185f5661b89957fbcc5c10bad48f18d48dc9d35accd22e2e9fc918dfbcf",
+      "manifestPath": "version.json",
+      "manifestObservation": {
+        "url": "https://chameleonjp-lab.github.io/nusumidase/version.json",
+        "finalUrl": "https://chameleonjp-lab.github.io/nusumidase/version.json",
+        "status": 200,
+        "bytes": 1275,
+        "sha256": "81968185f5661b89957fbcc5c10bad48f18d48dc9d35accd22e2e9fc918dfbcf",
+        "etag": "\"6aee3b72-4fb\"",
+        "lastModified": "Fri, 06 Nov 2026 20:41:22 GMT",
+        "date": "Fri, 06 Nov 2026 20:42:16 GMT",
+        "tlsVerification": true
+      },
+      "deployedBranchCommit": "0c3029e7c4c6eb3e871c2956d257c1b9b909ec18",
+      "deployedBranchTree": "97e0ef42ff7da406d8afa77b12891d101ceb1e2c",
+      "agentDeploymentPerformed": true,
+      "sourceReadme": {
+        "path": "README.md",
+        "blob": "221495a0cb2c764badb303f52c13dcc243868cce",
+        "sha256": "17a4a6bc4fe7f1a4ea1044269f74420dee38e7743708fc1f93681963ec7b1d4e",
+        "canonicalUrl": "https://chameleonjp-lab.github.io/nusumidase/"
+      },
+      "entryObservations": [
+        {
+          "url": "https://chameleonjp-lab.github.io/nusumidase/",
+          "finalUrl": "https://chameleonjp-lab.github.io/nusumidase/",
+          "status": 200,
+          "bytes": 9717,
+          "sha256": "34ff50b24c32dc88b2829b495a0942c3d24ce970cd0531d0d045b9daebf23da3",
+          "etag": "\"6aee3b72-25f5\"",
+          "lastModified": "Fri, 06 Nov 2026 20:41:22 GMT",
+          "date": "Fri, 06 Nov 2026 20:42:16 GMT",
+          "tlsVerification": true
+        },
+        {
+          "url": "https://chameleonjp-lab.github.io/nusumidase/?reload=0c3029e7c4c6eb3e871c2956d257c1b9b909ec18",
+          "finalUrl": "https://chameleonjp-lab.github.io/nusumidase/?reload=0c3029e7c4c6eb3e871c2956d257c1b9b909ec18",
+          "status": 200,
+          "bytes": 9717,
+          "sha256": "34ff50b24c32dc88b2829b495a0942c3d24ce970cd0531d0d045b9daebf23da3",
+          "etag": "\"6aee3b72-25f5\"",
+          "lastModified": "Fri, 06 Nov 2026 20:41:22 GMT",
+          "date": "Fri, 06 Nov 2026 20:42:16 GMT",
+          "tlsVerification": true
+        }
+      ],
+      "method": "Publication/native deployment and exact TLS-served file bytes verified. Fresh-document and reload are HTTP probes, not a browser old-tab/device test; iPhone Safari remains unverified.",
+      "independentMainBuildCount": 2,
+      "productFileCount": 3,
+      "allProductBytesMatch": true,
+      "physicalPhoneVerified": false,
+      "gameplayAcceptanceClaimed": false
+    }
+  ],
+  "limitations": [
+    "This records completed publication and served-byte verification. It does not complete gameplay, performance, physical-device or accessibility acceptance.",
+    "Faitofuraito public UI remains not accepted after the earlier observed slow-frame safety stop; the byte-verification result does not change that result.",
+    "No iPhone 17 Pro/Safari device was connected. Physical-phone verification remains false for all eight games.",
+    "HTTP fresh-document/reload/cache-header probes do not establish an old-tab or browser warm-cache acceptance result.",
+    "Fantasia formal release gates were not changed. Its publication commit/tree and runtime product source/tree are recorded separately.",
+    "The older 20:18 UTC snapshot and existing catalog/screenshot dates remain historical records; this report does not retag those screenshots."
+  ],
+  "priorPublicationSnapshot": "docs/evidence/publication-check-20261107.json",
+  "progressRecord": "docs/ZERO_SERIES_AIM_ASSIST_REMOVAL_PROGRESS_20261107.md"
+}
