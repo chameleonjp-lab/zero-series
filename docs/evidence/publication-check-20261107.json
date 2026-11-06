@@ -1,0 +1,810 @@
+{
+  "snapshot_started_at": "2026-11-06T20:18:29.687507+00:00",
+  "snapshot_finished_at": "2026-11-06T20:18:31.379460+00:00",
+  "repositories": {
+    "kaisen": {
+      "observed_at": "2026-11-06T20:18:29.687798+00:00",
+      "finished_at": "2026-11-06T20:18:30.672718+00:00",
+      "pr_url": "https://github.com/chameleonjp-lab/kaisen/pull/27",
+      "candidate_head": "7998bde74282d44b8a448f453db92a04335cd9e8",
+      "tested_tree": "a03ca73cde0cdf9ad091efca651818b64eeda24b",
+      "ci_state": "success",
+      "pr_merged": true,
+      "pr_draft": false,
+      "merged_at": "2026-11-06T19:54:13Z",
+      "main": "58577fb753a06c7f15cf4141b869db1b34466b38",
+      "main_tree": "a03ca73cde0cdf9ad091efca651818b64eeda24b",
+      "main_tree_matches_tested": true,
+      "index_url": "https://chameleonjp-lab.github.io/kaisen/",
+      "index_status": 200,
+      "index_sha256": "bbdcc8b868a6baef189cd399a7289be5a994fecce467f67551f94fc886ceccf4",
+      "index_cache_headers": {
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Fri, 06 Nov 2026 19:55:26 GMT",
+        "etag": "\"6aee30ae-3083\"",
+        "cache-control": "max-age=600",
+        "age": "323",
+        "date": "Fri, 06 Nov 2026 20:18:29 GMT"
+      },
+      "public_source": "58577fb753a06c7f15cf4141b869db1b34466b38",
+      "js": [
+        {
+          "url": "https://chameleonjp-lab.github.io/kaisen/assets/index-CsuA-yZq.js",
+          "observed_at": "2026-11-06T20:18:30.321850+00:00",
+          "status": 200,
+          "bytes": 837000,
+          "sha256": "c0dbfdcd4e79942925a1386709efccfc3b319a182b741c92b60fea795c2c3134",
+          "headers": {
+            "content-type": "application/javascript; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 19:55:26 GMT",
+            "etag": "\"6aee30ae-cc588\"",
+            "cache-control": "max-age=600",
+            "age": "323",
+            "date": "Fri, 06 Nov 2026 20:18:30 GMT"
+          }
+        }
+      ],
+      "css": [
+        {
+          "url": "https://chameleonjp-lab.github.io/kaisen/assets/index-CC4z0vjG.css",
+          "observed_at": "2026-11-06T20:18:30.613506+00:00",
+          "status": 200,
+          "bytes": 30778,
+          "sha256": "27a94f1a79f29ec460e9d2493989b05d0870874621a13186c397a5fe3e0c527a",
+          "headers": {
+            "content-type": "text/css; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 19:55:26 GMT",
+            "etag": "\"6aee30ae-783a\"",
+            "cache-control": "max-age=600",
+            "age": "323",
+            "date": "Fri, 06 Nov 2026 20:18:30 GMT"
+          }
+        }
+      ],
+      "comparison": {
+        "javascript": {
+          "public_url": "https://chameleonjp-lab.github.io/kaisen/assets/index-CsuA-yZq.js",
+          "public_path": "assets/index-CsuA-yZq.js",
+          "public_sha256": "c0dbfdcd4e79942925a1386709efccfc3b319a182b741c92b60fea795c2c3134",
+          "tested_path": "assets/index-CsuA-yZq.js",
+          "tested_sha256": "c0dbfdcd4e79942925a1386709efccfc3b319a182b741c92b60fea795c2c3134",
+          "bytes_equal": true
+        },
+        "css": {
+          "public_url": "https://chameleonjp-lab.github.io/kaisen/assets/index-CC4z0vjG.css",
+          "public_path": "assets/index-CC4z0vjG.css",
+          "public_sha256": "27a94f1a79f29ec460e9d2493989b05d0870874621a13186c397a5fe3e0c527a",
+          "tested_path": "assets/index-CC4z0vjG.css",
+          "tested_sha256": "27a94f1a79f29ec460e9d2493989b05d0870874621a13186c397a5fe3e0c527a",
+          "bytes_equal": true
+        },
+        "index": {
+          "public_url": "https://chameleonjp-lab.github.io/kaisen/",
+          "public_sha256": "bbdcc8b868a6baef189cd399a7289be5a994fecce467f67551f94fc886ceccf4",
+          "tested_sha256": "bbdcc8b868a6baef189cd399a7289be5a994fecce467f67551f94fc886ceccf4",
+          "bytes_equal": true
+        }
+      },
+      "status": "merged_and_public_matches_tested",
+      "fixes_publicly_delivered": true,
+      "production_ui": {
+        "status": "pass_both_modes",
+        "classification": "Linux Chromium with software WebGL; simulated mobile viewport, not physical iPhone",
+        "url": "https://chameleonjp-lab.github.io/kaisen/",
+        "viewport": {
+          "width": 402,
+          "height": 874
+        },
+        "started_at": "2026-11-06T20:11:28.071Z",
+        "finished_at": "2026-11-06T20:11:50.271Z",
+        "modes": [
+          {
+            "mode": "easy",
+            "status": "pass",
+            "screenshots": [
+              "/workspace/scratch/l1-all8-final/kaisen/production-ui-verified/easy-playing.png",
+              "/workspace/scratch/l1-all8-final/kaisen/production-ui-verified/easy-paused.png"
+            ],
+            "errors": []
+          },
+          {
+            "mode": "normal",
+            "status": "pass",
+            "screenshots": [
+              "/workspace/scratch/l1-all8-final/kaisen/production-ui-verified/normal-playing.png",
+              "/workspace/scratch/l1-all8-final/kaisen/production-ui-verified/normal-paused.png"
+            ],
+            "errors": []
+          }
+        ],
+        "checks": [
+          "ordinary Start",
+          "visible scene/HUD",
+          "short real ArrowRight",
+          "manual pause and DOM-clock freeze",
+          "Resume",
+          "restart readiness and final manual stop"
+        ],
+        "screenshots_visually_inspected": 4,
+        "evidence": "/workspace/scratch/l1-all8-final/kaisen/production-ui-verified/evidence.json",
+        "inspection": "/workspace/scratch/l1-all8-final/kaisen/production-ui-verified/inspection.json",
+        "trust_setup": "Configured session proxy CA SPKI pin only; no global trust/settings edits or broad TLS bypass",
+        "prior_setup_and_observation_failures_preserved": true,
+        "physical_iphone_verified": false,
+        "old_tab_reload_verified": false
+      }
+    },
+    "faitofuraito": {
+      "observed_at": "2026-11-06T20:18:29.688755+00:00",
+      "finished_at": "2026-11-06T20:18:30.867809+00:00",
+      "pr_url": "https://github.com/chameleonjp-lab/faitofuraito/pull/29",
+      "candidate_head": "82f14878737a3f048e3b564e777c3627490ab35f",
+      "tested_tree": "14519830a1edaf5bbe8763dbb47d97ff9e557ca0",
+      "ci_state": "success",
+      "pr_merged": true,
+      "pr_draft": false,
+      "merged_at": "2026-11-06T19:54:02Z",
+      "main": "70d2a8d44be70282cd99912f4881c6aab626800f",
+      "main_tree": "14519830a1edaf5bbe8763dbb47d97ff9e557ca0",
+      "main_tree_matches_tested": true,
+      "index_url": "https://chameleonjp-lab.github.io/faitofuraito/",
+      "index_status": 200,
+      "index_sha256": "7395a00f05cb042862089534da8f811caf413cf092ed9a236aecc924d4d5ebce",
+      "index_cache_headers": {
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Fri, 06 Nov 2026 20:06:19 GMT",
+        "etag": "\"6aee333b-53a6\"",
+        "cache-control": "max-age=600",
+        "age": "323",
+        "date": "Fri, 06 Nov 2026 20:18:29 GMT"
+      },
+      "public_source": null,
+      "js": [
+        {
+          "url": "https://chameleonjp-lab.github.io/faitofuraito/assets/index-Bk2Nwb68.js",
+          "observed_at": "2026-11-06T20:18:30.679228+00:00",
+          "status": 200,
+          "bytes": 1212823,
+          "sha256": "604a4c4a46346f590225f73b5ca8394e389a83e2abd6d4b1d04ae0e5b6fb473b",
+          "headers": {
+            "content-type": "application/javascript; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:06:39 GMT",
+            "etag": "\"6aee334f-128197\"",
+            "cache-control": "max-age=600",
+            "age": "323",
+            "date": "Fri, 06 Nov 2026 20:18:30 GMT"
+          }
+        }
+      ],
+      "css": [
+        {
+          "url": "https://chameleonjp-lab.github.io/faitofuraito/assets/index-CfcgTNfg.css",
+          "observed_at": "2026-11-06T20:18:30.774507+00:00",
+          "status": 200,
+          "bytes": 31256,
+          "sha256": "94428227347712c1269c74b07de397632fa2368e76b324bdedbe1edbeea1eef0",
+          "headers": {
+            "content-type": "text/css; charset=utf-8",
+            "last-modified": "Fri, 06 Nov 2026 20:06:34 GMT",
+            "etag": "\"6aee334a-7a18\"",
+            "cache-control": "max-age=600",
+            "age": "323",
+            "date": "Fri, 06 Nov 2026 20:18:30 GMT"
+          }
+        }
+      ],
+      "comparison": {
+        "javascript": {
+          "public_url": "https://chameleonjp-lab.github.io/faitofuraito/assets/index-Bk2Nwb68.js",
+          "public_path": "assets/index-Bk2Nwb68.js",
+          "public_sha256": "604a4c4a46346f590225f73b5ca8394e389a83e2abd6d4b1d04ae0e5b6fb473b",
+          "tested_path": "assets/index-Bk2Nwb68.js",
+          "tested_sha256": "604a4c4a46346f590225f73b5ca8394e389a83e2abd6d4b1d04ae0e5b6fb473b",
+          "bytes_equal": true
+        },
+        "css": {
+          "public_url": "https://chameleonjp-lab.github.io/faitofuraito/assets/index-CfcgTNfg.css",
+          "public_path": "assets/index-CfcgTNfg.css",
+          "public_sha256": "94428227347712c1269c74b07de397632fa2368e76b324bdedbe1edbeea1eef0",
+          "tested_path": "assets/index-CfcgTNfg.css",
+          "tested_sha256": "94428227347712c1269c74b07de397632fa2368e76b324bdedbe1edbeea1eef0",
+          "bytes_equal": true
+        },
+        "index": {
+          "public_url": "https://chameleonjp-lab.github.io/faitofuraito/",
+          "public_sha256": "7395a00f05cb042862089534da8f811caf413cf092ed9a236aecc924d4d5ebce",
+          "tested_sha256": "7395a00f05cb042862089534da8f811caf413cf092ed9a236aecc924d4d5ebce",
+          "bytes_equal": true
+        }
+      },
+      "status": "merged_and_public_matches_tested",
+      "fixes_publicly_delivered": true,
+      "production_ui": {
+        "status": "not_pass_slow_frame_pause_both_modes",
+        "classification": "Client-side production-asset verification with ranking mutations blocked; not backend/ranking acceptance",
+        "url": "https://chameleonjp-lab.github.io/faitofuraito/",
+        "viewport": {
+          "width": 402,
+          "height": 874
+        },
+        "started_at": "2026-11-06T20:16:46.030Z",
+        "finished_at": "2026-11-06T20:17:31.149Z",
+        "modes": [
+          {
+            "mode": "easy",
+            "status": "fail",
+            "failure_state": "paused",
+            "failure_pause_note": "画面の更新が止まったため一時停止しました。準備ができたら再開できます。",
+            "blocked_ranking_mutations": [
+              {
+                "at": "2026-11-06T20:16:48.299Z",
+                "method": "POST",
+                "path": "/rest/v1/rpc/start_faitofuraito_guest_play_v1"
+              }
+            ],
+            "screenshots": [
+              "/workspace/scratch/l1-all8-final/faitofuraito/production-ui/easy-playing.png",
+              "/workspace/scratch/l1-all8-final/faitofuraito/production-ui/easy-failure.png"
+            ],
+            "errors": []
+          },
+          {
+            "mode": "normal",
+            "status": "fail",
+            "failure_state": "paused",
+            "failure_pause_note": "画面の更新が止まったため一時停止しました。準備ができたら再開できます。",
+            "blocked_ranking_mutations": [
+              {
+                "at": "2026-11-06T20:17:14.729Z",
+                "method": "POST",
+                "path": "/rest/v1/rpc/start_faitofuraito_guest_play_v1"
+              }
+            ],
+            "screenshots": [
+              "/workspace/scratch/l1-all8-final/faitofuraito/production-ui/normal-playing.png",
+              "/workspace/scratch/l1-all8-final/faitofuraito/production-ui/normal-failure.png"
+            ],
+            "errors": []
+          }
+        ],
+        "reached": [
+          "ordinary Start",
+          "visible scene/HUD",
+          "short real ArrowRight"
+        ],
+        "not_reached": [
+          "manual clock-freeze verification",
+          "Resume",
+          "Home/restart readiness"
+        ],
+        "unexpected_pause_retried": false,
+        "screenshots_visually_inspected": 4,
+        "evidence": "/workspace/scratch/l1-all8-final/faitofuraito/production-ui/evidence.json",
+        "inspection": "/workspace/scratch/l1-all8-final/faitofuraito/production-ui/inspection.json",
+        "ranking_mutations": "aborted before network; no fake successful RPC responses",
+        "blocked_exact_paths": [
+          "POST /rest/v1/rpc/start_faitofuraito_guest_play_v1"
+        ],
+        "backend_ranking_acceptance": "not_tested",
+        "physical_iphone_verified": false,
+        "old_tab_reload_verified": false
+      }
+    },
+    "fantasia": {
+      "observed_at": "2026-11-06T20:18:29.689672+00:00",
+      "finished_at": "2026-11-06T20:18:30.541247+00:00",
+      "pr_url": "https://github.com/chameleonjp-lab/fantasia/pull/25",
+      "candidate_head": "f6d438c29ec68483858daefc866b77fbcc4067b6",
+      "tested_tree": "70f3f141d952f838177058cb00716c43f600e4ee",
+      "ci_state": "success",
+      "pr_merged": true,
+      "pr_draft": false,
+      "merged_at": "2026-11-06T19:36:22Z",
+      "main": "425f1311e0d0210670fe960f0fda7b1cdf75f51f",
+      "main_tree": "70f3f141d952f838177058cb00716c43f600e4ee",
+      "main_tree_matches_tested": true,
+      "index_url": "https://chameleonjp-lab.github.io/fantasia/",
+      "index_status": 200,
+      "index_sha256": "53bac91266d4db2aba396df49663cdb0729bdd0acc7050acae4d165ed1ab5e30",
+      "index_cache_headers": {
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Tue, 13 Oct 2026 07:47:46 GMT",
+        "etag": "\"6acde222-303b\"",
+        "cache-control": "max-age=600",
+        "age": "323",
+        "date": "Fri, 06 Nov 2026 20:18:29 GMT"
+      },
+      "public_source": "7f9c9045d164dda5a938db6a324bc6ac62b97bb3",
+      "js": [
+        {
+          "url": "https://chameleonjp-lab.github.io/fantasia/assets/index-DcbRvLPb.js",
+          "observed_at": "2026-11-06T20:18:30.328220+00:00",
+          "status": 200,
+          "bytes": 865865,
+          "sha256": "2a3333f18e9b23c864c00023ba1a98fd476c8995e845377f0a9557d1ba87f4bc",
+          "headers": {
+            "content-type": "application/javascript; charset=utf-8",
+            "last-modified": "Tue, 13 Oct 2026 07:47:46 GMT",
+            "etag": "\"6acde222-d3649\"",
+            "cache-control": "max-age=600",
+            "date": "Fri, 06 Nov 2026 20:18:30 GMT",
+            "age": "323"
+          }
+        }
+      ],
+      "css": [
+        {
+          "url": "https://chameleonjp-lab.github.io/fantasia/assets/index-BOqdvI6-.css",
+          "observed_at": "2026-11-06T20:18:30.418894+00:00",
+          "status": 200,
+          "bytes": 50469,
+          "sha256": "5070fa014994f06eadf7c2325c05c494968cbf03bb313f2ca99b3dc551c723b4",
+          "headers": {
+            "content-type": "text/css; charset=utf-8",
+            "last-modified": "Tue, 13 Oct 2026 07:47:46 GMT",
+            "etag": "\"6acde222-c525\"",
+            "cache-control": "max-age=600",
+            "age": "323",
+            "date": "Fri, 06 Nov 2026 20:18:30 GMT"
+          }
+        }
+      ],
+      "comparison": {
+        "javascript": {
+          "public_url": "https://chameleonjp-lab.github.io/fantasia/assets/index-DcbRvLPb.js",
+          "public_path": "assets/index-DcbRvLPb.js",
+          "public_sha256": "2a3333f18e9b23c864c00023ba1a98fd476c8995e845377f0a9557d1ba87f4bc",
+          "tested_path": "assets/index-C1joEkLX.js",
+          "tested_sha256": "c6ca94d540e9805a3f3e601a6084aef916f5e0fc245a36f8ade4b34f92b0d8b7",
+          "bytes_equal": false
+        },
+        "css": {
+          "public_url": "https://chameleonjp-lab.github.io/fantasia/assets/index-BOqdvI6-.css",
+          "public_path": "assets/index-BOqdvI6-.css",
+          "public_sha256": "5070fa014994f06eadf7c2325c05c494968cbf03bb313f2ca99b3dc551c723b4",
+          "tested_path": "assets/index-BOqdvI6-.css",
+          "tested_sha256": "5070fa014994f06eadf7c2325c05c494968cbf03bb313f2ca99b3dc551c723b4",
+          "bytes_equal": true
+        },
+        "index": {
+          "public_url": "https://chameleonjp-lab.github.io/fantasia/",
+          "public_sha256": "53bac91266d4db2aba396df49663cdb0729bdd0acc7050acae4d165ed1ab5e30",
+          "tested_sha256": "0c02f5c7dab9b5051fa2482dcd0e99e51e39aed76925158c6db2458510f00141",
+          "bytes_equal": false
+        }
+      },
+      "status": "merged_public_old",
+      "fixes_publicly_delivered": false
+    },
+    "machimamore": {
+      "observed_at": "2026-11-06T20:18:29.690207+00:00",
+      "finished_at": "2026-11-06T20:18:30.549117+00:00",
+      "pr_url": "https://github.com/chameleonjp-lab/machimamore/pull/23",
+      "candidate_head": "f55a0bc2a9b82584238537ef00bcdbb5b85da217",
+      "tested_tree": "04154d15c1fb56590805b8fdee249d4f48b0461d",
+      "ci_state": "success",
+      "pr_merged": true,
+      "pr_draft": false,
+      "merged_at": "2026-11-06T19:36:31Z",
+      "main": "e80d98c780216cdb24c8b2f233d33a6ce0ffc579",
+      "main_tree": "04154d15c1fb56590805b8fdee249d4f48b0461d",
+      "main_tree_matches_tested": true,
+      "index_url": "https://chameleonjp-lab.github.io/machimamore/",
+      "index_status": 200,
+      "index_sha256": "ef61e1bb7b7f2bd66c67048a99987267c3fc7e7be1f246d4ba8605517fc24557",
+      "index_cache_headers": {
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Sun, 18 Oct 2026 10:58:46 GMT",
+        "etag": "\"6ad4a666-27bc\"",
+        "cache-control": "max-age=600",
+        "age": "323",
+        "date": "Fri, 06 Nov 2026 20:18:29 GMT"
+      },
+      "public_source": "8d8a725e847974516be9fbc9a0e9e759d6e35683",
+      "js": [
+        {
+          "url": "https://chameleonjp-lab.github.io/machimamore/assets/index-BKfjS3v4.js",
+          "observed_at": "2026-11-06T20:18:30.322443+00:00",
+          "status": 200,
+          "bytes": 747758,
+          "sha256": "8e38f95b672319f5c89dedacb559414ead8bc393e8c4eba5653e4d09de3a0d7a",
+          "headers": {
+            "content-type": "application/javascript; charset=utf-8",
+            "last-modified": "Sun, 18 Oct 2026 10:58:46 GMT",
+            "etag": "\"6ad4a666-b68ee\"",
+            "cache-control": "max-age=600",
+            "age": "323",
+            "date": "Fri, 06 Nov 2026 20:18:30 GMT"
+          }
+        }
+      ],
+      "css": [
+        {
+          "url": "https://chameleonjp-lab.github.io/machimamore/assets/index-AkPUCdwC.css",
+          "observed_at": "2026-11-06T20:18:30.492807+00:00",
+          "status": 200,
+          "bytes": 38726,
+          "sha256": "7deef615a6daeb10d805275d0ac7540c3d249db757c96292d4a45e3c212789dc",
+          "headers": {
+            "content-type": "text/css; charset=utf-8",
+            "last-modified": "Sun, 18 Oct 2026 10:58:46 GMT",
+            "etag": "\"6ad4a666-9746\"",
+            "cache-control": "max-age=600",
+            "age": "323",
+            "date": "Fri, 06 Nov 2026 20:18:30 GMT"
+          }
+        }
+      ],
+      "comparison": {
+        "javascript": {
+          "public_url": "https://chameleonjp-lab.github.io/machimamore/assets/index-BKfjS3v4.js",
+          "public_path": "assets/index-BKfjS3v4.js",
+          "public_sha256": "8e38f95b672319f5c89dedacb559414ead8bc393e8c4eba5653e4d09de3a0d7a",
+          "tested_path": "assets/index-x6Z77ACk.js",
+          "tested_sha256": "a1831890d5c74daa6c49ca1c56111cd59eb9dee73d60dae854a90def50eb470f",
+          "bytes_equal": false
+        },
+        "css": {
+          "public_url": "https://chameleonjp-lab.github.io/machimamore/assets/index-AkPUCdwC.css",
+          "public_path": "assets/index-AkPUCdwC.css",
+          "public_sha256": "7deef615a6daeb10d805275d0ac7540c3d249db757c96292d4a45e3c212789dc",
+          "tested_path": "assets/index-X9WfUkK9.css",
+          "tested_sha256": "020d3ba110e2867aace34da55b8eec4a0269e9f725816bc78ee338c239164c09",
+          "bytes_equal": false
+        },
+        "index": {
+          "public_url": "https://chameleonjp-lab.github.io/machimamore/",
+          "public_sha256": "ef61e1bb7b7f2bd66c67048a99987267c3fc7e7be1f246d4ba8605517fc24557",
+          "tested_sha256": "6077a37f232c2562d50293d03cb552325ba194d2942495364cb86ee60037a3e9",
+          "bytes_equal": false
+        }
+      },
+      "status": "merged_public_old",
+      "fixes_publicly_delivered": false
+    },
+    "gekichin": {
+      "observed_at": "2026-11-06T20:18:30.541796+00:00",
+      "finished_at": "2026-11-06T20:18:31.243573+00:00",
+      "pr_url": "https://github.com/chameleonjp-lab/gekichin/pull/18",
+      "candidate_head": "5d9064a6c46cf5cd011f0d80e567b92b42c17c95",
+      "tested_tree": "4e28a1fd10c00f7a8547655a864ddc1733b8751b",
+      "ci_state": "success",
+      "pr_merged": true,
+      "pr_draft": false,
+      "merged_at": "2026-11-06T19:36:40Z",
+      "main": "8a7bd6aca86d0c1eea13c1dcb706c36e9efa98cf",
+      "main_tree": "4e28a1fd10c00f7a8547655a864ddc1733b8751b",
+      "main_tree_matches_tested": true,
+      "index_url": "https://chameleonjp-lab.github.io/gekichin/",
+      "index_status": 200,
+      "index_sha256": "e3ee22582648907cc7311e378298f37f449f4e7a839942554a5237a9da3ec390",
+      "index_cache_headers": {
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Sun, 18 Oct 2026 11:36:33 GMT",
+        "etag": "\"6ad4af41-262\"",
+        "cache-control": "max-age=600",
+        "age": "323",
+        "date": "Fri, 06 Nov 2026 20:18:30 GMT"
+      },
+      "public_source": "102c23ff4af10f67edb099632cf2aeed358b6449",
+      "js": [
+        {
+          "url": "https://chameleonjp-lab.github.io/gekichin/assets/index-DknftEkI.js",
+          "observed_at": "2026-11-06T20:18:30.972595+00:00",
+          "status": 200,
+          "bytes": 761109,
+          "sha256": "97221a6c39ab586274e0ef521e42c25b9c2fa1a1286bc9e1cf068ef8825019c7",
+          "headers": {
+            "content-type": "application/javascript; charset=utf-8",
+            "last-modified": "Sun, 18 Oct 2026 11:36:33 GMT",
+            "etag": "\"6ad4af41-b9d15\"",
+            "cache-control": "max-age=600",
+            "age": "323",
+            "date": "Fri, 06 Nov 2026 20:18:31 GMT"
+          }
+        }
+      ],
+      "css": [
+        {
+          "url": "https://chameleonjp-lab.github.io/gekichin/assets/index-CqEX_tlR.css",
+          "observed_at": "2026-11-06T20:18:31.183990+00:00",
+          "status": 200,
+          "bytes": 33218,
+          "sha256": "b461a999193bb643071d39db99bbf55f4cfb699247f27aed20673f071190d023",
+          "headers": {
+            "content-type": "text/css; charset=utf-8",
+            "last-modified": "Sun, 18 Oct 2026 11:36:33 GMT",
+            "etag": "\"6ad4af41-81c2\"",
+            "cache-control": "max-age=600",
+            "age": "323",
+            "date": "Fri, 06 Nov 2026 20:18:31 GMT"
+          }
+        }
+      ],
+      "comparison": {
+        "javascript": {
+          "public_url": "https://chameleonjp-lab.github.io/gekichin/assets/index-DknftEkI.js",
+          "public_path": "assets/index-DknftEkI.js",
+          "public_sha256": "97221a6c39ab586274e0ef521e42c25b9c2fa1a1286bc9e1cf068ef8825019c7",
+          "tested_path": "assets/index-DG4yMjkM.js",
+          "tested_sha256": "7736e4c444257d426fec68e41ca0fedfc06d9bafb42e621abdac4a1b2591e272",
+          "bytes_equal": false
+        },
+        "css": {
+          "public_url": "https://chameleonjp-lab.github.io/gekichin/assets/index-CqEX_tlR.css",
+          "public_path": "assets/index-CqEX_tlR.css",
+          "public_sha256": "b461a999193bb643071d39db99bbf55f4cfb699247f27aed20673f071190d023",
+          "tested_path": "assets/index-CqEX_tlR.css",
+          "tested_sha256": "b461a999193bb643071d39db99bbf55f4cfb699247f27aed20673f071190d023",
+          "bytes_equal": true
+        },
+        "index": {
+          "public_url": "https://chameleonjp-lab.github.io/gekichin/",
+          "public_sha256": "e3ee22582648907cc7311e378298f37f449f4e7a839942554a5237a9da3ec390",
+          "tested_sha256": "9cbc869e8d2c9fba3fba0e51e295368898891afb57cd223af14f28e04ab83ab1",
+          "bytes_equal": false
+        }
+      },
+      "status": "merged_public_old",
+      "fixes_publicly_delivered": false
+    },
+    "uchiotose": {
+      "observed_at": "2026-11-06T20:18:30.549764+00:00",
+      "finished_at": "2026-11-06T20:18:31.124681+00:00",
+      "pr_url": "https://github.com/chameleonjp-lab/uchiotose/pull/22",
+      "candidate_head": "c3d7c3a4a06f84a341f566fa2f3177cfb22854f4",
+      "tested_tree": "9b5f864b3d3d62f79fda21103b1ce0b927d9bd7c",
+      "ci_state": "success",
+      "pr_merged": true,
+      "pr_draft": false,
+      "merged_at": "2026-11-06T19:37:17Z",
+      "main": "e2af08dd3d1a9aede5721b657c876e11b1d520c2",
+      "main_tree": "9b5f864b3d3d62f79fda21103b1ce0b927d9bd7c",
+      "main_tree_matches_tested": true,
+      "index_url": "https://chameleonjp-lab.github.io/uchiotose/",
+      "index_status": 200,
+      "index_sha256": "07e6fd8b3e1cd5fac1d6b0837175c1b2cf5c39cb1b967925a70085c7f634bab9",
+      "index_cache_headers": {
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Sun, 18 Oct 2026 09:42:39 GMT",
+        "etag": "\"6ad4948f-2074\"",
+        "cache-control": "max-age=600",
+        "age": "323",
+        "date": "Fri, 06 Nov 2026 20:18:30 GMT"
+      },
+      "public_source": "89725b8bf96b7bdbef6869284f8c764ed9cd4e10",
+      "js": [
+        {
+          "url": "https://chameleonjp-lab.github.io/uchiotose/assets/index-B2mJ0w2C.js",
+          "observed_at": "2026-11-06T20:18:30.958074+00:00",
+          "status": 200,
+          "bytes": 810389,
+          "sha256": "9d9469bddc55de4f884a17e2445c5608444b31112327d54a1dc4c13460c9ef81",
+          "headers": {
+            "content-type": "application/javascript; charset=utf-8",
+            "last-modified": "Sun, 18 Oct 2026 09:42:39 GMT",
+            "etag": "\"6ad4948f-c5d95\"",
+            "cache-control": "max-age=600",
+            "age": "322",
+            "date": "Fri, 06 Nov 2026 20:18:31 GMT"
+          }
+        }
+      ],
+      "css": [
+        {
+          "url": "https://chameleonjp-lab.github.io/uchiotose/assets/index-CM_NdGef.css",
+          "observed_at": "2026-11-06T20:18:31.072697+00:00",
+          "status": 200,
+          "bytes": 30913,
+          "sha256": "da43ec868b2376e44fca82231ce10e744bf4435d158bdfc3698576a6aca177b7",
+          "headers": {
+            "content-type": "text/css; charset=utf-8",
+            "last-modified": "Sun, 18 Oct 2026 09:42:39 GMT",
+            "etag": "\"6ad4948f-78c1\"",
+            "cache-control": "max-age=600",
+            "age": "322",
+            "date": "Fri, 06 Nov 2026 20:18:31 GMT"
+          }
+        }
+      ],
+      "comparison": {
+        "javascript": {
+          "public_url": "https://chameleonjp-lab.github.io/uchiotose/assets/index-B2mJ0w2C.js",
+          "public_path": "assets/index-B2mJ0w2C.js",
+          "public_sha256": "9d9469bddc55de4f884a17e2445c5608444b31112327d54a1dc4c13460c9ef81",
+          "tested_path": "assets/index-B4gYYk4d.js",
+          "tested_sha256": "e46d1a78e44938dde3dc627979bed68e35ebd74e185a2b843e089eb150ac1936",
+          "bytes_equal": false
+        },
+        "css": {
+          "public_url": "https://chameleonjp-lab.github.io/uchiotose/assets/index-CM_NdGef.css",
+          "public_path": "assets/index-CM_NdGef.css",
+          "public_sha256": "da43ec868b2376e44fca82231ce10e744bf4435d158bdfc3698576a6aca177b7",
+          "tested_path": "assets/index-CM_NdGef.css",
+          "tested_sha256": "da43ec868b2376e44fca82231ce10e744bf4435d158bdfc3698576a6aca177b7",
+          "bytes_equal": true
+        },
+        "index": {
+          "public_url": "https://chameleonjp-lab.github.io/uchiotose/",
+          "public_sha256": "07e6fd8b3e1cd5fac1d6b0837175c1b2cf5c39cb1b967925a70085c7f634bab9",
+          "tested_sha256": "0bb64b8fe496ea1a8a97de58514055ca3fe0a017fa1c6605fea282377e02cd75",
+          "bytes_equal": false
+        }
+      },
+      "status": "merged_public_old",
+      "fixes_publicly_delivered": false
+    },
+    "nusumidase": {
+      "observed_at": "2026-11-06T20:18:30.673503+00:00",
+      "finished_at": "2026-11-06T20:18:31.378302+00:00",
+      "pr_url": "https://github.com/chameleonjp-lab/nusumidase/pull/10",
+      "candidate_head": "331c6ee22415ee6ccb586183fc60c29991745579",
+      "tested_tree": "add960dce73438e752adc534a7063ef6fdec4040",
+      "ci_state": "success",
+      "pr_merged": true,
+      "pr_draft": false,
+      "merged_at": "2026-11-06T19:37:06Z",
+      "main": "f33afc8c44de1ba0f540cd08c18cb3f08154ef16",
+      "main_tree": "add960dce73438e752adc534a7063ef6fdec4040",
+      "main_tree_matches_tested": true,
+      "index_url": "https://chameleonjp-lab.github.io/nusumidase/",
+      "index_status": 200,
+      "index_sha256": "82d218699d121d79be2ff9d6c98cb303c43afe0ae5c375d60433659455afdd4b",
+      "index_cache_headers": {
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Sun, 18 Oct 2026 09:50:31 GMT",
+        "etag": "\"6ad49667-25f5\"",
+        "cache-control": "max-age=600",
+        "age": "323",
+        "date": "Fri, 06 Nov 2026 20:18:30 GMT"
+      },
+      "public_source": "58a4fded9eab018c59a4a1a57f5644c7feb6a5d9",
+      "js": [
+        {
+          "url": "https://chameleonjp-lab.github.io/nusumidase/assets/index-C-n9Iqso.js",
+          "observed_at": "2026-11-06T20:18:31.077855+00:00",
+          "status": 200,
+          "bytes": 775385,
+          "sha256": "9d9cb12b7c39a2d8e4b4e98dd11db47fa60dde96dae8ef1c62b724206d173ffa",
+          "headers": {
+            "content-type": "application/javascript; charset=utf-8",
+            "last-modified": "Sun, 18 Oct 2026 09:50:31 GMT",
+            "etag": "\"6ad49667-bd4d9\"",
+            "cache-control": "max-age=600",
+            "age": "322",
+            "date": "Fri, 06 Nov 2026 20:18:31 GMT"
+          }
+        }
+      ],
+      "css": [
+        {
+          "url": "https://chameleonjp-lab.github.io/nusumidase/assets/index-A6yjUbUq.css",
+          "observed_at": "2026-11-06T20:18:31.251355+00:00",
+          "status": 200,
+          "bytes": 30981,
+          "sha256": "e42946727f66bdd861b9498ba1336fe6c5f22bb0cb29ad42a57d347fc3be6f84",
+          "headers": {
+            "content-type": "text/css; charset=utf-8",
+            "last-modified": "Sun, 18 Oct 2026 09:50:31 GMT",
+            "etag": "\"6ad49667-7905\"",
+            "cache-control": "max-age=600",
+            "age": "323",
+            "date": "Fri, 06 Nov 2026 20:18:31 GMT"
+          }
+        }
+      ],
+      "comparison": {
+        "javascript": {
+          "public_url": "https://chameleonjp-lab.github.io/nusumidase/assets/index-C-n9Iqso.js",
+          "public_path": "assets/index-C-n9Iqso.js",
+          "public_sha256": "9d9cb12b7c39a2d8e4b4e98dd11db47fa60dde96dae8ef1c62b724206d173ffa",
+          "tested_path": "assets/index-Y-ykInYK.js",
+          "tested_sha256": "84cd0513e60ff2e3eed330e1d672b79439d28af838abd210f6dc867e3667d23d",
+          "bytes_equal": false
+        },
+        "css": {
+          "public_url": "https://chameleonjp-lab.github.io/nusumidase/assets/index-A6yjUbUq.css",
+          "public_path": "assets/index-A6yjUbUq.css",
+          "public_sha256": "e42946727f66bdd861b9498ba1336fe6c5f22bb0cb29ad42a57d347fc3be6f84",
+          "tested_path": "assets/index-A6yjUbUq.css",
+          "tested_sha256": "e42946727f66bdd861b9498ba1336fe6c5f22bb0cb29ad42a57d347fc3be6f84",
+          "bytes_equal": true
+        },
+        "index": {
+          "public_url": "https://chameleonjp-lab.github.io/nusumidase/",
+          "public_sha256": "82d218699d121d79be2ff9d6c98cb303c43afe0ae5c375d60433659455afdd4b",
+          "tested_sha256": "34ff50b24c32dc88b2829b495a0942c3d24ce970cd0531d0d045b9daebf23da3",
+          "bytes_equal": false
+        }
+      },
+      "status": "merged_public_old",
+      "fixes_publicly_delivered": false
+    },
+    "senryou": {
+      "observed_at": "2026-11-06T20:18:30.868436+00:00",
+      "finished_at": "2026-11-06T20:18:31.350823+00:00",
+      "pr_url": "https://github.com/chameleonjp-lab/senryou/pull/26",
+      "candidate_head": "a3099c9add0f3e798ffab9245a03afe21a03f09d",
+      "tested_tree": "684c9e5d43e4bb8eeeeaea34960501488bb120ea",
+      "ci_state": "success",
+      "pr_merged": false,
+      "pr_draft": true,
+      "merged_at": null,
+      "main": "5dc32d0e57bff6b7c77ef7f8b38d4b4672f01157",
+      "main_tree": "cd38b38108dc76da7d1a88bb338b09ccabd039a9",
+      "main_tree_matches_tested": false,
+      "index_url": "https://chameleonjp-lab.github.io/senryou/",
+      "index_status": 200,
+      "index_sha256": "3904fe760a485774c14349d571c26cb1d1d703b2d755d57d2b0c024967e893fb",
+      "index_cache_headers": {
+        "content-type": "text/html; charset=utf-8",
+        "last-modified": "Sun, 18 Oct 2026 10:58:22 GMT",
+        "etag": "\"6ad4a64e-2d19\"",
+        "cache-control": "max-age=600",
+        "age": "323",
+        "date": "Fri, 06 Nov 2026 20:18:30 GMT"
+      },
+      "public_source": "129ea7f04ac72c236f267c8e8be1dc78c397794a",
+      "js": [
+        {
+          "url": "https://chameleonjp-lab.github.io/senryou/assets/index-CuWH0-8v.js",
+          "observed_at": "2026-11-06T20:18:31.230603+00:00",
+          "status": 200,
+          "bytes": 833216,
+          "sha256": "b929f7763b9b90f22e8c946619b448337f12b9c28f6fa48030ed21b5b11f24a4",
+          "headers": {
+            "content-type": "application/javascript; charset=utf-8",
+            "last-modified": "Sun, 18 Oct 2026 10:58:22 GMT",
+            "etag": "\"6ad4a64e-cb6c0\"",
+            "cache-control": "max-age=600",
+            "age": "323",
+            "date": "Fri, 06 Nov 2026 20:18:31 GMT"
+          }
+        }
+      ],
+      "css": [
+        {
+          "url": "https://chameleonjp-lab.github.io/senryou/assets/index-cRdNSjf2.css",
+          "observed_at": "2026-11-06T20:18:31.309771+00:00",
+          "status": 200,
+          "bytes": 45709,
+          "sha256": "edbd6b4494b8a37c31a683fe0c49132315347a4373926c2938b93195d5759ff7",
+          "headers": {
+            "content-type": "text/css; charset=utf-8",
+            "last-modified": "Sun, 18 Oct 2026 10:58:22 GMT",
+            "etag": "\"6ad4a64e-b28d\"",
+            "cache-control": "max-age=600",
+            "age": "322",
+            "date": "Fri, 06 Nov 2026 20:18:31 GMT"
+          }
+        }
+      ],
+      "comparison": {
+        "javascript": {
+          "public_url": "https://chameleonjp-lab.github.io/senryou/assets/index-CuWH0-8v.js",
+          "public_path": "assets/index-CuWH0-8v.js",
+          "public_sha256": "b929f7763b9b90f22e8c946619b448337f12b9c28f6fa48030ed21b5b11f24a4",
+          "tested_path": "assets/index-CXVdiGu5.js",
+          "tested_sha256": "c2b33704dbec1c7cee092a4a2067210e6ca17fcdf2a5ba43ae736fff178cf649",
+          "bytes_equal": false
+        },
+        "css": {
+          "public_url": "https://chameleonjp-lab.github.io/senryou/assets/index-cRdNSjf2.css",
+          "public_path": "assets/index-cRdNSjf2.css",
+          "public_sha256": "edbd6b4494b8a37c31a683fe0c49132315347a4373926c2938b93195d5759ff7",
+          "tested_path": "assets/index-cRdNSjf2.css",
+          "tested_sha256": "edbd6b4494b8a37c31a683fe0c49132315347a4373926c2938b93195d5759ff7",
+          "bytes_equal": true
+        },
+        "index": {
+          "public_url": "https://chameleonjp-lab.github.io/senryou/",
+          "public_sha256": "3904fe760a485774c14349d571c26cb1d1d703b2d755d57d2b0c024967e893fb",
+          "tested_sha256": "aa599d9bebc96c9bf7bb3cad337409deb684e5e18605d83ce53ef8908b8b1934",
+          "bytes_equal": false
+        }
+      },
+      "status": "unmerged_public_old",
+      "fixes_publicly_delivered": false
+    }
+  }
+}

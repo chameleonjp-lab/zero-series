@@ -2,7 +2,7 @@
 
 同じ操作で敵の位置だけを変えたとき、自機の軌道とカメラの向きに差が出ないこと。機銃・機関砲の弾が銃口の正面へ飛ぶこと。この2点をイージー・ノーマルの両方で確かめます。カイセンで先に直し、同じ手順を残る7作品に使います。
 
-2026年11月7日（日本時間）。8作品の開発版を前回の調査記録と照合しました。下の工程はこれからの作業です。ゲームの修正、実機での合否判定、公開後の照合はすべて未着手です。
+2026年11月7日（日本時間）作成。開始版と修正前の比較値は着手前の調査記録です。実行後の修正候補・CI結果・実機と公開版の確認状況は[実行記録](ZERO_SERIES_AIM_ASSIST_REMOVAL_PROGRESS_20261107.md)へ分けて記録します。
 
 ## 何を直すか
 
@@ -100,18 +100,18 @@ node --import tsx --test tests/normal-camera.test.ts tests/flight-presentation.t
 
 ## 作品ごとの進捗
 
-修正候補欄には作品ごとの変更依頼と検査した版を、実機欄には両モードの縦・横の結果を、公開照合欄には配信された版と確認日を記入します。
+開始版・最終CI・実機・公開版を分けた最新の結果は[実行記録](ZERO_SERIES_AIM_ASSIST_REMOVAL_PROGRESS_20261107.md)にあります。以下の候補は検査した内容とGitHubのtree一致を確認しています。
 
 | 作品 | 修正候補 | iPhone実機 | 公開照合 |
 | --- | --- | --- | --- |
-| カイセン | 未着手 | 未確認 | 未照合 |
-| ファイトフライト | 未着手 | 未確認 | 未照合 |
-| マチマモレ | 未着手 | 未確認 | 未照合 |
-| ゲキチン | 未着手 | 未確認 | 未照合 |
-| ウチオトセ | 未着手 | 未確認 | 未照合 |
-| センリョウ | 未着手 | 未確認 | 未照合 |
-| ファンタジア | 未着手 | 未確認 | 未照合 |
-| ヌスミダセ | 未着手 | 未確認 | 未照合 |
+| カイセン | [#27](https://github.com/chameleonjp-lab/kaisen/pull/27) / `7998bde7` | 未確認 | 配信ファイル一致 |
+| ファイトフライト | [#29](https://github.com/chameleonjp-lab/faitofuraito/pull/29) / `82f14878` | 未確認 | 配信ファイル一致・公開UI未合格 |
+| マチマモレ | [#23](https://github.com/chameleonjp-lab/machimamore/pull/23) / `f55a0bc2` | 未確認 | 旧版を照合・未反映 |
+| ゲキチン | [#18](https://github.com/chameleonjp-lab/gekichin/pull/18) / `5d9064a6` | 未確認 | 旧版を照合・未反映 |
+| ウチオトセ | [#22](https://github.com/chameleonjp-lab/uchiotose/pull/22) / `c3d7c3a4` | 未確認 | 旧版を照合・未反映 |
+| センリョウ | [#26](https://github.com/chameleonjp-lab/senryou/pull/26) / `a3099c9a` | 未確認 | 未マージ・旧版を照合 |
+| ファンタジア | [#25](https://github.com/chameleonjp-lab/fantasia/pull/25) / `f6d438c2` | 未確認 | 旧版を照合・未反映 |
+| ヌスミダセ | [#10](https://github.com/chameleonjp-lab/nusumidase/pull/10) / `331c6ee2` | 未確認 | 旧版を照合・未反映 |
 
 ## 作品ごとの実装入口と既存検査
 
