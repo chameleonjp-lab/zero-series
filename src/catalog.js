@@ -9,6 +9,7 @@ export const OFFICIAL_PLAY_URLS = Object.freeze({
   uchiotose:'https://chameleonjp-lab.github.io/uchiotose/',
   senryou:'https://chameleonjp-lab.github.io/senryou/',
   fantasia:'https://chameleonjp-lab.github.io/fantasia/',
+  nusumidase:'https://chameleonjp-lab.github.io/nusumidase/',
 });
 
 export const catalog = [
@@ -942,39 +943,120 @@ export const catalog = [
     "id": "nusumidase",
     "displayOrder": 8,
     "title": "ヌスミダセ",
-    "description": "敵の空中基地から機密コアを奪い、僚機とともに自基地へ持ち帰る、一人用の空中旗取りゲームを予定しています。仕様・実装計画を整備中です。",
-    "releaseState": "preparing",
-    "playUrl": null,
+    "description": "敵の空中基地から機密コアを奪い、4機の僚機とともに自基地へ持ち帰る、一人用の空中旗取りゲーム。イージーとノーマルで挑戦できます。",
+    "releaseState": "published",
+    "playUrl": "https://chameleonjp-lab.github.io/nusumidase/",
     "repositoryUrl": "https://github.com/chameleonjp-lab/nusumidase",
-    "sourceCommit": "c604c7990e5ba9a599898ede6c1ccb4b42970b51",
-    "sourceRoot": "https://github.com/chameleonjp-lab/nusumidase/tree/c604c7990e5ba9a599898ede6c1ccb4b42970b51",
-    "sourceObservedAt": "2026-10-09T14:46:27Z",
+    "sourceCommit": "f33afc8c44de1ba0f540cd08c18cb3f08154ef16",
+    "sourceRoot": "https://github.com/chameleonjp-lab/nusumidase/tree/f33afc8c44de1ba0f540cd08c18cb3f08154ef16",
+    "sourceObservedAt": "2026-11-06T20:43:11.122462+00:00",
     "descriptionSources": [
-      "https://github.com/chameleonjp-lab/nusumidase/blob/c604c7990e5ba9a599898ede6c1ccb4b42970b51/docs/REQUIREMENTS.md",
-      "https://github.com/chameleonjp-lab/nusumidase/blob/c604c7990e5ba9a599898ede6c1ccb4b42970b51/docs/IMPLEMENTATION_PLAN.md"
+      "https://github.com/chameleonjp-lab/nusumidase/blob/f33afc8c44de1ba0f540cd08c18cb3f08154ef16/README.md"
     ],
     "publicationEvidence": {
-      "verified": false,
-      "officialUrl": null,
+      "verified": true,
+      "officialUrl": "https://chameleonjp-lab.github.io/nusumidase/",
       "candidateUrl": null,
-      "deployedCommit": null,
-      "checkedAt": "2026-10-09T14:46:27Z",
+      "deployedCommit": "f33afc8c44de1ba0f540cd08c18cb3f08154ef16",
+      "sourceIsLatestMain": true,
+      "checkedAt": "2026-11-06T20:43:11.122462+00:00",
       "method": [
-        "Current main pinned SHA, README and all official source documents searched",
-        "Repository metadata, gh-pages branch presence, and Actions runs read independently"
+        "TLS-verified HTTPS GET of the canonical entry, exact public version manifest, and all seven served files; SHA-256 and byte-length comparison",
+        "Successful corresponding native GitHub Pages run and deploy job read independently; gh-pages commit kept separate from source main",
+        "Two separate exact-main production build checkouts produced identical HTML, JavaScript and CSS, and all three current product files matched the public bytes",
+        "Portal updater independently repeated canonical HTTPS GET of all seven files and the entry; hashes, lengths and exact manifest UTF-8 matched the publication receipt"
       ],
       "sources": [
-        "https://github.com/chameleonjp-lab/nusumidase/blob/c604c7990e5ba9a599898ede6c1ccb4b42970b51/docs/REQUIREMENTS.md",
-        "https://github.com/chameleonjp-lab/nusumidase/blob/c604c7990e5ba9a599898ede6c1ccb4b42970b51/docs/IMPLEMENTATION_PLAN.md"
+        "https://chameleonjp-lab.github.io/nusumidase/version.json",
+        "https://github.com/chameleonjp-lab/nusumidase/actions/runs/42290413067",
+        "https://github.com/chameleonjp-lab/nusumidase/tree/f33afc8c44de1ba0f540cd08c18cb3f08154ef16",
+        "https://github.com/chameleonjp-lab/nusumidase/blob/f33afc8c44de1ba0f540cd08c18cb3f08154ef16/README.md"
       ],
       "unknown": [
-        "No official current play URL or deployed source commit could be established from the main README, documentation, HTML, JSON, workflows, or public branch/run records",
-        "has_pages=true is observed repository configuration and does not establish a playable release",
-        "Current main contains README and two specification/planning documents only; no implementation or Actions run is present"
+        "This publication check did not start the game or verify live gameplay, score submission, physical iPhone, human controls, GPU performance or audio acceptance",
+        "Current product source and published bytes are verified; full gameplay/release acceptance is not claimed",
+        "Fresh-document and reload observations are HTTP probes, not an old-tab or browser cache test",
+        "No title screenshot is claimed for this deployed source; historical images are not retagged"
       ],
       "evidenceFile": "docs/evidence/current-games.json",
-      "deploymentRecord": null,
-      "artifactHashes": {}
+      "artifactHashes": {
+        "assets/index-A6yjUbUq.css": "e42946727f66bdd861b9498ba1336fe6c5f22bb0cb29ad42a57d347fc3be6f84",
+        "assets/index-Y-ykInYK.js": "84cd0513e60ff2e3eed330e1d672b79439d28af838abd210f6dc867e3667d23d",
+        "index.html": "34ff50b24c32dc88b2829b495a0942c3d24ce970cd0531d0d045b9daebf23da3"
+      },
+      "manifestSha256": "81968185f5661b89957fbcc5c10bad48f18d48dc9d35accd22e2e9fc918dfbcf",
+      "manifestFile": "version.json",
+      "allProductHashesMatch": true,
+      "productFileCount": 3,
+      "deployedSourceProductBytesMatch": true,
+      "currentMainProductBytesMatch": true,
+      "deploymentRecord": {
+        "kind": "github_pages_branch",
+        "runId": 42290413067,
+        "runUrl": "https://github.com/chameleonjp-lab/nusumidase/actions/runs/42290413067",
+        "headCommit": "0c3029e7c4c6eb3e871c2956d257c1b9b909ec18",
+        "headBranch": "gh-pages",
+        "status": "completed",
+        "conclusion": "success",
+        "createdAt": "2026-11-06T20:41:03Z",
+        "updatedAt": "2026-11-06T20:41:28Z",
+        "deployJobId": 128142151647,
+        "completedRecordAt": "2026-11-06T20:41:27Z",
+        "deployJobConclusion": "success"
+      },
+      "deployedArtifactBytesMatch": true,
+      "deployedBranchCommit": "0c3029e7c4c6eb3e871c2956d257c1b9b909ec18",
+      "deployedBranchTree": "97e0ef42ff7da406d8afa77b12891d101ceb1e2c",
+      "deployedBranchBytesMatch": true,
+      "entryUrlObservation": {
+        "url": "https://chameleonjp-lab.github.io/nusumidase/",
+        "finalUrl": "https://chameleonjp-lab.github.io/nusumidase/",
+        "status": 200,
+        "sha256": "34ff50b24c32dc88b2829b495a0942c3d24ce970cd0531d0d045b9daebf23da3",
+        "bytes": 9717,
+        "observedAt": "2026-11-06T20:42:16+00:00",
+        "matchesObservedIndexHtml": true,
+        "tlsVerificationEnabled": true
+      },
+      "deploymentManifest": {
+        "sourceCommit": "f33afc8c44de1ba0f540cd08c18cb3f08154ef16",
+        "sourceBranch": "main",
+        "sourceTree": "add960dce73438e752adc534a7063ef6fdec4040",
+        "sourcePullRequest": 10,
+        "publishedDate": "2026-11-06",
+        "rulesVersion": "nusumidase-ctf-v3",
+        "buildCommand": "npm ci && npm run build",
+        "files": {
+          "assets/index-A6yjUbUq.css": "e42946727f66bdd861b9498ba1336fe6c5f22bb0cb29ad42a57d347fc3be6f84",
+          "assets/index-Y-ykInYK.js": "84cd0513e60ff2e3eed330e1d672b79439d28af838abd210f6dc867e3667d23d",
+          "index.html": "34ff50b24c32dc88b2829b495a0942c3d24ce970cd0531d0d045b9daebf23da3",
+          ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "retainedFiles": {
+          "assets/index-BeHMgEnf.js": "22ffa721e5f9dfa520275568449b062368b5014c5e57899932c40367588e9855",
+          "assets/index-C-n9Iqso.js": "9d9cb12b7c39a2d8e4b4e98dd11db47fa60dde96dae8ef1c62b724206d173ffa"
+        },
+        "previousPagesCommit": "540ffaa930b6809496ebd0ed7fbb6c94cb982db0",
+        "sourceAcceptanceRun": "https://github.com/chameleonjp-lab/nusumidase/actions/runs/42279975389",
+        "physicalIphoneVerified": false,
+        "publicationScope": "User-authorized latest tested merged main; static artifacts only; previous hashed assets preserved; physical-phone acceptance not claimed"
+      },
+      "allPublicFileHashesMatch": true,
+      "publicFileCount": 7,
+      "publicFileHashes": {
+        ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "assets/index-A6yjUbUq.css": "e42946727f66bdd861b9498ba1336fe6c5f22bb0cb29ad42a57d347fc3be6f84",
+        "assets/index-BeHMgEnf.js": "22ffa721e5f9dfa520275568449b062368b5014c5e57899932c40367588e9855",
+        "assets/index-C-n9Iqso.js": "9d9cb12b7c39a2d8e4b4e98dd11db47fa60dde96dae8ef1c62b724206d173ffa",
+        "assets/index-Y-ykInYK.js": "84cd0513e60ff2e3eed330e1d672b79439d28af838abd210f6dc867e3667d23d",
+        "index.html": "34ff50b24c32dc88b2829b495a0942c3d24ce970cd0531d0d045b9daebf23da3",
+        "version.json": "81968185f5661b89957fbcc5c10bad48f18d48dc9d35accd22e2e9fc918dfbcf"
+      },
+      "retainedAssetHashes": {
+        "assets/index-BeHMgEnf.js": "22ffa721e5f9dfa520275568449b062368b5014c5e57899932c40367588e9855",
+        "assets/index-C-n9Iqso.js": "9d9cb12b7c39a2d8e4b4e98dd11db47fa60dde96dae8ef1c62b724206d173ffa"
+      },
+      "independentMainBuildCount": 2
     },
     "thumbnail": null,
     "ranking": {
@@ -983,7 +1065,9 @@ export const catalog = [
       "defaultMode": null,
       "modes": []
     },
-    "contentUpdatedAt": "2026-10-09T14:58:37.293190+00:00"
+    "contentUpdatedAt": "2026-11-06T20:44:47.273288+00:00",
+    "sourceTree": "add960dce73438e752adc534a7063ef6fdec4040",
+    "readmeBlob": "221495a0cb2c764badb303f52c13dcc243868cce"
   }
 ];
 

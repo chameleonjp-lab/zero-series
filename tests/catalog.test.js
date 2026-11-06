@@ -4,7 +4,7 @@ import {catalog,validateCatalog,getPlayableUrl} from '../src/catalog.js';
 
 test('fixed eight-source allowlist and live-disabled production policy',()=>{
   assert.equal(validateCatalog(),true);
-  assert.equal(catalog.filter(game=>getPlayableUrl(game)).length,7);
+  assert.equal(catalog.filter(game=>getPlayableUrl(game)).length,8);
   assert.equal(catalog.filter(game=>game.thumbnail).length,2);
   assert.ok(catalog.every(game=>game.ranking.enabled===false));
 });
@@ -23,8 +23,8 @@ test('wrong counts, ordering, unknown game and activation fail build validation'
   const active=structuredClone(catalog);active[0].ranking.enabled=true;assert.throws(()=>validateCatalog(active));
 });
 
-test('only the seven byte-verified public games have playable entries',()=>{
-  assert.deepEqual(catalog.filter(game=>getPlayableUrl(game)).map(game=>game.id),['kaisen','faitofuraito','machimamore','gekichin','uchiotose','senryou','fantasia']);
+test('all eight byte-verified public games have playable entries',()=>{
+  assert.deepEqual(catalog.filter(game=>getPlayableUrl(game)).map(game=>game.id),['kaisen','faitofuraito','machimamore','gekichin','uchiotose','senryou','fantasia','nusumidase']);
   const entry=catalog.find(game=>game.id==='uchiotose');
   assert.equal(entry.publicationEvidence.currentMainProductBytesMatch,true);
   assert.equal(entry.sourceCommit,entry.publicationEvidence.deployedCommit);
@@ -32,6 +32,38 @@ test('only the seven byte-verified public games have playable entries',()=>{
   assert.equal(Object.keys(entry.publicationEvidence.artifactHashes).length,4);
   const unverified=structuredClone(entry);unverified.publicationEvidence.verified=false;
   assert.equal(getPlayableUrl(unverified),null);
+});
+
+test('Nusumidase exposes its verified official entry with ranking disconnected',()=>{
+  const entry=catalog.find(game=>game.id==='nusumidase');
+  assert.equal(getPlayableUrl(entry),'https://chameleonjp-lab.github.io/nusumidase/');
+  assert.equal(entry.releaseState,'published');
+  assert.equal(entry.sourceCommit,entry.publicationEvidence.deployedCommit);
+  assert.equal(entry.publicationEvidence.currentMainProductBytesMatch,true);
+  assert.equal(entry.thumbnail,null);
+  assert.deepEqual(entry.ranking,{enabled:false,displayState:'not_connected',defaultMode:null,modes:[]});
+});
+
+test('Nusumidase refuses incorrect URLs and incomplete publication proof',()=>{
+  for(const change of [
+    entry=>entry.playUrl='https://chameleonjp-lab.github.io/nusumidase/?redirect=x',
+    entry=>entry.playUrl='https://chameleonjp-lab.github.io/nusumidase/#play',
+    entry=>entry.playUrl='https://chameleonjp-lab.github.io/kaisen/',
+    entry=>entry.publicationEvidence.officialUrl='https://example.test/nusumidase/',
+    entry=>entry.publicationEvidence.verified=false,
+    entry=>entry.publicationEvidence.deployedCommit=null,
+    entry=>entry.publicationEvidence.allProductHashesMatch=false,
+    entry=>entry.publicationEvidence.deployedSourceProductBytesMatch=false,
+    entry=>entry.publicationEvidence.manifestSha256=null,
+    entry=>entry.publicationEvidence.artifactHashes['index.html']=null,
+    entry=>entry.publicationEvidence.deploymentRecord.conclusion='failure',
+    entry=>entry.publicationEvidence.deploymentRecord.deployJobConclusion='failure',
+    entry=>entry.publicationEvidence.deploymentRecord.headCommit='0'.repeat(40),
+    entry=>entry.releaseState='preparing'
+  ]){
+    const copy=structuredClone(catalog);const entry=copy.find(game=>game.id==='nusumidase');change(entry);
+    assert.equal(getPlayableUrl(entry),null);assert.throws(()=>validateCatalog(copy));
+  }
 });
 
 test('Gekichin current publication binds exact product bytes and source',()=>{
