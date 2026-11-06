@@ -1,0 +1,504 @@
+[
+  {
+    "repo": "kaisen",
+    "at": "2026-11-06T18:37:49.339379+00:00",
+    "files": {
+      "index.html": {
+        "url": "https://chameleonjp-lab.github.io/kaisen/index.html",
+        "bytes": 12419,
+        "sha256": "bf1cf5caab649e7fc48e17239722040a99963563741a03cc3b16089d7904483f"
+      },
+      "deployment.json": {
+        "url": "https://chameleonjp-lab.github.io/kaisen/deployment.json",
+        "bytes": 504,
+        "sha256": "d091969ae369cfe9cff8ec0a7f280005f8bf997062917158019565f6e57987af"
+      }
+    },
+    "deployment": {
+      "repository": "chameleonjp-lab/kaisen",
+      "commit": "c95c9d186b977b2ab02bd6fa9e1a0ca32ea7f0a8",
+      "files": {
+        "assets/index-CC4z0vjG.css": "27a94f1a79f29ec460e9d2493989b05d0870874621a13186c397a5fe3e0c527a",
+        "assets/index-DiqwG3_d.js": "2bb5299df3dbbb019c9aada1f0776b726eb4dc955012dafbcc0f69fb7612b7fe",
+        "index.html": "bf1cf5caab649e7fc48e17239722040a99963563741a03cc3b16089d7904483f",
+        "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+      }
+    },
+    "assetVerification": [
+      {
+        "path": "assets/index-CC4z0vjG.css",
+        "sha256": "27a94f1a79f29ec460e9d2493989b05d0870874621a13186c397a5fe3e0c527a",
+        "expected": "27a94f1a79f29ec460e9d2493989b05d0870874621a13186c397a5fe3e0c527a",
+        "matches": true,
+        "bytes": 30778
+      },
+      {
+        "path": "assets/index-DiqwG3_d.js",
+        "sha256": "2bb5299df3dbbb019c9aada1f0776b726eb4dc955012dafbcc0f69fb7612b7fe",
+        "expected": "2bb5299df3dbbb019c9aada1f0776b726eb4dc955012dafbcc0f69fb7612b7fe",
+        "matches": true,
+        "bytes": 838773
+      },
+      {
+        "path": "index.html",
+        "sha256": "bf1cf5caab649e7fc48e17239722040a99963563741a03cc3b16089d7904483f",
+        "expected": "bf1cf5caab649e7fc48e17239722040a99963563741a03cc3b16089d7904483f",
+        "matches": true,
+        "bytes": 12419
+      },
+      {
+        "path": "third-party-notices.txt",
+        "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+        "expected": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+        "matches": true,
+        "bytes": 1082
+      }
+    ],
+    "developmentCommit": "c95c9d186b977b2ab02bd6fa9e1a0ca32ea7f0a8",
+    "dirtyAtStart": false,
+    "publicSourceCommit": "c95c9d186b977b2ab02bd6fa9e1a0ca32ea7f0a8",
+    "publicSourceEvidence": "deployment manifest plus all listed delivered files verified"
+  },
+  {
+    "repo": "faitofuraito",
+    "at": "2026-11-06T18:37:49.342464+00:00",
+    "files": {
+      "index.html": {
+        "url": "https://chameleonjp-lab.github.io/faitofuraito/index.html",
+        "bytes": 21202,
+        "sha256": "1c23de11c6d6a7f510a7eafd85a3185b35035f95464389e9af3891c943ab7fce"
+      },
+      "deployment.json": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    },
+    "assetVerification": [
+      {
+        "path": "assets/index-C5l2eOOg.js",
+        "sha256": "9940004269ff5f31af94a380bf7d7fae8da53a954bb4b9ec6c3fca7690e439a9",
+        "expected": null,
+        "matches": null,
+        "bytes": 1212724
+      },
+      {
+        "path": "assets/index-CfcgTNfg.css",
+        "sha256": "94428227347712c1269c74b07de397632fa2368e76b324bdedbe1edbeea1eef0",
+        "expected": null,
+        "matches": null,
+        "bytes": 31256
+      }
+    ],
+    "developmentCommit": "069e3e65e46bae95144ce11fb41de7487435e4e9",
+    "dirtyAtStart": false,
+    "publicSourceCommit": "85e79c13612c06d301b0d7e9ed39e8ad2cb0c86b",
+    "publicSourceEvidence": "recorded public source reconstructed with original configuration; HTML/JS/CSS all bytes equal"
+  },
+  {
+    "repo": "machimamore",
+    "at": "2026-11-06T18:37:49.344528+00:00",
+    "files": {
+      "index.html": {
+        "url": "https://chameleonjp-lab.github.io/machimamore/index.html",
+        "bytes": 10172,
+        "sha256": "ef61e1bb7b7f2bd66c67048a99987267c3fc7e7be1f246d4ba8605517fc24557"
+      },
+      "deployment.json": {
+        "url": "https://chameleonjp-lab.github.io/machimamore/deployment.json",
+        "bytes": 1107,
+        "sha256": "acc61c97d269e0d8b7c06a30489b7e17fd611f21f7a60aa25776ce26ae1481f1"
+      }
+    },
+    "deployment": {
+      "schema": 1,
+      "repository": "chameleonjp-lab/machimamore",
+      "commit": "8d8a725e847974516be9fbc9a0e9e759d6e35683",
+      "sourceContentDigest": "53deaeb200f91bef1c1ebef818e048fb118e4f91631e3b293417d10a4af19f0f",
+      "sourceManifestSha256": "932c158bc6d6a42ad3e8c5907dc9daa5d3aec67615dd53b48632dcc484e1e5e8",
+      "files": [
+        {
+          "path": "artifact-manifest.json",
+          "bytes": 661,
+          "sha256": "8b2bcd51bd0e35afac503f472feb2b27346e62b9ed43bad0b297dc5c6b743356"
+        },
+        {
+          "path": "assets/index-AkPUCdwC.css",
+          "bytes": 38726,
+          "sha256": "7deef615a6daeb10d805275d0ac7540c3d249db757c96292d4a45e3c212789dc"
+        },
+        {
+          "path": "assets/index-BKfjS3v4.js",
+          "bytes": 747758,
+          "sha256": "8e38f95b672319f5c89dedacb559414ead8bc393e8c4eba5653e4d09de3a0d7a"
+        },
+        {
+          "path": "index.html",
+          "bytes": 10172,
+          "sha256": "ef61e1bb7b7f2bd66c67048a99987267c3fc7e7be1f246d4ba8605517fc24557"
+        },
+        {
+          "path": "third-party-notices.txt",
+          "bytes": 1081,
+          "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+        }
+      ]
+    },
+    "assetVerification": [
+      {
+        "path": "artifact-manifest.json",
+        "sha256": "8b2bcd51bd0e35afac503f472feb2b27346e62b9ed43bad0b297dc5c6b743356",
+        "expected": "8b2bcd51bd0e35afac503f472feb2b27346e62b9ed43bad0b297dc5c6b743356",
+        "matches": true,
+        "bytes": 661
+      },
+      {
+        "path": "assets/index-AkPUCdwC.css",
+        "sha256": "7deef615a6daeb10d805275d0ac7540c3d249db757c96292d4a45e3c212789dc",
+        "expected": "7deef615a6daeb10d805275d0ac7540c3d249db757c96292d4a45e3c212789dc",
+        "matches": true,
+        "bytes": 38726
+      },
+      {
+        "path": "assets/index-BKfjS3v4.js",
+        "sha256": "8e38f95b672319f5c89dedacb559414ead8bc393e8c4eba5653e4d09de3a0d7a",
+        "expected": "8e38f95b672319f5c89dedacb559414ead8bc393e8c4eba5653e4d09de3a0d7a",
+        "matches": true,
+        "bytes": 747758
+      },
+      {
+        "path": "index.html",
+        "sha256": "ef61e1bb7b7f2bd66c67048a99987267c3fc7e7be1f246d4ba8605517fc24557",
+        "expected": "ef61e1bb7b7f2bd66c67048a99987267c3fc7e7be1f246d4ba8605517fc24557",
+        "matches": true,
+        "bytes": 10172
+      },
+      {
+        "path": "third-party-notices.txt",
+        "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+        "expected": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+        "matches": true,
+        "bytes": 1081
+      }
+    ],
+    "developmentCommit": "7afbc6a8de9e4489035ca093a97ae695b2cb1161",
+    "dirtyAtStart": false,
+    "publicSourceCommit": "8d8a725e847974516be9fbc9a0e9e759d6e35683",
+    "publicSourceEvidence": "deployment manifest plus all listed delivered files verified"
+  },
+  {
+    "repo": "gekichin",
+    "at": "2026-11-06T18:37:49.345122+00:00",
+    "files": {
+      "index.html": {
+        "url": "https://chameleonjp-lab.github.io/gekichin/index.html",
+        "bytes": 610,
+        "sha256": "e3ee22582648907cc7311e378298f37f449f4e7a839942554a5237a9da3ec390"
+      },
+      "deployment.json": {
+        "url": "https://chameleonjp-lab.github.io/gekichin/deployment.json",
+        "bytes": 759,
+        "sha256": "8daa5bf4cc8db506d57dce920728b0c7ad4a44e4e4896985c2c0c79fb4300d81"
+      }
+    },
+    "deployment": {
+      "schema": 1,
+      "repository": "chameleonjp-lab/gekichin",
+      "commit": "102c23ff4af10f67edb099632cf2aeed358b6449",
+      "files": [
+        {
+          "path": "assets/index-CqEX_tlR.css",
+          "bytes": 33218,
+          "sha256": "b461a999193bb643071d39db99bbf55f4cfb699247f27aed20673f071190d023"
+        },
+        {
+          "path": "assets/index-DknftEkI.js",
+          "bytes": 761109,
+          "sha256": "97221a6c39ab586274e0ef521e42c25b9c2fa1a1286bc9e1cf068ef8825019c7"
+        },
+        {
+          "path": "index.html",
+          "bytes": 610,
+          "sha256": "e3ee22582648907cc7311e378298f37f449f4e7a839942554a5237a9da3ec390"
+        },
+        {
+          "path": "third-party-notices.txt",
+          "bytes": 1082,
+          "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+        }
+      ]
+    },
+    "assetVerification": [
+      {
+        "path": "assets/index-CqEX_tlR.css",
+        "sha256": "b461a999193bb643071d39db99bbf55f4cfb699247f27aed20673f071190d023",
+        "expected": "b461a999193bb643071d39db99bbf55f4cfb699247f27aed20673f071190d023",
+        "matches": true,
+        "bytes": 33218
+      },
+      {
+        "path": "assets/index-DknftEkI.js",
+        "sha256": "97221a6c39ab586274e0ef521e42c25b9c2fa1a1286bc9e1cf068ef8825019c7",
+        "expected": "97221a6c39ab586274e0ef521e42c25b9c2fa1a1286bc9e1cf068ef8825019c7",
+        "matches": true,
+        "bytes": 761109
+      },
+      {
+        "path": "index.html",
+        "sha256": "e3ee22582648907cc7311e378298f37f449f4e7a839942554a5237a9da3ec390",
+        "expected": "e3ee22582648907cc7311e378298f37f449f4e7a839942554a5237a9da3ec390",
+        "matches": true,
+        "bytes": 610
+      },
+      {
+        "path": "third-party-notices.txt",
+        "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+        "expected": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+        "matches": true,
+        "bytes": 1082
+      }
+    ],
+    "developmentCommit": "a44fc39d7bebb1409421993722bf9ba1f85de6e9",
+    "dirtyAtStart": false,
+    "publicSourceCommit": "102c23ff4af10f67edb099632cf2aeed358b6449",
+    "publicSourceEvidence": "deployment manifest plus all listed delivered files verified"
+  },
+  {
+    "repo": "uchiotose",
+    "at": "2026-11-06T18:37:49.345767+00:00",
+    "files": {
+      "index.html": {
+        "url": "https://chameleonjp-lab.github.io/uchiotose/index.html",
+        "bytes": 8308,
+        "sha256": "07e6fd8b3e1cd5fac1d6b0837175c1b2cf5c39cb1b967925a70085c7f634bab9"
+      },
+      "deployment.json": {
+        "url": "https://chameleonjp-lab.github.io/uchiotose/deployment.json",
+        "bytes": 1394,
+        "sha256": "a933f9b1eb9e2699caf635c9ea61744317b8825788388f9f5087fdd230180ed4"
+      }
+    },
+    "deployment": {
+      "repository": "chameleonjp-lab/uchiotose",
+      "commit": "89725b8bf96b7bdbef6869284f8c764ed9cd4e10",
+      "sourceTree": "412d223db76ed05618e45d8d6e4a72530301305a",
+      "files": {
+        ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "assets/index-B2mJ0w2C.js": "9d9469bddc55de4f884a17e2445c5608444b31112327d54a1dc4c13460c9ef81",
+        "assets/index-CM_NdGef.css": "da43ec868b2376e44fca82231ce10e744bf4435d158bdfc3698576a6aca177b7",
+        "index.html": "07e6fd8b3e1cd5fac1d6b0837175c1b2cf5c39cb1b967925a70085c7f634bab9",
+        "release.json": "b50539b208e4157a13366b1c3e8b34815ecaa10fff5090b3a667c401b6034436",
+        "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+      },
+      "retainedFiles": {
+        "assets/index-BF7Y2cGw.js": "3338ca7bc302878339bf5471aca43eecc24d2c204d6604cea7949d23bf3261c7",
+        "assets/index-CWWXGqVN.js": "c0e0327ae8f20703fea79758faa05c554f1f08b7ec2917e6212f94658fd62ffc",
+        "assets/index-DnuEAYz2.js": "70cf9d483e5cdb5443e7b218b65fbc74551fc19ee36d0633a89643a2e1134f3c"
+      },
+      "previousPagesCommit": "bc2090c62f63f7bb9fe188d587e2adbb2b43ae2c",
+      "sourceAcceptanceRun": "https://github.com/chameleonjp-lab/uchiotose/actions/runs/39101695060",
+      "publicationScope": "Existing public GitHub Pages; static artifacts only; previously published hashed assets preserved; physical-phone acceptance not claimed"
+    },
+    "assetVerification": [
+      {
+        "path": "assets/index-B2mJ0w2C.js",
+        "sha256": "9d9469bddc55de4f884a17e2445c5608444b31112327d54a1dc4c13460c9ef81",
+        "expected": "9d9469bddc55de4f884a17e2445c5608444b31112327d54a1dc4c13460c9ef81",
+        "matches": true,
+        "bytes": 810389
+      },
+      {
+        "path": "assets/index-CM_NdGef.css",
+        "sha256": "da43ec868b2376e44fca82231ce10e744bf4435d158bdfc3698576a6aca177b7",
+        "expected": "da43ec868b2376e44fca82231ce10e744bf4435d158bdfc3698576a6aca177b7",
+        "matches": true,
+        "bytes": 30913
+      },
+      {
+        "path": "index.html",
+        "sha256": "07e6fd8b3e1cd5fac1d6b0837175c1b2cf5c39cb1b967925a70085c7f634bab9",
+        "expected": "07e6fd8b3e1cd5fac1d6b0837175c1b2cf5c39cb1b967925a70085c7f634bab9",
+        "matches": true,
+        "bytes": 8308
+      },
+      {
+        "path": "release.json",
+        "sha256": "b50539b208e4157a13366b1c3e8b34815ecaa10fff5090b3a667c401b6034436",
+        "expected": "b50539b208e4157a13366b1c3e8b34815ecaa10fff5090b3a667c401b6034436",
+        "matches": true,
+        "bytes": 112
+      },
+      {
+        "path": "third-party-notices.txt",
+        "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+        "expected": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+        "matches": true,
+        "bytes": 1082
+      }
+    ],
+    "developmentCommit": "8de66dbfdcbedbd8a6f3b607e1020684a63f9476",
+    "dirtyAtStart": false,
+    "publicSourceCommit": "89725b8bf96b7bdbef6869284f8c764ed9cd4e10",
+    "publicSourceEvidence": "deployment manifest plus all listed delivered files verified"
+  },
+  {
+    "repo": "senryou",
+    "at": "2026-11-06T18:37:49.346149+00:00",
+    "files": {
+      "index.html": {
+        "url": "https://chameleonjp-lab.github.io/senryou/index.html",
+        "bytes": 11545,
+        "sha256": "3904fe760a485774c14349d571c26cb1d1d703b2d755d57d2b0c024967e893fb"
+      },
+      "deployment.json": {
+        "url": "https://chameleonjp-lab.github.io/senryou/deployment.json",
+        "bytes": 811,
+        "sha256": "9879698698ebed8be68747f5e56d3ca157f922c44e472917d926cbe1a72b900f"
+      }
+    },
+    "deployment": {
+      "repository": "chameleonjp-lab/senryou",
+      "commit": "129ea7f04ac72c236f267c8e8be1dc78c397794a",
+      "files": {
+        "assets/index-CuWH0-8v.js": "b929f7763b9b90f22e8c946619b448337f12b9c28f6fa48030ed21b5b11f24a4",
+        "assets/index-cRdNSjf2.css": "edbd6b4494b8a37c31a683fe0c49132315347a4373926c2938b93195d5759ff7",
+        "index.html": "3904fe760a485774c14349d571c26cb1d1d703b2d755d57d2b0c024967e893fb",
+        "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+      },
+      "sourceTree": "0687b8a2cdbef01f3360769276d8accd60b0147e",
+      "workflowCommit": "129ea7f04ac72c236f267c8e8be1dc78c397794a",
+      "publicationAuthorizationDate": "2026-10-18",
+      "publicationScope": "User-requested latest merged main verification build; physical-phone and gameplay acceptance are not claimed"
+    },
+    "assetVerification": [
+      {
+        "path": "assets/index-CuWH0-8v.js",
+        "sha256": "b929f7763b9b90f22e8c946619b448337f12b9c28f6fa48030ed21b5b11f24a4",
+        "expected": "b929f7763b9b90f22e8c946619b448337f12b9c28f6fa48030ed21b5b11f24a4",
+        "matches": true,
+        "bytes": 833216
+      },
+      {
+        "path": "assets/index-cRdNSjf2.css",
+        "sha256": "edbd6b4494b8a37c31a683fe0c49132315347a4373926c2938b93195d5759ff7",
+        "expected": "edbd6b4494b8a37c31a683fe0c49132315347a4373926c2938b93195d5759ff7",
+        "matches": true,
+        "bytes": 45709
+      },
+      {
+        "path": "index.html",
+        "sha256": "3904fe760a485774c14349d571c26cb1d1d703b2d755d57d2b0c024967e893fb",
+        "expected": "3904fe760a485774c14349d571c26cb1d1d703b2d755d57d2b0c024967e893fb",
+        "matches": true,
+        "bytes": 11545
+      },
+      {
+        "path": "third-party-notices.txt",
+        "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+        "expected": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+        "matches": true,
+        "bytes": 1082
+      }
+    ],
+    "developmentCommit": "5dc32d0e57bff6b7c77ef7f8b38d4b4672f01157",
+    "dirtyAtStart": false,
+    "publicSourceCommit": "129ea7f04ac72c236f267c8e8be1dc78c397794a",
+    "publicSourceEvidence": "deployment manifest plus all listed delivered files verified"
+  },
+  {
+    "repo": "fantasia",
+    "at": "2026-11-06T18:37:49.346674+00:00",
+    "files": {
+      "index.html": {
+        "url": "https://chameleonjp-lab.github.io/fantasia/index.html",
+        "bytes": 12347,
+        "sha256": "53bac91266d4db2aba396df49663cdb0729bdd0acc7050acae4d165ed1ab5e30"
+      },
+      "deployment.json": {
+        "url": "https://chameleonjp-lab.github.io/fantasia/deployment.json",
+        "bytes": 799,
+        "sha256": "ad27feabdbe7f66f6a601e2bff2fb23ce2c7827ed67fb21912fb8df714a18dae"
+      }
+    },
+    "deployment": {
+      "repository": "chameleonjp-lab/fantasia",
+      "commit": "7f9c9045d164dda5a938db6a324bc6ac62b97bb3",
+      "files": {
+        "assets/index-BOqdvI6-.css": "5070fa014994f06eadf7c2325c05c494968cbf03bb313f2ca99b3dc551c723b4",
+        "assets/index-DcbRvLPb.js": "2a3333f18e9b23c864c00023ba1a98fd476c8995e845377f0a9557d1ba87f4bc",
+        "index.html": "53bac91266d4db2aba396df49663cdb0729bdd0acc7050acae4d165ed1ab5e30",
+        "third-party-notices.txt": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+      },
+      "sourceTree": "aec78be7fec9aae6595fd7574207a31ed45b0a47",
+      "workflowCommit": "7f9c9045d164dda5a938db6a324bc6ac62b97bb3",
+      "publicationAuthorizationDate": "2026-10-13",
+      "publicationScope": "User-requested verification build; final physical-phone and gameplay acceptance are not claimed"
+    },
+    "assetVerification": [
+      {
+        "path": "assets/index-BOqdvI6-.css",
+        "sha256": "5070fa014994f06eadf7c2325c05c494968cbf03bb313f2ca99b3dc551c723b4",
+        "expected": "5070fa014994f06eadf7c2325c05c494968cbf03bb313f2ca99b3dc551c723b4",
+        "matches": true,
+        "bytes": 50469
+      },
+      {
+        "path": "assets/index-DcbRvLPb.js",
+        "sha256": "2a3333f18e9b23c864c00023ba1a98fd476c8995e845377f0a9557d1ba87f4bc",
+        "expected": "2a3333f18e9b23c864c00023ba1a98fd476c8995e845377f0a9557d1ba87f4bc",
+        "matches": true,
+        "bytes": 865865
+      },
+      {
+        "path": "index.html",
+        "sha256": "53bac91266d4db2aba396df49663cdb0729bdd0acc7050acae4d165ed1ab5e30",
+        "expected": "53bac91266d4db2aba396df49663cdb0729bdd0acc7050acae4d165ed1ab5e30",
+        "matches": true,
+        "bytes": 12347
+      },
+      {
+        "path": "third-party-notices.txt",
+        "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+        "expected": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f",
+        "matches": true,
+        "bytes": 1082
+      }
+    ],
+    "developmentCommit": "3526a2b4b499da9f0f20be303f3a4624e8053be4",
+    "dirtyAtStart": false,
+    "publicSourceCommit": "7f9c9045d164dda5a938db6a324bc6ac62b97bb3",
+    "publicSourceEvidence": "deployment manifest plus all listed delivered files verified"
+  },
+  {
+    "repo": "nusumidase",
+    "at": "2026-11-06T18:37:49.347646+00:00",
+    "files": {
+      "index.html": {
+        "url": "https://chameleonjp-lab.github.io/nusumidase/index.html",
+        "bytes": 9717,
+        "sha256": "82d218699d121d79be2ff9d6c98cb303c43afe0ae5c375d60433659455afdd4b"
+      },
+      "deployment.json": {
+        "error": "HTTP Error 404: Not Found"
+      }
+    },
+    "assetVerification": [
+      {
+        "path": "assets/index-C-n9Iqso.js",
+        "sha256": "9d9cb12b7c39a2d8e4b4e98dd11db47fa60dde96dae8ef1c62b724206d173ffa",
+        "expected": null,
+        "matches": null,
+        "bytes": 775385
+      },
+      {
+        "path": "assets/index-A6yjUbUq.css",
+        "sha256": "e42946727f66bdd861b9498ba1336fe6c5f22bb0cb29ad42a57d347fc3be6f84",
+        "expected": null,
+        "matches": null,
+        "bytes": 30981
+      }
+    ],
+    "developmentCommit": "21b4d738e3dec11f45766ecaceb8907586fe4d10",
+    "dirtyAtStart": false,
+    "publicSourceCommit": "58a4fded9eab018c59a4a1a57f5644c7feb6a5d9",
+    "publicSourceEvidence": "recorded public source reconstructed with original configuration; HTML/JS/CSS all bytes equal"
+  }
+]

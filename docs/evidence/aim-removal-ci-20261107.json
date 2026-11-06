@@ -1,0 +1,210 @@
+{
+  "observed_at": "2026-11-06 20:03:23 UTC",
+  "states_are_observations_not_agent_merge_actions": true,
+  "all_required_candidate_workflows_successful": true,
+  "conditional_skipped_diagnostics_are_not_counted_as_pass": true,
+  "repositories": [
+    {
+      "repository": "chameleonjp-lab/faitofuraito",
+      "pr": "https://github.com/chameleonjp-lab/faitofuraito/pull/29",
+      "number": 29,
+      "candidate_sha": "82f14878737a3f048e3b564e777c3627490ab35f",
+      "local_sha": "23e66ce217e6ff5e9cbca3bac61629c6d94feca7",
+      "tree": "14519830a1edaf5bbe8763dbb47d97ff9e557ca0",
+      "state": "closed",
+      "draft": false,
+      "merged": true,
+      "merge_sha": "70d2a8d44be70282cd99912f4881c6aab626800f",
+      "ci": [
+        {
+          "id": 42281260625,
+          "name": "Game checks",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 69,
+          "jobs_url": "https://api.github.com/repos/chameleonjp-lab/faitofuraito/actions/runs/42281260625/jobs",
+          "logs_url": "https://api.github.com/repos/chameleonjp-lab/faitofuraito/actions/runs/42281260625/logs",
+          "workflow_id": 368945897
+        }
+      ]
+    },
+    {
+      "repository": "chameleonjp-lab/kaisen",
+      "pr": "https://github.com/chameleonjp-lab/kaisen/pull/27",
+      "number": 27,
+      "candidate_sha": "7998bde74282d44b8a448f453db92a04335cd9e8",
+      "local_sha": "5155df3038b2ed0cc5c49091295a9fb044189a78",
+      "tree": "a03ca73cde0cdf9ad091efca651818b64eeda24b",
+      "state": "closed",
+      "draft": false,
+      "merged": true,
+      "merge_sha": "58577fb753a06c7f15cf4141b869db1b34466b38",
+      "ci": [
+        {
+          "id": 42280133354,
+          "name": "Kaisen checks",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 69,
+          "jobs_url": "https://api.github.com/repos/chameleonjp-lab/kaisen/actions/runs/42280133354/jobs",
+          "logs_url": "https://api.github.com/repos/chameleonjp-lab/kaisen/actions/runs/42280133354/logs",
+          "workflow_id": 372785100
+        }
+      ]
+    },
+    {
+      "repository": "chameleonjp-lab/fantasia",
+      "pr": "https://github.com/chameleonjp-lab/fantasia/pull/25",
+      "number": 25,
+      "candidate_sha": "f6d438c29ec68483858daefc866b77fbcc4067b6",
+      "local_sha": "74a3edb8de7cee6730b92fd151316c8555ad3257",
+      "tree": "70f3f141d952f838177058cb00716c43f600e4ee",
+      "state": "closed",
+      "draft": false,
+      "merged": true,
+      "merge_sha": "425f1311e0d0210670fe960f0fda7b1cdf75f51f",
+      "ci": [
+        {
+          "id": 42279215961,
+          "name": "Verify Fantasia",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 133,
+          "jobs_url": "https://api.github.com/repos/chameleonjp-lab/fantasia/actions/runs/42279215961/jobs",
+          "logs_url": "https://api.github.com/repos/chameleonjp-lab/fantasia/actions/runs/42279215961/logs",
+          "workflow_id": 375038215
+        }
+      ]
+    },
+    {
+      "repository": "chameleonjp-lab/machimamore",
+      "pr": "https://github.com/chameleonjp-lab/machimamore/pull/23",
+      "number": 23,
+      "candidate_sha": "f55a0bc2a9b82584238537ef00bcdbb5b85da217",
+      "local_sha": "c8272d065cfae72f9d3ce8648bab552039f199f1",
+      "tree": "04154d15c1fb56590805b8fdee249d4f48b0461d",
+      "state": "closed",
+      "draft": false,
+      "merged": true,
+      "merge_sha": "e80d98c780216cdb24c8b2f233d33a6ce0ffc579",
+      "ci": [
+        {
+          "id": 42279078634,
+          "name": "Unit, build and UI checks",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 54,
+          "jobs_url": "https://api.github.com/repos/chameleonjp-lab/machimamore/actions/runs/42279078634/jobs",
+          "logs_url": "https://api.github.com/repos/chameleonjp-lab/machimamore/actions/runs/42279078634/logs",
+          "workflow_id": 375068622
+        }
+      ]
+    },
+    {
+      "repository": "chameleonjp-lab/gekichin",
+      "pr": "https://github.com/chameleonjp-lab/gekichin/pull/18",
+      "number": 18,
+      "candidate_sha": "5d9064a6c46cf5cd011f0d80e567b92b42c17c95",
+      "local_sha": "ec19b80ba80d6465970924b17030f7c438c51c41",
+      "tree": "4e28a1fd10c00f7a8547655a864ddc1733b8751b",
+      "state": "closed",
+      "draft": false,
+      "merged": true,
+      "merge_sha": "8a7bd6aca86d0c1eea13c1dcb706c36e9efa98cf",
+      "ci": [
+        {
+          "id": 42279030205,
+          "name": "Implementation checks",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 59,
+          "jobs_url": "https://api.github.com/repos/chameleonjp-lab/gekichin/actions/runs/42279030205/jobs",
+          "logs_url": "https://api.github.com/repos/chameleonjp-lab/gekichin/actions/runs/42279030205/logs",
+          "workflow_id": 374969911
+        }
+      ]
+    },
+    {
+      "repository": "chameleonjp-lab/uchiotose",
+      "pr": "https://github.com/chameleonjp-lab/uchiotose/pull/22",
+      "number": 22,
+      "candidate_sha": "c3d7c3a4a06f84a341f566fa2f3177cfb22854f4",
+      "local_sha": "d447bd8a735f6c086412fc820206ee02b0cd60c6",
+      "tree": "9b5f864b3d3d62f79fda21103b1ce0b927d9bd7c",
+      "state": "closed",
+      "draft": false,
+      "merged": true,
+      "merge_sha": "e2af08dd3d1a9aede5721b657c876e11b1d520c2",
+      "ci": [
+        {
+          "id": 42279549468,
+          "name": "Browser acceptance",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 44,
+          "jobs_url": "https://api.github.com/repos/chameleonjp-lab/uchiotose/actions/runs/42279549468/jobs",
+          "logs_url": "https://api.github.com/repos/chameleonjp-lab/uchiotose/actions/runs/42279549468/logs",
+          "workflow_id": 376124273
+        }
+      ]
+    },
+    {
+      "repository": "chameleonjp-lab/nusumidase",
+      "pr": "https://github.com/chameleonjp-lab/nusumidase/pull/10",
+      "number": 10,
+      "candidate_sha": "331c6ee22415ee6ccb586183fc60c29991745579",
+      "local_sha": "15dc54d5c11ccf411bcef9b64a78c8dd5fc72528",
+      "tree": "add960dce73438e752adc534a7063ef6fdec4040",
+      "state": "closed",
+      "draft": false,
+      "merged": true,
+      "merge_sha": "f33afc8c44de1ba0f540cd08c18cb3f08154ef16",
+      "ci": [
+        {
+          "id": 42279975389,
+          "name": "Validate game",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 18,
+          "jobs_url": "https://api.github.com/repos/chameleonjp-lab/nusumidase/actions/runs/42279975389/jobs",
+          "logs_url": "https://api.github.com/repos/chameleonjp-lab/nusumidase/actions/runs/42279975389/logs",
+          "workflow_id": 382766829
+        }
+      ]
+    },
+    {
+      "repository": "chameleonjp-lab/senryou",
+      "pr": "https://github.com/chameleonjp-lab/senryou/pull/26",
+      "number": 26,
+      "candidate_sha": "a3099c9add0f3e798ffab9245a03afe21a03f09d",
+      "local_sha": "b22e0f67bdda41f91b8d811f8360dd43da13031a",
+      "tree": "684c9e5d43e4bb8eeeeaea34960501488bb120ea",
+      "state": "open",
+      "draft": true,
+      "merged": false,
+      "merge_sha": "4da3fc7c17b6c7188dc539804ee4188eac38bf95",
+      "ci": [
+        {
+          "id": 42283250682,
+          "name": "Senryou one-time paired harness diagnostic",
+          "status": "completed",
+          "conclusion": "skipped",
+          "run_number": 40,
+          "jobs_url": "https://api.github.com/repos/chameleonjp-lab/senryou/actions/runs/42283250682/jobs",
+          "logs_url": "https://api.github.com/repos/chameleonjp-lab/senryou/actions/runs/42283250682/logs",
+          "workflow_id": 376222658
+        },
+        {
+          "id": 42283250479,
+          "name": "Senryou throttle lever checks",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 71,
+          "jobs_url": "https://api.github.com/repos/chameleonjp-lab/senryou/actions/runs/42283250479/jobs",
+          "logs_url": "https://api.github.com/repos/chameleonjp-lab/senryou/actions/runs/42283250479/logs",
+          "workflow_id": 375055417
+        }
+      ]
+    }
+  ]
+}

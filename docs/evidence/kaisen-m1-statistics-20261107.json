@@ -1,0 +1,1670 @@
+{
+  "source": "/workspace/scratch/kaisen-m1-20261107/results.json",
+  "sourceSha256": "eb5b35918cfffbd91463d3967729cf4ffa48cc2d321c6c58caa956bfc9d17745",
+  "script": "/workspace/scratch/measure-kaisen-m1.mjs",
+  "scriptSha256": "73213bb33277d4898265c076e32c5e07f8f1424b09e0573ce33b90890269579d",
+  "generatedAt": "2026-11-06T19:34:23.272Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "linux",
+    "arch": "x64",
+    "viewport": {
+      "width": 402,
+      "height": 874
+    },
+    "deviceScaleFactor": 1,
+    "args": [
+      "--use-gl=angle",
+      "--use-angle=swiftshader",
+      "--enable-unsafe-swiftshader"
+    ],
+    "headless": true,
+    "browser": "149.0.7827.55"
+  },
+  "method": "3 repeats per mode/scene/revision; fresh default-seed UI launch; fixed real touch commands; 3-second live window; app frameIntervals p50/p95 nearest-rank; 250ms read-only pose/target probes. No physical-device claim or optimization attribution.",
+  "commands": {
+    "ship": [
+      {
+        "turn": 0,
+        "climb": -0.25,
+        "ticks": 60
+      },
+      {
+        "turn": 0,
+        "climb": 0,
+        "ticks": 12
+      }
+    ],
+    "sea": [
+      {
+        "turn": -1,
+        "climb": 0,
+        "ticks": 120
+      },
+      {
+        "turn": 0,
+        "climb": 0,
+        "ticks": 12
+      }
+    ]
+  },
+  "counts": {
+    "measured": 15,
+    "blocked": 9
+  },
+  "limitations": [
+    "One planned run,24windows, no retries or automatic resume. Exit1 preserves9blocked windows.",
+    "RAF gap and CPU-observed GPU-fence completion interval are separate metrics. Completion snapshots at250ms are sparse, not every completed frame or physical display/present timestamps.",
+    "Normal sea windows all GPU-stall paused in both revisions, so no valid Normal sea comparison.",
+    "Fixed commands and seeds matched; actual poses/workload differ because approved behavior changed. Before/after measured sequentially, not randomized. Sparse samples and attrition prevent a speedup or causal optimization claim.",
+    "Software Chromium/SwiftShader Linux test machine only; physical iPhone and public candidate not tested."
+  ],
+  "pairedGroups": [
+    {
+      "mode": "easy",
+      "scene": "sea",
+      "matchedRepeats": [
+        1,
+        2,
+        3
+      ],
+      "status": "comparable",
+      "revisions": {
+        "before": {
+          "raf": {
+            "count": 481,
+            "p50Ms": 16.7,
+            "p95Ms": 33.2
+          },
+          "sparseCompleted": {
+            "count": 9,
+            "p50Ms": 852.6,
+            "p95Ms": 1061.6
+          }
+        },
+        "after": {
+          "raf": {
+            "count": 461,
+            "p50Ms": 16.6,
+            "p95Ms": 31.5
+          },
+          "sparseCompleted": {
+            "count": 12,
+            "p50Ms": 826.6,
+            "p95Ms": 977.1
+          }
+        }
+      }
+    },
+    {
+      "mode": "easy",
+      "scene": "ship",
+      "matchedRepeats": [
+        1,
+        3
+      ],
+      "status": "comparable",
+      "revisions": {
+        "before": {
+          "raf": {
+            "count": 290,
+            "p50Ms": 16.7,
+            "p95Ms": 35.8
+          },
+          "sparseCompleted": {
+            "count": 7,
+            "p50Ms": 846.1,
+            "p95Ms": 1069.7
+          }
+        },
+        "after": {
+          "raf": {
+            "count": 266,
+            "p50Ms": 16.7,
+            "p95Ms": 47.6
+          },
+          "sparseCompleted": {
+            "count": 6,
+            "p50Ms": 989.9,
+            "p95Ms": 1058
+          }
+        }
+      }
+    },
+    {
+      "mode": "normal",
+      "scene": "sea",
+      "matchedRepeats": [],
+      "status": "blocked",
+      "revisions": {
+        "before": {
+          "raf": {
+            "count": 0,
+            "p50Ms": null,
+            "p95Ms": null
+          },
+          "sparseCompleted": {
+            "count": 0,
+            "p50Ms": null,
+            "p95Ms": null
+          }
+        },
+        "after": {
+          "raf": {
+            "count": 0,
+            "p50Ms": null,
+            "p95Ms": null
+          },
+          "sparseCompleted": {
+            "count": 0,
+            "p50Ms": null,
+            "p95Ms": null
+          }
+        }
+      }
+    },
+    {
+      "mode": "normal",
+      "scene": "ship",
+      "matchedRepeats": [
+        1
+      ],
+      "status": "comparable",
+      "revisions": {
+        "before": {
+          "raf": {
+            "count": 159,
+            "p50Ms": 16.6,
+            "p95Ms": 33.7
+          },
+          "sparseCompleted": {
+            "count": 3,
+            "p50Ms": 839.5,
+            "p95Ms": 898.5
+          }
+        },
+        "after": {
+          "raf": {
+            "count": 164,
+            "p50Ms": 16.6,
+            "p95Ms": 28.6
+          },
+          "sparseCompleted": {
+            "count": 4,
+            "p50Ms": 858.7,
+            "p95Ms": 956.9
+          }
+        }
+      }
+    }
+  ],
+  "revisions": [
+    {
+      "label": "before",
+      "cwd": "/workspace/scratch/kaisen-m1-before",
+      "port": 4181,
+      "commit": "c95c9d186b977b2ab02bd6fa9e1a0ca32ea7f0a8",
+      "tree": "e65b222b400bb1ecbaf842900221bd4658b88400",
+      "lockBlob": "09fbe449f0cc3eee78ebf88ee27f368e25fe7b32"
+    },
+    {
+      "label": "after",
+      "cwd": "/workspace/kaisen",
+      "port": 4182,
+      "commit": "5155df3038b2ed0cc5c49091295a9fb044189a78",
+      "tree": "a03ca73cde0cdf9ad091efca651818b64eeda24b",
+      "lockBlob": "09fbe449f0cc3eee78ebf88ee27f368e25fe7b32"
+    }
+  ],
+  "runs": [
+    {
+      "mode": "easy",
+      "scene": "ship",
+      "repeat": 1,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3009.100000000093,
+      "error": null,
+      "validRAF": {
+        "count": 147,
+        "p50Ms": 16.7,
+        "p95Ms": 36.8
+      },
+      "validSparseCompleted": {
+        "count": 4,
+        "p50Ms": 825.3,
+        "p95Ms": 1051.1
+      },
+      "rawSparseCompletedIntervalsMs": [
+        1051.1000000000931,
+        825.2999999998137,
+        830.3999999999069,
+        816
+      ],
+      "rawSparseCompletedCounts": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "directionChangesDeg": {
+        "count": 147,
+        "p50Ms": 16.699999999720603,
+        "p95Ms": 36.799999999813735,
+        "minMs": 2.1000000000931323,
+        "maxMs": 188.5,
+        "playerDirectionChangeDeg": 2.806119095047723,
+        "cameraDirectionChangeDeg": 10.009103524003054
+      },
+      "pauseReasons": [],
+      "revision": "before",
+      "rawRAFCount": 147,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": 0,
+          "climb": -0.25,
+          "ticks": 60,
+          "acceptedTick": 12,
+          "endTick": 78,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 82,
+          "endTick": 96,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "easy",
+      "scene": "ship",
+      "repeat": 2,
+      "status": "blocked",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 2900,
+      "error": "safety interruption invalidates timing window\n+ actual - expected\n\n+ 'paused'\n- 'playing'\n",
+      "validRAF": null,
+      "validSparseCompleted": null,
+      "rawSparseCompletedIntervalsMs": [
+        831.2000000001863,
+        895.8999999999069
+      ],
+      "rawSparseCompletedCounts": [
+        5,
+        6
+      ],
+      "directionChangesDeg": null,
+      "pauseReasons": [
+        "render"
+      ],
+      "revision": "before",
+      "rawRAFCount": 120,
+      "lastInterruption": {
+        "reason": "stalled",
+        "gap": 0.25260000000009314,
+        "queue": {
+          "status": "stalled",
+          "failure": null,
+          "pendingMs": 1174,
+          "lastCompletedPendingMs": 853.2000000001863,
+          "completedFrameIntervalMs": 895.8999999999069,
+          "submittedCount": 7,
+          "completedCount": 6,
+          "skippedCount": 736
+        }
+      },
+      "inputs": [
+        {
+          "turn": 0,
+          "climb": -0.25,
+          "ticks": 60,
+          "acceptedTick": 7,
+          "endTick": 67,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 70,
+          "endTick": 82,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "easy",
+      "scene": "ship",
+      "repeat": 3,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3004.399999999907,
+      "error": null,
+      "validRAF": {
+        "count": 143,
+        "p50Ms": 16.7,
+        "p95Ms": 31.1
+      },
+      "validSparseCompleted": {
+        "count": 3,
+        "p50Ms": 874.8,
+        "p95Ms": 1069.7
+      },
+      "rawSparseCompletedIntervalsMs": [
+        874.7999999998137,
+        846.1000000000931,
+        1069.7000000001863
+      ],
+      "rawSparseCompletedCounts": [
+        5,
+        6,
+        7
+      ],
+      "directionChangesDeg": {
+        "count": 143,
+        "p50Ms": 16.699999999720603,
+        "p95Ms": 31.09999999962747,
+        "minMs": 8.700000000186265,
+        "maxMs": 207.89999999990687,
+        "playerDirectionChangeDeg": 2.979428363932358,
+        "cameraDirectionChangeDeg": 6.9014133556208845
+      },
+      "pauseReasons": [],
+      "revision": "before",
+      "rawRAFCount": 143,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": 0,
+          "climb": -0.25,
+          "ticks": 60,
+          "acceptedTick": 10,
+          "endTick": 70,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 72,
+          "endTick": 84,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "easy",
+      "scene": "sea",
+      "repeat": 1,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3030.3000000002794,
+      "error": null,
+      "validRAF": {
+        "count": 160,
+        "p50Ms": 16.6,
+        "p95Ms": 33.8
+      },
+      "validSparseCompleted": {
+        "count": 3,
+        "p50Ms": 851,
+        "p95Ms": 930.2
+      },
+      "rawSparseCompletedIntervalsMs": [
+        774.2000000001863,
+        930.2000000001863,
+        851
+      ],
+      "rawSparseCompletedCounts": [
+        6,
+        7,
+        8
+      ],
+      "directionChangesDeg": {
+        "count": 160,
+        "p50Ms": 16.600000000093132,
+        "p95Ms": 33.799999999813735,
+        "minMs": 3.5,
+        "maxMs": 101.89999999990687,
+        "playerDirectionChangeDeg": 2.296352136502531e-05,
+        "cameraDirectionChangeDeg": 5.259259696658273
+      },
+      "pauseReasons": [],
+      "revision": "before",
+      "rawRAFCount": 160,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": -1,
+          "climb": 0,
+          "ticks": 120,
+          "acceptedTick": 10,
+          "endTick": 134,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 139,
+          "endTick": 151,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "easy",
+      "scene": "sea",
+      "repeat": 2,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3006.6999999997206,
+      "error": null,
+      "validRAF": {
+        "count": 159,
+        "p50Ms": 16.7,
+        "p95Ms": 33.4
+      },
+      "validSparseCompleted": {
+        "count": 3,
+        "p50Ms": 987.5,
+        "p95Ms": 1061.6
+      },
+      "rawSparseCompletedIntervalsMs": [
+        1061.6000000000931,
+        987.5,
+        850.2999999998137
+      ],
+      "rawSparseCompletedCounts": [
+        6,
+        7,
+        8
+      ],
+      "directionChangesDeg": {
+        "count": 159,
+        "p50Ms": 16.699999999720603,
+        "p95Ms": 33.39999999990687,
+        "minMs": 3.8999999999068677,
+        "maxMs": 116.70000000018626,
+        "playerDirectionChangeDeg": 1.618213189281836e-05,
+        "cameraDirectionChangeDeg": 17.08689485973372
+      },
+      "pauseReasons": [],
+      "revision": "before",
+      "rawRAFCount": 159,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": -1,
+          "climb": 0,
+          "ticks": 120,
+          "acceptedTick": 9,
+          "endTick": 132,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 136,
+          "endTick": 148,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "easy",
+      "scene": "sea",
+      "repeat": 3,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3034.3000000002794,
+      "error": null,
+      "validRAF": {
+        "count": 162,
+        "p50Ms": 16.7,
+        "p95Ms": 27.3
+      },
+      "validSparseCompleted": {
+        "count": 3,
+        "p50Ms": 852.6,
+        "p95Ms": 911.1
+      },
+      "rawSparseCompletedIntervalsMs": [
+        810.0999999996275,
+        911.1000000000931,
+        852.6000000000931
+      ],
+      "rawSparseCompletedCounts": [
+        6,
+        7,
+        8
+      ],
+      "directionChangesDeg": {
+        "count": 162,
+        "p50Ms": 16.699999999720603,
+        "p95Ms": 27.300000000279397,
+        "minMs": 3.1999999997206032,
+        "maxMs": 125,
+        "playerDirectionChangeDeg": 1.131107280726067e-05,
+        "cameraDirectionChangeDeg": 6.574942101441432
+      },
+      "pauseReasons": [],
+      "revision": "before",
+      "rawRAFCount": 162,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": -1,
+          "climb": 0,
+          "ticks": 120,
+          "acceptedTick": 8,
+          "endTick": 135,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 140,
+          "endTick": 153,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "normal",
+      "scene": "ship",
+      "repeat": 1,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3013.7999999998137,
+      "error": null,
+      "validRAF": {
+        "count": 159,
+        "p50Ms": 16.6,
+        "p95Ms": 33.7
+      },
+      "validSparseCompleted": {
+        "count": 3,
+        "p50Ms": 839.5,
+        "p95Ms": 898.5
+      },
+      "rawSparseCompletedIntervalsMs": [
+        898.5,
+        839.5,
+        795.7000000001863
+      ],
+      "rawSparseCompletedCounts": [
+        5,
+        6,
+        7
+      ],
+      "directionChangesDeg": {
+        "count": 159,
+        "p50Ms": 16.600000000093132,
+        "p95Ms": 33.700000000186265,
+        "minMs": 6.5,
+        "maxMs": 122.1999999997206,
+        "playerDirectionChangeDeg": 0,
+        "cameraDirectionChangeDeg": 0
+      },
+      "pauseReasons": [],
+      "revision": "before",
+      "rawRAFCount": 159,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": 0,
+          "climb": -0.25,
+          "ticks": 60,
+          "acceptedTick": 15,
+          "endTick": 75,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 79,
+          "endTick": 93,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "normal",
+      "scene": "ship",
+      "repeat": 2,
+      "status": "blocked",
+      "seed": 1262569811,
+      "rawWindowDurationMs": null,
+      "error": "page.evaluate: Error: setup paused\n    at poll (eval at evaluate (:303:30), <anonymous>:1:166)\n    at eval (eval at evaluate (:303:30), <anonymous>:1:422)\n    at new Promise (<anonymous>)\n    at eval (eval at evaluate (:303:30), <anonymous>:1:10)\n    at UtilityScript.evaluate (<anonymous>:305:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+      "validRAF": null,
+      "validSparseCompleted": null,
+      "rawSparseCompletedIntervalsMs": [],
+      "rawSparseCompletedCounts": [],
+      "directionChangesDeg": null,
+      "pauseReasons": [
+        "render"
+      ],
+      "revision": "before",
+      "rawRAFCount": 0,
+      "lastInterruption": {
+        "reason": "stalled",
+        "gap": 0.024,
+        "queue": {
+          "status": "stalled",
+          "failure": null,
+          "pendingMs": 1007.1999999997206,
+          "lastCompletedPendingMs": 533.3999999999069,
+          "completedFrameIntervalMs": 570.6999999997206,
+          "submittedCount": 3,
+          "completedCount": 2,
+          "skippedCount": 475
+        }
+      },
+      "inputs": [
+        {
+          "turn": 0,
+          "climb": -0.25,
+          "ticks": 60,
+          "acceptedTick": 79,
+          "endTick": 90,
+          "endPhase": "paused"
+        }
+      ]
+    },
+    {
+      "mode": "normal",
+      "scene": "ship",
+      "repeat": 3,
+      "status": "blocked",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 1686.2999999998137,
+      "error": "safety interruption invalidates timing window\n+ actual - expected\n\n+ 'paused'\n- 'playing'\n",
+      "validRAF": null,
+      "validSparseCompleted": null,
+      "rawSparseCompletedIntervalsMs": [
+        1080.1000000000931
+      ],
+      "rawSparseCompletedCounts": [
+        5
+      ],
+      "directionChangesDeg": null,
+      "pauseReasons": [
+        "render"
+      ],
+      "revision": "before",
+      "rawRAFCount": 75,
+      "lastInterruption": {
+        "reason": "stalled",
+        "gap": 0.032,
+        "queue": {
+          "status": "stalled",
+          "failure": null,
+          "pendingMs": 1005.7999999998137,
+          "lastCompletedPendingMs": 1010.6000000000931,
+          "completedFrameIntervalMs": 1080.1000000000931,
+          "submittedCount": 6,
+          "completedCount": 5,
+          "skippedCount": 847
+        }
+      },
+      "inputs": [
+        {
+          "turn": 0,
+          "climb": -0.25,
+          "ticks": 60,
+          "acceptedTick": 28,
+          "endTick": 90,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 93,
+          "endTick": 113,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "normal",
+      "scene": "sea",
+      "repeat": 1,
+      "status": "blocked",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 839.1999999997206,
+      "error": "safety interruption invalidates timing window\n+ actual - expected\n\n+ 'paused'\n- 'playing'\n",
+      "validRAF": null,
+      "validSparseCompleted": null,
+      "rawSparseCompletedIntervalsMs": [],
+      "rawSparseCompletedCounts": [],
+      "directionChangesDeg": null,
+      "pauseReasons": [
+        "render"
+      ],
+      "revision": "before",
+      "rawRAFCount": 41,
+      "lastInterruption": {
+        "reason": "stalled",
+        "gap": 0.011899999999906867,
+        "queue": {
+          "status": "stalled",
+          "failure": null,
+          "pendingMs": 1002,
+          "lastCompletedPendingMs": 989.2999999998137,
+          "completedFrameIntervalMs": 1016.3999999999069,
+          "submittedCount": 6,
+          "completedCount": 5,
+          "skippedCount": 736
+        }
+      },
+      "inputs": [
+        {
+          "turn": -1,
+          "climb": 0,
+          "ticks": 120,
+          "acceptedTick": 9,
+          "endTick": 129,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 132,
+          "endTick": 149,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "normal",
+      "scene": "sea",
+      "repeat": 2,
+      "status": "blocked",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 2192.899999999907,
+      "error": "safety interruption invalidates timing window\n+ actual - expected\n\n+ 'paused'\n- 'playing'\n",
+      "validRAF": null,
+      "validSparseCompleted": null,
+      "rawSparseCompletedIntervalsMs": [
+        896.6000000000931,
+        951.3999999999069
+      ],
+      "rawSparseCompletedCounts": [
+        6,
+        7
+      ],
+      "directionChangesDeg": null,
+      "pauseReasons": [
+        "render"
+      ],
+      "revision": "before",
+      "rawRAFCount": 101,
+      "lastInterruption": {
+        "reason": "stalled",
+        "gap": 0.1378000000002794,
+        "queue": {
+          "status": "stalled",
+          "failure": null,
+          "pendingMs": 1070.7000000001863,
+          "lastCompletedPendingMs": 929.6999999997206,
+          "completedFrameIntervalMs": 951.3999999999069,
+          "submittedCount": 8,
+          "completedCount": 7,
+          "skippedCount": 831
+        }
+      },
+      "inputs": [
+        {
+          "turn": -1,
+          "climb": 0,
+          "ticks": 120,
+          "acceptedTick": 19,
+          "endTick": 139,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 142,
+          "endTick": 154,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "normal",
+      "scene": "sea",
+      "repeat": 3,
+      "status": "blocked",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 1693.2000000001863,
+      "error": "safety interruption invalidates timing window\n+ actual - expected\n\n+ 'paused'\n- 'playing'\n",
+      "validRAF": null,
+      "validSparseCompleted": null,
+      "rawSparseCompletedIntervalsMs": [
+        930.4000000003725
+      ],
+      "rawSparseCompletedCounts": [
+        6
+      ],
+      "directionChangesDeg": null,
+      "pauseReasons": [
+        "render"
+      ],
+      "revision": "before",
+      "rawRAFCount": 77,
+      "lastInterruption": {
+        "reason": "stalled",
+        "gap": 0.1735,
+        "queue": {
+          "status": "stalled",
+          "failure": null,
+          "pendingMs": 1121.3999999999069,
+          "lastCompletedPendingMs": 910.5,
+          "completedFrameIntervalMs": 930.4000000003725,
+          "submittedCount": 7,
+          "completedCount": 6,
+          "skippedCount": 768
+        }
+      },
+      "inputs": [
+        {
+          "turn": -1,
+          "climb": 0,
+          "ticks": 120,
+          "acceptedTick": 11,
+          "endTick": 131,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 142,
+          "endTick": 154,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "easy",
+      "scene": "ship",
+      "repeat": 1,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3015.7999999998137,
+      "error": null,
+      "validRAF": {
+        "count": 135,
+        "p50Ms": 16.7,
+        "p95Ms": 43.8
+      },
+      "validSparseCompleted": {
+        "count": 3,
+        "p50Ms": 997.2,
+        "p95Ms": 1058
+      },
+      "rawSparseCompletedIntervalsMs": [
+        1058,
+        963.8000000002794,
+        997.1999999997206
+      ],
+      "rawSparseCompletedCounts": [
+        5,
+        6,
+        7
+      ],
+      "directionChangesDeg": {
+        "count": 135,
+        "p50Ms": 16.699999999720603,
+        "p95Ms": 43.799999999813735,
+        "minMs": 4.599999999627471,
+        "maxMs": 211.1999999997206,
+        "playerDirectionChangeDeg": 0,
+        "cameraDirectionChangeDeg": 0
+      },
+      "pauseReasons": [],
+      "revision": "after",
+      "rawRAFCount": 135,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": 0,
+          "climb": -0.25,
+          "ticks": 60,
+          "acceptedTick": 15,
+          "endTick": 75,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 77,
+          "endTick": 89,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "easy",
+      "scene": "ship",
+      "repeat": 2,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3188.7999999998137,
+      "error": null,
+      "validRAF": {
+        "count": 137,
+        "p50Ms": 16.7,
+        "p95Ms": 55.5
+      },
+      "validSparseCompleted": {
+        "count": 4,
+        "p50Ms": 942.3,
+        "p95Ms": 1049.8
+      },
+      "rawSparseCompletedIntervalsMs": [
+        942.2999999998137,
+        892.7999999998137,
+        1049.8000000002794,
+        954.1000000000931
+      ],
+      "rawSparseCompletedCounts": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "directionChangesDeg": {
+        "count": 137,
+        "p50Ms": 16.699999999720603,
+        "p95Ms": 55.5,
+        "minMs": 3.7999999998137355,
+        "maxMs": 203.5,
+        "playerDirectionChangeDeg": 0,
+        "cameraDirectionChangeDeg": 0
+      },
+      "pauseReasons": [],
+      "revision": "after",
+      "rawRAFCount": 137,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": 0,
+          "climb": -0.25,
+          "ticks": 60,
+          "acceptedTick": 7,
+          "endTick": 67,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 69,
+          "endTick": 81,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "easy",
+      "scene": "ship",
+      "repeat": 3,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3070.100000000093,
+      "error": null,
+      "validRAF": {
+        "count": 131,
+        "p50Ms": 16.7,
+        "p95Ms": 49.2
+      },
+      "validSparseCompleted": {
+        "count": 3,
+        "p50Ms": 989.9,
+        "p95Ms": 1030.2
+      },
+      "rawSparseCompletedIntervalsMs": [
+        979.5,
+        989.9000000003725,
+        1030.1999999997206
+      ],
+      "rawSparseCompletedCounts": [
+        5,
+        6,
+        7
+      ],
+      "directionChangesDeg": {
+        "count": 131,
+        "p50Ms": 16.699999999720603,
+        "p95Ms": 49.200000000186265,
+        "minMs": 3.3999999999068677,
+        "maxMs": 237.09999999962747,
+        "playerDirectionChangeDeg": 0,
+        "cameraDirectionChangeDeg": 3.1805546814635168e-15
+      },
+      "pauseReasons": [],
+      "revision": "after",
+      "rawRAFCount": 131,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": 0,
+          "climb": -0.25,
+          "ticks": 60,
+          "acceptedTick": 6,
+          "endTick": 67,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 70,
+          "endTick": 82,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "easy",
+      "scene": "sea",
+      "repeat": 1,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3000.399999999907,
+      "error": null,
+      "validRAF": {
+        "count": 147,
+        "p50Ms": 16.7,
+        "p95Ms": 47.5
+      },
+      "validSparseCompleted": {
+        "count": 4,
+        "p50Ms": 823.9,
+        "p95Ms": 977.1
+      },
+      "rawSparseCompletedIntervalsMs": [
+        822.7999999998137,
+        977.1000000000931,
+        823.8999999999069,
+        824.8000000002794
+      ],
+      "rawSparseCompletedCounts": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "directionChangesDeg": {
+        "count": 147,
+        "p50Ms": 16.699999999720603,
+        "p95Ms": 47.5,
+        "minMs": 4.7000000001862645,
+        "maxMs": 162.10000000009313,
+        "playerDirectionChangeDeg": 7.952357272451911e-16,
+        "cameraDirectionChangeDeg": 2.2843604397603758e-09
+      },
+      "pauseReasons": [],
+      "revision": "after",
+      "rawRAFCount": 147,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": -1,
+          "climb": 0,
+          "ticks": 120,
+          "acceptedTick": 9,
+          "endTick": 129,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 131,
+          "endTick": 144,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "easy",
+      "scene": "sea",
+      "repeat": 2,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3018.899999999907,
+      "error": null,
+      "validRAF": {
+        "count": 161,
+        "p50Ms": 16.6,
+        "p95Ms": 30.2
+      },
+      "validSparseCompleted": {
+        "count": 4,
+        "p50Ms": 832.7,
+        "p95Ms": 930.2
+      },
+      "rawSparseCompletedIntervalsMs": [
+        930.2000000001863,
+        823,
+        832.6999999997206,
+        858.3000000002794
+      ],
+      "rawSparseCompletedCounts": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "directionChangesDeg": {
+        "count": 161,
+        "p50Ms": 16.600000000093132,
+        "p95Ms": 30.200000000186265,
+        "minMs": 5.199999999720603,
+        "maxMs": 102.60000000009313,
+        "playerDirectionChangeDeg": 4.9696166897867456e-17,
+        "cameraDirectionChangeDeg": 5.815666371551744e-10
+      },
+      "pauseReasons": [],
+      "revision": "after",
+      "rawRAFCount": 161,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": -1,
+          "climb": 0,
+          "ticks": 120,
+          "acceptedTick": 8,
+          "endTick": 129,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 130,
+          "endTick": 143,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "easy",
+      "scene": "sea",
+      "repeat": 3,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3004,
+      "error": null,
+      "validRAF": {
+        "count": 153,
+        "p50Ms": 16.6,
+        "p95Ms": 50
+      },
+      "validSparseCompleted": {
+        "count": 4,
+        "p50Ms": 826.6,
+        "p95Ms": 917
+      },
+      "rawSparseCompletedIntervalsMs": [
+        827.5,
+        917,
+        826.5999999996275,
+        820.3000000002794
+      ],
+      "rawSparseCompletedCounts": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "directionChangesDeg": {
+        "count": 153,
+        "p50Ms": 16.600000000093132,
+        "p95Ms": 50,
+        "minMs": 4.599999999627471,
+        "maxMs": 132.6999999997206,
+        "playerDirectionChangeDeg": 1.5904714545366601e-15,
+        "cameraDirectionChangeDeg": 1.5220882799766626e-09
+      },
+      "pauseReasons": [],
+      "revision": "after",
+      "rawRAFCount": 153,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": -1,
+          "climb": 0,
+          "ticks": 120,
+          "acceptedTick": 10,
+          "endTick": 130,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 135,
+          "endTick": 147,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "normal",
+      "scene": "ship",
+      "repeat": 1,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3009.899999999907,
+      "error": null,
+      "validRAF": {
+        "count": 164,
+        "p50Ms": 16.6,
+        "p95Ms": 28.6
+      },
+      "validSparseCompleted": {
+        "count": 4,
+        "p50Ms": 858.7,
+        "p95Ms": 956.9
+      },
+      "rawSparseCompletedIntervalsMs": [
+        956.8999999999069,
+        858.7000000001863,
+        922.2999999998137,
+        811.8999999999069
+      ],
+      "rawSparseCompletedCounts": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "directionChangesDeg": {
+        "count": 164,
+        "p50Ms": 16.600000000093132,
+        "p95Ms": 28.600000000093132,
+        "minMs": 0.40000000037252903,
+        "maxMs": 143.70000000018626,
+        "playerDirectionChangeDeg": 0,
+        "cameraDirectionChangeDeg": 3.1805546814635168e-15
+      },
+      "pauseReasons": [],
+      "revision": "after",
+      "rawRAFCount": 164,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": 0,
+          "climb": -0.25,
+          "ticks": 60,
+          "acceptedTick": 12,
+          "endTick": 72,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 75,
+          "endTick": 87,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "normal",
+      "scene": "ship",
+      "repeat": 2,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3007.5999999996275,
+      "error": null,
+      "validRAF": {
+        "count": 149,
+        "p50Ms": 16.7,
+        "p95Ms": 42.8
+      },
+      "validSparseCompleted": {
+        "count": 4,
+        "p50Ms": 825.4,
+        "p95Ms": 958.7
+      },
+      "rawSparseCompletedIntervalsMs": [
+        825.3999999999069,
+        831.5,
+        958.7000000001863,
+        811.2000000001863
+      ],
+      "rawSparseCompletedCounts": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "directionChangesDeg": {
+        "count": 149,
+        "p50Ms": 16.699999999720603,
+        "p95Ms": 42.8000000002794,
+        "minMs": 2.8999999999068677,
+        "maxMs": 141.60000000009313,
+        "playerDirectionChangeDeg": 0,
+        "cameraDirectionChangeDeg": 0
+      },
+      "pauseReasons": [],
+      "revision": "after",
+      "rawRAFCount": 149,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": 0,
+          "climb": -0.25,
+          "ticks": 60,
+          "acceptedTick": 11,
+          "endTick": 72,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 73,
+          "endTick": 85,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "normal",
+      "scene": "ship",
+      "repeat": 3,
+      "status": "measured",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 3111.7999999998137,
+      "error": null,
+      "validRAF": {
+        "count": 146,
+        "p50Ms": 16.6,
+        "p95Ms": 43.6
+      },
+      "validSparseCompleted": {
+        "count": 3,
+        "p50Ms": 958.7,
+        "p95Ms": 1060
+      },
+      "rawSparseCompletedIntervalsMs": [
+        935.5,
+        958.6999999997206,
+        1060
+      ],
+      "rawSparseCompletedCounts": [
+        5,
+        6,
+        7
+      ],
+      "directionChangesDeg": {
+        "count": 146,
+        "p50Ms": 16.600000000093132,
+        "p95Ms": 43.60000000009313,
+        "minMs": 3.8000000002793968,
+        "maxMs": 150.79999999981374,
+        "playerDirectionChangeDeg": 0,
+        "cameraDirectionChangeDeg": 0
+      },
+      "pauseReasons": [],
+      "revision": "after",
+      "rawRAFCount": 146,
+      "lastInterruption": {
+        "reason": null,
+        "gap": null,
+        "queue": null
+      },
+      "inputs": [
+        {
+          "turn": 0,
+          "climb": -0.25,
+          "ticks": 60,
+          "acceptedTick": 9,
+          "endTick": 69,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 72,
+          "endTick": 94,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "normal",
+      "scene": "sea",
+      "repeat": 1,
+      "status": "blocked",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 1125.1000000000931,
+      "error": "safety interruption invalidates timing window\n+ actual - expected\n\n+ 'paused'\n- 'playing'\n",
+      "validRAF": null,
+      "validSparseCompleted": null,
+      "rawSparseCompletedIntervalsMs": [
+        1009.1000000000931
+      ],
+      "rawSparseCompletedCounts": [
+        6
+      ],
+      "directionChangesDeg": null,
+      "pauseReasons": [
+        "render"
+      ],
+      "revision": "after",
+      "rawRAFCount": 48,
+      "lastInterruption": {
+        "reason": "stalled",
+        "gap": 0.19689999999990687,
+        "queue": {
+          "status": "stalled",
+          "failure": null,
+          "pendingMs": 1036.6000000000931,
+          "lastCompletedPendingMs": 999.2000000001863,
+          "completedFrameIntervalMs": 1009.1000000000931,
+          "submittedCount": 7,
+          "completedCount": 6,
+          "skippedCount": 759
+        }
+      },
+      "inputs": [
+        {
+          "turn": -1,
+          "climb": 0,
+          "ticks": 120,
+          "acceptedTick": 9,
+          "endTick": 129,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 132,
+          "endTick": 144,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "normal",
+      "scene": "sea",
+      "repeat": 2,
+      "status": "blocked",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 0.19999999972060323,
+      "error": "safety interruption invalidates timing window\n+ actual - expected\n\n+ 'paused'\n- 'playing'\n",
+      "validRAF": null,
+      "validSparseCompleted": null,
+      "rawSparseCompletedIntervalsMs": [],
+      "rawSparseCompletedCounts": [],
+      "directionChangesDeg": null,
+      "pauseReasons": [
+        "render"
+      ],
+      "revision": "after",
+      "rawRAFCount": 0,
+      "lastInterruption": {
+        "reason": "stalled",
+        "gap": 0.10889999999990686,
+        "queue": {
+          "status": "stalled",
+          "failure": null,
+          "pendingMs": 1023.5,
+          "lastCompletedPendingMs": 849.7999999998137,
+          "completedFrameIntervalMs": 860.7000000001863,
+          "submittedCount": 6,
+          "completedCount": 5,
+          "skippedCount": 658
+        }
+      },
+      "inputs": [
+        {
+          "turn": -1,
+          "climb": 0,
+          "ticks": 120,
+          "acceptedTick": 10,
+          "endTick": 130,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 134,
+          "endTick": 146,
+          "endPhase": "playing"
+        }
+      ]
+    },
+    {
+      "mode": "normal",
+      "scene": "sea",
+      "repeat": 3,
+      "status": "blocked",
+      "seed": 1262569811,
+      "rawWindowDurationMs": 211,
+      "error": "safety interruption invalidates timing window\n+ actual - expected\n\n+ 'paused'\n- 'playing'\n",
+      "validRAF": null,
+      "validSparseCompleted": null,
+      "rawSparseCompletedIntervalsMs": [],
+      "rawSparseCompletedCounts": [],
+      "directionChangesDeg": null,
+      "pauseReasons": [
+        "render"
+      ],
+      "revision": "after",
+      "rawRAFCount": 12,
+      "lastInterruption": {
+        "reason": "stalled",
+        "gap": 0.014100000000093132,
+        "queue": {
+          "status": "stalled",
+          "failure": null,
+          "pendingMs": 1009.1000000000931,
+          "lastCompletedPendingMs": 977,
+          "completedFrameIntervalMs": 999.1000000000931,
+          "submittedCount": 6,
+          "completedCount": 5,
+          "skippedCount": 670
+        }
+      },
+      "inputs": [
+        {
+          "turn": -1,
+          "climb": 0,
+          "ticks": 120,
+          "acceptedTick": 17,
+          "endTick": 138,
+          "endPhase": "playing"
+        },
+        {
+          "turn": 0,
+          "climb": 0,
+          "ticks": 12,
+          "acceptedTick": 143,
+          "endTick": 155,
+          "endPhase": "playing"
+        }
+      ]
+    }
+  ]
+}
